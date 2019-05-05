@@ -1,0 +1,13 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-PointCloudEditor-5583-Win64-DebugGame.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"E:\Luk\Dokumente\Unreal Projects\CPP_PointCloudsVR\Intermediate\Build\Win64\CPP_PointCloudsVREditor\DebugGame\UnrealEd\SharedPCH.UnrealEd.NonOptimized.h.obj"
+"E:\Luk\Dokumente\Unreal Projects\CPP_PointCloudsVR\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\DebugGame\PointCloudEditor\Module.PointCloudEditor.cpp.obj"
+"E:\Luk\Dokumente\Unreal Projects\CPP_PointCloudsVR\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\DebugGame\PointCloudEditor\Module.PointCloudEditor.gen.cpp.obj"
+"E:\Luk\Dokumente\Unreal Projects\CPP_PointCloudsVR\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\DebugGame\PointCloudEditor\PCLaunch.rc.res"
+/OUT:"E:\Luk\Dokumente\Unreal Projects\CPP_PointCloudsVR\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\DebugGame\PointCloudEditor\UE4Editor-PointCloudEditor-5583-Win64-DebugGame.lib"

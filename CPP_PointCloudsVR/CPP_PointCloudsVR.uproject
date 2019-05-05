@@ -1,0 +1,20 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "4.21",
+	"Category": "",
+	"Description": "",
+	"Enterprise": true,
+	"Modules": [
+		{
+			"Name": "CPP_PointCloudsVR",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "PointCloudPlugin",
+			"Enabled": true
+		}
+	]
+}
