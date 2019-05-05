@@ -189,11 +189,11 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"
-/I "E:\Luk\Dokumente\Unreal Projects\CPP_PointCloudsVR\Intermediate\Build\Win64\CPP_PointCloudsVREditor\Development\UnrealEd"
-/Yc"E:\Luk\Dokumente\Unreal Projects\CPP_PointCloudsVR\Intermediate\Build\Win64\CPP_PointCloudsVREditor\Development\UnrealEd\SharedPCH.UnrealEd.h"
-/Fp"E:\Luk\Dokumente\Unreal Projects\CPP_PointCloudsVR\Intermediate\Build\Win64\CPP_PointCloudsVREditor\Development\UnrealEd\SharedPCH.UnrealEd.h.pch"
-"E:\Luk\Dokumente\Unreal Projects\CPP_PointCloudsVR\Intermediate\Build\Win64\CPP_PointCloudsVREditor\Development\UnrealEd\SharedPCH.UnrealEd.cpp"
-/Fo"E:\Luk\Dokumente\Unreal Projects\CPP_PointCloudsVR\Intermediate\Build\Win64\CPP_PointCloudsVREditor\Development\UnrealEd\SharedPCH.UnrealEd.h.obj"
+/I E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR\Intermediate\Build\Win64\CPP_PointCloudsVREditor\Development\UnrealEd
+/Yc"E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR\Intermediate\Build\Win64\CPP_PointCloudsVREditor\Development\UnrealEd\SharedPCH.UnrealEd.h"
+/Fp"E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR\Intermediate\Build\Win64\CPP_PointCloudsVREditor\Development\UnrealEd\SharedPCH.UnrealEd.h.pch"
+"E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR\Intermediate\Build\Win64\CPP_PointCloudsVREditor\Development\UnrealEd\SharedPCH.UnrealEd.cpp"
+/Fo"E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR\Intermediate\Build\Win64\CPP_PointCloudsVREditor\Development\UnrealEd\SharedPCH.UnrealEd.h.obj"
 /TP
 /GR-
 /W4

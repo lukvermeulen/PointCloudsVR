@@ -24,9 +24,9 @@
 /wd4838
 /we4668
 /I .
-/I "E:\Luk\Dokumente\Unreal Projects\CPP_PointCloudsVR\Intermediate\Build\Win64\UE4Editor\Inc\CPP_PointCloudsVR"
-/I "E:\Luk\Dokumente\Unreal Projects\CPP_PointCloudsVR\Source"
-/I "E:\Luk\Dokumente\Unreal Projects\CPP_PointCloudsVR\Source\CPP_PointCloudsVR"
+/I E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR\Intermediate\Build\Win64\UE4Editor\Inc\CPP_PointCloudsVR
+/I E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR\Source
+/I E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR\Source\CPP_PointCloudsVR
 /I Runtime
 /I Runtime\Core\Public
 /I Runtime\Core
@@ -421,12 +421,12 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"
-/FI"E:\Luk\Dokumente\Unreal Projects\CPP_PointCloudsVR\Intermediate\Build\Win64\CPP_PointCloudsVREditor\Development\Engine\SharedPCH.Engine.h"
-/Yu"E:\Luk\Dokumente\Unreal Projects\CPP_PointCloudsVR\Intermediate\Build\Win64\CPP_PointCloudsVREditor\Development\Engine\SharedPCH.Engine.h"
-/Fp"E:\Luk\Dokumente\Unreal Projects\CPP_PointCloudsVR\Intermediate\Build\Win64\CPP_PointCloudsVREditor\Development\Engine\SharedPCH.Engine.h.pch"
-"E:\Luk\Dokumente\Unreal Projects\CPP_PointCloudsVR\Source\CPP_PointCloudsVR\CPP_PointCloudsVRCharacter.cpp"
-/FI"E:\Luk\Dokumente\Unreal Projects\CPP_PointCloudsVR\Intermediate\Build\Win64\UE4Editor\Development\CPP_PointCloudsVR\Definitions.CPP_PointCloudsVR.h"
-/Fo"E:\Luk\Dokumente\Unreal Projects\CPP_PointCloudsVR\Intermediate\Build\Win64\UE4Editor\Development\CPP_PointCloudsVR\CPP_PointCloudsVRCharacter.cpp.obj"
+/FI"E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR\Intermediate\Build\Win64\CPP_PointCloudsVREditor\Development\Engine\SharedPCH.Engine.h"
+/Yu"E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR\Intermediate\Build\Win64\CPP_PointCloudsVREditor\Development\Engine\SharedPCH.Engine.h"
+/Fp"E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR\Intermediate\Build\Win64\CPP_PointCloudsVREditor\Development\Engine\SharedPCH.Engine.h.pch"
+"E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR\Source\CPP_PointCloudsVR\CPP_PointCloudsVRCharacter.cpp"
+/FI"E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR\Intermediate\Build\Win64\UE4Editor\Development\CPP_PointCloudsVR\Definitions.CPP_PointCloudsVR.h"
+/Fo"E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR\Intermediate\Build\Win64\UE4Editor\Development\CPP_PointCloudsVR\CPP_PointCloudsVRCharacter.cpp.obj"
 /TP
 /GR-
 /W4

@@ -1,5 +1,5 @@
-E:\Luk\Dokumente\Unreal Projects\CPP_PointCloudsVR\Source\CPP_PointCloudsVR\CPP_PointCloudsVR.Build.cs
-E:\Luk\Dokumente\Unreal Projects\CPP_PointCloudsVR\Plugins\PointCloudPlugin\Source\PointCloudEditor\PointCloudEditor.Build.cs
-E:\Luk\Dokumente\Unreal Projects\CPP_PointCloudsVR\Plugins\PointCloudPlugin\Source\PointCloudRuntime\PointCloudRuntime.Build.cs
-E:\Luk\Dokumente\Unreal Projects\CPP_PointCloudsVR\Source\CPP_PointCloudsVR.Target.cs
-E:\Luk\Dokumente\Unreal Projects\CPP_PointCloudsVR\Source\CPP_PointCloudsVREditor.Target.cs
+E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR\Source\CPP_PointCloudsVR\CPP_PointCloudsVR.Build.cs
+E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR\Plugins\PointCloudPlugin\Source\PointCloudEditor\PointCloudEditor.Build.cs
+E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR\Plugins\PointCloudPlugin\Source\PointCloudRuntime\PointCloudRuntime.Build.cs
+E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR\Source\CPP_PointCloudsVR.Target.cs
+E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR\Source\CPP_PointCloudsVREditor.Target.cs

@@ -33,10 +33,9 @@ void FPointCloudOctree::GetPoints(TArray<FVector>& CollectedPoints, TArray<FPoin
 		{
 			TmpTouchedPointsIndex.AddUnique(pointIndex);                           // Add the Index of the Point to the collection
 			CollectedPoints.AddUnique(PointCloudPoints[pointIndex].Location);      // Add the Location of the Point to the colleection
-			if (GEngine) { GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, FString::Printf(TEXT("Point Added: %d"), pNodeToGetPoints.GetDepth())); }
+			if (GEngine) { GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, FString::Printf(TEXT("Point Added: %d"), pNodeToGetPoints.LOD)); }
 		}
 	}
-    return; 
 }
 
 // Function called by PointCloud.h Calls other function and starts recursion with root node
@@ -54,13 +53,21 @@ void FPointCloudOctree::GetAllTouchedNodes(TArray<FVector>& CollectedPoints, FVe
 	FBox nodeBox = pNodeToGetPoints.LocalBounds.GetBox(); // Box from Node to check against collider
 
 	// Is the Collider Sphere inside the node or the distance to it smaller than the sphere radius and does the node have 0 children?
-	if (nodeBox.IsInsideOrOn(CLocation) || ComputeSquaredDistanceFromBoxToPoint(nodeBox.Min, nodeBox.Max, CLocation) < (Radius*Radius))
+	if (nodeBox.IsInsideOrOn(CLocation) || nodeBox.ComputeSquaredDistanceToPoint(CLocation) < (Radius*Radius))  // 
 	{
-		if (GEngine) { GEngine->AddOnScreenDebugMessage(1, 5.f, FColor::Green, TEXT("Collider IS Inside Node")); }
+		//if (GEngine) { GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Collider IS Inside LOD")); }
+		UWorld* myworld = GEngine->GetWorldFromContextObject(PointCloud);
+		FVector center = nodeBox.GetCenter();
+		FVector extent = nodeBox.GetExtent();
+		DrawDebugBox(myworld, center, extent, FColor::Red, false, 10, 0, 5);
 
-		GetPoints(CollectedPoints, pPointCloudPoints, CLocation, Radius, pNodeToGetPoints); // Get the points that are inside the collider
+		if (pNodeToGetPoints.LOD >= 0)
+		{
+			//if (GEngine) { GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Purple, FString::Printf(TEXT("Colliding with LOD: %d"), pNodeToGetPoints.LOD)); }
+			GetPoints(CollectedPoints, pPointCloudPoints, CLocation, Radius, pNodeToGetPoints); // Get the points that are inside the collider
+		}
 
-		if (pNodeToGetPoints.NumChildren > 0)   
+		if (pNodeToGetPoints.LOD > 0)   
 		{  
 			// Iterate through all node children
 			for (int i = 0; i < int(pNodeToGetPoints.NumChildren); i++) {
@@ -68,13 +75,12 @@ void FPointCloudOctree::GetAllTouchedNodes(TArray<FVector>& CollectedPoints, FVe
 			}
 		}
 		else { // Node has no children, so function arrived at leaf node
-			return;
+			
 		}
 	}
 	else // Collider not inside node
 	{
 		if (GEngine) { GEngine->AddOnScreenDebugMessage(2, 5.f, FColor::Red, TEXT("Collider NOT Inside Node")); }
-		return;
 	}
 }
 //END LUK

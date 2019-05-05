@@ -1,41 +1,11 @@
-﻿  Cleaning CPP_PointCloudsVREditor Binaries...
-  Creating makefile for CPP_PointCloudsVREditor (no existing makefile)
-  Performing full C++ include scan (no include cache file)
+﻿  Using 'git status' to determine working set for adaptive non-unity build (E:\Luk\Dokumente\GitHub\PointCloudsVR).
+  Creating makefile for CPP_PointCloudsVREditor (source directory changed)
   Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Parsing headers for CPP_PointCloudsVREditor
-    Running UnrealHeaderTool "E:\Luk\Dokumente\Unreal Projects\CPP_PointCloudsVR\CPP_PointCloudsVR.uproject" "E:\Luk\Dokumente\Unreal Projects\CPP_PointCloudsVR\Intermediate\Build\Win64\CPP_PointCloudsVREditor\Development\CPP_PointCloudsVREditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for CPP_PointCloudsVREditor in 13,3103701 seconds
-  Building 25 actions with 8 processes...
-    [1/25] PCLaunch.rc
-    [2/25] PCLaunch.rc
-    [3/25] PCLaunch.rc
-    [4/25] SharedPCH.UnrealEd.cpp
-    [5/25] Module.PointCloudRuntime.gen.cpp
-    [6/25] SharedPCH.Engine.cpp
-    [7/25] CPP_PointCloudsVRHUD.gen.cpp
-    [8/25] CPP_PointCloudsVRCharacter.gen.cpp
-    [9/25] CPP_PointCloudsVR.init.gen.cpp
-    [10/25] CPP_PointCloudsVRProjectile.cpp
-    [11/25] CPP_PointCloudsVRGameMode.gen.cpp
-    [12/25] CPP_PointCloudsVR.cpp
-    [13/25] CPP_PointCloudsVRHUD.cpp
-    [14/25] CPP_PointCloudsVRProjectile.gen.cpp
-    [15/25] CPP_PointCloudsVRGameMode.cpp
-    [16/25] CPP_PointCloudsVRCharacter.cpp
-    [17/25] UE4Editor-CPP_PointCloudsVR.lib
-       Bibliothek "E:\Luk\Dokumente\Unreal Projects\CPP_PointCloudsVR\Intermediate\Build\Win64\UE4Editor\Development\CPP_PointCloudsVR\UE4Editor-CPP_PointCloudsVR.lib" und Objekt "E:\Luk\Dokumente\Unreal Projects\CPP_PointCloudsVR\Intermediate\Build\Win64\UE4Editor\Development\CPP_PointCloudsVR\UE4Editor-CPP_PointCloudsVR.exp" werden erstellt.
-    [18/25] UE4Editor-CPP_PointCloudsVR.dll
-       Bibliothek "E:\Luk\Dokumente\Unreal Projects\CPP_PointCloudsVR\Intermediate\Build\Win64\UE4Editor\Development\CPP_PointCloudsVR\UE4Editor-CPP_PointCloudsVR.suppressed.lib" und Objekt "E:\Luk\Dokumente\Unreal Projects\CPP_PointCloudsVR\Intermediate\Build\Win64\UE4Editor\Development\CPP_PointCloudsVR\UE4Editor-CPP_PointCloudsVR.suppressed.exp" werden erstellt.
-    [19/25] Module.PointCloudRuntime.cpp
-    [20/25] UE4Editor-PointCloudRuntime.lib
-       Bibliothek "E:\Luk\Dokumente\Unreal Projects\CPP_PointCloudsVR\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Development\PointCloudRuntime\UE4Editor-PointCloudRuntime.lib" und Objekt "E:\Luk\Dokumente\Unreal Projects\CPP_PointCloudsVR\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Development\PointCloudRuntime\UE4Editor-PointCloudRuntime.exp" werden erstellt.
-    [21/25] UE4Editor-PointCloudRuntime.dll
-       Bibliothek "E:\Luk\Dokumente\Unreal Projects\CPP_PointCloudsVR\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Development\PointCloudRuntime\UE4Editor-PointCloudRuntime.suppressed.lib" und Objekt "E:\Luk\Dokumente\Unreal Projects\CPP_PointCloudsVR\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Development\PointCloudRuntime\UE4Editor-PointCloudRuntime.suppressed.exp" werden erstellt.
-    [22/25] Module.PointCloudEditor.gen.cpp
-    [23/25] Module.PointCloudEditor.cpp
-    [24/25] UE4Editor-PointCloudEditor.lib
-       Bibliothek "E:\Luk\Dokumente\Unreal Projects\CPP_PointCloudsVR\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Development\PointCloudEditor\UE4Editor-PointCloudEditor.lib" und Objekt "E:\Luk\Dokumente\Unreal Projects\CPP_PointCloudsVR\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Development\PointCloudEditor\UE4Editor-PointCloudEditor.exp" werden erstellt.
-    [25/25] UE4Editor-PointCloudEditor.dll
-       Bibliothek "E:\Luk\Dokumente\Unreal Projects\CPP_PointCloudsVR\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Development\PointCloudEditor\UE4Editor-PointCloudEditor.suppressed.lib" und Objekt "E:\Luk\Dokumente\Unreal Projects\CPP_PointCloudsVR\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Development\PointCloudEditor\UE4Editor-PointCloudEditor.suppressed.exp" werden erstellt.
-  Deploying CPP_PointCloudsVREditor Win64 Development...
-  Total build time: 106,73 seconds (Parallel executor: 82,80 seconds)
+  [Adaptive unity build] Disabling PCH for excluded files. Set bAdaptiveUnityDisablesPCH to false in BuildConfiguration.xml to change this behavior.
+  [Adaptive unity build] Excluded from PointCloudRuntime unity file: PointCloudOctree.cpp
+  Building 3 actions with 8 processes...
+    [1/3] PointCloudOctree.cpp
+E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudOctree.cpp(59): warning C4996: 'UEngine::GetWorldFromContextObject': GetWorldFromContextObject(Object) and GetWorldFromContextObject(Object, boolean) are replaced by GetWorldFromContextObject(Object, Enum) or GetWorldFromContextObjectChecked(Object) Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+    C:\Program Files\Epic Games\UE_4.21\Engine\Source\Runtime/Engine/Classes/Engine/Engine.h(2480): note: Siehe Deklaration von "UEngine::GetWorldFromContextObject"
+    [2/3] UE4Editor-PointCloudRuntime.lib
+       Bibliothek "E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Development\PointCloudRuntime\UE4Editor-PointCloudRuntime.lib" und Objekt "E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Development\PointCloudRuntime\UE4Editor-PointCloudRuntime.exp" werden erstellt.

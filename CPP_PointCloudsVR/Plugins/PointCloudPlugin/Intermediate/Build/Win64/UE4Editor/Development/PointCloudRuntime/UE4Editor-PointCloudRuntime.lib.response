@@ -6,8 +6,9 @@
 /NAME:"UE4Editor-PointCloudRuntime.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"E:\Luk\Dokumente\Unreal Projects\CPP_PointCloudsVR\Intermediate\Build\Win64\CPP_PointCloudsVREditor\Development\UnrealEd\SharedPCH.UnrealEd.h.obj"
-"E:\Luk\Dokumente\Unreal Projects\CPP_PointCloudsVR\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Development\PointCloudRuntime\Module.PointCloudRuntime.cpp.obj"
-"E:\Luk\Dokumente\Unreal Projects\CPP_PointCloudsVR\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Development\PointCloudRuntime\Module.PointCloudRuntime.gen.cpp.obj"
-"E:\Luk\Dokumente\Unreal Projects\CPP_PointCloudsVR\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Development\PointCloudRuntime\PCLaunch.rc.res"
-/OUT:"E:\Luk\Dokumente\Unreal Projects\CPP_PointCloudsVR\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Development\PointCloudRuntime\UE4Editor-PointCloudRuntime.lib"
+"E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR\Intermediate\Build\Win64\CPP_PointCloudsVREditor\Development\UnrealEd\SharedPCH.UnrealEd.h.obj"
+"E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Development\PointCloudRuntime\Module.PointCloudRuntime.cpp.obj"
+"E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Development\PointCloudRuntime\PointCloudOctree.cpp.obj"
+"E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Development\PointCloudRuntime\Module.PointCloudRuntime.gen.cpp.obj"
+"E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Development\PointCloudRuntime\PCLaunch.rc.res"
+/OUT:"E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Development\PointCloudRuntime\UE4Editor-PointCloudRuntime.lib"
