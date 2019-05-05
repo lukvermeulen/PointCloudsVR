@@ -1,0 +1,905 @@
+﻿Log file open, 05/05/19 22:12:36
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: File 'aqProf.dll' does not exist
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi32e.dll' does not exist
+LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
+LogInit: Display: Running engine for game: CPP_PointCloudsVR
+LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 23 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.394984
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +1:00, Platform Override: ''
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin EditorScriptingUtilities
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MeshEditor
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleVision
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin HTML5Networking
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin LinearTimecode
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin Firebase
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin PointCloudPlugin
+LogPluginManager: Mounting plugin DatasmithCADImporter
+LogPluginManager: Mounting plugin DatasmithFBXImporter
+LogPluginManager: Mounting plugin DatasmithImporter
+LogPluginManager: Mounting plugin MDLImporter
+LogPluginManager: Mounting plugin StaticMeshEditorExtension
+LogPluginManager: Mounting plugin VariantManager
+LogStreaming: Display: Took  0.176s to configure plugins.
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2h
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogInit: Build: ++UE4+Release-4.21-CL-4753647
+LogInit: Engine Version: 4.21.2-4753647+++UE4+Release-4.21
+LogInit: Compatible Engine Version: 4.21.0-4541578+++UE4+Release-4.21
+LogInit: Net CL: 4541578
+LogInit: OS: Windows 10 (), CPU: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, GPU: Intel(R) HD Graphics 530
+LogInit: Compiled (64-bit): Jan 19 2019 02:07:31
+LogInit: Compiled with Visual C++: 19.13.26129.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.21
+LogInit: Command Line:  -skipcompile
+LogInit: Base Directory: C:/Program Files/Epic Games/UE_4.21/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 22
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 26
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 34
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 27
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 9
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 2
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 2
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 17
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 4
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogStreaming: Display: Took  0.002s to delete old logs.
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2019.05.05-20.12.36:833][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2019.05.05-20.12.36:833][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2019.05.05-20.12.36:833][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR/Saved/Config/Windows/Engine.ini]
+[2019.05.05-20.12.36:834][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2019.05.05-20.12.36:834][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR/Saved/Config/Windows/Engine.ini]
+[2019.05.05-20.12.36:834][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR/Saved/Config/Windows/Engine.ini]
+[2019.05.05-20.12.36:834][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2019.05.05-20.12.36:835][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2019.05.05-20.12.36:835][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2019.05.05-20.12.36:835][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2019.05.05-20.12.36:835][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2019.05.05-20.12.36:836][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2019.05.05-20.12.36:836][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2019.05.05-20.12.36:836][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2019.05.05-20.12.36:836][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2019.05.05-20.12.36:836][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2019.05.05-20.12.36:837][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2019.05.05-20.12.36:837][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2019.05.05-20.12.36:837][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2019.05.05-20.12.36:837][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR/Saved/Config/Windows/Engine.ini]
+[2019.05.05-20.12.36:838][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2019.05.05-20.12.36:838][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2019.05.05-20.12.36:838][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2019.05.05-20.12.36:838][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2019.05.05-20.12.36:839][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2019.05.05-20.12.36:839][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2019.05.05-20.12.36:839][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:8388607]]
+[2019.05.05-20.12.36:839][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2019.05.05-20.12.36:839][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2019.05.05-20.12.36:840][  0]LogConfig: Setting CVar [[gc.MergeGCClusters:0]]
+[2019.05.05-20.12.36:840][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2019.05.05-20.12.36:840][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2019.05.05-20.12.36:840][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2019.05.05-20.12.36:841][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2019.05.05-20.12.36:841][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR/Saved/Config/Windows/Engine.ini]
+[2019.05.05-20.12.36:841][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR/Saved/Config/Windows/Engine.ini]
+[2019.05.05-20.12.36:872][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR/Saved/Config/Windows/Scalability.ini]
+[2019.05.05-20.12.36:872][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2019.05.05-20.12.36:872][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2019.05.05-20.12.36:873][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR/Saved/Config/Windows/Scalability.ini]
+[2019.05.05-20.12.36:873][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2019.05.05-20.12.36:873][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR/Saved/Config/Windows/Scalability.ini]
+[2019.05.05-20.12.36:873][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2019.05.05-20.12.36:874][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2019.05.05-20.12.36:874][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2019.05.05-20.12.36:874][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2019.05.05-20.12.36:874][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2019.05.05-20.12.36:875][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2019.05.05-20.12.36:875][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2019.05.05-20.12.36:875][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2019.05.05-20.12.36:875][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2019.05.05-20.12.36:875][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2019.05.05-20.12.36:876][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2019.05.05-20.12.36:876][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2019.05.05-20.12.36:876][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2019.05.05-20.12.36:876][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2019.05.05-20.12.36:877][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2019.05.05-20.12.36:877][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2019.05.05-20.12.36:877][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2019.05.05-20.12.36:877][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2019.05.05-20.12.36:878][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR/Saved/Config/Windows/Scalability.ini]
+[2019.05.05-20.12.36:878][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2019.05.05-20.12.36:878][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2019.05.05-20.12.36:878][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2019.05.05-20.12.36:878][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2019.05.05-20.12.36:879][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2019.05.05-20.12.36:879][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2019.05.05-20.12.36:879][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2019.05.05-20.12.36:879][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2019.05.05-20.12.36:880][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2019.05.05-20.12.36:880][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2019.05.05-20.12.36:880][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2019.05.05-20.12.36:880][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2019.05.05-20.12.36:881][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2019.05.05-20.12.36:881][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2019.05.05-20.12.36:881][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2019.05.05-20.12.36:881][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2019.05.05-20.12.36:881][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2019.05.05-20.12.36:882][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2019.05.05-20.12.36:882][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2019.05.05-20.12.36:882][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2019.05.05-20.12.36:882][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2019.05.05-20.12.36:883][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2019.05.05-20.12.36:883][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2019.05.05-20.12.36:883][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2019.05.05-20.12.36:883][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2019.05.05-20.12.36:884][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2019.05.05-20.12.36:884][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2019.05.05-20.12.36:884][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2019.05.05-20.12.36:884][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2019.05.05-20.12.36:884][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2019.05.05-20.12.36:885][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR/Saved/Config/Windows/Scalability.ini]
+[2019.05.05-20.12.36:885][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2019.05.05-20.12.36:885][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2019.05.05-20.12.36:885][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2019.05.05-20.12.36:885][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2019.05.05-20.12.36:885][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2019.05.05-20.12.36:886][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2019.05.05-20.12.36:886][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2019.05.05-20.12.36:886][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2019.05.05-20.12.36:886][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR/Saved/Config/Windows/Scalability.ini]
+[2019.05.05-20.12.36:886][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2019.05.05-20.12.36:886][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2019.05.05-20.12.36:886][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2019.05.05-20.12.36:887][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2019.05.05-20.12.36:887][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2019.05.05-20.12.36:887][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2019.05.05-20.12.36:887][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2019.05.05-20.12.36:887][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2019.05.05-20.12.36:887][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2019.05.05-20.12.36:887][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2019.05.05-20.12.36:887][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2019.05.05-20.12.36:888][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2019.05.05-20.12.36:888][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2019.05.05-20.12.36:888][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR/Saved/Config/Windows/Scalability.ini]
+[2019.05.05-20.12.36:888][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2019.05.05-20.12.36:888][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2019.05.05-20.12.36:888][  0]LogInit: Selected Device Profile: [Windows]
+[2019.05.05-20.12.36:888][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2019.05.05-20.12.36:909][  0]LogHAL: Display: Platform has ~ 16 GB [16999284736 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2019.05.05-20.12.36:909][  0]LogConfig: Setting CVar [[r.Vulkan.UseRealUBs:1]]
+[2019.05.05-20.12.36:909][  0]LogInit: Going up to parent DeviceProfile []
+[2019.05.05-20.12.36:909][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR/Saved/Config/Windows/Scalability.ini]
+[2019.05.05-20.12.36:909][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2019.05.05-20.12.36:910][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2019.05.05-20.12.36:910][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR/Saved/Config/Windows/Scalability.ini]
+[2019.05.05-20.12.36:910][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2019.05.05-20.12.36:910][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR/Saved/Config/Windows/Scalability.ini]
+[2019.05.05-20.12.36:910][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2019.05.05-20.12.36:910][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2019.05.05-20.12.36:910][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2019.05.05-20.12.36:911][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2019.05.05-20.12.36:911][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2019.05.05-20.12.36:911][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2019.05.05-20.12.36:911][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2019.05.05-20.12.36:911][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2019.05.05-20.12.36:911][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2019.05.05-20.12.36:911][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2019.05.05-20.12.36:912][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2019.05.05-20.12.36:912][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2019.05.05-20.12.36:912][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2019.05.05-20.12.36:912][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2019.05.05-20.12.36:912][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2019.05.05-20.12.36:912][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2019.05.05-20.12.36:913][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2019.05.05-20.12.36:913][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2019.05.05-20.12.36:913][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR/Saved/Config/Windows/Scalability.ini]
+[2019.05.05-20.12.36:913][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2019.05.05-20.12.36:913][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2019.05.05-20.12.36:913][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2019.05.05-20.12.36:913][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2019.05.05-20.12.36:914][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2019.05.05-20.12.36:914][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2019.05.05-20.12.36:914][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2019.05.05-20.12.36:914][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2019.05.05-20.12.36:914][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2019.05.05-20.12.36:914][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2019.05.05-20.12.36:914][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2019.05.05-20.12.36:915][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2019.05.05-20.12.36:915][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2019.05.05-20.12.36:915][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2019.05.05-20.12.36:915][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2019.05.05-20.12.36:915][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2019.05.05-20.12.36:915][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2019.05.05-20.12.36:915][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2019.05.05-20.12.36:915][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2019.05.05-20.12.36:916][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2019.05.05-20.12.36:916][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2019.05.05-20.12.36:916][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2019.05.05-20.12.36:916][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2019.05.05-20.12.36:916][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2019.05.05-20.12.36:916][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2019.05.05-20.12.36:916][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2019.05.05-20.12.36:916][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2019.05.05-20.12.36:916][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2019.05.05-20.12.36:916][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2019.05.05-20.12.36:916][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2019.05.05-20.12.36:916][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR/Saved/Config/Windows/Scalability.ini]
+[2019.05.05-20.12.36:917][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2019.05.05-20.12.36:917][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2019.05.05-20.12.36:917][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2019.05.05-20.12.36:917][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2019.05.05-20.12.36:917][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2019.05.05-20.12.36:917][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2019.05.05-20.12.36:917][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2019.05.05-20.12.36:917][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2019.05.05-20.12.36:917][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR/Saved/Config/Windows/Scalability.ini]
+[2019.05.05-20.12.36:917][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2019.05.05-20.12.36:918][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2019.05.05-20.12.36:918][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2019.05.05-20.12.36:918][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2019.05.05-20.12.36:918][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2019.05.05-20.12.36:918][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2019.05.05-20.12.36:918][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2019.05.05-20.12.36:918][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2019.05.05-20.12.36:918][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2019.05.05-20.12.36:918][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2019.05.05-20.12.36:918][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2019.05.05-20.12.36:919][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2019.05.05-20.12.36:919][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2019.05.05-20.12.36:919][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR/Saved/Config/Windows/Scalability.ini]
+[2019.05.05-20.12.36:919][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2019.05.05-20.12.36:919][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2019.05.05-20.12.36:919][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2019.05.05-20.12.36:920][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2019.05.05-20.12.36:920][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR/Saved/Config/Windows/Engine.ini]
+[2019.05.05-20.12.36:920][  0]LogInit: Computer: LAPTOP-9EU9193A
+[2019.05.05-20.12.36:920][  0]LogInit: User: Luk
+[2019.05.05-20.12.36:920][  0]LogInit: CPU Page size=4096, Cores=4
+[2019.05.05-20.12.36:920][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2019.05.05-20.12.36:921][  0]LogMemory: Memory total: Physical=15.8GB (16GB approx)
+[2019.05.05-20.12.36:921][  0]LogMemory: Platform Memory Stats for Windows
+[2019.05.05-20.12.36:921][  0]LogMemory: Process Physical Memory: 104.42 MB used, 104.42 MB peak
+[2019.05.05-20.12.36:921][  0]LogMemory: Process Virtual Memory: 89.98 MB used, 89.98 MB peak
+[2019.05.05-20.12.36:921][  0]LogMemory: Physical Memory: 9147.89 MB used,  7063.89 MB free, 16211.78 MB total
+[2019.05.05-20.12.36:921][  0]LogMemory: Virtual Memory: 4649.44 MB used,  134213080.00 MB free, 134217728.00 MB total
+[2019.05.05-20.12.37:058][  0]LogInit: Using OS detected language (de-DE).
+[2019.05.05-20.12.37:059][  0]LogInit: Using OS detected locale (de-DE).
+[2019.05.05-20.12.37:060][  0]LogTextLocalizationManager: No specific localization for 'de-DE' exists, so the 'de' localization will be used.
+[2019.05.05-20.12.37:062][  0]LogStreaming: Display: Took  0.004s to InitEngineTextLocalization.
+[2019.05.05-20.12.37:063][  0]LogInit: Setting process to per monitor DPI aware
+[2019.05.05-20.12.37:217][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2019.05.05-20.12.37:217][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2019.05.05-20.12.37:509][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2019.05.05-20.12.37:509][  0]LogD3D11RHI: D3D11 adapters:
+[2019.05.05-20.12.37:915][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 960M' (Feature Level 11_0)
+[2019.05.05-20.12.37:915][  0]LogD3D11RHI:       4055/0/8105 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2019.05.05-20.12.37:937][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 530' (Feature Level 11_0)
+[2019.05.05-20.12.37:937][  0]LogD3D11RHI:       128/0/8105 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2019.05.05-20.12.37:943][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2019.05.05-20.12.37:943][  0]LogD3D11RHI:       0/0/8105 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2019.05.05-20.12.37:944][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2019.05.05-20.12.37:998][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2019.05.05-20.12.37:998][  0]LogD3D11RHI:     GPU DeviceId: 0x139b (for the marketing name, search the web for "GPU Device Id")
+[2019.05.05-20.12.37:998][  0]LogWindows: EnumDisplayDevices:
+[2019.05.05-20.12.37:998][  0]LogWindows:    0. 'Intel(R) HD Graphics 530' (P:1 D:1)
+[2019.05.05-20.12.37:999][  0]LogWindows:    1. 'Intel(R) HD Graphics 530' (P:0 D:1)
+[2019.05.05-20.12.38:000][  0]LogWindows:    2. 'Intel(R) HD Graphics 530' (P:0 D:0)
+[2019.05.05-20.12.38:001][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2019.05.05-20.12.38:001][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 960M
+[2019.05.05-20.12.38:001][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2019.05.05-20.12.38:001][  0]LogD3D11RHI:      Driver Date: Unknown
+[2019.05.05-20.12.38:001][  0]LogRHI: Texture pool is 2839 MB (70% of 4055 MB)
+[2019.05.05-20.12.38:063][  0]LogD3D11RHI: Async texture creation enabled
+[2019.05.05-20.12.38:077][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2019.05.05-20.12.38:453][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2019.05.05-20.12.38:475][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2019.05.05-20.12.38:493][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2019.05.05-20.12.38:512][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2019.05.05-20.12.38:530][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2019.05.05-20.12.38:549][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2019.05.05-20.12.38:566][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2019.05.05-20.12.38:584][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2019.05.05-20.12.38:594][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2019.05.05-20.12.38:690][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.05-20.12.38:690][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.05-20.12.38:690][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.05-20.12.38:690][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.05-20.12.38:691][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.05-20.12.38:691][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.05-20.12.38:691][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.05-20.12.38:691][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.05-20.12.38:691][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.05-20.12.38:691][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.05-20.12.38:691][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.05-20.12.38:691][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.05-20.12.38:691][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.05-20.12.38:691][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.05-20.12.38:692][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.05-20.12.38:692][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.05-20.12.38:692][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.05-20.12.38:692][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.05-20.12.38:697][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2019.05.05-20.12.38:774][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2019.05.05-20.12.38:774][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2019.05.05-20.12.38:806][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2019.05.05-20.12.38:806][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2019.05.05-20.12.38:826][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2019.05.05-20.12.38:844][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2019.05.05-20.12.38:861][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2019.05.05-20.12.38:880][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2019.05.05-20.12.38:935][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
+[2019.05.05-20.12.38:936][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
+[2019.05.05-20.12.38:936][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2019.05.05-20.12.39:060][  0]LogShaderCompilers: Guid format shader working directory is -11 characters bigger than the processId version (E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR/Intermediate/Shaders/WorkingDirectory/8540/).
+[2019.05.05-20.12.39:061][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Luk/AppData/Local/Temp/UnrealShaderWorkingDir/94F5D50C42D1E8C1AE273BAFF50E64F6/'.
+[2019.05.05-20.12.39:064][  0]LogXGEController: Cleaning working directory: C:/Users/Luk/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2019.05.05-20.12.39:064][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2019.05.05-20.12.39:064][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2019.05.05-20.12.39:065][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2019.05.05-20.12.39:689][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2019.05.05-20.12.39:751][  0]LogDerivedDataCache: Loaded boot cache 0.06s 75MB C:/Users/Luk/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc.
+[2019.05.05-20.12.39:751][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Luk/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc
+[2019.05.05-20.12.39:751][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2019.05.05-20.12.39:751][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2019.05.05-20.12.39:751][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2019.05.05-20.12.39:751][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2019.05.05-20.12.39:769][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2019.05.05-20.12.39:775][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Enterprise/DerivedDataCache/Compressed.ddp.
+[2019.05.05-20.12.39:790][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Luk/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2019.05.05-20.12.39:790][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2019.05.05-20.12.39:790][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2019.05.05-20.12.39:817][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2019.05.05-20.12.39:819][  0]LogSlate: Using FreeType 2.6.0
+[2019.05.05-20.12.39:820][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2019.05.05-20.12.39:924][  0]LogAssetRegistry: FAssetRegistry took 0.0385 seconds to start up
+[2019.05.05-20.12.40:322][  0]LogInit: Selected Device Profile: [Windows]
+[2019.05.05-20.12.40:540][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2019.05.05-20.12.40:549][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2019.05.05-20.12.40:549][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2019.05.05-20.12.40:549][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2019.05.05-20.12.40:549][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2019.05.05-20.12.40:565][  0]LogNetVersion: CPP_PointCloudsVR 1.0.0, NetCL: 4541578, EngineNetVer: 5, GameNetVer: 0 (Checksum: 361833818)
+[2019.05.05-20.12.41:277][  0]LogPackageLocalizationCache: Processed 15 localized package path(s) for 2 prioritized culture(s) in 0.139587 seconds
+[2019.05.05-20.12.41:284][  0]LogUObjectArray: 40195 objects as part of root set at end of initial load.
+[2019.05.05-20.12.41:284][  0]LogUObjectAllocator: 7014752 out of 0 bytes used by permanent object pool.
+[2019.05.05-20.12.41:284][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2019.05.05-20.12.42:512][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2019.05.05-20.12.42:531][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2019.05.05-20.12.43:572][  0]SourceControl: Source control is disabled
+[2019.05.05-20.12.43:572][  0]SourceControl: Source control is disabled
+[2019.05.05-20.12.43:576][  0]SourceControl: Source control is disabled
+[2019.05.05-20.12.43:580][  0]SourceControl: Source control is disabled
+[2019.05.05-20.12.43:891][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2019.05.05-20.12.44:066][  0]LogOcInput: OculusInput pre-init called
+[2019.05.05-20.12.46:228][  0]LogClass: Warning: BoolProperty FPointCloudFileHeader::bHasDescriptions is not initialized properly
+[2019.05.05-20.12.46:229][  0]LogClass: Warning: FPointCloudFileHeader::EstimatedPointCount is not initialized properly
+[2019.05.05-20.12.46:229][  0]LogClass: Display: 2 Uninitialized script stuct members found
+[2019.05.05-20.12.46:230][  0]LogAutomationTest: Warning: BoolProperty FPointCloudFileHeader::bHasDescriptions is not initialized properly
+[2019.05.05-20.12.46:231][  0]LogAutomationTest: Warning: FPointCloudFileHeader::EstimatedPointCount is not initialized properly
+[2019.05.05-20.12.46:232][  0]LogEngine: Initializing Engine...
+[2019.05.05-20.12.46:233][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2019.05.05-20.12.46:235][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2019.05.05-20.12.46:235][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2019.05.05-20.12.46:236][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2019.05.05-20.12.46:236][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2019.05.05-20.12.46:531][  0]LogInit: Initializing FReadOnlyCVARCache
+[2019.05.05-20.12.46:550][  0]LogAIModule: Creating AISystem for world Untitled
+[2019.05.05-20.12.46:569][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2019.05.05-20.12.46:570][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2019.05.05-20.12.46:570][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2019.05.05-20.12.46:570][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2019.05.05-20.12.46:570][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2019.05.05-20.12.46:570][  0]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2019.05.05-20.12.46:570][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2019.05.05-20.12.46:571][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2019.05.05-20.12.46:600][  0]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2019.05.05-20.12.46:600][  0]LogAudioMixer: Display: Name: Lautsprecher (Realtek High Definition Audio)
+[2019.05.05-20.12.46:601][  0]LogAudioMixer: Display: Is Default: Yes
+[2019.05.05-20.12.46:601][  0]LogAudioMixer: Display: Sample Rate: 48000
+[2019.05.05-20.12.46:601][  0]LogAudioMixer: Display: Channel Count Used: 2
+[2019.05.05-20.12.46:601][  0]LogAudioMixer: Display: Device Channel Count: 2
+[2019.05.05-20.12.46:601][  0]LogAudioMixer: Display: Channel Order:
+[2019.05.05-20.12.46:602][  0]LogAudioMixer: Display: 0: FrontLeft
+[2019.05.05-20.12.46:602][  0]LogAudioMixer: Display: 1: FrontRight
+[2019.05.05-20.12.46:663][  0]LogInit: FAudioDevice initialized.
+[2019.05.05-20.12.46:663][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2019.05.05-20.12.46:754][  0]LogDerivedDataCache: Saved boot cache 0.09s 75MB C:/Users/Luk/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc.
+[2019.05.05-20.12.46:756][  0]LogInit: Texture streaming: Enabled
+[2019.05.05-20.12.46:788][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2019.05.05-20.12.46:803][  0]LogInit: Transaction tracking system initialized
+[2019.05.05-20.12.46:848][  0]BlueprintLog: New page: Editor Load
+[2019.05.05-20.12.47:028][  0]LocalizationService: Localization service is disabled
+[2019.05.05-20.12.47:628][  0]LogFileCache: Scanning file cache for directory 'E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR/Content/' took 0.01s
+[2019.05.05-20.12.47:628][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2019.05.05-20.12.47:628][  0]LogCook: Display: Mobile HDR setting 1
+[2019.05.05-20.12.47:629][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2019.05.05-20.12.47:629][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2019.05.05-20.12.47:629][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2019.05.05-20.12.47:629][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2019.05.05-20.12.47:629][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2019.05.05-20.12.49:629][  0]SourceControl: Source control is disabled
+[2019.05.05-20.12.49:629][  0]Cmd: MAP LOAD FILE="E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR/Content/FirstPersonCPP/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2019.05.05-20.12.49:630][  0]LightingResults: New page: Lighting Build
+[2019.05.05-20.12.49:633][  0]MapCheck: New page: Map Check
+[2019.05.05-20.12.49:633][  0]LightingResults: New page: Lighting Build
+[2019.05.05-20.12.49:888][  0]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2019.05.05-20.12.49:903][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2019.05.05-20.12.49:931][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2019.05.05-20.12.49:932][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0,24ms to complete.
+[2019.05.05-20.12.49:932][  0]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 0.303
+[2019.05.05-20.12.50:074][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.05.05-20.12.50:084][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.05.05-20.12.50:093][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.05.05-20.12.50:102][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.05.05-20.12.50:112][  0]LogCollectionManager: Loaded 0 collections in 0.002079 seconds
+[2019.05.05-20.12.50:132][  0]LogFileCache: Scanning file cache for directory 'E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR/Saved/Collections/' took 0.01s
+[2019.05.05-20.12.50:132][  0]LogFileCache: Scanning file cache for directory 'E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR/Content/Developers/Luk/Collections/' took 0.00s
+[2019.05.05-20.12.50:132][  0]LogFileCache: Scanning file cache for directory 'E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR/Content/Collections/' took 0.00s
+[2019.05.05-20.12.50:132][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
+[2019.05.05-20.12.50:143][  0]LogContentBrowser: Native class hierarchy populated in 0.0099 seconds. Added 2721 classes and 660 folders.
+[2019.05.05-20.12.50:152][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2019.05.05-20.12.50:155][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-20.12.50:156][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-20.12.50:158][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-20.12.50:159][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-20.12.50:160][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-20.12.50:160][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-20.12.50:161][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-20.12.50:162][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-20.12.50:162][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-20.12.50:163][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-20.12.50:164][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-20.12.50:165][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-20.12.50:167][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-20.12.50:167][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-20.12.50:169][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-20.12.50:170][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-20.12.50:171][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-20.12.50:172][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-20.12.50:173][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-20.12.50:174][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-20.12.50:175][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-20.12.50:176][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-20.12.50:177][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-20.12.50:178][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-20.12.50:179][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-20.12.50:180][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-20.12.50:181][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-20.12.50:181][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-20.12.50:224][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0007 seconds. Added 0 classes and 0 folders.
+[2019.05.05-20.12.50:235][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2019.05.05-20.12.50:249][  0]LogContentBrowser: Native class hierarchy updated for 'WorldBrowser' in 0.0004 seconds. Added 2 classes and 3 folders.
+[2019.05.05-20.12.50:268][  0]LogSlate: Took 0.000581 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2019.05.05-20.12.50:271][  0]LogSlate: Took 0.000497 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2019.05.05-20.12.50:282][  0]LogSlate: Took 0.000505 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2019.05.05-20.12.50:402][  0]LogRenderer: Reallocating scene render targets to support 1208x576 Format 10 NumSamples 1 (Frame:1).
+[2019.05.05-20.12.50:655][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0009 seconds. Added 0 classes and 0 folders.
+[2019.05.05-20.12.50:656][  0]LogLoad: (Engine Initialization) Total time: 16.02 seconds
+[2019.05.05-20.12.50:656][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2019.05.05-20.12.50:719][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2019.05.05-20.12.50:767][  0]LogSlate: Took 0.000447 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2019.05.05-20.12.51:088][  2]LogAssetRegistry: Asset discovery search completed in 11.1904 seconds
+[2019.05.05-20.12.51:092][  2]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2019.05.05-20.12.51:092][  2]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000310 seconds (updated 0 objects)
+[2019.05.05-20.18.20:129][ 20]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.05-20.18.20:296][ 20]LogTemp: Repeating last play command: Selected Viewport
+[2019.05.05-20.18.20:312][ 20]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2019.05.05-20.18.20:313][ 20]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.05.05-20.18.20:313][ 20]PIE: New page: PIE session: FirstPersonExampleMap (06.05.2019 00:18:20)
+[2019.05.05-20.18.20:330][ 20]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2019.05.05-20.18.20:356][ 20]LogPlayLevel: PIE: StaticDuplicateObject took: (0.026140s)
+[2019.05.05-20.18.20:358][ 20]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2019.05.05-20.18.20:358][ 20]LogPlayLevel: PIE: World Init took: (0.001544s)
+[2019.05.05-20.18.20:358][ 20]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.028517s)
+[2019.05.05-20.18.20:393][ 20]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2019.05.05-20.18.20:393][ 20]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2019.05.05-20.18.20:393][ 20]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2019.05.05-20.18.20:394][ 20]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2019.05.05-20.18.20:394][ 20]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2019.05.05-20.18.20:394][ 20]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2019.05.05-20.18.20:394][ 20]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2019.05.05-20.18.20:397][ 20]LogAudioMixer: Display: Initializing audio mixer.
+[2019.05.05-20.18.20:411][ 20]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2019.05.05-20.18.20:411][ 20]LogAudioMixer: Display: Name: Lautsprecher (Realtek High Definition Audio)
+[2019.05.05-20.18.20:411][ 20]LogAudioMixer: Display: Is Default: Yes
+[2019.05.05-20.18.20:412][ 20]LogAudioMixer: Display: Sample Rate: 48000
+[2019.05.05-20.18.20:412][ 20]LogAudioMixer: Display: Channel Count Used: 2
+[2019.05.05-20.18.20:412][ 20]LogAudioMixer: Display: Device Channel Count: 2
+[2019.05.05-20.18.20:412][ 20]LogAudioMixer: Display: Channel Order:
+[2019.05.05-20.18.20:412][ 20]LogAudioMixer: Display: 0: FrontLeft
+[2019.05.05-20.18.20:412][ 20]LogAudioMixer: Display: 1: FrontRight
+[2019.05.05-20.18.20:451][ 20]LogInit: FAudioDevice initialized.
+[2019.05.05-20.18.20:500][ 20]LogLoad: Game class is 'CPP_PointCloudsVRGameMode'
+[2019.05.05-20.18.20:504][ 20]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2019.05.05-22.18.20
+[2019.05.05-20.18.20:505][ 20]LogWorld: Bringing up level for play took: 0.002284
+[2019.05.05-20.18.20:524][ 20]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0004 seconds. Added 20 classes and 0 folders.
+[2019.05.05-20.18.20:525][ 20]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.20:526][ 20]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.20:526][ 20]PIE: Play in editor start time for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap 1,033
+[2019.05.05-20.18.20:526][ 20]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2019.05.05-20.18.20:528][ 20]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.20:567][ 21]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.20:982][ 41]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=-271.082 Y=-57.862 Z=45.394] for [FirstPersonProjectile_C]
+[2019.05.05-20.18.21:076][ 52]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:077][ 52]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:086][ 53]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:087][ 53]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:094][ 54]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:096][ 54]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:106][ 55]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:115][ 56]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:124][ 57]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:125][ 57]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:132][ 58]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:133][ 58]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:140][ 59]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:142][ 59]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:151][ 60]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:152][ 60]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:159][ 61]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:160][ 61]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:168][ 62]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:168][ 62]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:176][ 63]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:176][ 63]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:185][ 64]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:192][ 65]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:193][ 65]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:202][ 66]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:202][ 66]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:210][ 67]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:211][ 67]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:219][ 68]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:220][ 68]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:227][ 69]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:228][ 69]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:236][ 70]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:237][ 70]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:245][ 71]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:253][ 72]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:262][ 73]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:270][ 74]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:278][ 75]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:375][ 86]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:384][ 87]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:391][ 88]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:392][ 88]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:400][ 89]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:408][ 90]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:417][ 91]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:418][ 91]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:425][ 92]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:434][ 93]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:448][ 94]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:457][ 95]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:466][ 96]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:466][ 96]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:474][ 97]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:482][ 98]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:483][ 98]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:491][ 99]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:492][ 99]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:502][100]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.21:511][101]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.22:113][171]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.22:121][172]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.22:129][173]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.22:130][173]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.22:139][174]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.22:148][175]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.22:149][175]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.22:156][176]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.22:157][176]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.22:173][178]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.22:183][179]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.22:184][179]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.22:191][180]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.22:200][181]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.22:209][182]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.22:218][183]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.22:227][184]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.22:304][193]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.22:311][194]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.22:312][194]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.22:321][195]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.22:739][210]LogTemp: Warning: [LOD4] Cells: 1, MinPoints: 6250, MaxPoints: 6250, TotalPoints: 6250
+[2019.05.05-20.18.22:740][210]LogTemp: Warning: [LOD3] Cells: 8, MinPoints: 1532, MaxPoints: 1580, TotalPoints: 12502
+[2019.05.05-20.18.22:740][210]LogTemp: Warning: [LOD2] Cells: 64, MinPoints: 358, MaxPoints: 414, TotalPoints: 25022
+[2019.05.05-20.18.22:740][210]LogTemp: Warning: [LOD1] Cells: 512, MinPoints: 78, MaxPoints: 122, TotalPoints: 50129
+[2019.05.05-20.18.22:740][210]LogTemp: Warning: [LOD0] Cells: 4096, MinPoints: 13, MaxPoints: 40, TotalPoints: 12607
+[2019.05.05-20.18.22:758][211]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.22:759][211]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:189][237]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:198][238]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:206][239]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:206][239]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:215][240]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:215][240]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:223][241]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:224][241]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:232][242]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:233][242]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:240][243]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:241][243]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:249][244]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:251][244]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:258][245]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:259][245]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:268][246]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:269][246]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:276][247]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:276][247]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:286][248]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:287][248]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:294][249]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:295][249]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:303][250]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:303][250]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:311][251]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:312][251]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:320][252]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:321][252]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:329][253]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:330][253]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:338][254]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:339][254]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:347][255]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:348][255]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:355][256]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:356][256]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:364][257]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:365][257]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:372][258]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:381][259]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:381][259]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:389][260]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:389][260]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:398][261]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:398][261]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:405][262]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:406][262]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:414][263]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:415][263]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:423][264]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:432][265]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:433][265]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:440][266]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:450][267]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:458][268]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:475][269]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:485][270]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:492][271]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:503][272]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:511][273]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:521][274]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:530][275]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:538][276]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:555][278]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:564][279]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:572][280]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:581][281]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:589][282]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:597][283]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:614][285]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.18.23:638][288]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.20.39:186][293]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.05.05-20.20.39:269][293]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.000 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.05.05-20.20.42:505][294]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.20.42:511][294]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.20.51:878][297]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (12.609 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.05.05-20.20.51:879][297]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.20.51:888][297]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.20.53:589][298]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.20.53:589][298]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.20.53:603][298]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.20.54:949][299]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.20.54:949][299]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.20.54:956][299]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.20.56:386][300]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.20.56:386][300]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.20.56:395][300]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.20.57:765][301]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.20.57:765][301]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.20.57:776][301]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.20.59:136][302]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.20.59:136][302]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.20.59:148][302]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.00:516][303]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.00:516][303]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.00:531][303]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.01:924][304]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.01:925][304]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.01:936][304]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.03:261][305]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.03:262][305]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.03:272][305]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.04:473][306]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.04:474][306]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.04:484][306]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.06:153][307]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.07:372][308]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.08:945][309]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.10:358][310]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.11:731][311]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.13:125][312]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.14:515][313]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.15:907][314]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.17:136][315]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.18:821][316]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.20:045][317]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.21:605][318]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.21:943][319]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.22:281][320]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.22:617][321]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.22:953][322]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.23:289][323]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.23:622][324]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.23:956][325]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.24:289][326]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.24:624][327]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.24:960][328]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.25:294][329]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.25:627][330]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.25:963][331]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.26:297][332]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.26:632][333]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.26:968][334]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.26:969][334]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.27:303][335]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.27:643][336]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.27:643][336]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.27:644][336]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.27:979][337]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.28:315][338]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.28:651][339]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.28:987][340]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.29:321][341]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.29:656][342]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.29:988][343]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.30:322][344]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.30:660][345]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.30:661][345]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.30:999][346]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.31:336][347]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.31:670][348]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.31:671][348]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.32:007][349]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.32:339][350]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.32:340][350]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.32:675][351]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.33:012][352]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.33:012][352]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.33:013][352]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.33:352][353]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.33:687][354]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.33:689][354]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.34:026][355]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.34:362][356]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.34:701][357]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.35:037][358]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.35:376][359]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.35:711][360]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.36:049][361]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.36:382][362]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.36:383][362]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.36:384][362]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.36:718][363]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.37:053][364]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.37:386][365]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)
+[2019.05.05-20.21.37:721][366]LogSkinnedMeshComp: Warning: GetSocketByName(GripPoint): No SkeletalMesh for Component(CharacterMesh1P) Actor(FirstPersonCharacter_C_0)

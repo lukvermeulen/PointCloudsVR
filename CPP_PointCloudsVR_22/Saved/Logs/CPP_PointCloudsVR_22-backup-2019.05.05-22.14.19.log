@@ -1,0 +1,1043 @@
+﻿Log file open, 05/05/19 23:41:15
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: File 'aqProf.dll' does not exist
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi32e.dll' does not exist
+LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
+LogInit: Display: Running engine for game: CPP_PointCloudsVR_22
+LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 23 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.594254
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +1:00, Platform Override: ''
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin EditorScriptingUtilities
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin GLTFImporter
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MaterialAnalyzer
+LogPluginManager: Mounting plugin MeshEditor
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleVision
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin BlastPlugin
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin HTML5Networking
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin SkeletalReduction
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin LinearTimecode
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin Firebase
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin PointCloudPlugin
+LogPluginManager: Mounting plugin DatasmithCADImporter
+LogPluginManager: Mounting plugin DatasmithDataPrepEditor
+LogPluginManager: Mounting plugin DatasmithFBXImporter
+LogPluginManager: Mounting plugin DatasmithGLTFImporter
+LogPluginManager: Mounting plugin DatasmithImporter
+LogPluginManager: Mounting plugin MDLImporter
+LogPluginManager: Mounting plugin StaticMeshEditorExtension
+LogPluginManager: Mounting plugin VariantManager
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogInit: Build: ++UE4+Release-4.22-CL-6063286
+LogInit: Engine Version: 4.22.1-6063286+++UE4+Release-4.22
+LogInit: Compatible Engine Version: 4.22.0-5660361+++UE4+Release-4.22
+LogInit: Net CL: 5660361
+LogInit: OS: Windows 10 (Release 1809) (), CPU: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, GPU: Intel(R) HD Graphics 530
+LogInit: Compiled (64-bit): Apr 24 2019 04:36:48
+LogInit: Compiled with Visual C++: 19.16.27025.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.22
+LogInit: Command Line:  -skipcompile
+LogInit: Base Directory: C:/Program Files/Epic Games/UE_4.22/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 23
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 3
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 30
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 35
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 28
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 11
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 2
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 2
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 25
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 6
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 2
+LogInit: Presizing for max 16777216 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2019.05.05-21.41.17:108][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2019.05.05-21.41.17:108][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2019.05.05-21.41.17:108][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Config/Windows/Engine.ini]
+[2019.05.05-21.41.17:108][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2019.05.05-21.41.17:108][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Config/Windows/Engine.ini]
+[2019.05.05-21.41.17:108][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Config/Windows/Engine.ini]
+[2019.05.05-21.41.17:108][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2019.05.05-21.41.17:108][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2019.05.05-21.41.17:109][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2019.05.05-21.41.17:109][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2019.05.05-21.41.17:109][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2019.05.05-21.41.17:109][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2019.05.05-21.41.17:109][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2019.05.05-21.41.17:109][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2019.05.05-21.41.17:109][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2019.05.05-21.41.17:109][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2019.05.05-21.41.17:109][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2019.05.05-21.41.17:110][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2019.05.05-21.41.17:110][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2019.05.05-21.41.17:110][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Config/Windows/Engine.ini]
+[2019.05.05-21.41.17:110][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2019.05.05-21.41.17:110][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2019.05.05-21.41.17:110][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2019.05.05-21.41.17:110][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2019.05.05-21.41.17:110][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2019.05.05-21.41.17:110][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2019.05.05-21.41.17:110][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:16777216]]
+[2019.05.05-21.41.17:110][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2019.05.05-21.41.17:110][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2019.05.05-21.41.17:110][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2019.05.05-21.41.17:111][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2019.05.05-21.41.17:111][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2019.05.05-21.41.17:111][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2019.05.05-21.41.17:111][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Config/Windows/Engine.ini]
+[2019.05.05-21.41.17:111][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Config/Windows/Engine.ini]
+[2019.05.05-21.41.17:122][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Config/Windows/Scalability.ini]
+[2019.05.05-21.41.17:123][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2019.05.05-21.41.17:123][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2019.05.05-21.41.17:123][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Config/Windows/Scalability.ini]
+[2019.05.05-21.41.17:123][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2019.05.05-21.41.17:123][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Config/Windows/Scalability.ini]
+[2019.05.05-21.41.17:123][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2019.05.05-21.41.17:123][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2019.05.05-21.41.17:123][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2019.05.05-21.41.17:123][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2019.05.05-21.41.17:123][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2019.05.05-21.41.17:123][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2019.05.05-21.41.17:123][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2019.05.05-21.41.17:123][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2019.05.05-21.41.17:123][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2019.05.05-21.41.17:124][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2019.05.05-21.41.17:124][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2019.05.05-21.41.17:124][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2019.05.05-21.41.17:124][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2019.05.05-21.41.17:124][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2019.05.05-21.41.17:124][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2019.05.05-21.41.17:124][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2019.05.05-21.41.17:124][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2019.05.05-21.41.17:124][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2019.05.05-21.41.17:124][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Config/Windows/Scalability.ini]
+[2019.05.05-21.41.17:124][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2019.05.05-21.41.17:124][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2019.05.05-21.41.17:124][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2019.05.05-21.41.17:125][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2019.05.05-21.41.17:125][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2019.05.05-21.41.17:125][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2019.05.05-21.41.17:125][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2019.05.05-21.41.17:125][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2019.05.05-21.41.17:125][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2019.05.05-21.41.17:125][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2019.05.05-21.41.17:125][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2019.05.05-21.41.17:125][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2019.05.05-21.41.17:125][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2019.05.05-21.41.17:125][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2019.05.05-21.41.17:125][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2019.05.05-21.41.17:125][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2019.05.05-21.41.17:125][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2019.05.05-21.41.17:126][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2019.05.05-21.41.17:126][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2019.05.05-21.41.17:126][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2019.05.05-21.41.17:126][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2019.05.05-21.41.17:126][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2019.05.05-21.41.17:126][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2019.05.05-21.41.17:126][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2019.05.05-21.41.17:126][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2019.05.05-21.41.17:126][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2019.05.05-21.41.17:126][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2019.05.05-21.41.17:126][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2019.05.05-21.41.17:126][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2019.05.05-21.41.17:126][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2019.05.05-21.41.17:127][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Config/Windows/Scalability.ini]
+[2019.05.05-21.41.17:127][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2019.05.05-21.41.17:127][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2019.05.05-21.41.17:127][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2019.05.05-21.41.17:127][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2019.05.05-21.41.17:127][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2019.05.05-21.41.17:127][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2019.05.05-21.41.17:127][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2019.05.05-21.41.17:127][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2019.05.05-21.41.17:127][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Config/Windows/Scalability.ini]
+[2019.05.05-21.41.17:127][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2019.05.05-21.41.17:127][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2019.05.05-21.41.17:128][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2019.05.05-21.41.17:128][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2019.05.05-21.41.17:128][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2019.05.05-21.41.17:128][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2019.05.05-21.41.17:128][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2019.05.05-21.41.17:128][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2019.05.05-21.41.17:128][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2019.05.05-21.41.17:128][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2019.05.05-21.41.17:128][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2019.05.05-21.41.17:128][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2019.05.05-21.41.17:128][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2019.05.05-21.41.17:128][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Config/Windows/Scalability.ini]
+[2019.05.05-21.41.17:128][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2019.05.05-21.41.17:129][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2019.05.05-21.41.17:129][  0]LogInit: Selected Device Profile: [Windows]
+[2019.05.05-21.41.17:129][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2019.05.05-21.41.17:148][  0]LogHAL: Display: Platform has ~ 16 GB [16999284736 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2019.05.05-21.41.17:148][  0]LogConfig: Setting CVar [[r.Vulkan.UseRealUBs:0		; Required until we fix HLR fall-out]]
+[2019.05.05-21.41.17:148][  0]LogInit: Going up to parent DeviceProfile []
+[2019.05.05-21.41.17:148][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Config/Windows/Scalability.ini]
+[2019.05.05-21.41.17:148][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2019.05.05-21.41.17:148][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2019.05.05-21.41.17:148][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Config/Windows/Scalability.ini]
+[2019.05.05-21.41.17:148][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2019.05.05-21.41.17:148][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Config/Windows/Scalability.ini]
+[2019.05.05-21.41.17:149][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2019.05.05-21.41.17:149][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2019.05.05-21.41.17:149][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2019.05.05-21.41.17:149][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2019.05.05-21.41.17:149][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2019.05.05-21.41.17:149][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2019.05.05-21.41.17:149][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2019.05.05-21.41.17:149][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2019.05.05-21.41.17:149][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2019.05.05-21.41.17:149][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2019.05.05-21.41.17:149][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2019.05.05-21.41.17:149][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2019.05.05-21.41.17:150][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2019.05.05-21.41.17:150][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2019.05.05-21.41.17:150][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2019.05.05-21.41.17:150][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2019.05.05-21.41.17:150][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2019.05.05-21.41.17:150][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2019.05.05-21.41.17:150][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Config/Windows/Scalability.ini]
+[2019.05.05-21.41.17:150][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2019.05.05-21.41.17:150][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2019.05.05-21.41.17:150][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2019.05.05-21.41.17:151][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2019.05.05-21.41.17:151][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2019.05.05-21.41.17:151][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2019.05.05-21.41.17:151][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2019.05.05-21.41.17:151][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2019.05.05-21.41.17:151][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2019.05.05-21.41.17:151][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2019.05.05-21.41.17:151][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2019.05.05-21.41.17:151][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2019.05.05-21.41.17:151][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2019.05.05-21.41.17:151][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2019.05.05-21.41.17:151][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2019.05.05-21.41.17:151][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2019.05.05-21.41.17:152][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2019.05.05-21.41.17:152][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2019.05.05-21.41.17:152][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2019.05.05-21.41.17:152][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2019.05.05-21.41.17:152][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2019.05.05-21.41.17:152][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2019.05.05-21.41.17:152][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2019.05.05-21.41.17:152][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2019.05.05-21.41.17:152][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2019.05.05-21.41.17:152][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2019.05.05-21.41.17:152][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2019.05.05-21.41.17:152][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2019.05.05-21.41.17:153][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2019.05.05-21.41.17:153][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2019.05.05-21.41.17:153][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Config/Windows/Scalability.ini]
+[2019.05.05-21.41.17:153][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2019.05.05-21.41.17:153][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2019.05.05-21.41.17:153][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2019.05.05-21.41.17:153][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2019.05.05-21.41.17:153][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2019.05.05-21.41.17:153][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2019.05.05-21.41.17:153][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2019.05.05-21.41.17:153][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2019.05.05-21.41.17:153][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Config/Windows/Scalability.ini]
+[2019.05.05-21.41.17:154][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2019.05.05-21.41.17:154][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2019.05.05-21.41.17:154][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2019.05.05-21.41.17:154][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2019.05.05-21.41.17:154][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2019.05.05-21.41.17:154][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2019.05.05-21.41.17:154][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2019.05.05-21.41.17:154][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2019.05.05-21.41.17:154][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2019.05.05-21.41.17:154][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2019.05.05-21.41.17:155][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2019.05.05-21.41.17:155][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2019.05.05-21.41.17:155][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2019.05.05-21.41.17:155][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Config/Windows/Scalability.ini]
+[2019.05.05-21.41.17:155][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2019.05.05-21.41.17:155][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2019.05.05-21.41.17:155][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2019.05.05-21.41.17:156][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2019.05.05-21.41.17:156][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2019.05.05-21.41.17:156][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Config/Windows/Engine.ini]
+[2019.05.05-21.41.17:156][  0]LogInit: Computer: LAPTOP-9EU9193A
+[2019.05.05-21.41.17:156][  0]LogInit: User: Luk
+[2019.05.05-21.41.17:156][  0]LogInit: CPU Page size=4096, Cores=4
+[2019.05.05-21.41.17:156][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2019.05.05-21.41.17:157][  0]LogMemory: Memory total: Physical=15.8GB (16GB approx)
+[2019.05.05-21.41.17:157][  0]LogMemory: Platform Memory Stats for Windows
+[2019.05.05-21.41.17:157][  0]LogMemory: Process Physical Memory: 97.14 MB used, 97.14 MB peak
+[2019.05.05-21.41.17:157][  0]LogMemory: Process Virtual Memory: 89.32 MB used, 89.32 MB peak
+[2019.05.05-21.41.17:158][  0]LogMemory: Physical Memory: 9611.82 MB used,  6599.96 MB free, 16211.78 MB total
+[2019.05.05-21.41.17:158][  0]LogMemory: Virtual Memory: 4657.81 MB used,  134213072.00 MB free, 134217728.00 MB total
+[2019.05.05-21.41.17:471][  0]LogInit: Using OS detected language (de-DE).
+[2019.05.05-21.41.17:471][  0]LogInit: Using OS detected locale (de-DE).
+[2019.05.05-21.41.17:473][  0]LogTextLocalizationManager: No specific localization for 'de-DE' exists, so the 'de' localization will be used.
+[2019.05.05-21.41.17:474][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/Editor/de/Editor.locres' could not be opened for reading!
+[2019.05.05-21.41.17:475][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/EditorTutorials/de/EditorTutorials.locres' could not be opened for reading!
+[2019.05.05-21.41.17:475][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/Keywords/de/Keywords.locres' could not be opened for reading!
+[2019.05.05-21.41.17:475][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/Category/de/Category.locres' could not be opened for reading!
+[2019.05.05-21.41.17:476][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/ToolTips/de/ToolTips.locres' could not be opened for reading!
+[2019.05.05-21.41.17:477][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/PropertyNames/de/PropertyNames.locres' could not be opened for reading!
+[2019.05.05-21.41.17:477][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/Engine/de/Engine.locres' could not be opened for reading!
+[2019.05.05-21.41.17:480][  0]LogInit: Setting process to per monitor DPI aware
+[2019.05.05-21.41.17:701][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2019.05.05-21.41.17:701][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2019.05.05-21.41.18:156][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2019.05.05-21.41.18:156][  0]LogD3D11RHI: D3D11 adapters:
+[2019.05.05-21.41.18:637][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 960M' (Feature Level 11_0)
+[2019.05.05-21.41.18:637][  0]LogD3D11RHI:       4055/0/8105 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2019.05.05-21.41.18:663][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 530' (Feature Level 11_0)
+[2019.05.05-21.41.18:664][  0]LogD3D11RHI:       128/0/8105 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2019.05.05-21.41.18:676][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2019.05.05-21.41.18:676][  0]LogD3D11RHI:       0/0/8105 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2019.05.05-21.41.18:676][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2019.05.05-21.41.18:729][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2019.05.05-21.41.18:730][  0]LogD3D11RHI:     GPU DeviceId: 0x139b (for the marketing name, search the web for "GPU Device Id")
+[2019.05.05-21.41.18:730][  0]LogWindows: EnumDisplayDevices:
+[2019.05.05-21.41.18:730][  0]LogWindows:    0. 'Intel(R) HD Graphics 530' (P:1 D:1)
+[2019.05.05-21.41.18:731][  0]LogWindows:    1. 'Intel(R) HD Graphics 530' (P:0 D:1)
+[2019.05.05-21.41.18:732][  0]LogWindows:    2. 'Intel(R) HD Graphics 530' (P:0 D:0)
+[2019.05.05-21.41.18:732][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2019.05.05-21.41.18:733][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 960M
+[2019.05.05-21.41.18:733][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2019.05.05-21.41.18:733][  0]LogD3D11RHI:      Driver Date: Unknown
+[2019.05.05-21.41.18:733][  0]LogRHI: Texture pool is 2839 MB (70% of 4055 MB)
+[2019.05.05-21.41.18:800][  0]LogD3D11RHI: Async texture creation enabled
+[2019.05.05-21.41.18:807][  0]LogRendererCore: FGlobalReadBuffer::InitRHI
+[2019.05.05-21.41.18:807][  0]LogRendererCore: FGlobalReadBuffer::InitRHI
+[2019.05.05-21.41.18:807][  0]LogRendererCore: FGlobalReadBuffer::InitRHI
+[2019.05.05-21.41.18:817][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2019.05.05-21.41.19:339][  0]LogTemp: Display: Module 'AllDesktopTargetPlatform' loaded TargetPlatform 'AllDesktop'
+[2019.05.05-21.41.19:482][  0]LogTemp: Display: Module 'MacClientTargetPlatform' loaded TargetPlatform 'MacClient'
+[2019.05.05-21.41.19:518][  0]LogTemp: Display: Module 'MacNoEditorTargetPlatform' loaded TargetPlatform 'MacNoEditor'
+[2019.05.05-21.41.19:558][  0]LogTemp: Display: Module 'MacServerTargetPlatform' loaded TargetPlatform 'MacServer'
+[2019.05.05-21.41.19:592][  0]LogTemp: Display: Module 'MacTargetPlatform' loaded TargetPlatform 'Mac'
+[2019.05.05-21.41.19:785][  0]LogTemp: Display: Module 'WindowsClientTargetPlatform' loaded TargetPlatform 'WindowsClient'
+[2019.05.05-21.41.19:822][  0]LogTemp: Display: Module 'WindowsNoEditorTargetPlatform' loaded TargetPlatform 'WindowsNoEditor'
+[2019.05.05-21.41.19:849][  0]LogTemp: Display: Module 'WindowsServerTargetPlatform' loaded TargetPlatform 'WindowsServer'
+[2019.05.05-21.41.20:016][  0]LogTemp: Display: Module 'WindowsTargetPlatform' loaded TargetPlatform 'Windows'
+[2019.05.05-21.41.20:149][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android'
+[2019.05.05-21.41.20:150][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ASTC'
+[2019.05.05-21.41.20:150][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ATC'
+[2019.05.05-21.41.20:151][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_DXT'
+[2019.05.05-21.41.20:151][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1'
+[2019.05.05-21.41.20:151][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1a'
+[2019.05.05-21.41.20:151][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC2'
+[2019.05.05-21.41.20:151][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_PVRTC'
+[2019.05.05-21.41.20:152][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'AndroidClient'
+[2019.05.05-21.41.20:152][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ASTCClient'
+[2019.05.05-21.41.20:152][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ATCClient'
+[2019.05.05-21.41.20:152][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_DXTClient'
+[2019.05.05-21.41.20:152][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1Client'
+[2019.05.05-21.41.20:152][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1aClient'
+[2019.05.05-21.41.20:152][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC2Client'
+[2019.05.05-21.41.20:153][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_PVRTCClient'
+[2019.05.05-21.41.20:153][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_Multi'
+[2019.05.05-21.41.20:153][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_MultiClient'
+[2019.05.05-21.41.20:169][  0]LogTemp: Display: Module 'HTML5TargetPlatform' loaded TargetPlatform 'HTML5'
+[2019.05.05-21.41.20:397][  0]LogTemp: Display: Module 'IOSTargetPlatform' loaded TargetPlatform 'IOSClient'
+[2019.05.05-21.41.20:398][  0]LogTemp: Display: Module 'IOSTargetPlatform' loaded TargetPlatform 'IOS'
+[2019.05.05-21.41.20:441][  0]LogTemp: Display: Module 'TVOSTargetPlatform' loaded TargetPlatform 'TVOSClient'
+[2019.05.05-21.41.20:442][  0]LogTemp: Display: Module 'TVOSTargetPlatform' loaded TargetPlatform 'TVOS'
+[2019.05.05-21.41.20:470][  0]LogTemp: Display: Module 'LinuxClientTargetPlatform' loaded TargetPlatform 'LinuxClient'
+[2019.05.05-21.41.20:598][  0]LogTemp: Display: Module 'LinuxNoEditorTargetPlatform' loaded TargetPlatform 'LinuxNoEditor'
+[2019.05.05-21.41.20:758][  0]LogTemp: Display: Module 'LinuxServerTargetPlatform' loaded TargetPlatform 'LinuxServer'
+[2019.05.05-21.41.20:802][  0]LogTemp: Display: Module 'LinuxTargetPlatform' loaded TargetPlatform 'Linux'
+[2019.05.05-21.41.20:877][  0]LogTemp: Display: Module 'LuminTargetPlatform' loaded TargetPlatform 'Lumin'
+[2019.05.05-21.41.20:878][  0]LogTemp: Display: Module 'LuminTargetPlatform' loaded TargetPlatform 'LuminClient'
+[2019.05.05-21.41.20:878][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2019.05.05-21.41.21:041][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2019.05.05-21.41.21:674][  0]LogShaderCompilers: Guid format shader working directory is -15 characters bigger than the processId version (E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR_22/Intermediate/Shaders/WorkingDirectory/10624/).
+[2019.05.05-21.41.21:674][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Luk/AppData/Local/Temp/UnrealShaderWorkingDir/C87709B342AC0A4463CD3CB31C20386A/'.
+[2019.05.05-21.41.21:677][  0]LogXGEController: Cleaning working directory: C:/Users/Luk/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2019.05.05-21.41.21:678][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2019.05.05-21.41.21:678][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2019.05.05-21.41.21:678][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2019.05.05-21.41.22:615][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2019.05.05-21.41.22:828][  0]LogDerivedDataCache: Loaded boot cache 0.21s 75MB C:/Users/Luk/AppData/Local/UnrealEngine/4.22/DerivedDataCache/Boot.ddc.
+[2019.05.05-21.41.22:829][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Luk/AppData/Local/UnrealEngine/4.22/DerivedDataCache/Boot.ddc
+[2019.05.05-21.41.22:829][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR_22/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2019.05.05-21.41.22:829][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2019.05.05-21.41.22:829][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR_22/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2019.05.05-21.41.22:829][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2019.05.05-21.41.22:848][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2019.05.05-21.41.22:854][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Enterprise/DerivedDataCache/Compressed.ddp.
+[2019.05.05-21.41.22:868][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Luk/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2019.05.05-21.41.22:868][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2019.05.05-21.41.22:869][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2019.05.05-21.41.22:897][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2019.05.05-21.41.22:899][  0]LogSlate: Using FreeType 2.6.0
+[2019.05.05-21.41.22:903][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2019.05.05-21.41.23:081][  0]LogAssetRegistry: FAssetRegistry took 0.0439 seconds to start up
+[2019.05.05-21.41.23:539][  0]LogInit: Selected Device Profile: [Windows]
+[2019.05.05-21.41.23:658][  0]LogMaterial: Display: Missing cached shader map for material WorldGridMaterial, compiling. Is special engine material.
+[2019.05.05-21.42.15:587][  0]LogShaderCompilers: Display: Shaders left to compile 850
+[2019.05.05-21.42.15:587][  0]LogShaderCompilers: Display: Shaders left to compile 840
+[2019.05.05-21.42.15:587][  0]LogShaderCompilers: Display: Shaders left to compile 830
+[2019.05.05-21.42.15:587][  0]LogShaderCompilers: Display: Shaders left to compile 820
+[2019.05.05-21.42.15:587][  0]LogShaderCompilers: Display: Shaders left to compile 810
+[2019.05.05-21.42.15:588][  0]LogShaderCompilers: Display: Shaders left to compile 800
+[2019.05.05-21.42.15:588][  0]LogShaderCompilers: Display: Shaders left to compile 790
+[2019.05.05-21.42.15:588][  0]LogShaderCompilers: Display: Shaders left to compile 780
+[2019.05.05-21.42.15:588][  0]LogShaderCompilers: Display: Shaders left to compile 770
+[2019.05.05-21.42.15:588][  0]LogShaderCompilers: Display: Shaders left to compile 760
+[2019.05.05-21.42.15:588][  0]LogShaderCompilers: Display: Shaders left to compile 750
+[2019.05.05-21.42.15:588][  0]LogShaderCompilers: Display: Shaders left to compile 740
+[2019.05.05-21.42.15:588][  0]LogShaderCompilers: Display: Shaders left to compile 730
+[2019.05.05-21.42.15:589][  0]LogShaderCompilers: Display: Shaders left to compile 720
+[2019.05.05-21.42.15:589][  0]LogShaderCompilers: Display: Shaders left to compile 710
+[2019.05.05-21.42.15:589][  0]LogShaderCompilers: Display: Shaders left to compile 700
+[2019.05.05-21.42.15:589][  0]LogShaderCompilers: Display: Shaders left to compile 690
+[2019.05.05-21.42.15:589][  0]LogShaderCompilers: Display: Shaders left to compile 680
+[2019.05.05-21.42.15:589][  0]LogShaderCompilers: Display: Shaders left to compile 670
+[2019.05.05-21.42.15:589][  0]LogShaderCompilers: Display: Shaders left to compile 660
+[2019.05.05-21.42.15:590][  0]LogShaderCompilers: Display: Shaders left to compile 650
+[2019.05.05-21.42.15:590][  0]LogShaderCompilers: Display: Shaders left to compile 640
+[2019.05.05-21.42.15:590][  0]LogShaderCompilers: Display: Shaders left to compile 630
+[2019.05.05-21.42.15:590][  0]LogShaderCompilers: Display: Shaders left to compile 620
+[2019.05.05-21.42.15:590][  0]LogShaderCompilers: Display: Shaders left to compile 610
+[2019.05.05-21.42.15:590][  0]LogShaderCompilers: Display: Shaders left to compile 600
+[2019.05.05-21.42.15:590][  0]LogShaderCompilers: Display: Shaders left to compile 590
+[2019.05.05-21.42.15:590][  0]LogShaderCompilers: Display: Shaders left to compile 580
+[2019.05.05-21.42.15:590][  0]LogShaderCompilers: Display: Shaders left to compile 570
+[2019.05.05-21.42.15:591][  0]LogShaderCompilers: Display: Shaders left to compile 560
+[2019.05.05-21.42.15:591][  0]LogShaderCompilers: Display: Shaders left to compile 550
+[2019.05.05-21.42.15:591][  0]LogShaderCompilers: Display: Shaders left to compile 540
+[2019.05.05-21.42.15:591][  0]LogShaderCompilers: Display: Shaders left to compile 530
+[2019.05.05-21.42.15:591][  0]LogShaderCompilers: Display: Shaders left to compile 520
+[2019.05.05-21.42.15:591][  0]LogShaderCompilers: Display: Shaders left to compile 510
+[2019.05.05-21.42.15:591][  0]LogShaderCompilers: Display: Shaders left to compile 500
+[2019.05.05-21.42.15:591][  0]LogShaderCompilers: Display: Shaders left to compile 490
+[2019.05.05-21.42.15:591][  0]LogShaderCompilers: Display: Shaders left to compile 480
+[2019.05.05-21.42.15:592][  0]LogShaderCompilers: Display: Shaders left to compile 470
+[2019.05.05-21.42.15:592][  0]LogShaderCompilers: Display: Shaders left to compile 460
+[2019.05.05-21.42.15:592][  0]LogShaderCompilers: Display: Shaders left to compile 450
+[2019.05.05-21.42.15:592][  0]LogShaderCompilers: Display: Shaders left to compile 440
+[2019.05.05-21.42.15:592][  0]LogShaderCompilers: Display: Shaders left to compile 430
+[2019.05.05-21.42.15:592][  0]LogShaderCompilers: Display: Shaders left to compile 420
+[2019.05.05-21.42.15:592][  0]LogShaderCompilers: Display: Shaders left to compile 410
+[2019.05.05-21.42.15:592][  0]LogShaderCompilers: Display: Shaders left to compile 400
+[2019.05.05-21.42.15:592][  0]LogShaderCompilers: Display: Shaders left to compile 390
+[2019.05.05-21.42.15:592][  0]LogShaderCompilers: Display: Shaders left to compile 380
+[2019.05.05-21.42.15:592][  0]LogShaderCompilers: Display: Shaders left to compile 370
+[2019.05.05-21.42.15:593][  0]LogShaderCompilers: Display: Shaders left to compile 360
+[2019.05.05-21.42.15:593][  0]LogShaderCompilers: Display: Shaders left to compile 350
+[2019.05.05-21.42.15:593][  0]LogShaderCompilers: Display: Shaders left to compile 340
+[2019.05.05-21.42.15:593][  0]LogShaderCompilers: Display: Shaders left to compile 330
+[2019.05.05-21.42.15:593][  0]LogShaderCompilers: Display: Shaders left to compile 320
+[2019.05.05-21.42.15:593][  0]LogShaderCompilers: Display: Shaders left to compile 310
+[2019.05.05-21.42.15:593][  0]LogShaderCompilers: Display: Shaders left to compile 300
+[2019.05.05-21.42.15:593][  0]LogShaderCompilers: Display: Shaders left to compile 290
+[2019.05.05-21.42.15:593][  0]LogShaderCompilers: Display: Shaders left to compile 280
+[2019.05.05-21.42.15:593][  0]LogShaderCompilers: Display: Shaders left to compile 270
+[2019.05.05-21.42.15:593][  0]LogShaderCompilers: Display: Shaders left to compile 260
+[2019.05.05-21.42.15:593][  0]LogShaderCompilers: Display: Shaders left to compile 250
+[2019.05.05-21.42.15:594][  0]LogShaderCompilers: Display: Shaders left to compile 240
+[2019.05.05-21.42.15:594][  0]LogShaderCompilers: Display: Shaders left to compile 230
+[2019.05.05-21.42.15:594][  0]LogShaderCompilers: Display: Shaders left to compile 220
+[2019.05.05-21.42.15:594][  0]LogShaderCompilers: Display: Shaders left to compile 210
+[2019.05.05-21.42.15:594][  0]LogShaderCompilers: Display: Shaders left to compile 200
+[2019.05.05-21.42.15:594][  0]LogShaderCompilers: Display: Shaders left to compile 190
+[2019.05.05-21.42.15:594][  0]LogShaderCompilers: Display: Shaders left to compile 180
+[2019.05.05-21.42.15:594][  0]LogShaderCompilers: Display: Shaders left to compile 170
+[2019.05.05-21.42.15:594][  0]LogShaderCompilers: Display: Shaders left to compile 160
+[2019.05.05-21.42.15:594][  0]LogShaderCompilers: Display: Shaders left to compile 150
+[2019.05.05-21.42.15:594][  0]LogShaderCompilers: Display: Shaders left to compile 140
+[2019.05.05-21.42.15:594][  0]LogShaderCompilers: Display: Shaders left to compile 130
+[2019.05.05-21.42.15:594][  0]LogShaderCompilers: Display: Shaders left to compile 120
+[2019.05.05-21.42.15:594][  0]LogShaderCompilers: Display: Shaders left to compile 110
+[2019.05.05-21.42.15:595][  0]LogShaderCompilers: Display: Shaders left to compile 100
+[2019.05.05-21.42.15:595][  0]LogShaderCompilers: Display: Shaders left to compile 90
+[2019.05.05-21.42.15:595][  0]LogShaderCompilers: Display: Shaders left to compile 80
+[2019.05.05-21.42.15:595][  0]LogShaderCompilers: Display: Shaders left to compile 70
+[2019.05.05-21.42.15:595][  0]LogShaderCompilers: Display: Shaders left to compile 60
+[2019.05.05-21.42.15:595][  0]LogShaderCompilers: Display: Shaders left to compile 50
+[2019.05.05-21.42.15:595][  0]LogShaderCompilers: Display: Shaders left to compile 40
+[2019.05.05-21.42.15:595][  0]LogShaderCompilers: Display: Shaders left to compile 30
+[2019.05.05-21.42.15:595][  0]LogShaderCompilers: Display: Shaders left to compile 20
+[2019.05.05-21.42.15:595][  0]LogShaderCompilers: Display: Shaders left to compile 10
+[2019.05.05-21.42.15:595][  0]LogMaterial: Display: Missing cached shader map for material DefaultDeferredDecalMaterial, compiling. 
+[2019.05.05-21.42.30:904][  0]LogShaderCompilers: Display: Shaders left to compile 160
+[2019.05.05-21.42.30:904][  0]LogShaderCompilers: Display: Shaders left to compile 150
+[2019.05.05-21.42.30:904][  0]LogShaderCompilers: Display: Shaders left to compile 140
+[2019.05.05-21.42.30:904][  0]LogShaderCompilers: Display: Shaders left to compile 130
+[2019.05.05-21.42.30:905][  0]LogShaderCompilers: Display: Shaders left to compile 120
+[2019.05.05-21.42.30:905][  0]LogShaderCompilers: Display: Shaders left to compile 110
+[2019.05.05-21.42.30:905][  0]LogShaderCompilers: Display: Shaders left to compile 100
+[2019.05.05-21.42.30:905][  0]LogShaderCompilers: Display: Shaders left to compile 90
+[2019.05.05-21.42.30:905][  0]LogShaderCompilers: Display: Shaders left to compile 80
+[2019.05.05-21.42.30:905][  0]LogShaderCompilers: Display: Shaders left to compile 70
+[2019.05.05-21.42.30:905][  0]LogShaderCompilers: Display: Shaders left to compile 60
+[2019.05.05-21.42.30:906][  0]LogShaderCompilers: Display: Shaders left to compile 50
+[2019.05.05-21.42.30:906][  0]LogShaderCompilers: Display: Shaders left to compile 40
+[2019.05.05-21.42.30:906][  0]LogShaderCompilers: Display: Shaders left to compile 30
+[2019.05.05-21.42.30:906][  0]LogShaderCompilers: Display: Shaders left to compile 20
+[2019.05.05-21.42.30:906][  0]LogShaderCompilers: Display: Shaders left to compile 10
+[2019.05.05-21.42.30:906][  0]LogMaterial: Display: Missing cached shader map for material DefaultLightFunctionMaterial, compiling. 
+[2019.05.05-21.42.32:311][  0]LogShaderCompilers: Display: Shaders left to compile 20
+[2019.05.05-21.42.32:311][  0]LogShaderCompilers: Display: Shaders left to compile 10
+[2019.05.05-21.42.32:312][  0]LogMaterial: Display: Missing cached shader map for material DefaultPostProcessMaterial, compiling. 
+[2019.05.05-21.42.33:231][  0]LogShaderCompilers: Display: Shaders left to compile 10
+[2019.05.05-21.42.33:231][  0]LogMaterial: Display: Missing cached shader map for material MatineeCam_mat, compiling. 
+[2019.05.05-21.42.33:884][  0]LogShaderCompilers: Display: Shaders left to compile 60
+[2019.05.05-21.42.33:884][  0]LogShaderCompilers: Display: Shaders left to compile 50
+[2019.05.05-21.42.33:884][  0]LogShaderCompilers: Display: Shaders left to compile 40
+[2019.05.05-21.42.33:884][  0]LogShaderCompilers: Display: Shaders left to compile 30
+[2019.05.05-21.42.33:884][  0]LogShaderCompilers: Display: Shaders left to compile 20
+[2019.05.05-21.42.33:884][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2019.05.05-21.42.33:884][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2019.05.05-21.42.33:884][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2019.05.05-21.42.33:884][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2019.05.05-21.42.33:884][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2019.05.05-21.42.34:224][  0]LogNetVersion: CPP_PointCloudsVR_22 1.0.0, NetCL: 5660361, EngineNetVer: 10, GameNetVer: 0 (Checksum: 2507006774)
+[2019.05.05-21.42.34:269][  0]LogMaterial: Display: Missing cached shader map for material HelpActorMaterial, compiling. 
+[2019.05.05-21.42.34:388][  0]LogMaterial: Display: Missing cached shader map for material M_ChromeBall, compiling. 
+[2019.05.05-21.42.34:492][  0]LogMaterial: Display: Missing cached shader map for material DefaultTextMaterialOpaque, compiling. 
+[2019.05.05-21.42.34:585][  0]LogMaterial: Display: Missing cached shader map for material BaseFlattenMaterial, compiling. 
+[2019.05.05-21.42.34:693][  0]LogMaterial: Display: Missing cached shader map for material Widget3DPassThrough, compiling. 
+[2019.05.05-21.42.34:717][  0]LogMaterial: Display: Missing cached shader map for material Widget3DPassThrough, compiling. 
+[2019.05.05-21.42.34:750][  0]LogMaterial: Display: Missing cached shader map for material Widget3DPassThrough, compiling. 
+[2019.05.05-21.42.34:773][  0]LogMaterial: Display: Missing cached shader map for material Widget3DPassThrough, compiling. 
+[2019.05.05-21.42.34:791][  0]LogMaterial: Display: Missing cached shader map for material Widget3DPassThrough, compiling. 
+[2019.05.05-21.42.34:823][  0]LogMaterial: Display: Missing cached shader map for material Widget3DPassThrough, compiling. 
+[2019.05.05-21.42.34:864][  0]LogMaterial: Display: Missing cached shader map for material Xray, compiling. 
+[2019.05.05-21.42.34:910][  0]LogMaterial: Display: Missing cached shader map for material Main, compiling. 
+[2019.05.05-21.42.34:963][  0]LogMaterial: Display: Missing cached shader map for material TranslucentTransformGizmoMaterial, compiling. 
+[2019.05.05-21.42.34:990][  0]LogMaterial: Display: Missing cached shader map for material TransformGizmoMaterial, compiling. 
+[2019.05.05-21.42.35:029][  0]LogMaterial: Display: Missing cached shader map for material CineMat, compiling. 
+[2019.05.05-21.42.35:132][  0]LogMaterial: Display: Missing cached shader map for material M_SimpleOpaque, compiling. 
+[2019.05.05-21.42.35:196][  0]LogMaterial: Display: Missing cached shader map for material M_SimpleTranslucent, compiling. 
+[2019.05.05-21.42.35:396][  0]LogMaterial: Display: Missing cached shader map for material SkySphereMaterial, compiling. 
+[2019.05.05-21.42.35:419][  0]LogMaterial: Display: Missing cached shader map for material FloorPlaneMaterial, compiling. 
+[2019.05.05-21.42.35:545][  0]LogMaterial: Display: Missing cached shader map for material LandscapeGizmo_Mat, compiling. 
+[2019.05.05-21.42.35:588][  0]LogMaterial: Display: Missing cached shader map for material LandscapeGizmoHeight_Mat, compiling. 
+[2019.05.05-21.42.35:686][  0]LogMaterial: Display: Missing cached shader map for material SplineEditorMeshMat, compiling. 
+[2019.05.05-21.42.35:748][  0]LogMaterial: Display: Missing cached shader map for material M_PointCloud, compiling. 
+[2019.05.05-21.42.35:973][  0]LogPackageLocalizationCache: Processed 17 localized package path(s) for 1 prioritized culture(s) in 0.146247 seconds
+[2019.05.05-21.42.35:985][  0]LogUObjectArray: 42614 objects as part of root set at end of initial load.
+[2019.05.05-21.42.35:985][  0]LogUObjectAllocator: 7423144 out of 0 bytes used by permanent object pool.
+[2019.05.05-21.42.35:985][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2019.05.05-21.42.39:394][  0]LogMaterial: Display: Missing cached shader map for material DefaultSpriteMaterial, compiling. 
+[2019.05.05-21.42.39:422][  0]LogMaterial: Display: Missing cached shader map for material DefaultSpriteMaterial, compiling. 
+[2019.05.05-21.42.40:540][  0]LogMaterial: Display: Missing cached shader map for material BaseColor, compiling. 
+[2019.05.05-21.42.40:558][  0]LogMaterial: Display: Missing cached shader map for material CustomDepth, compiling. 
+[2019.05.05-21.42.40:597][  0]LogMaterial: Display: Missing cached shader map for material CustomStencil, compiling. 
+[2019.05.05-21.42.40:616][  0]LogMaterial: Display: Missing cached shader map for material FinalImage, compiling. 
+[2019.05.05-21.42.40:636][  0]LogMaterial: Display: Missing cached shader map for material LightingModel, compiling. 
+[2019.05.05-21.42.40:656][  0]LogMaterial: Display: Missing cached shader map for material MaterialAO, compiling. 
+[2019.05.05-21.42.40:674][  0]LogMaterial: Display: Missing cached shader map for material Metallic, compiling. 
+[2019.05.05-21.42.40:692][  0]LogMaterial: Display: Missing cached shader map for material Opacity, compiling. 
+[2019.05.05-21.42.40:711][  0]LogMaterial: Display: Missing cached shader map for material Roughness, compiling. 
+[2019.05.05-21.42.40:728][  0]LogMaterial: Display: Missing cached shader map for material SceneColor, compiling. 
+[2019.05.05-21.42.40:746][  0]LogMaterial: Display: Missing cached shader map for material SceneDepth, compiling. 
+[2019.05.05-21.42.40:762][  0]LogMaterial: Display: Missing cached shader map for material SeparateTranslucencyRGB, compiling. 
+[2019.05.05-21.42.40:779][  0]LogMaterial: Display: Missing cached shader map for material SeparateTranslucencyA, compiling. 
+[2019.05.05-21.42.40:796][  0]LogMaterial: Display: Missing cached shader map for material Specular, compiling. 
+[2019.05.05-21.42.40:817][  0]LogMaterial: Display: Missing cached shader map for material SubsurfaceColor, compiling. 
+[2019.05.05-21.42.40:833][  0]LogMaterial: Display: Missing cached shader map for material WorldNormal, compiling. 
+[2019.05.05-21.42.40:853][  0]LogMaterial: Display: Missing cached shader map for material AmbientOcclusion, compiling. 
+[2019.05.05-21.42.40:881][  0]LogMaterial: Display: Missing cached shader map for material CustomDepthWorldUnits, compiling. 
+[2019.05.05-21.42.40:900][  0]LogMaterial: Display: Missing cached shader map for material SceneDepthWorldUnits, compiling. 
+[2019.05.05-21.42.40:920][  0]LogMaterial: Display: Missing cached shader map for material Velocity, compiling. 
+[2019.05.05-21.42.40:936][  0]LogMaterial: Display: Missing cached shader map for material PreTonemapHDRColor, compiling. 
+[2019.05.05-21.42.40:955][  0]LogMaterial: Display: Missing cached shader map for material PostTonemapHDRColor, compiling. 
+[2019.05.05-21.42.41:851][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2019.05.05-21.42.42:039][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2019.05.05-21.42.42:332][  0]LogMaterial: Display: Missing cached shader map for material DefaultMaterial, compiling. 
+[2019.05.05-21.42.43:280][  0]LogMaterial: Display: Missing cached shader map for material M_FPGun, compiling. 
+[2019.05.05-21.42.43:414][  0]LogMaterial: Display: Missing cached shader map for material M_UE4Man_Body, compiling. 
+[2019.05.05-21.42.43:546][  0]LogMaterial: Display: Missing cached shader map for material BaseMaterial, compiling. 
+[2019.05.05-21.42.44:339][  0]SourceControl: Source control is disabled
+[2019.05.05-21.42.44:339][  0]SourceControl: Source control is disabled
+[2019.05.05-21.42.44:527][  0]SourceControl: Source control is disabled
+[2019.05.05-21.42.44:668][  0]SourceControl: Source control is disabled
+[2019.05.05-21.42.47:532][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2019.05.05-21.42.48:003][  0]LogOcInput: OculusInput pre-init called
+[2019.05.05-21.42.48:050][  0]LogMaterial: Display: Missing cached shader map for material GearVRControllerMaterial, compiling. 
+[2019.05.05-21.42.48:113][  0]LogMaterial: Display: Missing cached shader map for material touchController_mat, compiling. 
+[2019.05.05-21.42.48:205][  0]LogMaterial: Display: Missing cached shader map for material PokeAHoleMaterial, compiling. 
+[2019.05.05-21.42.49:921][  0]LogMaterial: Display: Missing cached shader map for material RevitMaster, compiling. 
+[2019.05.05-21.42.50:008][  0]LogMaterial: Display: Missing cached shader map for material SketchUpMaster, compiling. 
+[2019.05.05-21.42.50:102][  0]LogMaterial: Display: Missing cached shader map for material CE_OpaqueMaster, compiling. 
+[2019.05.05-21.42.50:190][  0]LogMaterial: Display: Missing cached shader map for material CE_OpacityMaster, compiling. 
+[2019.05.05-21.42.50:275][  0]LogMaterial: Display: Missing cached shader map for material CE_OpacitySimpleMaster, compiling. 
+[2019.05.05-21.42.53:791][  0]LogMaterial: Display: Missing cached shader map for material Datasmith_Color, compiling. 
+[2019.05.05-21.42.53:879][  0]LogMaterial: Display: Missing cached shader map for material Datasmith_Material, compiling. 
+[2019.05.05-21.42.55:582][  0]LogMaterial: Display: Missing cached shader map for material HighResScreenshot, compiling. 
+[2019.05.05-21.42.55:612][  0]LogMaterial: Display: Missing cached shader map for material HighResScreenshotMask, compiling. 
+[2019.05.05-21.42.55:643][  0]LogMaterial: Display: Missing cached shader map for material HighResScreenshotCaptureRegion, compiling. 
+[2019.05.05-21.42.55:704][  0]LogEngine: Initializing Engine...
+[2019.05.05-21.42.55:705][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2019.05.05-21.42.55:707][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2019.05.05-21.42.55:716][  0]LogMaterial: Display: Missing cached shader map for material WireframeMaterial, compiling. Is special engine material.
+[2019.05.05-21.42.55:857][  0]LogMaterial: Display: Missing cached shader map for material LevelColorationLitMaterial, compiling. Is special engine material.
+[2019.05.05-21.42.56:368][  0]LogMaterial: Display: Missing cached shader map for material LevelColorationUnlitMaterial, compiling. Is special engine material.
+[2019.05.05-21.42.56:494][  0]LogMaterial: Display: Missing cached shader map for material MAT_LevelColorationLitLightmapUV, compiling. Is special engine material.
+[2019.05.05-21.42.56:995][  0]LogMaterial: Display: Missing cached shader map for material ShadedLevelColorationLitMaterial, compiling. Is special engine material.
+[2019.05.05-21.42.57:500][  0]LogMaterial: Display: Missing cached shader map for material ShadedLevelColorationUnlitMateri, compiling. Is special engine material.
+[2019.05.05-21.42.57:621][  0]LogMaterial: Display: Missing cached shader map for material VertexColorMaterial, compiling. 
+[2019.05.05-21.42.57:749][  0]LogMaterial: Display: Missing cached shader map for material VertexColorViewMode_ColorOnly, compiling. 
+[2019.05.05-21.42.57:782][  0]LogMaterial: Display: Missing cached shader map for material VertexColorViewMode_AlphaAsColor, compiling. 
+[2019.05.05-21.42.57:815][  0]LogMaterial: Display: Missing cached shader map for material VertexColorViewMode_RedOnly, compiling. 
+[2019.05.05-21.42.57:846][  0]LogMaterial: Display: Missing cached shader map for material VertexColorViewMode_GreenOnly, compiling. 
+[2019.05.05-21.42.57:876][  0]LogMaterial: Display: Missing cached shader map for material VertexColorViewMode_BlueOnly, compiling. 
+[2019.05.05-21.42.57:906][  0]LogMaterial: Display: Missing cached shader map for material RemoveSurfaceMaterial, compiling. 
+[2019.05.05-21.42.57:924][  0]LogMaterial: Display: Missing cached shader map for material DebugMeshMaterial, compiling. 
+[2019.05.05-21.42.57:955][  0]LogMaterial: Display: Missing cached shader map for material M_InvalidLightmapSettings, compiling. 
+[2019.05.05-21.42.58:026][  0]LogMaterial: Display: Missing cached shader map for material GizmoMaterial, compiling. 
+[2019.05.05-21.42.58:057][  0]LogMaterial: Display: Missing cached shader map for material PhAT_JointLimitMaterial, compiling. 
+[2019.05.05-21.42.58:098][  0]LogMaterial: Display: Missing cached shader map for material GeomMaterial, compiling. 
+[2019.05.05-21.42.58:126][  0]LogMaterial: Display: Missing cached shader map for material EditorBrushMaterial, compiling. 
+[2019.05.05-21.42.58:156][  0]LogMaterial: Display: Missing cached shader map for material BoneWeightMaterial, compiling. 
+[2019.05.05-21.42.58:271][  0]LogMaterial: Display: Missing cached shader map for material ClothMaterial, compiling. 
+[2019.05.05-21.42.58:302][  0]LogMaterial: Display: Missing cached shader map for material ClothMaterial_WF, compiling. 
+[2019.05.05-21.42.58:340][  0]LogMaterial: Display: Missing cached shader map for material DebugEditorMaterial, compiling. 
+[2019.05.05-21.42.58:365][  0]LogMaterial: Display: Missing cached shader map for material PreviewShadowIndicatorMaterial, compiling. 
+[2019.05.05-21.42.58:448][  0]LogInit: Initializing FReadOnlyCVARCache
+[2019.05.05-21.42.58:604][  0]LogAIModule: Creating AISystem for world Untitled
+[2019.05.05-21.42.58:652][  0]LogInit: XAudio2 using 'Lautsprecher (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2019.05.05-21.42.59:081][  0]LogInit: FAudioDevice initialized.
+[2019.05.05-21.42.59:081][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2019.05.05-21.42.59:178][  0]LogDerivedDataCache: Saved boot cache 0.10s 78MB C:/Users/Luk/AppData/Local/UnrealEngine/4.22/DerivedDataCache/Boot.ddc.
+[2019.05.05-21.42.59:192][  0]LogInit: Texture streaming: Enabled
+[2019.05.05-21.42.59:415][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2019.05.05-21.42.59:584][  0]LogInit: Transaction tracking system initialized
+[2019.05.05-21.42.59:955][  0]BlueprintLog: New page: Editor Load
+[2019.05.05-21.43.01:825][  0]LocalizationService: Localization service is disabled
+[2019.05.05-21.43.03:001][  0]LogMaterial: Display: Missing cached shader map for material Cross_Mat, compiling. 
+[2019.05.05-21.43.03:030][  0]LogMaterial: Display: Missing cached shader map for material PhAT_BoneSelectedMaterial, compiling. 
+[2019.05.05-21.43.03:057][  0]LogMaterial: Display: Missing cached shader map for material PhAT_ElemSelectedMaterial, compiling. 
+[2019.05.05-21.43.03:085][  0]LogMaterial: Display: Missing cached shader map for material PhAT_NoCollisionMaterial, compiling. 
+[2019.05.05-21.43.03:113][  0]LogShaderCompilers: Display: Shaders left to compile 7320
+[2019.05.05-21.43.03:113][  0]LogMaterial: Display: Missing cached shader map for material PhAT_UnselectedMaterial, compiling. 
+[2019.05.05-21.43.03:142][  0]LogMaterial: Display: Missing cached shader map for material Tick_Mat, compiling. 
+[2019.05.05-21.43.03:173][  0]LogMaterial: Display: Missing cached shader map for material WidgetGridVertexColorMaterial_Ma, compiling. 
+[2019.05.05-21.43.03:202][  0]LogMaterial: Display: Missing cached shader map for material WidgetMaterial, compiling. 
+[2019.05.05-21.43.03:226][  0]LogMaterial: Display: Missing cached shader map for material WidgetMaterial_Current, compiling. 
+[2019.05.05-21.43.03:250][  0]LogMaterial: Display: Missing cached shader map for material WidgetMaterial_X, compiling. 
+[2019.05.05-21.43.03:273][  0]LogMaterial: Display: Missing cached shader map for material WidgetMaterial_Y, compiling. 
+[2019.05.05-21.43.03:297][  0]LogMaterial: Display: Missing cached shader map for material WidgetMaterial_Z, compiling. 
+[2019.05.05-21.43.03:321][  0]LogMaterial: Display: Missing cached shader map for material WidgetVertexColorMaterial, compiling. 
+[2019.05.05-21.43.03:406][  0]LogMaterial: Display: Missing cached shader map for material LevelGridMaterial, compiling. 
+[2019.05.05-21.43.03:471][  0]LogMaterial: Display: Missing cached shader map for material BlinkingCaret, compiling. 
+[2019.05.05-21.43.03:538][  0]LogMaterial: Display: Missing cached shader map for material M_StreamingPause, compiling. 
+[2019.05.05-21.43.03:615][  0]LogFileCache: Scanning file cache for directory 'E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR_22/Content/' took 0.02s
+[2019.05.05-21.43.03:615][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2019.05.05-21.43.03:616][  0]LogCook: Display: Mobile HDR setting 1
+[2019.05.05-21.43.04:638][  0]LogMaterial: Display: Missing cached shader map for material OculusMR_WhiteMaterial, compiling. 
+[2019.05.05-21.43.04:679][  0]LogMaterial: Display: Missing cached shader map for material OculusMR_ChromaKey, compiling. 
+[2019.05.05-21.43.04:731][  0]LogMaterial: Display: Missing cached shader map for material OculusMR_ChromaKey_Lit, compiling. 
+[2019.05.05-21.43.04:811][  0]LogMaterial: Display: Missing cached shader map for material OculusMR_OpaqueColoredMaterial, compiling. 
+[2019.05.05-21.43.05:106][  0]LogMaterial: Display: Missing cached shader map for material Phong, compiling. 
+[2019.05.05-21.43.05:300][  0]LogMaterial: Display: Missing cached shader map for material Plastic, compiling. 
+[2019.05.05-21.43.05:454][  0]LogMaterial: Display: Missing cached shader map for material Glass, compiling. 
+[2019.05.05-21.43.06:653][  0]LogMaterial: Display: Missing cached shader map for material DeltaGenMaster, compiling. 
+[2019.05.05-21.43.06:710][  0]LogMaterial: Display: Missing cached shader map for material DeltaGenMasterTransparent, compiling. 
+[2019.05.05-21.43.08:567][  0]SourceControl: Source control is disabled
+[2019.05.05-21.43.08:568][  0]Cmd: MAP LOAD FILE="E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR_22/Content/FirstPersonCPP/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2019.05.05-21.43.08:600][  0]LightingResults: New page: Lighting Build
+[2019.05.05-21.43.08:605][  0]MapCheck: New page: Map Check
+[2019.05.05-21.43.08:605][  0]LightingResults: New page: Lighting Build
+[2019.05.05-21.43.08:644][  0]LogUObjectHash: Compacting FUObjectHashTables data took   3.48ms
+[2019.05.05-21.43.08:845][  0]LogMaterial: Display: Missing cached shader map for material M_Sky_Panning_Clouds2, compiling. 
+[2019.05.05-21.43.08:868][  0]LogMaterial: Display: Missing cached shader map for material CubeMaterial, compiling. 
+[2019.05.05-21.43.08:929][  0]LogMaterial: Display: Missing cached shader map for material AntiAliasedTextMaterialTranslucent, compiling. 
+[2019.05.05-21.43.09:133][  0]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2019.05.05-21.43.09:254][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2019.05.05-21.43.09:289][  0]LogUObjectHash: Compacting FUObjectHashTables data took   3.21ms
+[2019.05.05-21.43.09:290][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2019.05.05-21.43.09:290][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0,154ms to complete.
+[2019.05.05-21.43.09:290][  0]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 0.722
+[2019.05.05-21.43.09:447][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.05.05-21.43.09:460][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.05.05-21.43.09:473][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.05.05-21.43.09:486][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.05.05-21.43.09:518][  0]LogCollectionManager: Loaded 0 collections in 0.002786 seconds
+[2019.05.05-21.43.09:575][  0]LogFileCache: Scanning file cache for directory 'E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Collections/' took 0.01s
+[2019.05.05-21.43.09:575][  0]LogFileCache: Scanning file cache for directory 'E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR_22/Content/Developers/Luk/Collections/' took 0.01s
+[2019.05.05-21.43.09:576][  0]LogFileCache: Scanning file cache for directory 'E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR_22/Content/Collections/' took 0.02s
+[2019.05.05-21.43.09:576][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
+[2019.05.05-21.43.09:593][  0]LogContentBrowser: Native class hierarchy populated in 0.0164 seconds. Added 2878 classes and 735 folders.
+[2019.05.05-21.43.09:608][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2019.05.05-21.43.09:613][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-21.43.09:615][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-21.43.09:617][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-21.43.09:619][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-21.43.09:620][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-21.43.09:622][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-21.43.09:624][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-21.43.09:625][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-21.43.09:627][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-21.43.09:629][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-21.43.09:630][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-21.43.09:632][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-21.43.09:633][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-21.43.09:635][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-21.43.09:637][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-21.43.09:638][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-21.43.09:640][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-21.43.09:641][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-21.43.09:643][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-21.43.09:644][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-21.43.09:646][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-21.43.09:648][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-21.43.09:650][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-21.43.09:652][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-21.43.09:653][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-21.43.09:658][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-21.43.09:659][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-21.43.09:661][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.05-21.43.09:766][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2019.05.05-21.43.09:772][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0006 seconds. Added 1 classes and 0 folders.
+[2019.05.05-21.43.09:852][  0]LogContentBrowser: Native class hierarchy updated for 'WorldBrowser' in 0.0006 seconds. Added 2 classes and 3 folders.
+[2019.05.05-21.43.10:112][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2019.05.05-21.43.10:112][  0]LogLoad: (Engine Initialization) Total time: 117.51 seconds
+[2019.05.05-21.43.10:112][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2019.05.05-21.43.10:162][  0]LogAssetRegistry: Asset discovery search completed in 107.1059 seconds
+[2019.05.05-21.43.10:166][  0]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2019.05.05-21.43.10:166][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000228 seconds (updated 0 objects)
+[2019.05.05-21.43.10:167][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2019.05.05-21.43.10:185][  0]LogSlate: Took 0.000922 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2019.05.05-21.43.10:189][  0]LogSlate: Took 0.000961 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2019.05.05-21.43.10:201][  0]LogSlate: Took 0.004798 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2019.05.05-21.43.10:207][  0]LogSlate: Took 0.000917 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2019.05.05-21.43.10:489][  0]LogMaterial: Display: Missing cached shader map for material LevelGridMaterial2, compiling. 
+[2019.05.05-21.43.10:528][  0]LogSlate: Took 0.000296 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2019.05.05-21.43.10:563][  0]LogRenderer: Reallocating scene render targets to support 804x360 Format 10 NumSamples 1 (Frame:1).
+[2019.05.05-21.43.22:467][189]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.05-21.43.33:931][320]LogSlate: Window 'Plugins' being destroyed
+[2019.05.05-21.43.33:943][320]LogSlate: Window 'Plugins' being destroyed
+[2019.05.05-21.43.33:944][320]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/' was aborted.
+[2019.05.05-21.43.33:944][320]LogDirectoryWatcher: A directory notification for 'C:/Program Files/Epic Games/UE_4.22/Enterprise/Plugins/' was aborted.
+[2019.05.05-21.43.33:945][320]LogDirectoryWatcher: A directory notification for 'E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR_22/Plugins/' was aborted.
+[2019.05.05-21.43.36:545][624]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.05-21.43.42:121][208]LogRenderer: Reallocating scene render targets to support 1208x572 Format 10 NumSamples 1 (Frame:3111).
+[2019.05.05-21.43.43:764][359]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.05-21.43.52:840][185]LogBlueprint: Error: [Compiler BPA_Collider] In use pin  <Unnamed>  no longer exists on node  Set Point Cloud . Please refresh node or break links to remove pin.
+[2019.05.05-21.43.52:840][185]LogBlueprint: Error: [Compiler BPA_Collider] In use pin  Target  no longer exists on node  Set Point Cloud . Please refresh node or break links to remove pin.
+[2019.05.05-21.43.52:841][185]LogBlueprint: Error: [Compiler BPA_Collider] In use pin  In Point Cloud  no longer exists on node  Set Point Cloud . Please refresh node or break links to remove pin.
+[2019.05.05-21.43.52:841][185]LogBlueprint: Error: [Compiler BPA_Collider] Could not find a function named "SetPointCloud" in 'BPA_Collider'.
+Make sure 'BPA_Collider' has been compiled for  Set Point Cloud
+[2019.05.05-21.43.52:841][185]LogBlueprint: Error: [Compiler BPA_Collider] In use pin  Point Cloud Component  no longer exists on node  Get . Please refresh node or break links to remove pin.
+[2019.05.05-21.43.52:849][185]LogBlueprint: Warning: [Compiler BPA_Collider] [0160,24] Compile of BPA_Collider failed. 5 Fatal Issue(s) 0 Warning(s) [in 24 ms] (/Game/Collider/BPA_Collider.BPA_Collider)
+[2019.05.05-21.43.52:856][185]LogMaterial: Display: Missing cached shader map for material BasicAsset01, compiling. 
+[2019.05.05-21.44.15:637][912]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.05-21.44.23:714][542]LogEditor: Attempting to add actor of class 'PointCloudActor' to level at -30.00,100.00,170.00
+[2019.05.05-21.44.25:580][690]LogEditor: Attempting to add actor of class 'PointCloudActor' to level at 10.00,280.00,170.00
+[2019.05.05-21.44.32:647][239]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.05-21.44.50:019][601]LogConsoleManager: Warning: Console object named 'ActorComponents.Enable' already exists but is being registered again, but we weren't expected it to be! (FConsoleManager::AddConsoleObject)
+[2019.05.05-22.00.31:077][355]LogEditorViewport: Clicking on Actor (context menu): TextRenderActor (TemplateLabel)
+[2019.05.05-22.00.31:156][355]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.05.05-22.00.32:597][458]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (BigWall2)
+[2019.05.05-22.00.33:371][507]LogEditorViewport: Clicking on Actor (LMB): TextRenderActor (TemplateLabel)
+[2019.05.05-22.00.35:598][675]Cmd: DELETE
+[2019.05.05-22.00.35:598][675]Cmd: ACTOR DELETE
+[2019.05.05-22.00.35:601][675]LogEditorActor: Deleted Actor: TextRenderActor
+[2019.05.05-22.00.35:645][675]LogUObjectHash: Compacting FUObjectHashTables data took   4.40ms
+[2019.05.05-22.00.35:645][675]LogEditorActor: Deleted 1 Actors (0.046 secs)
+[2019.05.05-22.00.41:529][204]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (BigWall)
+[2019.05.05-22.00.42:412][258]Cmd: DELETE
+[2019.05.05-22.00.42:412][258]Cmd: ACTOR DELETE
+[2019.05.05-22.00.42:415][258]LogEditorActor: Deleted Actor: StaticMeshActor
+[2019.05.05-22.00.42:457][258]LogUObjectHash: Compacting FUObjectHashTables data took   1.16ms
+[2019.05.05-22.00.42:458][258]LogEditorActor: Deleted 1 Actors (0.046 secs)
+[2019.05.05-22.00.43:194][328]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall4)
+[2019.05.05-22.00.43:318][332]Cmd: DELETE
+[2019.05.05-22.00.43:319][332]Cmd: ACTOR DELETE
+[2019.05.05-22.00.43:323][332]LogEditorActor: Deleted Actor: StaticMeshActor
+[2019.05.05-22.00.43:360][332]LogUObjectHash: Compacting FUObjectHashTables data took   1.14ms
+[2019.05.05-22.00.43:361][332]LogEditorActor: Deleted 1 Actors (0.042 secs)
+[2019.05.05-22.00.43:984][389]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall2)
+[2019.05.05-22.00.44:035][389]Cmd: DELETE
+[2019.05.05-22.00.44:035][389]Cmd: ACTOR DELETE
+[2019.05.05-22.00.44:039][389]LogEditorActor: Deleted Actor: StaticMeshActor
+[2019.05.05-22.00.44:082][389]LogUObjectHash: Compacting FUObjectHashTables data took   1.34ms
+[2019.05.05-22.00.44:083][389]LogEditorActor: Deleted 1 Actors (0.047 secs)
+[2019.05.05-22.00.47:459][696]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall3)
+[2019.05.05-22.00.48:420][760]Cmd: DELETE
+[2019.05.05-22.00.48:421][760]Cmd: ACTOR DELETE
+[2019.05.05-22.00.48:425][760]LogEditorActor: Deleted Actor: StaticMeshActor
+[2019.05.05-22.00.48:462][760]LogUObjectHash: Compacting FUObjectHashTables data took   1.16ms
+[2019.05.05-22.00.48:462][760]LogEditorActor: Deleted 1 Actors (0.041 secs)
+[2019.05.05-22.00.50:419][951]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (BigWall2)
+[2019.05.05-22.00.51:361][ 18]Cmd: DELETE
+[2019.05.05-22.00.51:361][ 18]Cmd: ACTOR DELETE
+[2019.05.05-22.00.51:364][ 18]LogEditorActor: Deleted Actor: StaticMeshActor
+[2019.05.05-22.00.51:406][ 18]LogUObjectHash: Compacting FUObjectHashTables data took   2.35ms
+[2019.05.05-22.00.51:406][ 18]LogEditorActor: Deleted 1 Actors (0.045 secs)
+[2019.05.05-22.00.52:361][112]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall1)
+[2019.05.05-22.00.53:230][173]Cmd: DELETE
+[2019.05.05-22.00.53:230][173]Cmd: ACTOR DELETE
+[2019.05.05-22.00.53:233][173]LogEditorActor: Deleted Actor: StaticMeshActor
+[2019.05.05-22.00.53:272][173]LogUObjectHash: Compacting FUObjectHashTables data took   1.25ms
+[2019.05.05-22.00.53:273][173]LogEditorActor: Deleted 1 Actors (0.042 secs)
+[2019.05.05-22.01.02:721][ 49]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2019.05.05-22.01.04:021][125]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.05-22.01.12:413][697]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.05-22.01.56:793][990]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2019.05.05-22.02.06:124][640]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (EditorCube10)
+[2019.05.05-22.02.28:923][285]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2019.05.05-22.02.30:056][348]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2019.05.05-22.02.31:166][428]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2019.05.05-22.02.32:845][528]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.05-22.02.46:066][276]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (EditorCube10)
+[2019.05.05-22.02.49:539][503]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2019.05.05-22.02.50:577][578]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (EditorCube10)
+[2019.05.05-22.02.54:961][869]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.05-22.03.05:598][610]Cmd: DELETE
+[2019.05.05-22.03.05:598][610]Cmd: ACTOR DELETE
+[2019.05.05-22.03.05:601][610]LogEditorActor: Deleted Actor: StaticMeshActor
+[2019.05.05-22.03.05:638][610]LogUObjectHash: Compacting FUObjectHashTables data took   1.14ms
+[2019.05.05-22.03.05:639][610]LogEditorActor: Deleted 1 Actors (0.041 secs)
+[2019.05.05-22.03.08:410][878]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (EditorCube11)
+[2019.05.05-22.03.15:057][359]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2019.05.05-22.03.26:561][352]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.05-22.03.43:827][ 12]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/Collider/BPA_Collider.BPA_Collider
+[2019.05.05-22.03.44:214][ 12]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0009 seconds. Added 121 classes and 0 folders.
+[2019.05.05-22.03.45:262][ 12]LogMaterial: Display: Missing cached shader map for material GridMaterial, compiling. 
+[2019.05.05-22.03.45:323][ 12]LogShaderCompilers: Display: Shaders left to compile 60
+[2019.05.05-22.03.45:323][ 12]LogShaderCompilers: Display: Shaders left to compile 50
+[2019.05.05-22.03.45:323][ 12]LogShaderCompilers: Display: Shaders left to compile 40
+[2019.05.05-22.03.45:324][ 12]LogShaderCompilers: Display: Shaders left to compile 30
+[2019.05.05-22.03.45:324][ 12]LogMaterial: Display: Missing cached shader map for material PersonaFloorMat, compiling. 
+[2019.05.05-22.03.45:464][ 12]LogSlate: Took 0.001061 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2019.05.05-22.03.45:626][ 13]LogSlate: Took 0.001030 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2019.05.05-22.03.49:176][167]BlueprintLog: New page: Compile BPA_Collider
+[2019.05.05-22.03.49:192][167]LogBlueprint: Error: [Compiler BPA_Collider] In use pin  <Unnamed>  no longer exists on node  Set Point Cloud . Please refresh node or break links to remove pin.
+[2019.05.05-22.03.49:192][167]LogBlueprint: Error: [Compiler BPA_Collider] In use pin  Target  no longer exists on node  Set Point Cloud . Please refresh node or break links to remove pin.
+[2019.05.05-22.03.49:193][167]LogBlueprint: Error: [Compiler BPA_Collider] In use pin  In Point Cloud  no longer exists on node  Set Point Cloud . Please refresh node or break links to remove pin.
+[2019.05.05-22.03.49:193][167]LogBlueprint: Error: [Compiler BPA_Collider] Could not find a function named "SetPointCloud" in 'BPA_Collider'.
+Make sure 'BPA_Collider' has been compiled for  Set Point Cloud
+[2019.05.05-22.03.49:193][167]LogBlueprint: Error: [Compiler BPA_Collider] In use pin  Point Cloud Component  no longer exists on node  Get . Please refresh node or break links to remove pin.
+[2019.05.05-22.03.49:544][167]LogUObjectHash: Compacting FUObjectHashTables data took   6.66ms
+[2019.05.05-22.03.49:560][167]LogBlueprint: Warning: [Compiler BPA_Collider] [1356,95] Compile of BPA_Collider failed. 5 Fatal Issue(s) 0 Warning(s) [in 383 ms] (/Game/Collider/BPA_Collider.BPA_Collider)
+[2019.05.05-22.04.58:277][754]LogEditorTransaction: Undo Create Pin Link
+[2019.05.05-22.04.58:776][776]LogEditorTransaction: Undo Delete current selection
+[2019.05.05-22.04.59:277][805]LogEditorTransaction: Undo Move Node
+[2019.05.05-22.04.59:793][838]LogEditorTransaction: Undo Create Pin Link
+[2019.05.05-22.05.00:264][869]LogEditorTransaction: Undo Create Pin Link
+[2019.05.05-22.05.00:767][899]LogEditorTransaction: Undo Move Node
+[2019.05.05-22.05.01:320][933]LogEditorTransaction: Undo Add Node
+[2019.05.05-22.05.01:961][977]LogEditorTransaction: Undo Delete current selection
+[2019.05.05-22.05.02:512][ 14]LogEditorTransaction: Undo Refresh Node(s)
+[2019.05.05-22.05.42:713][985]BlueprintLog: New page: Compile BPA_Collider
+[2019.05.05-22.05.42:944][985]LogUObjectHash: Compacting FUObjectHashTables data took   5.08ms
+[2019.05.05-22.05.46:132][209]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.05-22.05.46:224][220]LogTemp: Repeating last play command: Selected Viewport
+[2019.05.05-22.05.46:243][220]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2019.05.05-22.05.46:243][220]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.05.05-22.05.46:247][220]PIE: New page: PIE session: FirstPersonExampleMap (06.05.2019 02:05:46)
+[2019.05.05-22.05.46:261][220]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2019.05.05-22.05.46:275][220]LogPlayLevel: PIE: StaticDuplicateObject took: (0.012885s)
+[2019.05.05-22.05.46:275][220]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2019.05.05-22.05.46:276][220]LogPlayLevel: PIE: World Init took: (0.001110s)
+[2019.05.05-22.05.46:276][220]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.014759s)
+[2019.05.05-22.05.46:323][220]LogUObjectHash: Compacting FUObjectHashTables data took   3.26ms
+[2019.05.05-22.05.46:337][220]LogInit: XAudio2 using 'Lautsprecher (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2019.05.05-22.05.46:359][220]LogInit: FAudioDevice initialized.
+[2019.05.05-22.05.46:406][220]LogLoad: Game class is 'CPP_PointCloudsVR_22GameMode'
+[2019.05.05-22.05.46:420][220]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2019.05.06-00.05.46
+[2019.05.05-22.05.46:421][220]LogWorld: Bringing up level for play took: 0.004124
+[2019.05.05-22.05.46:452][220]LogBlueprintActionDatabase: Requesting refresh due to module change: Voice (loaded)
+[2019.05.05-22.05.46:461][220]LogBlueprintActionDatabase: Requesting refresh due to module change: MovieSceneCapture (loaded)
+[2019.05.05-22.05.46:462][220]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0007 seconds. Added 20 classes and 0 folders.
+[2019.05.05-22.05.46:464][220]PIE: Play in editor start time for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap 0,97
+[2019.05.05-22.05.46:464][220]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2019.05.05-22.05.59:882][736]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2019.05.05-22.05.59:883][736]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.05.05-22.05.59:924][736]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.05.05-22.05.59:924][736]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2019.05.05-22.05.59:979][736]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.05.05-22.06.00:009][736]LogUObjectHash: Compacting FUObjectHashTables data took   6.62ms
+[2019.05.05-22.06.00:083][737]LogPlayLevel: Display: Destroying online subsystem :Context_5
+[2019.05.05-22.06.01:002][831]LogEditorViewport: Clicking on Actor (LMB): BPA_Collider_C (BPA_Collider)
+[2019.05.05-22.06.05:572][339]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.05.05-22.06.08:687][692]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.05-22.06.08:779][703]LogTemp: Repeating last play command: Selected Viewport
+[2019.05.05-22.06.08:788][703]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2019.05.05-22.06.08:789][703]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.05.05-22.06.08:789][703]PIE: New page: PIE session: FirstPersonExampleMap (06.05.2019 02:06:08)
+[2019.05.05-22.06.08:789][703]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2019.05.05-22.06.08:802][703]LogPlayLevel: PIE: StaticDuplicateObject took: (0.012746s)
+[2019.05.05-22.06.08:803][703]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2019.05.05-22.06.08:803][703]LogPlayLevel: PIE: World Init took: (0.001185s)
+[2019.05.05-22.06.08:803][703]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.014450s)
+[2019.05.05-22.06.08:862][703]LogUObjectHash: Compacting FUObjectHashTables data took   4.28ms
+[2019.05.05-22.06.08:879][703]LogInit: XAudio2 using 'Lautsprecher (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2019.05.05-22.06.08:901][703]LogInit: FAudioDevice initialized.
+[2019.05.05-22.06.08:937][703]LogLoad: Game class is 'CPP_PointCloudsVR_22GameMode'
+[2019.05.05-22.06.08:939][703]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2019.05.06-00.06.08
+[2019.05.05-22.06.08:940][703]LogWorld: Bringing up level for play took: 0.002097
+[2019.05.05-22.06.08:954][703]PIE: Play in editor start time for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap -0,539
+[2019.05.05-22.06.08:955][703]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2019.05.05-22.06.11:131][881]LogTemp: Warning: [LOD4] Cells: 1, MinPoints: 6251, MaxPoints: 6251, TotalPoints: 6251
+[2019.05.05-22.06.11:131][881]LogTemp: Warning: [LOD3] Cells: 8, MinPoints: 1559, MaxPoints: 1568, TotalPoints: 12504
+[2019.05.05-22.06.11:132][881]LogTemp: Warning: [LOD2] Cells: 64, MinPoints: 369, MaxPoints: 413, TotalPoints: 25023
+[2019.05.05-22.06.11:132][881]LogTemp: Warning: [LOD1] Cells: 512, MinPoints: 78, MaxPoints: 115, TotalPoints: 50143
+[2019.05.05-22.06.11:132][881]LogTemp: Warning: [LOD0] Cells: 4096, MinPoints: 10, MaxPoints: 41, TotalPoints: 12436
+[2019.05.05-22.06.39:369][800]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2019.05.05-22.06.39:371][800]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.05.05-22.06.39:425][800]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.05.05-22.06.39:426][800]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2019.05.05-22.06.39:479][800]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.05.05-22.06.39:486][800]LogUObjectHash: Compacting FUObjectHashTables data took   2.60ms
+[2019.05.05-22.06.39:566][801]LogPlayLevel: Display: Destroying online subsystem :Context_6
+[2019.05.05-22.07.06:558][334]LogUObjectHash: Compacting FUObjectHashTables data took   1.14ms
+[2019.05.05-22.07.06:863][334]LogSavePackage: Moving 'E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR_22/Saved/FirstPersonExampleMap_Auto17A2AC411473C97E91A0F34A50565E801.tmp' to 'E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Autosaves/Game/FirstPersonCPP/Maps/FirstPersonExampleMap_Auto1.umap'
+[2019.05.05-22.07.06:868][334]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap' took 0.368
+[2019.05.05-22.07.06:868][334]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.368
+[2019.05.05-22.07.06:872][334]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Collider/BPA_Collider] ([1] browsable assets)...
+[2019.05.05-22.07.06:925][334]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/Collider/BPA_Collider.BPA_Collider]
+[2019.05.05-22.07.06:925][334]OBJ SavePackage: Finished generating thumbnails for package [/Game/Collider/BPA_Collider]
+[2019.05.05-22.07.06:983][334]LogSavePackage: Moving 'E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR_22/Saved/BPA_Collider_Auto1E9B7330A4D70B544EA08BFBEE19C4B14.tmp' to 'E:/Luk/Dokumente/GitHub/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Autosaves/Game/Collider/BPA_Collider_Auto1.uasset'
+[2019.05.05-22.07.06:984][334]LogFileHelpers: Auto-saving content packages took 0.113
+[2019.05.05-22.11.46:283][168]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.05.05-22.12.10:336][978]LogEditorTransaction: Undo Delete current selection
+[2019.05.05-22.12.17:271][493]LogEditorTransaction: Undo Delete current selection
+[2019.05.05-22.12.17:643][510]LogEditorTransaction: Undo Refresh Node(s)
+[2019.05.05-22.12.20:145][680]LogEditorTransaction: Undo Refresh Node(s)
+[2019.05.05-22.12.23:748][927]BlueprintLog: New page: Compile BPA_Collider
+[2019.05.05-22.12.24:061][927]LogUObjectHash: Compacting FUObjectHashTables data took   5.33ms
+[2019.05.05-22.12.43:611][431]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.05-22.12.43:682][439]LogTemp: Repeating last play command: Selected Viewport
+[2019.05.05-22.12.43:704][439]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2019.05.05-22.12.43:704][439]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.05.05-22.12.43:704][439]PIE: New page: PIE session: FirstPersonExampleMap (06.05.2019 02:12:43)
+[2019.05.05-22.12.43:705][439]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2019.05.05-22.12.43:723][439]LogPlayLevel: PIE: StaticDuplicateObject took: (0.018075s)
+[2019.05.05-22.12.43:724][439]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2019.05.05-22.12.43:725][439]LogPlayLevel: PIE: World Init took: (0.001739s)
+[2019.05.05-22.12.43:725][439]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.020504s)
+[2019.05.05-22.12.43:783][439]LogUObjectHash: Compacting FUObjectHashTables data took   5.09ms
+[2019.05.05-22.12.43:800][439]LogInit: XAudio2 using 'Lautsprecher (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2019.05.05-22.12.43:826][439]LogInit: FAudioDevice initialized.
+[2019.05.05-22.12.43:860][439]LogLoad: Game class is 'CPP_PointCloudsVR_22GameMode'
+[2019.05.05-22.12.43:863][439]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2019.05.06-00.12.43
+[2019.05.05-22.12.43:863][439]LogWorld: Bringing up level for play took: 0.002449
+[2019.05.05-22.12.43:878][439]PIE: Play in editor start time for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap 0,386
+[2019.05.05-22.12.43:879][439]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2019.05.05-22.12.46:056][598]LogTemp: Warning: [LOD4] Cells: 1, MinPoints: 6251, MaxPoints: 6251, TotalPoints: 6251
+[2019.05.05-22.12.46:057][598]LogTemp: Warning: [LOD3] Cells: 8, MinPoints: 1531, MaxPoints: 1588, TotalPoints: 12503
+[2019.05.05-22.12.46:057][598]LogTemp: Warning: [LOD2] Cells: 64, MinPoints: 364, MaxPoints: 413, TotalPoints: 25023
+[2019.05.05-22.12.46:057][598]LogTemp: Warning: [LOD1] Cells: 512, MinPoints: 77, MaxPoints: 115, TotalPoints: 50128
+[2019.05.05-22.12.46:057][598]LogTemp: Warning: [LOD0] Cells: 4096, MinPoints: 13, MaxPoints: 38, TotalPoints: 12409
+[2019.05.05-22.13.17:677][986]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.05.05-22.14.18:900][696]LogSlate: FSceneViewport::OnFocusLost() reason 2

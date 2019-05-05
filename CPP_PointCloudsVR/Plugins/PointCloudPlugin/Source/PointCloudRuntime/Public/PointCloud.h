@@ -420,6 +420,7 @@ public:
 		return GetCollectedPointLocations();
 	}
 
+
 	//END LUK
 
 

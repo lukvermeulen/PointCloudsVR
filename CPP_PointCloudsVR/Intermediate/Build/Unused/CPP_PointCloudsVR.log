@@ -9,3 +9,7 @@ E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR\Plugins\PointCloudPlugin
     C:\Program Files\Epic Games\UE_4.21\Engine\Source\Runtime/Engine/Classes/Engine/Engine.h(2480): note: Siehe Deklaration von "UEngine::GetWorldFromContextObject"
     [2/3] UE4Editor-PointCloudRuntime.lib
        Bibliothek "E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Development\PointCloudRuntime\UE4Editor-PointCloudRuntime.lib" und Objekt "E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Development\PointCloudRuntime\UE4Editor-PointCloudRuntime.exp" werden erstellt.
+    [3/3] UE4Editor-PointCloudRuntime.dll
+       Bibliothek "E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Development\PointCloudRuntime\UE4Editor-PointCloudRuntime.suppressed.lib" und Objekt "E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Development\PointCloudRuntime\UE4Editor-PointCloudRuntime.suppressed.exp" werden erstellt.
+  Deploying CPP_PointCloudsVREditor Win64 Development...
+  Total build time: 23,47 seconds (Parallel executor: 11,61 seconds)

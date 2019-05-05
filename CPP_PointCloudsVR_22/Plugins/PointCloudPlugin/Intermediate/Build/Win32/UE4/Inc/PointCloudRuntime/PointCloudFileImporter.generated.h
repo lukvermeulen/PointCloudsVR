@@ -1,0 +1,181 @@
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+/*===========================================================================
+	Generated code exported from UnrealHeaderTool.
+	DO NOT modify this manually! Edit the corresponding .h files instead!
+===========================================================================*/
+
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+#ifdef POINTCLOUDRUNTIME_PointCloudFileImporter_generated_h
+#error "PointCloudFileImporter.generated.h already included, missing '#pragma once' in PointCloudFileImporter.h"
+#endif
+#define POINTCLOUDRUNTIME_PointCloudFileImporter_generated_h
+
+#define Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloudFileImporter_h_53_RPC_WRAPPERS
+#define Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloudFileImporter_h_53_RPC_WRAPPERS_NO_PURE_DECLS
+#define Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloudFileImporter_h_53_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UPointCloudFileImporterInterface(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UPointCloudFileImporterInterface) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UPointCloudFileImporterInterface); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UPointCloudFileImporterInterface); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UPointCloudFileImporterInterface(UPointCloudFileImporterInterface&&); \
+	NO_API UPointCloudFileImporterInterface(const UPointCloudFileImporterInterface&); \
+public:
+
+
+#define Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloudFileImporter_h_53_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UPointCloudFileImporterInterface(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UPointCloudFileImporterInterface(UPointCloudFileImporterInterface&&); \
+	NO_API UPointCloudFileImporterInterface(const UPointCloudFileImporterInterface&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UPointCloudFileImporterInterface); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UPointCloudFileImporterInterface); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UPointCloudFileImporterInterface)
+
+
+#define Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloudFileImporter_h_53_GENERATED_UINTERFACE_BODY() \
+private: \
+	static void StaticRegisterNativesUPointCloudFileImporterInterface(); \
+	friend struct Z_Construct_UClass_UPointCloudFileImporterInterface_Statics; \
+public: \
+	DECLARE_CLASS(UPointCloudFileImporterInterface, UInterface, COMPILED_IN_FLAGS(CLASS_Abstract | CLASS_Interface), CASTCLASS_None, TEXT("/Script/PointCloudRuntime"), NO_API) \
+	DECLARE_SERIALIZER(UPointCloudFileImporterInterface)
+
+
+#define Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloudFileImporter_h_53_GENERATED_BODY_LEGACY \
+		PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+	Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloudFileImporter_h_53_GENERATED_UINTERFACE_BODY() \
+	Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloudFileImporter_h_53_STANDARD_CONSTRUCTORS \
+	PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloudFileImporter_h_53_GENERATED_BODY \
+	PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+	Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloudFileImporter_h_53_GENERATED_UINTERFACE_BODY() \
+	Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloudFileImporter_h_53_ENHANCED_CONSTRUCTORS \
+private: \
+	PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloudFileImporter_h_53_INCLASS_IINTERFACE_NO_PURE_DECLS \
+protected: \
+	virtual ~IPointCloudFileImporterInterface() {} \
+public: \
+	typedef UPointCloudFileImporterInterface UClassType; \
+	typedef IPointCloudFileImporterInterface ThisClass; \
+	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
+
+
+#define Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloudFileImporter_h_53_INCLASS_IINTERFACE \
+protected: \
+	virtual ~IPointCloudFileImporterInterface() {} \
+public: \
+	typedef UPointCloudFileImporterInterface UClassType; \
+	typedef IPointCloudFileImporterInterface ThisClass; \
+	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
+
+
+#define Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloudFileImporter_h_50_PROLOG
+#define Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloudFileImporter_h_59_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloudFileImporter_h_53_RPC_WRAPPERS \
+	Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloudFileImporter_h_53_INCLASS_IINTERFACE \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloudFileImporter_h_59_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloudFileImporter_h_53_RPC_WRAPPERS_NO_PURE_DECLS \
+	Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloudFileImporter_h_53_INCLASS_IINTERFACE_NO_PURE_DECLS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> POINTCLOUDRUNTIME_API UClass* StaticClass<class UPointCloudFileImporterInterface>();
+
+#define Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloudFileImporter_h_89_RPC_WRAPPERS
+#define Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloudFileImporter_h_89_RPC_WRAPPERS_NO_PURE_DECLS
+#define Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloudFileImporter_h_89_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUPointCloudFileImporter(); \
+	friend struct Z_Construct_UClass_UPointCloudFileImporter_Statics; \
+public: \
+	DECLARE_CLASS(UPointCloudFileImporter, UObject, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/PointCloudRuntime"), NO_API) \
+	DECLARE_SERIALIZER(UPointCloudFileImporter)
+
+
+#define Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloudFileImporter_h_89_INCLASS \
+private: \
+	static void StaticRegisterNativesUPointCloudFileImporter(); \
+	friend struct Z_Construct_UClass_UPointCloudFileImporter_Statics; \
+public: \
+	DECLARE_CLASS(UPointCloudFileImporter, UObject, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/PointCloudRuntime"), NO_API) \
+	DECLARE_SERIALIZER(UPointCloudFileImporter)
+
+
+#define Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloudFileImporter_h_89_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UPointCloudFileImporter(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UPointCloudFileImporter) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UPointCloudFileImporter); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UPointCloudFileImporter); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UPointCloudFileImporter(UPointCloudFileImporter&&); \
+	NO_API UPointCloudFileImporter(const UPointCloudFileImporter&); \
+public:
+
+
+#define Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloudFileImporter_h_89_ENHANCED_CONSTRUCTORS \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UPointCloudFileImporter(UPointCloudFileImporter&&); \
+	NO_API UPointCloudFileImporter(const UPointCloudFileImporter&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UPointCloudFileImporter); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UPointCloudFileImporter); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UPointCloudFileImporter)
+
+
+#define Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloudFileImporter_h_89_PRIVATE_PROPERTY_OFFSET
+#define Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloudFileImporter_h_86_PROLOG
+#define Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloudFileImporter_h_89_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloudFileImporter_h_89_PRIVATE_PROPERTY_OFFSET \
+	Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloudFileImporter_h_89_RPC_WRAPPERS \
+	Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloudFileImporter_h_89_INCLASS \
+	Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloudFileImporter_h_89_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloudFileImporter_h_89_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloudFileImporter_h_89_PRIVATE_PROPERTY_OFFSET \
+	Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloudFileImporter_h_89_RPC_WRAPPERS_NO_PURE_DECLS \
+	Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloudFileImporter_h_89_INCLASS_NO_PURE_DECLS \
+	Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloudFileImporter_h_89_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> POINTCLOUDRUNTIME_API UClass* StaticClass<class UPointCloudFileImporter>();
+
+#undef CURRENT_FILE_ID
+#define CURRENT_FILE_ID Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloudFileImporter_h
+
+
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
