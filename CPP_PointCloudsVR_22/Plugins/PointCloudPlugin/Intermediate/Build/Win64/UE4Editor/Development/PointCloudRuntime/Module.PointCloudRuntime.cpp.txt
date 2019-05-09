@@ -77,8 +77,6 @@ C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Async/Asyn
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\HAL/Runnable.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\HAL/RunnableThread.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\HAL/PlatformAffinity.h
-E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudOctree.cpp
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Public\DrawDebugHelpers.h
 E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudRendering.cpp
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Public\Engine.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/MonolithicHeaderBoilerplate.h
@@ -734,6 +732,7 @@ C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Animati
 C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\AnimNotify.generated.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\AnimInstance.generated.h
 c:\program files\epic games\ue_4.22\engine\source\runtime\engine\public\SystemSettings.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\engine\public\DrawDebugHelpers.h
 c:\program files\epic games\ue_4.22\engine\source\runtime\engine\public\UnrealEngine.h
 c:\program files\epic games\ue_4.22\engine\source\runtime\engine\public\EngineUtils.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\SlateCore\Public\SlateCore.h

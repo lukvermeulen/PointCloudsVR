@@ -52,7 +52,7 @@ void FPointCloudOctree::GetTouchedPoints(TArray<FVector>& CollectedPoints, FVect
 // Go through all nodes
 void FPointCloudOctree::GetAllTouchedNodes(TArray<FVector>& CollectedPoints, FVector CLocation, int32 Radius, TArray<FPointCloudPoint> &pPointCloudPoints, const FPointCloudOctree::Node &pNodeToGetPoints)
 {
-	FBox nodeBox = pNodeToGetPoints.LocalBounds.GetBox(); // Box from Node to check against collider
+	FBox nodeBox = pNodeToGetPoints.WorldBounds.GetBox(); // Box from Node to check against collider
 
 	// Is the Collider Sphere inside the node or the distance to it smaller than the sphere radius and does the node have 0 children?
 	if (nodeBox.IsInsideOrOn(CLocation) || nodeBox.ComputeSquaredDistanceToPoint(CLocation) < (Radius*Radius))
@@ -61,12 +61,14 @@ void FPointCloudOctree::GetAllTouchedNodes(TArray<FVector>& CollectedPoints, FVe
 		UWorld* myworld = GEngine->GetWorldFromContextObject(PointCloud);
 		FVector center = nodeBox.GetCenter();
 		FVector extent = nodeBox.GetExtent();
-		DrawDebugBox(myworld, center, extent, FColor::Red, false, 10, 0, 5);
+		
 
-		if (pNodeToGetPoints.LOD > 0)
+		if (pNodeToGetPoints.LOD >= 0)
 		{
 			//if (GEngine) { GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Purple, FString::Printf(TEXT("Colliding with LOD: %d"), pNodeToGetPoints.LOD)); }
 			GetPoints(CollectedPoints, pPointCloudPoints, CLocation, Radius, pNodeToGetPoints); // Get the points that are inside the collider
+
+			DrawDebugBox(myworld, center, extent, FColor::Red, false, 10, 0, 5);
 		}
 
 		if (pNodeToGetPoints.LOD > 0)
@@ -76,9 +78,7 @@ void FPointCloudOctree::GetAllTouchedNodes(TArray<FVector>& CollectedPoints, FVe
 				GetAllTouchedNodes(CollectedPoints, CLocation, Radius, pPointCloudPoints, *pNodeToGetPoints.Children[i]); // Start recursion to check child nodes
 			}
 		}
-		else { // Node has no children, so function arrived at leaf node
 
-		}
 	}
 	else // Collider not inside node
 	{
@@ -257,7 +257,7 @@ bool FPointCloudOctree::Node::BuildIBCache(TArray<FPointCloudPoint*> *InPoints)
 
 	for (double i = 0; i < InPoints->Num(); i += Tree->SkipValues[LOD])
 	{
-		CacheNode->LukPointIndices.Add((uint32)i);
+		CacheNode->LukPointIndices.Add((*InPoints)[(uint32)i]->VertexIndex);
 
 		if (Tree->bUsesSprites)
 		{
