@@ -21,8 +21,8 @@ void EmptyLinkFunctionForGeneratedCodeCPP_PointCloudsVR_22_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x60E511EF,
-				0x779084BD,
+				0xC39FF36C,
+				0x4B1F5479,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

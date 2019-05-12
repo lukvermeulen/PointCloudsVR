@@ -22,6 +22,13 @@
 //LUK CODE
 TArray<FPointCloudPoint> TmpTouchedPoints;
 TArray<uint32> TmpTouchedPointsIndex;
+void FPointCloudOctree::HideCollectedPoints(TArray<FPointCloudPoint> &Points) 
+{
+	for (auto const &index : TmpTouchedPointsIndex)
+	{
+		Points[index].Color=FColor::Green;
+	}
+}
 
 void FPointCloudOctree::GetPoints(TArray<FVector>& CollectedPoints, TArray<FPointCloudPoint> &PointCloudPoints, FVector ColliderLocation, int32 Radius, const FPointCloudOctree::Node &ppNodeToGetPoints)
 {

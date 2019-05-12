@@ -31,6 +31,14 @@ enum class EPointCloudColorMode : uint8;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execHideCollectedPoints) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->HideCollectedPoints(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetCollectedPointLocations) \
 	{ \
 		P_FINISH; \
@@ -232,6 +240,14 @@ enum class EPointCloudColorMode : uint8;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->SetPointCloudData(Z_Param_Out_InPoints,Z_Param_bRebuildCloud); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execHideCollectedPoints) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->HideCollectedPoints(); \
 		P_NATIVE_END; \
 	} \
  \

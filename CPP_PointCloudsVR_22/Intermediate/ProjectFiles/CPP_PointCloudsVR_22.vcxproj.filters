@@ -231,4 +231,14 @@
       <Filter>Source\CPP_PointCloudsVR_22</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\CPP_PointCloudsVR_22\PointCloudTraveller.h">
+      <Filter>Source\CPP_PointCloudsVR_22</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\CPP_PointCloudsVR_22\PointCloudTraveller.cpp">
+      <Filter>Source\CPP_PointCloudsVR_22</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>

@@ -495,6 +495,9 @@ public:
 	UFUNCTION(BlueprintPure, Category = "Point Cloud")
 	FORCEINLINE TArray<FVector>& GetCollectedPointLocations() { return PointCoordinatesCollected; } //Get Collected Point Luk
 
+	UFUNCTION(BlueprintCallable, Category = "Point Cloud")
+		void HideCollectedPoints() { Octree.HideCollectedPoints(Points); } //Get Collected Point Index Luk
+
 	/**
 	 * Replaces the original data with the set provided.
 	 * Optionally rebuilds using current settings.

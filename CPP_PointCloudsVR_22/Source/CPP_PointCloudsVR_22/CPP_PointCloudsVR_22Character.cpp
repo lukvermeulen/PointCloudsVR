@@ -1,6 +1,7 @@
 // Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 
 #include "CPP_PointCloudsVR_22Character.h"
+
 #include "CPP_PointCloudsVR_22Projectile.h"
 #include "Animation/AnimInstance.h"
 #include "Camera/CameraComponent.h"

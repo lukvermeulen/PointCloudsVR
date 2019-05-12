@@ -12,11 +12,13 @@
 "E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Intermediate\Build\Win64\UE4Editor\Development\CPP_PointCloudsVR_22\CPP_PointCloudsVR_22GameMode.cpp.obj"
 "E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Intermediate\Build\Win64\UE4Editor\Development\CPP_PointCloudsVR_22\CPP_PointCloudsVR_22HUD.cpp.obj"
 "E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Intermediate\Build\Win64\UE4Editor\Development\CPP_PointCloudsVR_22\CPP_PointCloudsVR_22Projectile.cpp.obj"
+"E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Intermediate\Build\Win64\UE4Editor\Development\CPP_PointCloudsVR_22\PointCloudTraveller.cpp.obj"
 "E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Intermediate\Build\Win64\UE4Editor\Development\CPP_PointCloudsVR_22\CPP_PointCloudsVR_22.init.gen.cpp.obj"
 "E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Intermediate\Build\Win64\UE4Editor\Development\CPP_PointCloudsVR_22\CPP_PointCloudsVR_22Character.gen.cpp.obj"
 "E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Intermediate\Build\Win64\UE4Editor\Development\CPP_PointCloudsVR_22\CPP_PointCloudsVR_22GameMode.gen.cpp.obj"
 "E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Intermediate\Build\Win64\UE4Editor\Development\CPP_PointCloudsVR_22\CPP_PointCloudsVR_22HUD.gen.cpp.obj"
 "E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Intermediate\Build\Win64\UE4Editor\Development\CPP_PointCloudsVR_22\CPP_PointCloudsVR_22Projectile.gen.cpp.obj"
+"E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Intermediate\Build\Win64\UE4Editor\Development\CPP_PointCloudsVR_22\PointCloudTraveller.gen.cpp.obj"
 "E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Intermediate\Build\Win64\UE4Editor\Development\CPP_PointCloudsVR_22\Default.rc2.res"
 /OUT:"E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Intermediate\Build\Win64\UE4Editor\Development\CPP_PointCloudsVR_22\UE4Editor-CPP_PointCloudsVR_22.lib"
 /INCLUDE:IMPLEMENT_MODULE_CPP_PointCloudsVR_22
