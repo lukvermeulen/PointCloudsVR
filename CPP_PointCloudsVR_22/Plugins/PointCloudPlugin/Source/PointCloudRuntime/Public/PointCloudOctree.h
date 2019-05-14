@@ -58,7 +58,10 @@ public:
 	Node Root;
 
 	//LUK CODE
+
+	void ColorCollectedPoints(TArray<FPointCloudPoint> &, FColor);
 	void HideCollectedPoints(TArray<FPointCloudPoint> &);
+	void DeleteCollectedPoints(TArray<FPointCloudPoint> &);
 	void GetTouchedPoints(TArray<FVector> &, FVector ColliderLocation, int32 Radius, TArray<FPointCloudPoint>&, const FPointCloudOctree::Node&);
 	void GetPoints(TArray<FVector>&, TArray<FPointCloudPoint> &, FVector, int32, const FPointCloudOctree::Node &);
 	void GetAllTouchedNodes(TArray<FVector>&, FVector, int32, TArray<FPointCloudPoint> &, const FPointCloudOctree::Node &);

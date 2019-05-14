@@ -22,11 +22,29 @@
 //LUK CODE
 TArray<FPointCloudPoint> TmpTouchedPoints;
 TArray<uint32> TmpTouchedPointsIndex;
-void FPointCloudOctree::HideCollectedPoints(TArray<FPointCloudPoint> &Points) 
+
+void FPointCloudOctree::ColorCollectedPoints(TArray<FPointCloudPoint> &Points, FColor pColor) 
 {
 	for (auto const &index : TmpTouchedPointsIndex)
 	{
-		Points[index].Color=FColor::Green;
+		Points[index].Color=pColor;
+	}
+}
+
+void FPointCloudOctree::HideCollectedPoints(TArray<FPointCloudPoint> &Points)
+{
+	for (auto const &index : TmpTouchedPointsIndex)
+	{
+		Points[index].SetEnabled(false);
+		Points[index].SetEnabledOverride(true);
+	}
+}
+
+void FPointCloudOctree::DeleteCollectedPoints(TArray<FPointCloudPoint> &Points)
+{
+	for (auto const &index : TmpTouchedPointsIndex)
+	{
+		Points.RemoveAt(index); // Only call at end! Indexes need to probably be refreshed somehow to work runtime
 	}
 }
 
@@ -41,7 +59,7 @@ void FPointCloudOctree::GetPoints(TArray<FVector>& CollectedPoints, TArray<FPoin
 		if (distanceSquared < radiusSquared)
 		{
 			TmpTouchedPointsIndex.AddUnique(pointIndex);                           // Add the Index of the Point to the collection
-			CollectedPoints.AddUnique(PointCloudPoints[pointIndex].Location);      // Add the Location of the Point to the colleection
+			//CollectedPoints.AddUnique(PointCloudPoints[pointIndex].Location);      // Add the Location of the Point to the colleection
 			//if (GEngine) { GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, FString::Printf(TEXT("Point Added: %d"), pNodeToGetPoints.LOD)); }
 		}
 	}

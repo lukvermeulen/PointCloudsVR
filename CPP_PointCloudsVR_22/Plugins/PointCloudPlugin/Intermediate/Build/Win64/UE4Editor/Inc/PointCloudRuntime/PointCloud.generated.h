@@ -9,6 +9,7 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 struct FPointCloudPoint;
+struct FColor;
 struct FVector;
 class UMaterialInterface;
 enum class EPointCloudRenderMethod : uint8;
@@ -31,11 +32,28 @@ enum class EPointCloudColorMode : uint8;
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execHideCollectedPoints) \
+	DECLARE_FUNCTION(execBP_DeleteCollectedPoints) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->HideCollectedPoints(); \
+		P_THIS->BP_DeleteCollectedPoints(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBP_HideCollectedPoints) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->BP_HideCollectedPoints(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBP_ColorCollectedPoints) \
+	{ \
+		P_GET_STRUCT(FColor,Z_Param_pColor); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->BP_ColorCollectedPoints(Z_Param_pColor); \
 		P_NATIVE_END; \
 	} \
  \
@@ -243,11 +261,28 @@ enum class EPointCloudColorMode : uint8;
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execHideCollectedPoints) \
+	DECLARE_FUNCTION(execBP_DeleteCollectedPoints) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->HideCollectedPoints(); \
+		P_THIS->BP_DeleteCollectedPoints(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBP_HideCollectedPoints) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->BP_HideCollectedPoints(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBP_ColorCollectedPoints) \
+	{ \
+		P_GET_STRUCT(FColor,Z_Param_pColor); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->BP_ColorCollectedPoints(Z_Param_pColor); \
 		P_NATIVE_END; \
 	} \
  \

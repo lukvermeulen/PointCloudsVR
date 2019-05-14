@@ -496,8 +496,13 @@ public:
 	FORCEINLINE TArray<FVector>& GetCollectedPointLocations() { return PointCoordinatesCollected; } //Get Collected Point Luk
 
 	UFUNCTION(BlueprintCallable, Category = "Point Cloud")
-		void HideCollectedPoints() { Octree.HideCollectedPoints(Points); } //Get Collected Point Index Luk
+	void BP_ColorCollectedPoints(FColor pColor) { Octree.ColorCollectedPoints(Points, pColor); } //Color Collected Points Index Luk
 
+	UFUNCTION(BlueprintCallable, Category = "Point Cloud")
+	void BP_HideCollectedPoints() { Octree.HideCollectedPoints(Points); } //Hide Collected Points Index Luk
+
+	UFUNCTION(BlueprintCallable, Category = "Point Cloud")
+	void BP_DeleteCollectedPoints() { Octree.DeleteCollectedPoints(Points); } //Delete Collected Points Index Luk
 	/**
 	 * Replaces the original data with the set provided.
 	 * Optionally rebuilds using current settings.

@@ -24,6 +24,10 @@ void EmptyLinkFunctionForGeneratedCodePointCloud() {}
 	COREUOBJECT_API UClass* Z_Construct_UClass_UObject();
 	POINTCLOUDRUNTIME_API UFunction* Z_Construct_UFunction_UPointCloud_ApplyRenderingParameters();
 	POINTCLOUDRUNTIME_API UFunction* Z_Construct_UFunction_UPointCloud_Bake();
+	POINTCLOUDRUNTIME_API UFunction* Z_Construct_UFunction_UPointCloud_BP_ColorCollectedPoints();
+	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FColor();
+	POINTCLOUDRUNTIME_API UFunction* Z_Construct_UFunction_UPointCloud_BP_DeleteCollectedPoints();
+	POINTCLOUDRUNTIME_API UFunction* Z_Construct_UFunction_UPointCloud_BP_HideCollectedPoints();
 	POINTCLOUDRUNTIME_API UFunction* Z_Construct_UFunction_UPointCloud_GetBounds();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FBoxSphereBounds();
 	POINTCLOUDRUNTIME_API UFunction* Z_Construct_UFunction_UPointCloud_GetCollectedPointLocations();
@@ -38,7 +42,6 @@ void EmptyLinkFunctionForGeneratedCodePointCloud() {}
 	POINTCLOUDRUNTIME_API UScriptStruct* Z_Construct_UScriptStruct_FPointCloudPoint();
 	POINTCLOUDRUNTIME_API UFunction* Z_Construct_UFunction_UPointCloud_GetPointCount();
 	POINTCLOUDRUNTIME_API UFunction* Z_Construct_UFunction_UPointCloud_GetTouchedPoints();
-	POINTCLOUDRUNTIME_API UFunction* Z_Construct_UFunction_UPointCloud_HideCollectedPoints();
 	POINTCLOUDRUNTIME_API UFunction* Z_Construct_UFunction_UPointCloud_IsDirty();
 	POINTCLOUDRUNTIME_API UFunction* Z_Construct_UFunction_UPointCloud_Rebuild();
 	POINTCLOUDRUNTIME_API UFunction* Z_Construct_UFunction_UPointCloud_Reimport();
@@ -281,6 +284,9 @@ void EmptyLinkFunctionForGeneratedCodePointCloud() {}
 		static const FNameNativePtrPair Funcs[] = {
 			{ "ApplyRenderingParameters", &UPointCloud::execApplyRenderingParameters },
 			{ "Bake", &UPointCloud::execBake },
+			{ "BP_ColorCollectedPoints", &UPointCloud::execBP_ColorCollectedPoints },
+			{ "BP_DeleteCollectedPoints", &UPointCloud::execBP_DeleteCollectedPoints },
+			{ "BP_HideCollectedPoints", &UPointCloud::execBP_HideCollectedPoints },
 			{ "GetBounds", &UPointCloud::execGetBounds },
 			{ "GetCollectedPointLocations", &UPointCloud::execGetCollectedPointLocations },
 			{ "GetColorMode", &UPointCloud::execGetColorMode },
@@ -290,7 +296,6 @@ void EmptyLinkFunctionForGeneratedCodePointCloud() {}
 			{ "GetPointCloudData", &UPointCloud::execGetPointCloudData },
 			{ "GetPointCount", &UPointCloud::execGetPointCount },
 			{ "GetTouchedPoints", &UPointCloud::execGetTouchedPoints },
-			{ "HideCollectedPoints", &UPointCloud::execHideCollectedPoints },
 			{ "IsDirty", &UPointCloud::execIsDirty },
 			{ "Rebuild", &UPointCloud::execRebuild },
 			{ "Reimport", &UPointCloud::execReimport },
@@ -351,6 +356,88 @@ void EmptyLinkFunctionForGeneratedCodePointCloud() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UPointCloud_Bake_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UPointCloud_BP_ColorCollectedPoints_Statics
+	{
+		struct PointCloud_eventBP_ColorCollectedPoints_Parms
+		{
+			FColor pColor;
+		};
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_pColor;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UPointCloud_BP_ColorCollectedPoints_Statics::NewProp_pColor = { "pColor", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PointCloud_eventBP_ColorCollectedPoints_Parms, pColor), Z_Construct_UScriptStruct_FColor, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UPointCloud_BP_ColorCollectedPoints_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPointCloud_BP_ColorCollectedPoints_Statics::NewProp_pColor,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UPointCloud_BP_ColorCollectedPoints_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Point Cloud" },
+		{ "ModuleRelativePath", "Public/PointCloud.h" },
+		{ "ToolTip", "Get Collected Point Luk" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UPointCloud_BP_ColorCollectedPoints_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UPointCloud, nullptr, "BP_ColorCollectedPoints", sizeof(PointCloud_eventBP_ColorCollectedPoints_Parms), Z_Construct_UFunction_UPointCloud_BP_ColorCollectedPoints_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UPointCloud_BP_ColorCollectedPoints_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UPointCloud_BP_ColorCollectedPoints_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UPointCloud_BP_ColorCollectedPoints_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UPointCloud_BP_ColorCollectedPoints()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UPointCloud_BP_ColorCollectedPoints_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UPointCloud_BP_DeleteCollectedPoints_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UPointCloud_BP_DeleteCollectedPoints_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Point Cloud" },
+		{ "ModuleRelativePath", "Public/PointCloud.h" },
+		{ "ToolTip", "Hide Collected Points Index Luk" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UPointCloud_BP_DeleteCollectedPoints_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UPointCloud, nullptr, "BP_DeleteCollectedPoints", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UPointCloud_BP_DeleteCollectedPoints_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UPointCloud_BP_DeleteCollectedPoints_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UPointCloud_BP_DeleteCollectedPoints()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UPointCloud_BP_DeleteCollectedPoints_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UPointCloud_BP_HideCollectedPoints_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UPointCloud_BP_HideCollectedPoints_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Point Cloud" },
+		{ "ModuleRelativePath", "Public/PointCloud.h" },
+		{ "ToolTip", "Color Collected Points Index Luk" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UPointCloud_BP_HideCollectedPoints_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UPointCloud, nullptr, "BP_HideCollectedPoints", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UPointCloud_BP_HideCollectedPoints_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UPointCloud_BP_HideCollectedPoints_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UPointCloud_BP_HideCollectedPoints()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UPointCloud_BP_HideCollectedPoints_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -698,30 +785,6 @@ void EmptyLinkFunctionForGeneratedCodePointCloud() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UPointCloud_GetTouchedPoints_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_UPointCloud_HideCollectedPoints_Statics
-	{
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UPointCloud_HideCollectedPoints_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Point Cloud" },
-		{ "ModuleRelativePath", "Public/PointCloud.h" },
-		{ "ToolTip", "Get Collected Point Luk" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UPointCloud_HideCollectedPoints_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UPointCloud, nullptr, "HideCollectedPoints", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UPointCloud_HideCollectedPoints_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UPointCloud_HideCollectedPoints_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UPointCloud_HideCollectedPoints()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UPointCloud_HideCollectedPoints_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -1408,6 +1471,9 @@ void EmptyLinkFunctionForGeneratedCodePointCloud() {}
 	const FClassFunctionLinkInfo Z_Construct_UClass_UPointCloud_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_UPointCloud_ApplyRenderingParameters, "ApplyRenderingParameters" }, // 1729720017
 		{ &Z_Construct_UFunction_UPointCloud_Bake, "Bake" }, // 1859343979
+		{ &Z_Construct_UFunction_UPointCloud_BP_ColorCollectedPoints, "BP_ColorCollectedPoints" }, // 1378287842
+		{ &Z_Construct_UFunction_UPointCloud_BP_DeleteCollectedPoints, "BP_DeleteCollectedPoints" }, // 3758576029
+		{ &Z_Construct_UFunction_UPointCloud_BP_HideCollectedPoints, "BP_HideCollectedPoints" }, // 1231388544
 		{ &Z_Construct_UFunction_UPointCloud_GetBounds, "GetBounds" }, // 4003801707
 		{ &Z_Construct_UFunction_UPointCloud_GetCollectedPointLocations, "GetCollectedPointLocations" }, // 3891403864
 		{ &Z_Construct_UFunction_UPointCloud_GetColorMode, "GetColorMode" }, // 4155626947
@@ -1417,7 +1483,6 @@ void EmptyLinkFunctionForGeneratedCodePointCloud() {}
 		{ &Z_Construct_UFunction_UPointCloud_GetPointCloudData, "GetPointCloudData" }, // 1598880285
 		{ &Z_Construct_UFunction_UPointCloud_GetPointCount, "GetPointCount" }, // 1720545787
 		{ &Z_Construct_UFunction_UPointCloud_GetTouchedPoints, "GetTouchedPoints" }, // 1070333182
-		{ &Z_Construct_UFunction_UPointCloud_HideCollectedPoints, "HideCollectedPoints" }, // 41240034
 		{ &Z_Construct_UFunction_UPointCloud_IsDirty, "IsDirty" }, // 1954845454
 		{ &Z_Construct_UFunction_UPointCloud_Rebuild, "Rebuild" }, // 874996021
 		{ &Z_Construct_UFunction_UPointCloud_Reimport, "Reimport" }, // 862459480
@@ -1847,7 +1912,7 @@ void EmptyLinkFunctionForGeneratedCodePointCloud() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UPointCloud, 558054852);
+	IMPLEMENT_CLASS(UPointCloud, 3109715927);
 	template<> POINTCLOUDRUNTIME_API UClass* StaticClass<UPointCloud>()
 	{
 		return UPointCloud::StaticClass();
