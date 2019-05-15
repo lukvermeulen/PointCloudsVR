@@ -34,26 +34,29 @@ enum class EPointCloudColorMode : uint8;
  \
 	DECLARE_FUNCTION(execBP_DeleteCollectedPoints) \
 	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_SelectionListIndex); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->BP_DeleteCollectedPoints(); \
+		P_THIS->BP_DeleteCollectedPoints(Z_Param_SelectionListIndex); \
 		P_NATIVE_END; \
 	} \
  \
 	DECLARE_FUNCTION(execBP_HideCollectedPoints) \
 	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_SelectionListIndex); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->BP_HideCollectedPoints(); \
+		P_THIS->BP_HideCollectedPoints(Z_Param_SelectionListIndex); \
 		P_NATIVE_END; \
 	} \
  \
 	DECLARE_FUNCTION(execBP_ColorCollectedPoints) \
 	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_SelectionListIndex); \
 		P_GET_STRUCT(FColor,Z_Param_pColor); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->BP_ColorCollectedPoints(Z_Param_pColor); \
+		P_THIS->BP_ColorCollectedPoints(Z_Param_SelectionListIndex,Z_Param_pColor); \
 		P_NATIVE_END; \
 	} \
  \
@@ -230,13 +233,13 @@ enum class EPointCloudColorMode : uint8;
  \
 	DECLARE_FUNCTION(execGetTouchedPoints) \
 	{ \
-		P_GET_TARRAY(FVector,Z_Param_pPointCoordinatesCollected); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_SelectionListIndex); \
 		P_GET_STRUCT(FVector,Z_Param_ColliderLocation); \
 		P_GET_PROPERTY(UIntProperty,Z_Param_Radius); \
 		P_GET_TARRAY_REF(FPointCloudPoint,Z_Param_Out_InPoints); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(TArray<FVector>*)Z_Param__Result=P_THIS->GetTouchedPoints(Z_Param_pPointCoordinatesCollected,Z_Param_ColliderLocation,Z_Param_Radius,Z_Param_Out_InPoints); \
+		P_THIS->GetTouchedPoints(Z_Param_SelectionListIndex,Z_Param_ColliderLocation,Z_Param_Radius,Z_Param_Out_InPoints); \
 		P_NATIVE_END; \
 	} \
  \
@@ -263,26 +266,29 @@ enum class EPointCloudColorMode : uint8;
  \
 	DECLARE_FUNCTION(execBP_DeleteCollectedPoints) \
 	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_SelectionListIndex); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->BP_DeleteCollectedPoints(); \
+		P_THIS->BP_DeleteCollectedPoints(Z_Param_SelectionListIndex); \
 		P_NATIVE_END; \
 	} \
  \
 	DECLARE_FUNCTION(execBP_HideCollectedPoints) \
 	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_SelectionListIndex); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->BP_HideCollectedPoints(); \
+		P_THIS->BP_HideCollectedPoints(Z_Param_SelectionListIndex); \
 		P_NATIVE_END; \
 	} \
  \
 	DECLARE_FUNCTION(execBP_ColorCollectedPoints) \
 	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_SelectionListIndex); \
 		P_GET_STRUCT(FColor,Z_Param_pColor); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->BP_ColorCollectedPoints(Z_Param_pColor); \
+		P_THIS->BP_ColorCollectedPoints(Z_Param_SelectionListIndex,Z_Param_pColor); \
 		P_NATIVE_END; \
 	} \
  \
@@ -459,13 +465,13 @@ enum class EPointCloudColorMode : uint8;
  \
 	DECLARE_FUNCTION(execGetTouchedPoints) \
 	{ \
-		P_GET_TARRAY(FVector,Z_Param_pPointCoordinatesCollected); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_SelectionListIndex); \
 		P_GET_STRUCT(FVector,Z_Param_ColliderLocation); \
 		P_GET_PROPERTY(UIntProperty,Z_Param_Radius); \
 		P_GET_TARRAY_REF(FPointCloudPoint,Z_Param_Out_InPoints); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(TArray<FVector>*)Z_Param__Result=P_THIS->GetTouchedPoints(Z_Param_pPointCoordinatesCollected,Z_Param_ColliderLocation,Z_Param_Radius,Z_Param_Out_InPoints); \
+		P_THIS->GetTouchedPoints(Z_Param_SelectionListIndex,Z_Param_ColliderLocation,Z_Param_Radius,Z_Param_Out_InPoints); \
 		P_NATIVE_END; \
 	} \
  \

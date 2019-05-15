@@ -59,12 +59,12 @@ public:
 
 	//LUK CODE
 
-	void ColorCollectedPoints(TArray<FPointCloudPoint> &, FColor);
-	void HideCollectedPoints(TArray<FPointCloudPoint> &);
-	void DeleteCollectedPoints(TArray<FPointCloudPoint> &);
-	void GetTouchedPoints(TArray<FVector> &, FVector ColliderLocation, int32 Radius, TArray<FPointCloudPoint>&, const FPointCloudOctree::Node&);
-	void GetPoints(TArray<FVector>&, TArray<FPointCloudPoint> &, FVector, int32, const FPointCloudOctree::Node &);
-	void GetAllTouchedNodes(TArray<FVector>&, FVector, int32, TArray<FPointCloudPoint> &, const FPointCloudOctree::Node &);
+	void ColorCollectedPoints(int32, TArray<FPointCloudPoint> &, FColor);
+	void HideCollectedPoints(int32, TArray<FPointCloudPoint> &);
+	void DeleteCollectedPoints(int32, TArray<FPointCloudPoint> &);
+	void GetTouchedPoints(int32, FVector ColliderLocation, int32 Radius, TArray<FPointCloudPoint>&, const FPointCloudOctree::Node&);
+	void GetPoints(int32, TArray<FPointCloudPoint> &, FVector, int32, const FPointCloudOctree::Node &);
+	void GetAllTouchedNodes(int32, FVector, int32, TArray<FPointCloudPoint> &, const FPointCloudOctree::Node &);
 
 	//END LUK
 

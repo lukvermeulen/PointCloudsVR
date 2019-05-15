@@ -408,11 +408,11 @@ public:
 
 	//LUK CODE
 
-	UFUNCTION(BlueprintPure, Category = "Rendering")
-		TArray<FVector> GetTouchedPoints(TArray<FVector> pPointCoordinatesCollected, FVector ColliderLocation, int32 Radius, UPARAM(ref) TArray<FPointCloudPoint> &InPoints)
+	UFUNCTION(BlueprintCallable, Category = "Point Cloud")
+	void GetTouchedPoints(int32 SelectionListIndex, FVector ColliderLocation, int32 Radius, UPARAM(ref) TArray<FPointCloudPoint> &InPoints)
 	{
-		Octree.GetTouchedPoints(GetCollectedPointLocations(), ColliderLocation, Radius, InPoints, this->Octree.Root);
-		return GetCollectedPointLocations();
+		Octree.GetTouchedPoints(SelectionListIndex, ColliderLocation, Radius, InPoints, this->Octree.Root);
+		return;
 	}
 
 
@@ -492,17 +492,20 @@ public:
 	UFUNCTION(BlueprintPure, Category = "Point Cloud")
 	FORCEINLINE TArray<FPointCloudPoint>& GetPointCloudData() { return Points; }
 
+	// Start Luk Code 2
 	UFUNCTION(BlueprintPure, Category = "Point Cloud")
-	FORCEINLINE TArray<FVector>& GetCollectedPointLocations() { return PointCoordinatesCollected; } //Get Collected Point Luk
+	FORCEINLINE TArray<FVector>& GetCollectedPointLocations() { return PointCoordinatesCollected; } //Not in use Get Collected Point Luk
 
 	UFUNCTION(BlueprintCallable, Category = "Point Cloud")
-	void BP_ColorCollectedPoints(FColor pColor) { Octree.ColorCollectedPoints(Points, pColor); } //Color Collected Points Index Luk
+	void BP_ColorCollectedPoints(int32 SelectionListIndex, FColor pColor) { Octree.ColorCollectedPoints(SelectionListIndex, Points, pColor); } //Color Collected Points Index Luk
 
 	UFUNCTION(BlueprintCallable, Category = "Point Cloud")
-	void BP_HideCollectedPoints() { Octree.HideCollectedPoints(Points); } //Hide Collected Points Index Luk
+	void BP_HideCollectedPoints(int32 SelectionListIndex) { Octree.HideCollectedPoints(SelectionListIndex, Points); } //Hide Collected Points Index Luk
 
 	UFUNCTION(BlueprintCallable, Category = "Point Cloud")
-	void BP_DeleteCollectedPoints() { Octree.DeleteCollectedPoints(Points); } //Delete Collected Points Index Luk
+	void BP_DeleteCollectedPoints(int32 SelectionListIndex) { Octree.DeleteCollectedPoints(SelectionListIndex, Points); } //Delete Collected Points Index Luk
+	// End Luk Code 2
+
 	/**
 	 * Replaces the original data with the set provided.
 	 * Optionally rebuilds using current settings.

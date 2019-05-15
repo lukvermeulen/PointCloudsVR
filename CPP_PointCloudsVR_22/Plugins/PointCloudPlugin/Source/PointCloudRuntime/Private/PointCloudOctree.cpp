@@ -20,35 +20,35 @@
 // FPointCloudOctreeNode
 
 //LUK CODE
-TArray<FPointCloudPoint> TmpTouchedPoints;
-TArray<uint32> TmpTouchedPointsIndex;
+TArray<uint32> TmpTouchedPointsIndex;   //stores indecies to Points
+TArray<TArray<uint32>> SelectionList;   //List of individual selections
 
-void FPointCloudOctree::ColorCollectedPoints(TArray<FPointCloudPoint> &Points, FColor pColor) 
+void FPointCloudOctree::ColorCollectedPoints(int32 SelectionListIndex, TArray<FPointCloudPoint> &Points, FColor pColor) 
 {
-	for (auto const &index : TmpTouchedPointsIndex)
+	for (auto const &index : SelectionList[SelectionListIndex])
 	{
 		Points[index].Color=pColor;
 	}
 }
 
-void FPointCloudOctree::HideCollectedPoints(TArray<FPointCloudPoint> &Points)
+void FPointCloudOctree::HideCollectedPoints(int32 SelectionListIndex, TArray<FPointCloudPoint> &Points)
 {
-	for (auto const &index : TmpTouchedPointsIndex)
+	for (auto const &index : SelectionList[SelectionListIndex])
 	{
 		Points[index].SetEnabled(false);
 		Points[index].SetEnabledOverride(true);
 	}
 }
 
-void FPointCloudOctree::DeleteCollectedPoints(TArray<FPointCloudPoint> &Points)
+void FPointCloudOctree::DeleteCollectedPoints(int32 SelectionListIndex, TArray<FPointCloudPoint> &Points)
 {
-	for (auto const &index : TmpTouchedPointsIndex)
+	for (auto const &index : SelectionList[SelectionListIndex])
 	{
 		Points.RemoveAt(index); // Only call at end! Indexes need to probably be refreshed somehow to work runtime
 	}
 }
 
-void FPointCloudOctree::GetPoints(TArray<FVector>& CollectedPoints, TArray<FPointCloudPoint> &PointCloudPoints, FVector ColliderLocation, int32 Radius, const FPointCloudOctree::Node &ppNodeToGetPoints)
+void FPointCloudOctree::GetPoints(int32 SelectionListIndex, TArray<FPointCloudPoint> &PointCloudPoints, FVector ColliderLocation, int32 Radius, const FPointCloudOctree::Node &ppNodeToGetPoints)
 {
 	//For every PointIndex in LukPointIndex
 	for (auto const &pointIndex : ppNodeToGetPoints.LukPointIndices)
@@ -58,24 +58,27 @@ void FPointCloudOctree::GetPoints(TArray<FVector>& CollectedPoints, TArray<FPoin
 		//if (GEngine) { GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::Printf(TEXT("DistanceSquared to Collider: %f"), distanceSquared)); } //Print distanceSquared
 		if (distanceSquared < radiusSquared)
 		{
-			TmpTouchedPointsIndex.AddUnique(pointIndex);                           // Add the Index of the Point to the collection
-			//CollectedPoints.AddUnique(PointCloudPoints[pointIndex].Location);      // Add the Location of the Point to the colleection
+			SelectionList[SelectionListIndex].AddUnique(pointIndex);                           // Add the Index of the Point to the collection
 			//if (GEngine) { GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, FString::Printf(TEXT("Point Added: %d"), pNodeToGetPoints.LOD)); }
 		}
 	}
 }
 
 // Function called by PointCloud.h Calls other function and starts recursion with root node
-void FPointCloudOctree::GetTouchedPoints(TArray<FVector>& CollectedPoints, FVector ColliderLocation, int32 Radius, TArray<FPointCloudPoint> &PointCloudPoints, const FPointCloudOctree::Node& ParamRoot)
+void FPointCloudOctree::GetTouchedPoints(int32 SelectionListIndex, FVector ColliderLocation, int32 Radius, TArray<FPointCloudPoint> &PointCloudPoints, const FPointCloudOctree::Node& ParamRoot)
 {
-	GetAllTouchedNodes(CollectedPoints, ColliderLocation, Radius, PointCloudPoints, ParamRoot); // Call function that goes through nodes
+	if (SelectionList.Num()<(SelectionListIndex+1))
+	{
+		SelectionList.AddDefaulted(1);
+	}
+	GetAllTouchedNodes(SelectionListIndex, ColliderLocation, Radius, PointCloudPoints, ParamRoot); // Call function that goes through nodes
 
 	if (GEngine) { GEngine->AddOnScreenDebugMessage(3, 5.f, FColor::Red, FString::Printf(TEXT("Number of collected points: %d"), TmpTouchedPointsIndex.Num())); }
 	return;
 }
 
 // Go through all nodes
-void FPointCloudOctree::GetAllTouchedNodes(TArray<FVector>& CollectedPoints, FVector CLocation, int32 Radius, TArray<FPointCloudPoint> &pPointCloudPoints, const FPointCloudOctree::Node &pNodeToGetPoints)
+void FPointCloudOctree::GetAllTouchedNodes(int32 SelectionListIndex, FVector CLocation, int32 Radius, TArray<FPointCloudPoint> &pPointCloudPoints, const FPointCloudOctree::Node &pNodeToGetPoints)
 {
 	FBox nodeBox = pNodeToGetPoints.WorldBounds.GetBox(); // Box from Node to check against collider
 
@@ -91,7 +94,7 @@ void FPointCloudOctree::GetAllTouchedNodes(TArray<FVector>& CollectedPoints, FVe
 		if (pNodeToGetPoints.LOD >= 0)
 		{
 			//if (GEngine) { GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Purple, FString::Printf(TEXT("Colliding with LOD: %d"), pNodeToGetPoints.LOD)); }
-			GetPoints(CollectedPoints, pPointCloudPoints, CLocation, Radius, pNodeToGetPoints); // Get the points that are inside the collider
+			GetPoints(SelectionListIndex, pPointCloudPoints, CLocation, Radius, pNodeToGetPoints); // Get the points that are inside the collider
 
 			DrawDebugBox(myworld, center, extent, FColor::Red, false, 10, 0, 5);
 		}
@@ -100,7 +103,7 @@ void FPointCloudOctree::GetAllTouchedNodes(TArray<FVector>& CollectedPoints, FVe
 		{
 			// Iterate through all node children
 			for (int i = 0; i < int(pNodeToGetPoints.NumChildren); i++) {
-				GetAllTouchedNodes(CollectedPoints, CLocation, Radius, pPointCloudPoints, *pNodeToGetPoints.Children[i]); // Start recursion to check child nodes
+				GetAllTouchedNodes(SelectionListIndex, CLocation, Radius, pPointCloudPoints, *pNodeToGetPoints.Children[i]); // Start recursion to check child nodes
 			}
 		}
 

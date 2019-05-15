@@ -2,8 +2,8 @@
   Creating makefile for CPP_PointCloudsVR_22Editor (ini files are newer than makefile)
   Parsing headers for CPP_PointCloudsVR_22Editor
     Running UnrealHeaderTool "E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\CPP_PointCloudsVR_22.uproject" "E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Intermediate\Build\Win64\CPP_PointCloudsVR_22Editor\Development\CPP_PointCloudsVR_22Editor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for CPP_PointCloudsVR_22Editor in 10,7679502 seconds
+  Reflection code generated for CPP_PointCloudsVR_22Editor in 6,7846598 seconds
   [Adaptive unity build] Excluded from PointCloudRuntime unity file: PointCloudOctree.cpp
   [Adaptive unity build] Excluded from PointCloudRuntime.gen unity file: PointCloud.gen.cpp, PointCloudRuntime.init.gen.cpp
   Target is up to date
-  Total execution time: 15,15 seconds
+  Total execution time: 9,21 seconds
