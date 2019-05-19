@@ -11,6 +11,9 @@
 #include "UObject/ConstructorHelpers.h"
 #include "Logging/MessageLog.h"
 
+#include "Misc/FileHelper.h"
+#include "HAL/PlatformFilemanager.h"
+
 #define IS_PROPERTY(Name) PropertyChangedEvent.MemberProperty->GetName().Equals(#Name)
 
 static const FGuid PointCloudFileGUID('P', 'C', 'P', 'F');
@@ -463,8 +466,8 @@ void UPointCloud::Rebuild(bool bForced)
 			// Refresh VertexIndex properties
 			for (int32 i = 0, idx = 0; i < Points.Num(); i++)
 			{
-				Points[i].VertexIndex = Points[i].IsEnabled() ? idx++ : -1;
-			}
+				Points[i].VertexIndex = Points[i].IsEnabled() ? idx++ : -1;  //Points[i].IsEnabled() ? idx++ : -1 luk changed
+			} 
 		}
 
 		Progress.EnterProgressFrame(1.f, LOCTEXT("RebuildTransform", "Applying Transformations"));
@@ -841,4 +844,38 @@ void UPointCloud::ProcessWarningMessages()
 	}
 }
 
+
+// Luk Exporter Code
+
+bool UPointCloud::BP_ExportCloud(FString SaveDirectory, FString FileName, bool AllowOverWriting = false, bool ExportSelections = false)
+{
+	//Set complete file path
+	SaveDirectory += "\\";
+	SaveDirectory += FileName;
+
+	//Abort if File already exists and overwriting not allowed
+	if (!AllowOverWriting)
+	{
+		if (FPlatformFileManager::Get().GetPlatformFile().FileExists(*SaveDirectory))
+		{
+			return false;
+		}
+	}
+
+	//Build Final String
+	TArray<FString> FinalString;
+	FString Line = "";
+	FString Delimiter = ", ";
+	for (auto const& point : Points)
+	{
+		Line += FString::SanitizeFloat(point.Location.X) + Delimiter;
+		Line += FString::SanitizeFloat(point.Location.Y) + Delimiter;
+		Line += FString::SanitizeFloat(point.Location.Z) + Delimiter;
+		Line += FString::SanitizeFloat(point.Color.R) + Delimiter;
+		Line += FString::SanitizeFloat(point.Color.G) + Delimiter;
+		Line += FString::SanitizeFloat(point.Color.B) + LINE_TERMINATOR;
+		FinalString.Add(Line); 
+	}
+	return FFileHelper::SaveStringArrayToFile(FinalString, *SaveDirectory);
+}
 #undef LOCTEXT_NAMESPACE

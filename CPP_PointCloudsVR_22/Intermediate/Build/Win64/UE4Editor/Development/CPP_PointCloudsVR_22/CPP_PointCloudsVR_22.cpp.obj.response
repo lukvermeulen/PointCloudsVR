@@ -28,6 +28,7 @@
 /wd4838
 /we4668
 /I .
+/I E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Source\CPP_PointCloudsVR_22\Private
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\Engine
 /I Runtime
 /I Runtime\Engine\Classes
@@ -428,6 +429,7 @@
 /I ThirdParty\libSampleRate
 /I E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Intermediate\Build\Win64\UE4Editor\Inc\CPP_PointCloudsVR_22
 /I E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Source
+/I E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Source\CPP_PointCloudsVR_22\Public
 /I E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Source\CPP_PointCloudsVR_22
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\AugmentedReality
 /I Runtime\AugmentedReality\Public

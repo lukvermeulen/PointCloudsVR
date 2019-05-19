@@ -1,0 +1,37 @@
+#include "LukExporter.h"
+#include "Misc/FileHelper.h"
+#include "HAL/PlatformFilemanager.h"
+
+
+LukExporter::LukExporter()
+{
+}
+
+
+LukExporter::~LukExporter()
+{
+}
+
+bool LukExporter::SaveArrayText(FString SaveDirectory, FString FileName, TArray<FString> SaveText, bool AllowOverWriting = false)
+{
+	//Set complete file path
+	SaveDirectory += "\\";
+	SaveDirectory += FileName;
+
+	if (!AllowOverWriting)
+	{
+		if (FPlatformFileManager::Get().GetPlatformFile().FileExists(*SaveDirectory))
+		{
+			return false;
+		}
+	}
+
+	FString FinalString = "";
+	for (FString& Each : SaveText)
+	{
+		FinalString += Each;
+		FinalString += LINE_TERMINATOR;
+	}
+
+	return FFileHelper::SaveStringToFile(FinalString, *SaveDirectory);
+}

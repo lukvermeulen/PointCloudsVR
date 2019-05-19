@@ -1,0 +1,13 @@
+#pragma once
+
+#include "CoreMinimal.h"
+
+class LukExporter
+{
+public:
+	LukExporter();
+	~LukExporter();
+
+	static bool SaveArrayText(FString SaveDirectory, FString FileName, TArray<FString> SaveText, bool AllowOverWriting);
+};
+

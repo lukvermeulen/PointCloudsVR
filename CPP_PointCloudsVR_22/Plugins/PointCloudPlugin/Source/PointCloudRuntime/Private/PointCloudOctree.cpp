@@ -23,8 +23,23 @@
 TArray<uint32> TmpTouchedPointsIndex;   //stores indecies to Points
 TArray<TArray<uint32>> SelectionList;   //List of individual selections
 
+void FPointCloudOctree::ResetVariables()
+{
+	TmpTouchedPointsIndex.Empty();
+	for (auto &index : SelectionList)
+	{
+		index.Empty();
+	}
+	SelectionList.Empty();
+}
+
 void FPointCloudOctree::ColorCollectedPoints(int32 SelectionListIndex, TArray<FPointCloudPoint> &Points, FColor pColor) 
 {
+	//Check if selection already exists, if not add a slot for it
+	if (SelectionList.Num() < (SelectionListIndex + 1))
+	{
+		SelectionList.AddDefaulted(1);
+	}
 	for (auto const &index : SelectionList[SelectionListIndex])
 	{
 		Points[index].Color=pColor;
@@ -33,6 +48,11 @@ void FPointCloudOctree::ColorCollectedPoints(int32 SelectionListIndex, TArray<FP
 
 void FPointCloudOctree::HideCollectedPoints(int32 SelectionListIndex, TArray<FPointCloudPoint> &Points)
 {
+	//Check if selection already exists, if not add a slot for it
+	if (SelectionList.Num() < (SelectionListIndex + 1))
+	{
+		SelectionList.AddDefaulted(1);
+	}
 	for (auto const &index : SelectionList[SelectionListIndex])
 	{
 		Points[index].SetEnabled(false);
@@ -42,6 +62,11 @@ void FPointCloudOctree::HideCollectedPoints(int32 SelectionListIndex, TArray<FPo
 
 void FPointCloudOctree::DeleteCollectedPoints(int32 SelectionListIndex, TArray<FPointCloudPoint> &Points)
 {
+	//Check if selection already exists, if not add a slot for it
+	if (SelectionList.Num() < (SelectionListIndex + 1))
+	{
+		SelectionList.AddDefaulted(1);
+	}
 	for (auto const &index : SelectionList[SelectionListIndex])
 	{
 		Points.RemoveAt(index); // Only call at end! Indexes need to probably be refreshed somehow to work runtime
@@ -285,7 +310,7 @@ bool FPointCloudOctree::Node::BuildIBCache(TArray<FPointCloudPoint*> *InPoints)
 
 	for (double i = 0; i < InPoints->Num(); i += Tree->SkipValues[LOD])
 	{
-		CacheNode->LukPointIndices.Add((*InPoints)[(uint32)i]->VertexIndex);
+		CacheNode->LukPointIndices.Add((*InPoints)[(uint32)i]->VertexIndex);  //Store index of point in special array 
 
 		if (Tree->bUsesSprites)
 		{

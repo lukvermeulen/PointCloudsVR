@@ -7,7 +7,9 @@
 #include "Curves/CurveFloat.h"
 #include "PointCloudShared.h"
 #include "PointCloudOctree.h"
+
 #include "PointCloud.generated.h"
+
 
 class UMaterialInstanceDynamic;
 
@@ -409,12 +411,11 @@ public:
 	//LUK CODE
 
 	UFUNCTION(BlueprintCallable, Category = "Point Cloud")
-	void GetTouchedPoints(int32 SelectionListIndex, FVector ColliderLocation, int32 Radius, UPARAM(ref) TArray<FPointCloudPoint> &InPoints)
+	void GetTouchedPoints(int32 SelectionListIndex, FVector ColliderLocation, int32 Radius) //UPARAM(ref) TArray<FPointCloudPoint> &InPoints
 	{
-		Octree.GetTouchedPoints(SelectionListIndex, ColliderLocation, Radius, InPoints, this->Octree.Root);
+		Octree.GetTouchedPoints(SelectionListIndex, ColliderLocation, Radius, Points, Octree.Root);
 		return;
 	}
-
 
 	//END LUK
 
@@ -492,7 +493,9 @@ public:
 	UFUNCTION(BlueprintPure, Category = "Point Cloud")
 	FORCEINLINE TArray<FPointCloudPoint>& GetPointCloudData() { return Points; }
 
+
 	// Start Luk Code 2
+
 	UFUNCTION(BlueprintPure, Category = "Point Cloud")
 	FORCEINLINE TArray<FVector>& GetCollectedPointLocations() { return PointCoordinatesCollected; } //Not in use Get Collected Point Luk
 
@@ -504,7 +507,15 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Point Cloud")
 	void BP_DeleteCollectedPoints(int32 SelectionListIndex) { Octree.DeleteCollectedPoints(SelectionListIndex, Points); } //Delete Collected Points Index Luk
+
+	UFUNCTION(BlueprintCallable, Category = "Point Cloud")
+	void BP_ResetVariables() { Octree.ResetVariables(); } //Reset Variables Luk
+
+	UFUNCTION(BlueprintCallable, Category = "Point Cloud") //Export function
+	bool BP_ExportCloud(FString SaveDirectory, FString FileName, bool AllowOverWriting, bool ExportSelections);
+
 	// End Luk Code 2
+
 
 	/**
 	 * Replaces the original data with the set provided.

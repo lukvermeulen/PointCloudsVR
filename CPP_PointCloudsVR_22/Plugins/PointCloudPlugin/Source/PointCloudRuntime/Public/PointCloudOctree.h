@@ -59,6 +59,8 @@ public:
 
 	//LUK CODE
 
+	void ResetVariables();
+	
 	void ColorCollectedPoints(int32, TArray<FPointCloudPoint> &, FColor);
 	void HideCollectedPoints(int32, TArray<FPointCloudPoint> &);
 	void DeleteCollectedPoints(int32, TArray<FPointCloudPoint> &);

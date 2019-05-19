@@ -2,8 +2,16 @@
   Creating makefile for CPP_PointCloudsVR_22Editor (ini files are newer than makefile)
   Parsing headers for CPP_PointCloudsVR_22Editor
     Running UnrealHeaderTool "E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\CPP_PointCloudsVR_22.uproject" "E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Intermediate\Build\Win64\CPP_PointCloudsVR_22Editor\Development\CPP_PointCloudsVR_22Editor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for CPP_PointCloudsVR_22Editor in 6,7846598 seconds
-  [Adaptive unity build] Excluded from PointCloudRuntime unity file: PointCloudOctree.cpp
+  Reflection code generated for CPP_PointCloudsVR_22Editor in 7,3425147 seconds
+  [Adaptive unity build] Excluded from PointCloudRuntime unity file: PointCloud.cpp, PointCloudOctree.cpp
   [Adaptive unity build] Excluded from PointCloudRuntime.gen unity file: PointCloud.gen.cpp, PointCloudRuntime.init.gen.cpp
-  Target is up to date
-  Total execution time: 9,21 seconds
+  Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Building 4 actions with 8 processes...
+    [1/4] PointCloud.cpp
+    [2/4] UE4Editor-PointCloudRuntime.lib
+       Bibliothek "E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Development\PointCloudRuntime\UE4Editor-PointCloudRuntime.lib" und Objekt "E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Development\PointCloudRuntime\UE4Editor-PointCloudRuntime.exp" werden erstellt.
+    [3/4] UE4Editor-PointCloudRuntime.dll
+       Bibliothek "E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Development\PointCloudRuntime\UE4Editor-PointCloudRuntime.suppressed.lib" und Objekt "E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Development\PointCloudRuntime\UE4Editor-PointCloudRuntime.suppressed.exp" werden erstellt.
+    [4/4] CPP_PointCloudsVR_22Editor.target
+  Total time in Parallel executor: 4,18 seconds
+  Total execution time: 13,99 seconds
