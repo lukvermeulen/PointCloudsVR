@@ -14,6 +14,10 @@
 #include "Misc/FileHelper.h"
 #include "HAL/PlatformFilemanager.h"
 
+#include <iostream>
+#include <fstream>
+#include <string>
+
 #define IS_PROPERTY(Name) PropertyChangedEvent.MemberProperty->GetName().Equals(#Name)
 
 static const FGuid PointCloudFileGUID('P', 'C', 'P', 'F');
@@ -849,9 +853,20 @@ void UPointCloud::ProcessWarningMessages()
 
 bool UPointCloud::BP_ExportCloud(FString SaveDirectory, FString FileName, bool AllowOverWriting = false, bool ExportSelections = false)
 {
+	//TODO Call code to delete all points that where marked for deletion
+
+
 	//Set complete file path
 	SaveDirectory += "\\";
 	SaveDirectory += FileName;
+
+	//convert to std::string to work with <ofstream>
+	std::string StdSaveDirectory = std::string(TCHAR_TO_UTF8(*SaveDirectory));
+
+	//declare my file and open the file
+	std::ofstream luksfile;
+	luksfile.open (StdSaveDirectory, std::ios::out | std::ios::app);
+
 
 	//Abort if File already exists and overwriting not allowed
 	if (!AllowOverWriting)
@@ -862,20 +877,39 @@ bool UPointCloud::BP_ExportCloud(FString SaveDirectory, FString FileName, bool A
 		}
 	}
 
-	//Build Final String
-	TArray<FString> FinalString;
-	FString Line = "";
-	FString Delimiter = ", ";
+	TArray<FString> FinalString;  //complete file as array
+	FString Line = "";            //variable for each line
+
+	std::string StdLine = "";     //std::string for each line
+	FString Delimiter = ", ";     //the delimiter to be used
+
+	//Print Header
+	luksfile << "X,Y,Z,R,G,B\n";
+
 	for (auto const& point : Points)
 	{
+		//Add x y z r g b to line
 		Line += FString::SanitizeFloat(point.Location.X) + Delimiter;
 		Line += FString::SanitizeFloat(point.Location.Y) + Delimiter;
 		Line += FString::SanitizeFloat(point.Location.Z) + Delimiter;
 		Line += FString::SanitizeFloat(point.Color.R) + Delimiter;
 		Line += FString::SanitizeFloat(point.Color.G) + Delimiter;
-		Line += FString::SanitizeFloat(point.Color.B) + LINE_TERMINATOR;
-		FinalString.Add(Line); 
+		Line += FString::SanitizeFloat(point.Color.B) + "\n";
+		
+		//convert FString Line to std::string and clear it after to be reused in next iteration
+		StdLine = std::string(TCHAR_TO_UTF8(*Line)); 
+		Line = "";
+
+		//add line to file
+		luksfile << StdLine;
+
+		//FFileHelper::SaveStringToFile(Line, SaveDirectory, FFileHelper::EEncodingOptions::AutoDetect, &IFileManager::Get(), FILEWRITE_Append);
+		//FinalString.Add(Line); 
 	}
-	return FFileHelper::SaveStringArrayToFile(FinalString, *SaveDirectory);
+
+	//close file
+	luksfile.close();
+	return true;
+	//return FFileHelper::SaveStringArrayToFile(FinalString, *SaveDirectory);
 }
 #undef LOCTEXT_NAMESPACE

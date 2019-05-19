@@ -22,6 +22,13 @@
 //LUK CODE
 TArray<uint32> TmpTouchedPointsIndex;   //stores indecies to Points
 TArray<TArray<uint32>> SelectionList;   //List of individual selections
+//TODO add array to store which selections should be deleted
+//TODO add function to add selection index to "shouldbedeleted" array
+//TODO let delete function iterate through "shouldbedeleted" array
+//TODO add option to rename selections
+//TODO add function to export selections as individual files
+//TODO name individual files like selection
+
 
 void FPointCloudOctree::ResetVariables()
 {

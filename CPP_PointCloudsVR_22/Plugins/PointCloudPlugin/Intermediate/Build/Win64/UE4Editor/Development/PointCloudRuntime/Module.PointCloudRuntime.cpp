@@ -5,6 +5,7 @@
 #include "E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudActor.cpp"
 #include "E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudComponent.cpp"
 #include "E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudHelper.cpp"
+#include "E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudOctree.cpp"
 #include "E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudRendering.cpp"
 #include "E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudRuntimeModule.cpp"
 #include "E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudShared.cpp"
