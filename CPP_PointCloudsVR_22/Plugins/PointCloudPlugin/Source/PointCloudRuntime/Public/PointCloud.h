@@ -505,14 +505,33 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Point Cloud")
 	void BP_HideCollectedPoints(int32 SelectionListIndex) { Octree.HideCollectedPoints(SelectionListIndex, Points); } //Hide Collected Points Index Luk
 
+	//Use MarkForDeletion instead
 	UFUNCTION(BlueprintCallable, Category = "Point Cloud")
 	void BP_DeleteCollectedPoints(int32 SelectionListIndex) { Octree.DeleteCollectedPoints(SelectionListIndex, Points); } //Delete Collected Points Index Luk
+
+	//Mark Selection to be Deleted Luk
+	UFUNCTION(BlueprintCallable, Category = "Point Cloud")
+	void BP_MarkSelectionForDeletion(int32 SelectionListIndex) 
+	{ 
+		Octree.MarkForDeletion(SelectionListIndex);
+		Octree.HideCollectedPoints(SelectionListIndex, Points);
+	} 
+
+	//Delete all points marked for deletion
+	UFUNCTION(BlueprintCallable, Category = "Point Cloud")
+	void BP_DeleteAllMarked()
+	{
+		Octree.DeleteAllMarked(Points);
+	}
 
 	UFUNCTION(BlueprintCallable, Category = "Point Cloud")
 	void BP_ResetVariables() { Octree.ResetVariables(); } //Reset Variables Luk
 
-	UFUNCTION(BlueprintCallable, Category = "Point Cloud") //Export function
-	bool BP_ExportCloud(FString SaveDirectory, FString FileName, bool AllowOverWriting, bool ExportSelections);
+	UFUNCTION(BlueprintCallable, Category = "Point Cloud") //Export whole changed cloud
+	bool BP_ExportCloud(FString SaveDirectory, FString FileName, bool AllowOverWriting);
+
+	UFUNCTION(BlueprintCallable, Category = "Point Cloud") //Export selections as individual files
+	bool BP_ExportIndividual(FString SaveDirectory, FString SelectionName, int32 SelectionIndex, bool AllowOverWriting);
 
 	// End Luk Code 2
 

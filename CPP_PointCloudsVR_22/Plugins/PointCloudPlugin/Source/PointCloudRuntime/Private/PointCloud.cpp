@@ -851,7 +851,7 @@ void UPointCloud::ProcessWarningMessages()
 
 // Luk Exporter Code
 
-bool UPointCloud::BP_ExportCloud(FString SaveDirectory, FString FileName, bool AllowOverWriting = false, bool ExportSelections = false)
+bool UPointCloud::BP_ExportCloud(FString SaveDirectory, FString FileName, bool AllowOverWriting = false)
 {
 	//TODO Call code to delete all points that where marked for deletion
 
@@ -877,7 +877,7 @@ bool UPointCloud::BP_ExportCloud(FString SaveDirectory, FString FileName, bool A
 		}
 	}
 
-	TArray<FString> FinalString;  //complete file as array
+	//TArray<FString> FinalString;  //complete file as array
 	FString Line = "";            //variable for each line
 
 	std::string StdLine = "";     //std::string for each line
@@ -912,4 +912,55 @@ bool UPointCloud::BP_ExportCloud(FString SaveDirectory, FString FileName, bool A
 	return true;
 	//return FFileHelper::SaveStringArrayToFile(FinalString, *SaveDirectory);
 }
+
+bool UPointCloud::BP_ExportIndividual(FString SaveDirectory, FString SelectionName, int32 SelectionIndex, bool AllowOverWriting)
+{
+	FString FileName;	
+	int32 SelectionI = SelectionIndex;
+	//Set complete file path
+	FileName = SelectionName + ".txt";
+	SaveDirectory += "\\";
+	SaveDirectory += FileName;  
+
+	//convert to std::string to work with <ofstream>
+	std::string StdSaveDirectory = std::string(TCHAR_TO_UTF8(*SaveDirectory));
+
+	//declare my file and open the file
+	std::ofstream luksindividualfile;
+	luksindividualfile.open(StdSaveDirectory, std::ios::out | std::ios::app);
+
+	//TArray<FString> FinalString;  //complete file as array
+	FString Line = "";            //variable for each line
+
+	std::string StdLine = "";     //std::string for each line
+	FString Delimiter = ", ";     //the delimiter to be used
+
+	//Print Header
+	luksindividualfile << "X,Y,Z,R,G,B\n";
+
+	//For every pointIndex in selection array
+	for (auto const& pointIndex : Octree.GetSelectionList(SelectionIndex))
+	{
+		//Add x y z r g b to line
+		//Line += FString::FromInt(pointIndex) + "\n";
+		Line += FString::SanitizeFloat(Points[pointIndex].Location.X) + Delimiter;
+		Line += FString::SanitizeFloat(Points[pointIndex].Location.Y) + Delimiter;
+		Line += FString::SanitizeFloat(Points[pointIndex].Location.Z) + Delimiter;
+		Line += FString::SanitizeFloat(Points[pointIndex].Color.R) + Delimiter;
+		Line += FString::SanitizeFloat(Points[pointIndex].Color.G) + Delimiter;
+		Line += FString::SanitizeFloat(Points[pointIndex].Color.B) + "\n";
+		
+		//convert FString Line to std::string and clear it after to be reused in next iteration
+		StdLine = std::string(TCHAR_TO_UTF8(*Line));
+		Line = "";
+
+		//add line to file
+		luksindividualfile << StdLine;
+	}
+
+	//close file
+	luksindividualfile.close();
+	return true;
+}
+
 #undef LOCTEXT_NAMESPACE

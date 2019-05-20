@@ -21,8 +21,8 @@ void EmptyLinkFunctionForGeneratedCodePointCloudRuntime_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x17144018,
-				0x6F0F8FC5,
+				0x9636EB8E,
+				0x1F768B59,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

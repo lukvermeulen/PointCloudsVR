@@ -32,15 +32,26 @@ enum class EPointCloudColorMode : uint8;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execBP_ExportIndividual) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_SaveDirectory); \
+		P_GET_PROPERTY(UStrProperty,Z_Param_SelectionName); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_SelectionIndex); \
+		P_GET_UBOOL(Z_Param_AllowOverWriting); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->BP_ExportIndividual(Z_Param_SaveDirectory,Z_Param_SelectionName,Z_Param_SelectionIndex,Z_Param_AllowOverWriting); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execBP_ExportCloud) \
 	{ \
 		P_GET_PROPERTY(UStrProperty,Z_Param_SaveDirectory); \
 		P_GET_PROPERTY(UStrProperty,Z_Param_FileName); \
 		P_GET_UBOOL(Z_Param_AllowOverWriting); \
-		P_GET_UBOOL(Z_Param_ExportSelections); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->BP_ExportCloud(Z_Param_SaveDirectory,Z_Param_FileName,Z_Param_AllowOverWriting,Z_Param_ExportSelections); \
+		*(bool*)Z_Param__Result=P_THIS->BP_ExportCloud(Z_Param_SaveDirectory,Z_Param_FileName,Z_Param_AllowOverWriting); \
 		P_NATIVE_END; \
 	} \
  \
@@ -49,6 +60,23 @@ enum class EPointCloudColorMode : uint8;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->BP_ResetVariables(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBP_DeleteAllMarked) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->BP_DeleteAllMarked(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBP_MarkSelectionForDeletion) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_SelectionListIndex); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->BP_MarkSelectionForDeletion(Z_Param_SelectionListIndex); \
 		P_NATIVE_END; \
 	} \
  \
@@ -283,15 +311,26 @@ enum class EPointCloudColorMode : uint8;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execBP_ExportIndividual) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_SaveDirectory); \
+		P_GET_PROPERTY(UStrProperty,Z_Param_SelectionName); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_SelectionIndex); \
+		P_GET_UBOOL(Z_Param_AllowOverWriting); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->BP_ExportIndividual(Z_Param_SaveDirectory,Z_Param_SelectionName,Z_Param_SelectionIndex,Z_Param_AllowOverWriting); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execBP_ExportCloud) \
 	{ \
 		P_GET_PROPERTY(UStrProperty,Z_Param_SaveDirectory); \
 		P_GET_PROPERTY(UStrProperty,Z_Param_FileName); \
 		P_GET_UBOOL(Z_Param_AllowOverWriting); \
-		P_GET_UBOOL(Z_Param_ExportSelections); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->BP_ExportCloud(Z_Param_SaveDirectory,Z_Param_FileName,Z_Param_AllowOverWriting,Z_Param_ExportSelections); \
+		*(bool*)Z_Param__Result=P_THIS->BP_ExportCloud(Z_Param_SaveDirectory,Z_Param_FileName,Z_Param_AllowOverWriting); \
 		P_NATIVE_END; \
 	} \
  \
@@ -300,6 +339,23 @@ enum class EPointCloudColorMode : uint8;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->BP_ResetVariables(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBP_DeleteAllMarked) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->BP_DeleteAllMarked(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBP_MarkSelectionForDeletion) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_SelectionListIndex); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->BP_MarkSelectionForDeletion(Z_Param_SelectionListIndex); \
 		P_NATIVE_END; \
 	} \
  \
