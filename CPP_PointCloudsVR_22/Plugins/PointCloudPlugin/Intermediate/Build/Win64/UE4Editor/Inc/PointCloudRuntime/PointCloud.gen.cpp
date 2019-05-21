@@ -24,6 +24,7 @@ void EmptyLinkFunctionForGeneratedCodePointCloud() {}
 	COREUOBJECT_API UClass* Z_Construct_UClass_UObject();
 	POINTCLOUDRUNTIME_API UFunction* Z_Construct_UFunction_UPointCloud_ApplyRenderingParameters();
 	POINTCLOUDRUNTIME_API UFunction* Z_Construct_UFunction_UPointCloud_Bake();
+	POINTCLOUDRUNTIME_API UFunction* Z_Construct_UFunction_UPointCloud_BP_AddSelectionIndex();
 	POINTCLOUDRUNTIME_API UFunction* Z_Construct_UFunction_UPointCloud_BP_ColorCollectedPoints();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FColor();
 	POINTCLOUDRUNTIME_API UFunction* Z_Construct_UFunction_UPointCloud_BP_DeleteAllMarked();
@@ -289,6 +290,7 @@ void EmptyLinkFunctionForGeneratedCodePointCloud() {}
 		static const FNameNativePtrPair Funcs[] = {
 			{ "ApplyRenderingParameters", &UPointCloud::execApplyRenderingParameters },
 			{ "Bake", &UPointCloud::execBake },
+			{ "BP_AddSelectionIndex", &UPointCloud::execBP_AddSelectionIndex },
 			{ "BP_ColorCollectedPoints", &UPointCloud::execBP_ColorCollectedPoints },
 			{ "BP_DeleteAllMarked", &UPointCloud::execBP_DeleteAllMarked },
 			{ "BP_DeleteCollectedPoints", &UPointCloud::execBP_DeleteCollectedPoints },
@@ -366,6 +368,30 @@ void EmptyLinkFunctionForGeneratedCodePointCloud() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UPointCloud_Bake_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UPointCloud_BP_AddSelectionIndex_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UPointCloud_BP_AddSelectionIndex_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Point Cloud" },
+		{ "ModuleRelativePath", "Public/PointCloud.h" },
+		{ "ToolTip", "Reset Variables Luk" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UPointCloud_BP_AddSelectionIndex_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UPointCloud, nullptr, "BP_AddSelectionIndex", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UPointCloud_BP_AddSelectionIndex_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UPointCloud_BP_AddSelectionIndex_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UPointCloud_BP_AddSelectionIndex()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UPointCloud_BP_AddSelectionIndex_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -1686,6 +1712,7 @@ void EmptyLinkFunctionForGeneratedCodePointCloud() {}
 	const FClassFunctionLinkInfo Z_Construct_UClass_UPointCloud_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_UPointCloud_ApplyRenderingParameters, "ApplyRenderingParameters" }, // 1729720017
 		{ &Z_Construct_UFunction_UPointCloud_Bake, "Bake" }, // 1859343979
+		{ &Z_Construct_UFunction_UPointCloud_BP_AddSelectionIndex, "BP_AddSelectionIndex" }, // 2904086722
 		{ &Z_Construct_UFunction_UPointCloud_BP_ColorCollectedPoints, "BP_ColorCollectedPoints" }, // 397478623
 		{ &Z_Construct_UFunction_UPointCloud_BP_DeleteAllMarked, "BP_DeleteAllMarked" }, // 3839103960
 		{ &Z_Construct_UFunction_UPointCloud_BP_DeleteCollectedPoints, "BP_DeleteCollectedPoints" }, // 3837792571
@@ -2132,7 +2159,7 @@ void EmptyLinkFunctionForGeneratedCodePointCloud() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UPointCloud, 475347578);
+	IMPLEMENT_CLASS(UPointCloud, 831038666);
 	template<> POINTCLOUDRUNTIME_API UClass* StaticClass<UPointCloud>()
 	{
 		return UPointCloud::StaticClass();

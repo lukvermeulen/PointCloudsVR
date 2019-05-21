@@ -55,6 +55,14 @@ enum class EPointCloudColorMode : uint8;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execBP_AddSelectionIndex) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->BP_AddSelectionIndex(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execBP_ResetVariables) \
 	{ \
 		P_FINISH; \
@@ -331,6 +339,14 @@ enum class EPointCloudColorMode : uint8;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(bool*)Z_Param__Result=P_THIS->BP_ExportCloud(Z_Param_SaveDirectory,Z_Param_FileName,Z_Param_AllowOverWriting); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBP_AddSelectionIndex) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->BP_AddSelectionIndex(); \
 		P_NATIVE_END; \
 	} \
  \

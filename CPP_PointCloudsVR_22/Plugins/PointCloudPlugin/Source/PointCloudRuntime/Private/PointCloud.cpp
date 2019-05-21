@@ -854,7 +854,7 @@ void UPointCloud::ProcessWarningMessages()
 bool UPointCloud::BP_ExportCloud(FString SaveDirectory, FString FileName, bool AllowOverWriting = false)
 {
 	//TODO Call code to delete all points that where marked for deletion
-
+	Octree.DeleteAllMarked(Points);
 
 	//Set complete file path
 	SaveDirectory += "\\";

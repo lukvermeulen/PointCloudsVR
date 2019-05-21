@@ -62,6 +62,7 @@ public:
 	void ResetVariables();
 	TArray<uint32> GetSelectionList(int32);
 	
+	void AddSelectionIndex();
 	void MarkForDeletion(int32);
 	void DeleteAllMarked(TArray<FPointCloudPoint> &);
 	void ColorCollectedPoints(int32, TArray<FPointCloudPoint> &, FColor);

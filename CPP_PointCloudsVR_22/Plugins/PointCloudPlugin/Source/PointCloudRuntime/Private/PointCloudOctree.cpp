@@ -27,7 +27,6 @@ TArray<int32> ToBeDeleted;
 
 TArray<uint32> FPointCloudOctree::GetSelectionList(int32 ListIndex) { return SelectionList[ListIndex]; }
 
-
 void FPointCloudOctree::ResetVariables()
 {
 	TmpTouchedPointsIndex.Empty();
@@ -37,6 +36,11 @@ void FPointCloudOctree::ResetVariables()
 		index.Empty();
 	}
 	SelectionList.Empty();
+}
+
+void FPointCloudOctree::AddSelectionIndex()
+{
+	SelectionList.AddDefaulted(1);
 }
 
 void FPointCloudOctree::MarkForDeletion(int32 index)

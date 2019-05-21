@@ -527,6 +527,9 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Point Cloud")
 	void BP_ResetVariables() { Octree.ResetVariables(); } //Reset Variables Luk
 
+	UFUNCTION(BlueprintCallable, Category = "Point Cloud")
+	void BP_AddSelectionIndex() { Octree.AddSelectionIndex(); } //Reset Variables Luk
+
 	UFUNCTION(BlueprintCallable, Category = "Point Cloud") //Export whole changed cloud
 	bool BP_ExportCloud(FString SaveDirectory, FString FileName, bool AllowOverWriting);
 
