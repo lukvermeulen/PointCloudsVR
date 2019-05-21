@@ -1016,7 +1016,7 @@ void EmptyLinkFunctionForGeneratedCodePointCloud() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UPointCloud_GetTouchedPoints_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Point Cloud" },
 		{ "ModuleRelativePath", "Public/PointCloud.h" },
-		{ "ToolTip", "LUK CODE\nUPARAM(ref) TArray<FPointCloudPoint> &InPoints" },
+		{ "ToolTip", "Gets touched points colliding with collider sphere\nUPARAM(ref) TArray<FPointCloudPoint> &InPoints" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UPointCloud_GetTouchedPoints_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UPointCloud, nullptr, "GetTouchedPoints", sizeof(PointCloud_eventGetTouchedPoints_Parms), Z_Construct_UFunction_UPointCloud_GetTouchedPoints_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UPointCloud_GetTouchedPoints_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UPointCloud_GetTouchedPoints_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UPointCloud_GetTouchedPoints_Statics::Function_MetaDataParams)) };
@@ -1729,7 +1729,7 @@ void EmptyLinkFunctionForGeneratedCodePointCloud() {}
 		{ &Z_Construct_UFunction_UPointCloud_GetNumMaterials, "GetNumMaterials" }, // 428697908
 		{ &Z_Construct_UFunction_UPointCloud_GetPointCloudData, "GetPointCloudData" }, // 1598880285
 		{ &Z_Construct_UFunction_UPointCloud_GetPointCount, "GetPointCount" }, // 1720545787
-		{ &Z_Construct_UFunction_UPointCloud_GetTouchedPoints, "GetTouchedPoints" }, // 2532243510
+		{ &Z_Construct_UFunction_UPointCloud_GetTouchedPoints, "GetTouchedPoints" }, // 3650703280
 		{ &Z_Construct_UFunction_UPointCloud_IsDirty, "IsDirty" }, // 1954845454
 		{ &Z_Construct_UFunction_UPointCloud_Rebuild, "Rebuild" }, // 874996021
 		{ &Z_Construct_UFunction_UPointCloud_Reimport, "Reimport" }, // 862459480
@@ -2159,7 +2159,7 @@ void EmptyLinkFunctionForGeneratedCodePointCloud() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UPointCloud, 831038666);
+	IMPLEMENT_CLASS(UPointCloud, 1491198100);
 	template<> POINTCLOUDRUNTIME_API UClass* StaticClass<UPointCloud>()
 	{
 		return UPointCloud::StaticClass();

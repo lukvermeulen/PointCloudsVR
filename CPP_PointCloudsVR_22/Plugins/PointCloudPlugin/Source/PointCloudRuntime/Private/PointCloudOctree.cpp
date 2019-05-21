@@ -24,6 +24,14 @@ TArray<uint32> TmpTouchedPointsIndex;   //stores indecies to Points
 TArray<TArray<uint32>> SelectionList;   //List of individual selections
 TArray<int32> ToBeDeleted;
 //TODO add option to rename selections
+//TODO add option to rescale cloud
+//TODO maybe move cloud rebuild from blueprint to the function itself?
+//TODO Rework deletion algorythm due to array shifting
+//TODO !!Export only points that do not match index in deleted index?
+//TODO Check current export only "isenabled" (-> no distinction between deleted and hidden points)
+//TODO Merge all indices in deleted selections to one deleted array?
+//TODO 
+//TODO Maybe copy point array to call deletion upon, so you can continue working after export (Hard delete changes all indecies etc) or only skip those on export
 
 TArray<uint32> FPointCloudOctree::GetSelectionList(int32 ListIndex) { return SelectionList[ListIndex]; }
 
@@ -56,6 +64,23 @@ void FPointCloudOctree::DeleteAllMarked(TArray<FPointCloudPoint> &Points)
 	}
 }
 
+void FPointCloudOctree::DeleteCollectedPoints(int32 SelectionListIndex, TArray<FPointCloudPoint> &Points)
+{
+	//Check if selection already exists, if not add a slot for it
+	if (SelectionList.Num() < (SelectionListIndex + 1))
+	{
+		SelectionList.AddDefaulted(1);
+	}
+	for (int32 i = SelectionList[SelectionListIndex].Num(); i >= 0; i--)
+	{
+		Points.RemoveAt(i); // Only call at end! Indexes need to probably be refreshed somehow to work runtime
+	}
+	/*for (auto const &index : SelectionList[SelectionListIndex])
+	{
+		
+	}*/
+}
+
 void FPointCloudOctree::ColorCollectedPoints(int32 SelectionListIndex, TArray<FPointCloudPoint> &Points, FColor pColor) 
 {
 	//Check if selection already exists, if not add a slot for it
@@ -80,19 +105,6 @@ void FPointCloudOctree::HideCollectedPoints(int32 SelectionListIndex, TArray<FPo
 	{
 		Points[index].SetEnabled(false);
 		Points[index].SetEnabledOverride(true);
-	}
-}
-
-void FPointCloudOctree::DeleteCollectedPoints(int32 SelectionListIndex, TArray<FPointCloudPoint> &Points)
-{
-	//Check if selection already exists, if not add a slot for it
-	if (SelectionList.Num() < (SelectionListIndex + 1))
-	{
-		SelectionList.AddDefaulted(1);
-	}
-	for (auto const &index : SelectionList[SelectionListIndex])
-	{
-		Points.RemoveAt(index); // Only call at end! Indexes need to probably be refreshed somehow to work runtime
 	}
 }
 

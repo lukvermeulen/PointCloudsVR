@@ -410,6 +410,7 @@ public:
 
 	//LUK CODE
 
+	//Gets touched points colliding with collider sphere
 	UFUNCTION(BlueprintCallable, Category = "Point Cloud")
 	void GetTouchedPoints(int32 SelectionListIndex, FVector ColliderLocation, int32 Radius) //UPARAM(ref) TArray<FPointCloudPoint> &InPoints
 	{
@@ -495,7 +496,7 @@ public:
 
 
 	// Start Luk Code 2
-
+	
 	UFUNCTION(BlueprintPure, Category = "Point Cloud")
 	FORCEINLINE TArray<FVector>& GetCollectedPointLocations() { return PointCoordinatesCollected; } //Not in use Get Collected Point Luk
 

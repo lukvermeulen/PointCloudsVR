@@ -854,7 +854,7 @@ void UPointCloud::ProcessWarningMessages()
 bool UPointCloud::BP_ExportCloud(FString SaveDirectory, FString FileName, bool AllowOverWriting = false)
 {
 	//TODO Call code to delete all points that where marked for deletion
-	Octree.DeleteAllMarked(Points);
+	//BP_DeleteAllMarked();
 
 	//Set complete file path
 	SaveDirectory += "\\";
@@ -888,21 +888,23 @@ bool UPointCloud::BP_ExportCloud(FString SaveDirectory, FString FileName, bool A
 
 	for (auto const& point : Points)
 	{
-		//Add x y z r g b to line
-		Line += FString::SanitizeFloat(point.Location.X) + Delimiter;
-		Line += FString::SanitizeFloat(point.Location.Y) + Delimiter;
-		Line += FString::SanitizeFloat(point.Location.Z) + Delimiter;
-		Line += FString::SanitizeFloat(point.Color.R) + Delimiter;
-		Line += FString::SanitizeFloat(point.Color.G) + Delimiter;
-		Line += FString::SanitizeFloat(point.Color.B) + "\n";
+		if (point.IsEnabled()) //only export enabled points
+		{
+			//Add x y z r g b to line
+			Line += FString::SanitizeFloat(point.Location.X) + Delimiter;
+			Line += FString::SanitizeFloat(point.Location.Y) + Delimiter;
+			Line += FString::SanitizeFloat(point.Location.Z) + Delimiter;
+			Line += FString::FromInt(point.Color.R) + Delimiter;
+			Line += FString::FromInt(point.Color.G) + Delimiter;
+			Line += FString::FromInt(point.Color.B) + "\n";
 		
-		//convert FString Line to std::string and clear it after to be reused in next iteration
-		StdLine = std::string(TCHAR_TO_UTF8(*Line)); 
-		Line = "";
+			//convert FString Line to std::string and clear it after to be reused in next iteration
+			StdLine = std::string(TCHAR_TO_UTF8(*Line)); 
+			Line = "";
 
-		//add line to file
-		luksfile << StdLine;
-
+			//add line to file
+			luksfile << StdLine;
+		}
 		//FFileHelper::SaveStringToFile(Line, SaveDirectory, FFileHelper::EEncodingOptions::AutoDetect, &IFileManager::Get(), FILEWRITE_Append);
 		//FinalString.Add(Line); 
 	}
@@ -946,9 +948,9 @@ bool UPointCloud::BP_ExportIndividual(FString SaveDirectory, FString SelectionNa
 		Line += FString::SanitizeFloat(Points[pointIndex].Location.X) + Delimiter;
 		Line += FString::SanitizeFloat(Points[pointIndex].Location.Y) + Delimiter;
 		Line += FString::SanitizeFloat(Points[pointIndex].Location.Z) + Delimiter;
-		Line += FString::SanitizeFloat(Points[pointIndex].Color.R) + Delimiter;
-		Line += FString::SanitizeFloat(Points[pointIndex].Color.G) + Delimiter;
-		Line += FString::SanitizeFloat(Points[pointIndex].Color.B) + "\n";
+		Line += FString::FromInt(Points[pointIndex].Color.R) + Delimiter;
+		Line += FString::FromInt(Points[pointIndex].Color.G) + Delimiter;
+		Line += FString::FromInt(Points[pointIndex].Color.B) + "\n";
 		
 		//convert FString Line to std::string and clear it after to be reused in next iteration
 		StdLine = std::string(TCHAR_TO_UTF8(*Line));
