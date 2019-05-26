@@ -67,10 +67,14 @@ public:
 	void DeleteAllMarked(TArray<FPointCloudPoint> &);
 	void ColorCollectedPoints(int32, TArray<FPointCloudPoint> &, FColor);
 	void HideCollectedPoints(int32, TArray<FPointCloudPoint> &);
-	void DeleteCollectedPoints(int32, TArray<FPointCloudPoint> &);
+	void DeleteCollectedPoints(TArray<FPointCloudPoint> &); //int32, 
 	void GetTouchedPoints(int32, FVector ColliderLocation, int32 Radius, TArray<FPointCloudPoint>&, const FPointCloudOctree::Node&);
 	void GetPoints(int32, TArray<FPointCloudPoint> &, FVector, int32, const FPointCloudOctree::Node &);
 	void GetAllTouchedNodes(int32, FVector, int32, TArray<FPointCloudPoint> &, const FPointCloudOctree::Node &);
+
+	FPlane FitPlane(TArray<uint32> Selection1, TArray<uint32> Selection2, TArray<uint32> Selection3);
+	FBox FitBox(TArray<uint32> Selection, TArray<FPointCloudPoint> &Points);
+	void CallFitBoxOnSelection(int32 SelectionListIndex, TArray<FPointCloudPoint> &Points, const FPointCloudOctree::Node&);
 
 	//END LUK
 

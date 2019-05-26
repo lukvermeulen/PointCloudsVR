@@ -506,9 +506,13 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Point Cloud")
 	void BP_HideCollectedPoints(int32 SelectionListIndex) { Octree.HideCollectedPoints(SelectionListIndex, Points); } //Hide Collected Points Index Luk
 
+	//Create Box from selection and select all points in it
+	UFUNCTION(BlueprintCallable, Category = "Point Cloud")
+	void BP_CallFitBoxOnSelection(int32 SelectionListIndex) { Octree.CallFitBoxOnSelection(SelectionListIndex, Points, Octree.Root); }
+
 	//Use MarkForDeletion instead
 	UFUNCTION(BlueprintCallable, Category = "Point Cloud")
-	void BP_DeleteCollectedPoints(int32 SelectionListIndex) { Octree.DeleteCollectedPoints(SelectionListIndex, Points); } //Delete Collected Points Index Luk
+	void BP_DeleteCollectedPoints(int32 SelectionListIndex) { Octree.DeleteCollectedPoints(Points); } //Delete Collected Points Index Luk
 
 	//Mark Selection to be Deleted Luk
 	UFUNCTION(BlueprintCallable, Category = "Point Cloud")
@@ -532,7 +536,7 @@ public:
 	void BP_AddSelectionIndex() { Octree.AddSelectionIndex(); } //Reset Variables Luk
 
 	UFUNCTION(BlueprintCallable, Category = "Point Cloud") //Export whole changed cloud
-	bool BP_ExportCloud(FString SaveDirectory, FString FileName, bool AllowOverWriting);
+	bool BP_ExportCloud(FString SaveDirectory, FString FileName, bool DeleteMarked, bool AllowOverWriting);
 
 	UFUNCTION(BlueprintCallable, Category = "Point Cloud") //Export selections as individual files
 	bool BP_ExportIndividual(FString SaveDirectory, FString SelectionName, int32 SelectionIndex, bool AllowOverWriting);

@@ -22,7 +22,7 @@
 //LUK CODE
 TArray<uint32> TmpTouchedPointsIndex;   //stores indecies to Points
 TArray<TArray<uint32>> SelectionList;   //List of individual selections
-TArray<int32> ToBeDeleted;
+TArray<int32> ToBeDeleted;				//SelectionIndex of selection that will be deleted
 //TODO add option to rename selections
 //TODO add option to rescale cloud
 //TODO maybe move cloud rebuild from blueprint to the function itself?
@@ -58,20 +58,29 @@ void FPointCloudOctree::MarkForDeletion(int32 index)
 
 void FPointCloudOctree::DeleteAllMarked(TArray<FPointCloudPoint> &Points)
 {
-	for (auto const &index : ToBeDeleted)
+	DeleteCollectedPoints(Points);
+	
+	/*for (auto const &index : ToBeDeleted)
 	{
 		DeleteCollectedPoints(index, Points);
-	}
+	}*/
 }
 
-void FPointCloudOctree::DeleteCollectedPoints(int32 SelectionListIndex, TArray<FPointCloudPoint> &Points)
+void FPointCloudOctree::DeleteCollectedPoints(TArray<FPointCloudPoint> &Points) //int32 SelectionListIndex,
 {
 	//Check if selection already exists, if not add a slot for it
-	if (SelectionList.Num() < (SelectionListIndex + 1))
+	
+	
+	TArray<uint32> tmpdeleteindices;
+	
+	for (auto const& i : ToBeDeleted)
 	{
-		SelectionList.AddDefaulted(1);
+		tmpdeleteindices.Append(SelectionList[i]);
 	}
-	for (int32 i = SelectionList[SelectionListIndex].Num(); i >= 0; i--)
+	
+	tmpdeleteindices.Sort();
+
+	for (int32 i = tmpdeleteindices.Num(); i >= 0; i--)
 	{
 		Points.RemoveAt(i); // Only call at end! Indexes need to probably be refreshed somehow to work runtime
 	}
@@ -108,6 +117,55 @@ void FPointCloudOctree::HideCollectedPoints(int32 SelectionListIndex, TArray<FPo
 	}
 }
 
+//Calls function FitBox on already slected points
+void FPointCloudOctree::CallFitBoxOnSelection(int32 SelectionListIndex, TArray<FPointCloudPoint> &Points, const FPointCloudOctree::Node& pNode)
+{
+	FBox SelectionBounds = FitBox(SelectionList[SelectionListIndex], Points);
+
+	// Does Selection Bounds intersects with node 
+	if (SelectionBounds.Intersect(pNode.WorldBounds.GetBox()))
+	{
+		if (pNode.LOD >= 0)
+		{
+			for (auto const & index : pNode.LukPointIndices)
+			{
+				if (SelectionBounds.IsInsideOrOn(Points[index].Location))
+				{
+					SelectionList[SelectionListIndex].AddUnique(index);
+				}
+			}
+		}
+
+		if (pNode.LOD > 0)
+		{
+			// Iterate through all node children
+			for (int i = 0; i < int(pNode.NumChildren); i++) {
+				CallFitBoxOnSelection(SelectionListIndex, Points, pNode);
+			}
+		}
+	}
+	else // Collider not inside node
+	{
+		if (GEngine) { GEngine->AddOnScreenDebugMessage(2, 5.f, FColor::Red, TEXT("Collider NOT Inside Node")); }
+	}
+}
+
+//Create Box from points
+FBox FPointCloudOctree::FitBox(TArray<uint32> Selection, TArray<FPointCloudPoint> &Points)
+{
+	TArray<FVector> PointsForBox;
+	for (auto const & i : Selection)
+	{
+		PointsForBox.Add(Points[i].Location);
+	}
+
+	UWorld* myworld = GEngine->GetWorldFromContextObject(PointCloud);
+	DrawDebugBox(myworld, FBox(PointsForBox).GetCenter(), FBox(PointsForBox).GetExtent(), FColor::Green, false, 10, 0, 5);
+
+	return FBox(PointsForBox);
+}
+
+//Adds all points indecics of points that collide with collider to Array in given selection
 void FPointCloudOctree::GetPoints(int32 SelectionListIndex, TArray<FPointCloudPoint> &PointCloudPoints, FVector ColliderLocation, int32 Radius, const FPointCloudOctree::Node &ppNodeToGetPoints)
 {
 	//For every PointIndex in LukPointIndex
@@ -118,7 +176,11 @@ void FPointCloudOctree::GetPoints(int32 SelectionListIndex, TArray<FPointCloudPo
 		//if (GEngine) { GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::Printf(TEXT("DistanceSquared to Collider: %f"), distanceSquared)); } //Print distanceSquared
 		if (distanceSquared < radiusSquared)
 		{
-			SelectionList[SelectionListIndex].AddUnique(pointIndex);                           // Add the Index of the Point to the collection
+			SelectionList[SelectionListIndex].AddUnique(pointIndex);           // Add the Index of the Point to the collection
+
+			UWorld* myworld = GEngine->GetWorldFromContextObject(PointCloud);
+			DrawDebugPoint(myworld, PointCloudPoints[pointIndex].Location, 50, FColor::Red, false, 10);
+
 			//if (GEngine) { GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, FString::Printf(TEXT("Point Added: %d"), pNodeToGetPoints.LOD)); }
 		}
 	}

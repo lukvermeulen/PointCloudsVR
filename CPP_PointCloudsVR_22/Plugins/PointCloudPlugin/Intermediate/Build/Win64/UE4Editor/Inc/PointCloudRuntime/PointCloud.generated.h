@@ -48,10 +48,11 @@ enum class EPointCloudColorMode : uint8;
 	{ \
 		P_GET_PROPERTY(UStrProperty,Z_Param_SaveDirectory); \
 		P_GET_PROPERTY(UStrProperty,Z_Param_FileName); \
+		P_GET_UBOOL(Z_Param_DeleteMarked); \
 		P_GET_UBOOL(Z_Param_AllowOverWriting); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->BP_ExportCloud(Z_Param_SaveDirectory,Z_Param_FileName,Z_Param_AllowOverWriting); \
+		*(bool*)Z_Param__Result=P_THIS->BP_ExportCloud(Z_Param_SaveDirectory,Z_Param_FileName,Z_Param_DeleteMarked,Z_Param_AllowOverWriting); \
 		P_NATIVE_END; \
 	} \
  \
@@ -94,6 +95,15 @@ enum class EPointCloudColorMode : uint8;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->BP_DeleteCollectedPoints(Z_Param_SelectionListIndex); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBP_CallFitBoxOnSelection) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_SelectionListIndex); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->BP_CallFitBoxOnSelection(Z_Param_SelectionListIndex); \
 		P_NATIVE_END; \
 	} \
  \
@@ -335,10 +345,11 @@ enum class EPointCloudColorMode : uint8;
 	{ \
 		P_GET_PROPERTY(UStrProperty,Z_Param_SaveDirectory); \
 		P_GET_PROPERTY(UStrProperty,Z_Param_FileName); \
+		P_GET_UBOOL(Z_Param_DeleteMarked); \
 		P_GET_UBOOL(Z_Param_AllowOverWriting); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->BP_ExportCloud(Z_Param_SaveDirectory,Z_Param_FileName,Z_Param_AllowOverWriting); \
+		*(bool*)Z_Param__Result=P_THIS->BP_ExportCloud(Z_Param_SaveDirectory,Z_Param_FileName,Z_Param_DeleteMarked,Z_Param_AllowOverWriting); \
 		P_NATIVE_END; \
 	} \
  \
@@ -381,6 +392,15 @@ enum class EPointCloudColorMode : uint8;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->BP_DeleteCollectedPoints(Z_Param_SelectionListIndex); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBP_CallFitBoxOnSelection) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_SelectionListIndex); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->BP_CallFitBoxOnSelection(Z_Param_SelectionListIndex); \
 		P_NATIVE_END; \
 	} \
  \
