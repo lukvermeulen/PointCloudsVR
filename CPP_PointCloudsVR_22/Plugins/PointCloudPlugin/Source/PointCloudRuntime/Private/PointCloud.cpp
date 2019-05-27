@@ -851,7 +851,7 @@ void UPointCloud::ProcessWarningMessages()
 
 // Luk Exporter Code
 
-bool UPointCloud::BP_ExportCloud(FString SaveDirectory, FString FileName, bool DeleteMarked, bool AllowOverWriting = false)
+bool UPointCloud::BP_ExportCloud(FString SaveDirectory, FString FileName, bool DeleteMarked = true, bool AllowOverWriting = false)
 {
 	//TODO Call code to delete all points that where marked for deletion
 	if (DeleteMarked)

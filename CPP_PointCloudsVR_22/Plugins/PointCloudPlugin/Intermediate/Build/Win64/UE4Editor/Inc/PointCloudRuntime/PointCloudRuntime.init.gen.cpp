@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodePointCloudRuntime_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x381F021B,
+				0x2EDC231D,
 				0xCC1F5C45,
 				METADATA_PARAMS(nullptr, 0)
 			};

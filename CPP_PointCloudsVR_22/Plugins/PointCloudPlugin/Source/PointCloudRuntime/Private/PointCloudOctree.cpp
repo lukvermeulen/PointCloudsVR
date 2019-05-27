@@ -23,14 +23,8 @@
 TArray<uint32> TmpTouchedPointsIndex;   //stores indecies to Points
 TArray<TArray<uint32>> SelectionList;   //List of individual selections
 TArray<int32> ToBeDeleted;				//SelectionIndex of selection that will be deleted
-//TODO add option to rename selections
-//TODO add option to rescale cloud
 //TODO maybe move cloud rebuild from blueprint to the function itself?
-//TODO Rework deletion algorythm due to array shifting
 //TODO !!Export only points that do not match index in deleted index?
-//TODO Check current export only "isenabled" (-> no distinction between deleted and hidden points)
-//TODO Merge all indices in deleted selections to one deleted array?
-//TODO 
 //TODO Maybe copy point array to call deletion upon, so you can continue working after export (Hard delete changes all indecies etc) or only skip those on export
 
 TArray<uint32> FPointCloudOctree::GetSelectionList(int32 ListIndex) { return SelectionList[ListIndex]; }
@@ -59,7 +53,6 @@ void FPointCloudOctree::MarkForDeletion(int32 index)
 void FPointCloudOctree::DeleteAllMarked(TArray<FPointCloudPoint> &Points)
 {
 	DeleteCollectedPoints(Points);
-	
 	/*for (auto const &index : ToBeDeleted)
 	{
 		DeleteCollectedPoints(index, Points);
@@ -68,9 +61,6 @@ void FPointCloudOctree::DeleteAllMarked(TArray<FPointCloudPoint> &Points)
 
 void FPointCloudOctree::DeleteCollectedPoints(TArray<FPointCloudPoint> &Points) //int32 SelectionListIndex,
 {
-	//Check if selection already exists, if not add a slot for it
-	
-	
 	TArray<uint32> tmpdeleteindices;
 	
 	for (auto const& i : ToBeDeleted)
@@ -84,10 +74,6 @@ void FPointCloudOctree::DeleteCollectedPoints(TArray<FPointCloudPoint> &Points) 
 	{
 		Points.RemoveAt(i); // Only call at end! Indexes need to probably be refreshed somehow to work runtime
 	}
-	/*for (auto const &index : SelectionList[SelectionListIndex])
-	{
-		
-	}*/
 }
 
 void FPointCloudOctree::ColorCollectedPoints(int32 SelectionListIndex, TArray<FPointCloudPoint> &Points, FColor pColor) 
@@ -120,8 +106,14 @@ void FPointCloudOctree::HideCollectedPoints(int32 SelectionListIndex, TArray<FPo
 //Calls function FitBox on already slected points
 void FPointCloudOctree::CallFitBoxOnSelection(int32 SelectionListIndex, TArray<FPointCloudPoint> &Points, const FPointCloudOctree::Node& pNode)
 {
+	//Check if selection already exists, if not add a slot for it
+	if (SelectionList.Num() < (SelectionListIndex + 1))
+	{
+		SelectionList.AddDefaulted(1);
+	}
+	
 	FBox SelectionBounds = FitBox(SelectionList[SelectionListIndex], Points);
-
+	
 	// Does Selection Bounds intersects with node 
 	if (SelectionBounds.Intersect(pNode.WorldBounds.GetBox()))
 	{
@@ -138,16 +130,17 @@ void FPointCloudOctree::CallFitBoxOnSelection(int32 SelectionListIndex, TArray<F
 
 		if (pNode.LOD > 0)
 		{
+			
 			// Iterate through all node children
 			for (int i = 0; i < int(pNode.NumChildren); i++) {
-				CallFitBoxOnSelection(SelectionListIndex, Points, pNode);
+				CallFitBoxOnSelection(SelectionListIndex, Points, *pNode.Children[i]);
 			}
 		}
 	}
 	else // Collider not inside node
 	{
 		if (GEngine) { GEngine->AddOnScreenDebugMessage(2, 5.f, FColor::Red, TEXT("Collider NOT Inside Node")); }
-	}
+	} 
 }
 
 //Create Box from points
