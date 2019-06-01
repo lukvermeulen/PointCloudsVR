@@ -25,6 +25,60 @@ E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlu
 e:\luk\dokumente\github\pointcloudsvr\cpp_pointcloudsvr_22\plugins\pointcloudplugin\source\pointcloudruntime\private\importers\PointCloudFileImporter_XYZ.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Slate\Public\Widgets/Input/SSpinBox.h
 E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Inc\PointCloudRuntime\PointCloudFileImporter_XYZ.generated.h
+E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloud.cpp
+E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Public\PointCloudHelper.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/ScopedSlowTask.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Materials/MaterialInstance.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Materials/MaterialInstanceBasePropertyOverrides.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\MaterialInstanceBasePropertyOverrides.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\MaterialInstance.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Materials/MaterialInstanceDynamic.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\MaterialInstanceDynamic.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/ConstructorHelpers.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Logging/MessageLog.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Logging/TokenizedMessage.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\HAL/PlatformFilemanager.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\iostream
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\istream
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\ostream
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\ios
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\xlocnum
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\climits
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\cmath
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\xtgmath.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\cstdio
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\streambuf
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\xiosbase
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\xlocale
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\cstring
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\stdexcept
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\xstring
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\xmemory0
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\cstdint
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\limits
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\ymath.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\cfloat
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\cwchar
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\xutility
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\utility
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\iosfwd
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\xatomic0.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\typeinfo
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\vcruntime_typeinfo.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\xlocinfo
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\xlocinfo.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt\locale.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\memory
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\xmemory
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\xfacet
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\system_error
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\cerrno
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\xcall_once.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\xerrc.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt\share.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\fstream
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\string
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\xstring_insert.h
 E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudActor.cpp
 E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Public\PointCloudActor.h
 E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Inc\PointCloudRuntime\PointCloudActor.generated.h
@@ -61,11 +115,12 @@ C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStatics.generated.h
 E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudComponent.cpp
 E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudHelper.cpp
-E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Public\PointCloudHelper.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Async/Async.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\HAL/Runnable.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\HAL/RunnableThread.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\HAL/PlatformAffinity.h
+E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudOctree.cpp
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Public\DrawDebugHelpers.h
 E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudRendering.cpp
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Public\Engine.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/MonolithicHeaderBoilerplate.h
@@ -82,7 +137,6 @@ c:\program files\epic games\ue_4.22\engine\source\runtime\core\public\HAL/Platfo
 c:\program files\epic games\ue_4.22\engine\source\runtime\core\public\Windows/WindowsPlatformFile.h
 c:\program files\epic games\ue_4.22\engine\source\runtime\core\public\HAL/PlatformIncludes.h
 c:\program files\epic games\ue_4.22\engine\source\runtime\core\public\Misc/MonolithicHeaderBoilerplate.h
-c:\program files\epic games\ue_4.22\engine\source\runtime\core\public\HAL/PlatformFilemanager.h
 c:\program files\epic games\ue_4.22\engine\source\runtime\core\public\ProfilingDebugging/ScopedDebugInfo.h
 c:\program files\epic games\ue_4.22\engine\source\runtime\core\public\ProfilingDebugging/ExternalProfiler.h
 c:\program files\epic games\ue_4.22\engine\source\runtime\core\public\Misc/StringUtility.h
@@ -125,7 +179,6 @@ c:\program files\epic games\ue_4.22\engine\source\runtime\core\public\ProfilingD
 c:\program files\epic games\ue_4.22\engine\source\runtime\core\public\Misc/OutputDeviceHelper.h
 c:\program files\epic games\ue_4.22\engine\source\runtime\core\public\Misc/SlowTaskStack.h
 c:\program files\epic games\ue_4.22\engine\source\runtime\core\public\Misc/FeedbackContext.h
-c:\program files\epic games\ue_4.22\engine\source\runtime\core\public\Misc/ScopedSlowTask.h
 c:\program files\epic games\ue_4.22\engine\source\runtime\core\public\Misc/AutomationTest.h
 c:\program files\epic games\ue_4.22\engine\source\runtime\core\public\Internationalization/Regex.h
 c:\program files\epic games\ue_4.22\engine\source\runtime\core\public\Misc/CallbackDevice.h
@@ -176,7 +229,6 @@ c:\program files\epic games\ue_4.22\engine\source\runtime\coreuobject\public\Ser
 c:\program files\epic games\ue_4.22\engine\source\runtime\coreuobject\public\Serialization/ArchiveObjectPropertyMapper.h
 c:\program files\epic games\ue_4.22\engine\source\runtime\coreuobject\public\Serialization/ArchiveReferenceMarker.h
 c:\program files\epic games\ue_4.22\engine\source\runtime\coreuobject\public\Serialization/ArchiveObjectCrc32.h
-c:\program files\epic games\ue_4.22\engine\source\runtime\coreuobject\public\UObject/ConstructorHelpers.h
 c:\program files\epic games\ue_4.22\engine\source\runtime\coreuobject\public\UObject/LinkerSave.h
 c:\program files\epic games\ue_4.22\engine\source\runtime\coreuobject\public\Misc/RedirectCollector.h
 c:\program files\epic games\ue_4.22\engine\source\runtime\coreuobject\public\UObject/ScriptStackTracker.h
@@ -305,12 +357,6 @@ C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\PointLightComponent.generated.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Components/SpotLightComponent.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SpotLightComponent.generated.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Materials/MaterialInstance.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Materials/MaterialInstanceBasePropertyOverrides.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\MaterialInstanceBasePropertyOverrides.generated.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\MaterialInstance.generated.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Materials/MaterialInstanceDynamic.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\MaterialInstanceDynamic.generated.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Sound/AmbientSound.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\AmbientSound.generated.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/Volume.h
@@ -522,7 +568,6 @@ c:\program files\epic games\ue_4.22\engine\source\runtime\engine\public\Animatio
 c:\program files\epic games\ue_4.22\engine\source\runtime\engine\public\Animation/AnimMTStats.h
 c:\program files\epic games\ue_4.22\engine\source\runtime\engine\public\Animation/AnimMTStats.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/Base64.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Logging/TokenizedMessage.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\AnimNodeBase.generated.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\AnimBlueprintGeneratedClass.generated.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Camera/CameraAnim.h
@@ -730,7 +775,6 @@ C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Animati
 C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\AnimNotify.generated.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\AnimInstance.generated.h
 c:\program files\epic games\ue_4.22\engine\source\runtime\engine\public\SystemSettings.h
-c:\program files\epic games\ue_4.22\engine\source\runtime\engine\public\DrawDebugHelpers.h
 c:\program files\epic games\ue_4.22\engine\source\runtime\engine\public\UnrealEngine.h
 c:\program files\epic games\ue_4.22\engine\source\runtime\engine\public\EngineUtils.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\SlateCore\Public\SlateCore.h
