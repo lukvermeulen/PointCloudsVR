@@ -1,0 +1,14 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-PointCloudEditor-0001.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Intermediate\Build\Win64\CPP_PointCloudsVR_22Editor\Development\UnrealEd\SharedPCH.UnrealEd.h.obj"
+"E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Development\PointCloudEditor\Module.PointCloudEditor.cpp.obj"
+"E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Development\PointCloudEditor\Module.PointCloudEditor.gen.cpp.obj"
+"E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Development\PointCloudEditor\Default.rc2.res"
+/OUT:"E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Development\PointCloudEditor\UE4Editor-PointCloudEditor-0001.lib"
+/INCLUDE:IMPLEMENT_MODULE_PointCloudEditor

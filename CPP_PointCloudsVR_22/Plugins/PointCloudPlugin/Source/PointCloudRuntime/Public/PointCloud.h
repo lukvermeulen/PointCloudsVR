@@ -510,6 +510,18 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Point Cloud")
 	void BP_CallFitBoxOnSelection(int32 SelectionListIndex) { Octree.CallFitBoxOnSelection(SelectionListIndex, Points, Octree.Root); }
 
+	UFUNCTION(BlueprintCallable, Category = "Point Cloud")
+	void BP_GetPointsOnPlaneInBounds(FPlane Plane, FVector PlanePoint1, FVector PlanePoint2, FVector PlanePoint3, FVector PlanePointA, FVector PlanePointB, FVector PlaneNormal, float Threshhold, int32 SelectionListIndex)
+	{
+		Octree.GetPointsOnPlaneInBounds(Plane, PlanePoint1, PlanePoint2, PlanePoint3, PlanePointA, PlanePointB, PlaneNormal, Threshhold, SelectionListIndex, Points, Octree.Root);
+	}
+
+	UFUNCTION(BlueprintCallable, Category = "Point Cloud")
+	bool BP_PointOnPlaneInBounds(FPlane Plane, FVector Point, FVector PlanePoint1, FVector PlanePoint2, FVector PlanePoint3, FVector PlaneNormal, float Threshhold)
+	{
+		return Octree.PointOnPlaneInBounds(Plane, Point, PlanePoint1, PlanePoint2, PlanePoint3, PlaneNormal, Threshhold);
+	}
+
 	//Use MarkForDeletion instead
 	UFUNCTION(BlueprintCallable, Category = "Point Cloud")
 	void BP_DeleteCollectedPoints(int32 SelectionListIndex) { Octree.DeleteCollectedPoints(Points); } //Delete Collected Points Index Luk

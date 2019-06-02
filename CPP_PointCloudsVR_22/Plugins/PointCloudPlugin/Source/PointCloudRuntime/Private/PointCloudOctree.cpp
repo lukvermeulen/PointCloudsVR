@@ -10,6 +10,7 @@
 //Luk Impported
 #include "Box.h"
 #include "Vector.h"
+#include "Math/UnrealMathUtility.h"
 
 #include "EngineGlobals.h"
 #include <Runtime/Engine/Classes/Engine/Engine.h>
@@ -156,6 +157,103 @@ FBox FPointCloudOctree::FitBox(TArray<uint32> Selection, TArray<FPointCloudPoint
 	DrawDebugBox(myworld, FBox(PointsForBox).GetCenter(), FBox(PointsForBox).GetExtent(), FColor::Green, false, 10, 0, 5);
 
 	return FBox(PointsForBox);
+}
+
+//Calculate if Point is in certain distance to plane and lies between bounds
+bool FPointCloudOctree::PointOnPlaneInBounds(FPlane Plane, FVector Point, FVector PlanePoint1, FVector PlanePoint2, FVector PlanePointB, FVector PlaneNormal, float Threshhold)
+{
+	FVector ProjectedPoint = FVector::PointPlaneProject(Point, Plane);
+	float DistanceToPlane = FMath::Abs(FVector::PointPlaneDist(Point, PlanePoint1, PlaneNormal.GetSafeNormal(0.0001)));
+
+	//if (GEngine) { GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, FString::Printf(TEXT("Distance to Plane: %f"), DistanceToPlane)); }
+
+	if (DistanceToPlane > Threshhold) { return false; }
+	else
+	{
+		FVector ClosestPointU; //= FMath::ClosestPointOnInfiniteLine(PlanePoint1, PlanePoint2, Point);  //(PlanePoint1 - PlanePoint2)
+		FVector ClosestPointV; //= FMath::ClosestPointOnInfiniteLine(PlanePoint2, PlanePoint2, Point);  //(PlanePoint2 - PlanePoint3)
+
+		FMath::PointDistToLine(Point, (PlanePoint1 - PlanePoint2), PlanePoint1, ClosestPointU);
+		FMath::PointDistToLine(Point, (PlanePoint2 - PlanePointB), PlanePoint2, ClosestPointV);
+
+		float DistanceCombinedU = (FVector::DistSquared(ClosestPointU, PlanePoint1)) + (FVector::DistSquared(ClosestPointU, PlanePoint2));
+		float DistancePointsU = FVector::DistSquared(PlanePoint1, PlanePoint2);
+
+		float DistanceCombinedV = FVector::DistSquared(ClosestPointV, PlanePoint2) + FVector::DistSquared(ClosestPointV, PlanePointB);
+		float DistancePointsV = FVector::DistSquared(PlanePoint2, PlanePointB);
+
+		if ((DistanceCombinedU < DistancePointsU) && (DistanceCombinedV < DistancePointsV))
+		{
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	
+}
+
+void FPointCloudOctree::GetPointsOnPlaneInBounds(FPlane Plane, FVector PlanePoint1, FVector PlanePoint2, FVector PlanePoint3, FVector PlanePointA, FVector PlanePointB, FVector PlaneNormal, float Threshhold, int32 SelectionListIndex, TArray<FPointCloudPoint>& Points, const FPointCloudOctree::Node& pNode)
+{
+	//Check if selection already exists, if not add a slot for it
+	if (SelectionList.Num() < (SelectionListIndex + 1))
+	{
+		SelectionList.AddDefaulted(1);
+	}
+	
+	TArray<FVector> PlanePoints;
+	FVector NormalizedPlaneNormal = PlaneNormal.GetSafeNormal();
+	PlanePoints.Add(PlanePoint1);
+	PlanePoints.Add(PlanePoint2);
+	PlanePoints.Add(PlanePoint3);
+	PlanePoints.Add(PlanePoint1 + (NormalizedPlaneNormal*Threshhold));
+	PlanePoints.Add(PlanePoint2 + (NormalizedPlaneNormal*Threshhold));
+	PlanePoints.Add(PlanePointA + (NormalizedPlaneNormal*Threshhold));
+	PlanePoints.Add(PlanePointB + (NormalizedPlaneNormal*Threshhold));
+	PlanePoints.Add(PlanePoint1 - (NormalizedPlaneNormal*Threshhold));
+	PlanePoints.Add(PlanePoint2 - (NormalizedPlaneNormal*Threshhold));
+	PlanePoints.Add(PlanePointA - (NormalizedPlaneNormal*Threshhold));
+	PlanePoints.Add(PlanePointB - (NormalizedPlaneNormal*Threshhold));
+
+	UWorld* myworld = GEngine->GetWorldFromContextObject(PointCloud);
+	
+	FBox CompleteBounds = FBox(PlanePoints);  //Construct Axis Aligned Box for all Points  //Root.WorldBounds.GetBox();
+
+	for (auto const& index : PlanePoints)
+	{
+		DrawDebugBox(myworld, CompleteBounds.GetCenter(), CompleteBounds.GetExtent(), FColor::Red, false, 10, 0, 5);
+		DrawDebugPoint(myworld, index, 50, FColor::Red, false, 10);
+	}
+
+	//Get All Nodes that intersect with CompleteBounds
+	if (CompleteBounds.Intersect(pNode.WorldBounds.GetBox())) //
+	{
+		if (pNode.LOD >= 0)
+		{
+			for (auto const & index : pNode.LukPointIndices)
+			{
+				if (CompleteBounds.IsInsideOrOn(Points[index].Location))//
+				{
+					if (PointOnPlaneInBounds(Plane, Points[index].Location, PlanePoint1, PlanePoint2, PlanePointB, PlaneNormal, Threshhold))
+					{
+						SelectionList[SelectionListIndex].AddUnique(index);
+					}
+				}
+			}
+		}
+
+		if (pNode.LOD > 0)
+		{
+			// Iterate through all node children
+			for (int i = 0; i < int(pNode.NumChildren); i++) {
+				GetPointsOnPlaneInBounds(Plane, PlanePoint1, PlanePoint2, PlanePoint3, PlanePointA, PlanePointB, PlaneNormal, Threshhold, SelectionListIndex, Points, *pNode.Children[i]);
+			}
+		}
+	}
+	else // Collider not inside node
+	{
+		if (GEngine) { GEngine->AddOnScreenDebugMessage(2, 5.f, FColor::Red, TEXT("Collider NOT Inside Node")); }
+	}
 }
 
 //Adds all points indecics of points that collide with collider to Array in given selection

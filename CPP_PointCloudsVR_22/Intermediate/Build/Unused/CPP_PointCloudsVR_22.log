@@ -2,21 +2,24 @@
   Creating makefile for CPP_PointCloudsVR_22Editor (ini files are newer than makefile)
   Parsing headers for CPP_PointCloudsVR_22Editor
     Running UnrealHeaderTool "E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\CPP_PointCloudsVR_22.uproject" "E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Intermediate\Build\Win64\CPP_PointCloudsVR_22Editor\Development\CPP_PointCloudsVR_22Editor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for CPP_PointCloudsVR_22Editor in 10,0135475 seconds
+  Reflection code generated for CPP_PointCloudsVR_22Editor in 7,4586521 seconds
+  [Adaptive unity build] Excluded from PointCloudRuntime unity file: PointCloudOctree.cpp
+  [Adaptive unity build] Excluded from PointCloudRuntime.gen unity file: PointCloud.gen.cpp, PointCloudRuntime.init.gen.cpp
   Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 5 actions with 8 processes...
-    [1/5] Module.PointCloudRuntime.gen.cpp
-    [2/5] Module.PointCloudRuntime.cpp
-E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudOctree.cpp(155): warning C4996: 'UEngine::GetWorldFromContextObject': GetWorldFromContextObject(Object) and GetWorldFromContextObject(Object, boolean) are replaced by GetWorldFromContextObject(Object, Enum) or GetWorldFromContextObjectChecked(Object) Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+  Building 4 actions with 8 processes...
+    [1/4] PointCloudOctree.cpp
+E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudOctree.cpp(156): warning C4996: 'UEngine::GetWorldFromContextObject': GetWorldFromContextObject(Object) and GetWorldFromContextObject(Object, boolean) are replaced by GetWorldFromContextObject(Object, Enum) or GetWorldFromContextObjectChecked(Object) Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
     C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Engine/Engine.h(2478): note: Siehe Deklaration von "UEngine::GetWorldFromContextObject"
-E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudOctree.cpp(174): warning C4996: 'UEngine::GetWorldFromContextObject': GetWorldFromContextObject(Object) and GetWorldFromContextObject(Object, boolean) are replaced by GetWorldFromContextObject(Object, Enum) or GetWorldFromContextObjectChecked(Object) Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudOctree.cpp(218): warning C4996: 'UEngine::GetWorldFromContextObject': GetWorldFromContextObject(Object) and GetWorldFromContextObject(Object, boolean) are replaced by GetWorldFromContextObject(Object, Enum) or GetWorldFromContextObjectChecked(Object) Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
     C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Engine/Engine.h(2478): note: Siehe Deklaration von "UEngine::GetWorldFromContextObject"
-E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudOctree.cpp(204): warning C4996: 'UEngine::GetWorldFromContextObject': GetWorldFromContextObject(Object) and GetWorldFromContextObject(Object, boolean) are replaced by GetWorldFromContextObject(Object, Enum) or GetWorldFromContextObjectChecked(Object) Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudOctree.cpp(272): warning C4996: 'UEngine::GetWorldFromContextObject': GetWorldFromContextObject(Object) and GetWorldFromContextObject(Object, boolean) are replaced by GetWorldFromContextObject(Object, Enum) or GetWorldFromContextObjectChecked(Object) Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
     C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Engine/Engine.h(2478): note: Siehe Deklaration von "UEngine::GetWorldFromContextObject"
-    [3/5] UE4Editor-PointCloudRuntime.lib
+E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudOctree.cpp(302): warning C4996: 'UEngine::GetWorldFromContextObject': GetWorldFromContextObject(Object) and GetWorldFromContextObject(Object, boolean) are replaced by GetWorldFromContextObject(Object, Enum) or GetWorldFromContextObjectChecked(Object) Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+    C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Engine/Engine.h(2478): note: Siehe Deklaration von "UEngine::GetWorldFromContextObject"
+    [2/4] UE4Editor-PointCloudRuntime.lib
        Bibliothek "E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Development\PointCloudRuntime\UE4Editor-PointCloudRuntime.lib" und Objekt "E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Development\PointCloudRuntime\UE4Editor-PointCloudRuntime.exp" werden erstellt.
-    [4/5] UE4Editor-PointCloudRuntime.dll
+    [3/4] UE4Editor-PointCloudRuntime.dll
        Bibliothek "E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Development\PointCloudRuntime\UE4Editor-PointCloudRuntime.suppressed.lib" und Objekt "E:\Luk\Dokumente\GitHub\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Development\PointCloudRuntime\UE4Editor-PointCloudRuntime.suppressed.exp" werden erstellt.
-    [5/5] CPP_PointCloudsVR_22Editor.target
-  Total time in Parallel executor: 314,28 seconds
-  Total execution time: 328,99 seconds
+    [4/4] CPP_PointCloudsVR_22Editor.target
+  Total time in Parallel executor: 3,86 seconds
+  Total execution time: 13,82 seconds

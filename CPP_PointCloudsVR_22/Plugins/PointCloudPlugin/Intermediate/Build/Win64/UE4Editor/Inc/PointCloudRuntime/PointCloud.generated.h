@@ -9,8 +9,9 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 struct FPointCloudPoint;
-struct FColor;
+struct FPlane;
 struct FVector;
+struct FColor;
 class UMaterialInterface;
 enum class EPointCloudRenderMethod : uint8;
 struct FBoxSphereBounds;
@@ -95,6 +96,38 @@ enum class EPointCloudColorMode : uint8;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->BP_DeleteCollectedPoints(Z_Param_SelectionListIndex); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBP_PointOnPlaneInBounds) \
+	{ \
+		P_GET_STRUCT(FPlane,Z_Param_Plane); \
+		P_GET_STRUCT(FVector,Z_Param_Point); \
+		P_GET_STRUCT(FVector,Z_Param_PlanePoint1); \
+		P_GET_STRUCT(FVector,Z_Param_PlanePoint2); \
+		P_GET_STRUCT(FVector,Z_Param_PlanePoint3); \
+		P_GET_STRUCT(FVector,Z_Param_PlaneNormal); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Threshhold); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->BP_PointOnPlaneInBounds(Z_Param_Plane,Z_Param_Point,Z_Param_PlanePoint1,Z_Param_PlanePoint2,Z_Param_PlanePoint3,Z_Param_PlaneNormal,Z_Param_Threshhold); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBP_GetPointsOnPlaneInBounds) \
+	{ \
+		P_GET_STRUCT(FPlane,Z_Param_Plane); \
+		P_GET_STRUCT(FVector,Z_Param_PlanePoint1); \
+		P_GET_STRUCT(FVector,Z_Param_PlanePoint2); \
+		P_GET_STRUCT(FVector,Z_Param_PlanePoint3); \
+		P_GET_STRUCT(FVector,Z_Param_PlanePointA); \
+		P_GET_STRUCT(FVector,Z_Param_PlanePointB); \
+		P_GET_STRUCT(FVector,Z_Param_PlaneNormal); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Threshhold); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_SelectionListIndex); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->BP_GetPointsOnPlaneInBounds(Z_Param_Plane,Z_Param_PlanePoint1,Z_Param_PlanePoint2,Z_Param_PlanePoint3,Z_Param_PlanePointA,Z_Param_PlanePointB,Z_Param_PlaneNormal,Z_Param_Threshhold,Z_Param_SelectionListIndex); \
 		P_NATIVE_END; \
 	} \
  \
@@ -392,6 +425,38 @@ enum class EPointCloudColorMode : uint8;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->BP_DeleteCollectedPoints(Z_Param_SelectionListIndex); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBP_PointOnPlaneInBounds) \
+	{ \
+		P_GET_STRUCT(FPlane,Z_Param_Plane); \
+		P_GET_STRUCT(FVector,Z_Param_Point); \
+		P_GET_STRUCT(FVector,Z_Param_PlanePoint1); \
+		P_GET_STRUCT(FVector,Z_Param_PlanePoint2); \
+		P_GET_STRUCT(FVector,Z_Param_PlanePoint3); \
+		P_GET_STRUCT(FVector,Z_Param_PlaneNormal); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Threshhold); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->BP_PointOnPlaneInBounds(Z_Param_Plane,Z_Param_Point,Z_Param_PlanePoint1,Z_Param_PlanePoint2,Z_Param_PlanePoint3,Z_Param_PlaneNormal,Z_Param_Threshhold); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBP_GetPointsOnPlaneInBounds) \
+	{ \
+		P_GET_STRUCT(FPlane,Z_Param_Plane); \
+		P_GET_STRUCT(FVector,Z_Param_PlanePoint1); \
+		P_GET_STRUCT(FVector,Z_Param_PlanePoint2); \
+		P_GET_STRUCT(FVector,Z_Param_PlanePoint3); \
+		P_GET_STRUCT(FVector,Z_Param_PlanePointA); \
+		P_GET_STRUCT(FVector,Z_Param_PlanePointB); \
+		P_GET_STRUCT(FVector,Z_Param_PlaneNormal); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Threshhold); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_SelectionListIndex); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->BP_GetPointsOnPlaneInBounds(Z_Param_Plane,Z_Param_PlanePoint1,Z_Param_PlanePoint2,Z_Param_PlanePoint3,Z_Param_PlanePointA,Z_Param_PlanePointB,Z_Param_PlaneNormal,Z_Param_Threshhold,Z_Param_SelectionListIndex); \
 		P_NATIVE_END; \
 	} \
  \

@@ -72,10 +72,11 @@ public:
 	void GetPoints(int32, TArray<FPointCloudPoint> &, FVector, int32, const FPointCloudOctree::Node &);
 	void GetAllTouchedNodes(int32, FVector, int32, TArray<FPointCloudPoint> &, const FPointCloudOctree::Node &);
 
-	FPlane FitPlane(TArray<uint32> Selection1, TArray<uint32> Selection2, TArray<uint32> Selection3);
 	FBox FitBox(TArray<uint32> Selection, TArray<FPointCloudPoint> &Points);
 	void CallFitBoxOnSelection(int32 SelectionListIndex, TArray<FPointCloudPoint> &Points, const FPointCloudOctree::Node&);
 
+	bool PointOnPlaneInBounds(FPlane, FVector Point, FVector PlanePoint1, FVector PlanePoint2, FVector PlanePoint3, FVector PlaneNormal, float Threshhold);
+	void GetPointsOnPlaneInBounds(FPlane, FVector PlanePoint1, FVector PlanePoint2, FVector PlanePoint3, FVector, FVector, FVector PlaneNormal, float Threshhold, int32 SelectionListIndex, TArray<FPointCloudPoint>& Points, const FPointCloudOctree::Node&);
 	//END LUK
 
 private:
