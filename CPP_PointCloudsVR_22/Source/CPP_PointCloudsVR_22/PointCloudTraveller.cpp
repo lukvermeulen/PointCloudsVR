@@ -35,6 +35,7 @@ APointCloudTraveller::APointCloudTraveller()
 	R_MotionController->MotionSource = FXRMotionControllerBase::RightHandSourceId;
 	R_MotionController->SetupAttachment(RootComponent);
 	L_MotionController = CreateDefaultSubobject<UMotionControllerComponent>(TEXT("L_MotionController"));
+	L_MotionController->MotionSource = FXRMotionControllerBase::LeftHandSourceId;
 	L_MotionController->SetupAttachment(RootComponent);
 
 	// Uncomment the following line to turn motion controllers on by default:

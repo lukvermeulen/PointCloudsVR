@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\CPP_PointCloudsVR_22.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{45BAC833-8605-4C3E-A61F-1990E7764E15}</UniqueIdentifier>
+      <UniqueIdentifier>{6C80BEA4-B296-4869-9E03-870EF4984DAE}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\CPP_PointCloudsVR_22.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{EA42CFA5-9882-4CD6-963D-8A75BC488669}</UniqueIdentifier>
+      <UniqueIdentifier>{57F5F569-64FF-4E4F-9D81-BF84556EDA72}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,22 +30,124 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Plugins">
-      <UniqueIdentifier>{3D5ACE92-2A44-486D-B9BF-74CEB48000E2}</UniqueIdentifier>
+      <UniqueIdentifier>{F3BF72A7-D884-4462-B4CB-847B2881931E}</UniqueIdentifier>
     </Filter>
     <Filter Include="Plugins\PointCloudPlugin">
-      <UniqueIdentifier>{284EC53B-2AC1-4948-ABB9-D2FCF3FBEDC0}</UniqueIdentifier>
+      <UniqueIdentifier>{23AA3735-26B1-4C63-941A-92365D0603F1}</UniqueIdentifier>
     </Filter>
     <Filter Include="Plugins\PointCloudPlugin\Source">
-      <UniqueIdentifier>{B180EF72-C0E3-46C8-B067-2B141132F182}</UniqueIdentifier>
+      <UniqueIdentifier>{DA0B5D7E-9861-48D4-953A-E449CB987F8B}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Plugins\PointCloudPlugin\Source\PointCloudRuntime">
+      <UniqueIdentifier>{BE72F018-D694-4E38-A9DB-082B548BB50B}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\PointCloudRuntime.Build.cs">
+      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime</Filter>
+    </None>
+    <Filter Include="Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private">
+      <UniqueIdentifier>{34C9015E-950A-40D5-800A-E6B33BBF03C1}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloud.cpp">
+      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudActor.cpp">
+      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudComponent.cpp">
+      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudHelper.cpp">
+      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudOctree.cpp">
+      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudRendering.cpp">
+      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudRuntimeModule.cpp">
+      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudShared.cpp">
+      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudStatics.cpp">
+      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private</Filter>
+    </ClCompile>
+    <Filter Include="Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\Importers">
+      <UniqueIdentifier>{EB4B62DD-A726-4B86-98E8-BC386CE3B389}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\Importers\PointCloudFileImporter.cpp">
+      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\Importers\PointCloudFileImporter_LAS.cpp">
+      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\Importers</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\Importers\PointCloudFileImporter_LAS.h">
+      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\Importers</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\Importers\PointCloudFileImporter_XYZ.cpp">
+      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\Importers</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\Importers\PointCloudFileImporter_XYZ.h">
+      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\Importers</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\PointCloudPlugin\Source\PointCloudRuntime\Public">
+      <UniqueIdentifier>{DB93A7EE-C171-46BF-B334-F617253D6F80}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Public\IPointCloudRuntimeModule.h">
+      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Public\PointCloud.h">
+      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Public\PointCloudActor.h">
+      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Public\PointCloudComponent.h">
+      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Public\PointCloudFileImporter.h">
+      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Public\PointCloudHelper.h">
+      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Public\PointCloudOctree.h">
+      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Public\PointCloudShared.h">
+      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Public\PointCloudStatics.h">
+      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Public</Filter>
+    </ClInclude>
+    <None Include="..\..\Plugins\PointCloudPlugin\PointCloudPlugin.uplugin">
+      <Filter>Plugins\PointCloudPlugin</Filter>
+    </None>
+    <Filter Include="Plugins\PointCloudPlugin\Resources">
+      <UniqueIdentifier>{7337ED91-8459-4418-9932-EBF925D6BEEB}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\PointCloudPlugin\Resources\Icon128.png">
+      <Filter>Plugins\PointCloudPlugin\Resources</Filter>
+    </None>
+    <Filter Include="Plugins\PointCloudPlugin\Shaders">
+      <UniqueIdentifier>{2AB9686A-BB6F-4E9E-9522-28C4068C271A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\PointCloudPlugin\Shaders\Private">
+      <UniqueIdentifier>{362585D2-F5BC-4E8A-908F-FE214ACB8793}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\PointCloudPlugin\Shaders\Private\PointCloudVertexFactory.ush">
+      <Filter>Plugins\PointCloudPlugin\Shaders\Private</Filter>
+    </None>
     <Filter Include="Plugins\PointCloudPlugin\Source\PointCloudEditor">
-      <UniqueIdentifier>{DF390AF2-DFE5-4C72-B1A3-59307B83D66B}</UniqueIdentifier>
+      <UniqueIdentifier>{8D18226E-D707-4493-A9C0-9436E9E64C55}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudEditor\PointCloudEditor.Build.cs">
       <Filter>Plugins\PointCloudPlugin\Source\PointCloudEditor</Filter>
     </None>
     <Filter Include="Plugins\PointCloudPlugin\Source\PointCloudEditor\Private">
-      <UniqueIdentifier>{EB090054-65E3-4E05-8620-619A455A2DDF}</UniqueIdentifier>
+      <UniqueIdentifier>{2C33DA6E-2AFD-4231-AAE5-4380A610B2DD}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudEditor\Private\ActorFactoryPointCloud.cpp">
       <Filter>Plugins\PointCloudPlugin\Source\PointCloudEditor\Private</Filter>
@@ -87,115 +189,13 @@
       <Filter>Plugins\PointCloudPlugin\Source\PointCloudEditor\Private</Filter>
     </ClInclude>
     <Filter Include="Plugins\PointCloudPlugin\Source\PointCloudEditor\Public">
-      <UniqueIdentifier>{1DB5CA44-36E8-494B-A63F-6275E976083F}</UniqueIdentifier>
+      <UniqueIdentifier>{DABCB63E-BF72-4B47-AB10-E63B2CFFDA4A}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudEditor\Public\IPointCloudEditorModule.h">
       <Filter>Plugins\PointCloudPlugin\Source\PointCloudEditor\Public</Filter>
     </ClInclude>
-    <None Include="..\..\Plugins\PointCloudPlugin\PointCloudPlugin.uplugin">
-      <Filter>Plugins\PointCloudPlugin</Filter>
-    </None>
-    <Filter Include="Plugins\PointCloudPlugin\Resources">
-      <UniqueIdentifier>{3E8D5D75-B923-4840-A5FA-6D1E583807BE}</UniqueIdentifier>
-    </Filter>
-    <None Include="..\..\Plugins\PointCloudPlugin\Resources\Icon128.png">
-      <Filter>Plugins\PointCloudPlugin\Resources</Filter>
-    </None>
-    <Filter Include="Plugins\PointCloudPlugin\Shaders">
-      <UniqueIdentifier>{7FF4D4F7-9953-4F69-9D8A-A7EF09F7D68B}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Plugins\PointCloudPlugin\Shaders\Private">
-      <UniqueIdentifier>{3A4003F8-405C-4B23-9208-895BF300A3E1}</UniqueIdentifier>
-    </Filter>
-    <None Include="..\..\Plugins\PointCloudPlugin\Shaders\Private\PointCloudVertexFactory.ush">
-      <Filter>Plugins\PointCloudPlugin\Shaders\Private</Filter>
-    </None>
-    <Filter Include="Plugins\PointCloudPlugin\Source\PointCloudRuntime">
-      <UniqueIdentifier>{2256E963-2F70-4CAD-8CF3-1461B5819D51}</UniqueIdentifier>
-    </Filter>
-    <None Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\PointCloudRuntime.Build.cs">
-      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime</Filter>
-    </None>
-    <Filter Include="Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private">
-      <UniqueIdentifier>{38931C9C-A7D4-4343-80C4-2BFED29FC178}</UniqueIdentifier>
-    </Filter>
-    <ClCompile Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloud.cpp">
-      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudActor.cpp">
-      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudComponent.cpp">
-      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudHelper.cpp">
-      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudOctree.cpp">
-      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudRendering.cpp">
-      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudRuntimeModule.cpp">
-      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudShared.cpp">
-      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudStatics.cpp">
-      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private</Filter>
-    </ClCompile>
-    <Filter Include="Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\Importers">
-      <UniqueIdentifier>{388B8D8A-F823-4954-8533-0ADD903FC321}</UniqueIdentifier>
-    </Filter>
-    <ClCompile Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\Importers\PointCloudFileImporter.cpp">
-      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\Importers</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\Importers\PointCloudFileImporter_LAS.cpp">
-      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\Importers</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\Importers\PointCloudFileImporter_LAS.h">
-      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\Importers</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\Importers\PointCloudFileImporter_XYZ.cpp">
-      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\Importers</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\Importers\PointCloudFileImporter_XYZ.h">
-      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\Importers</Filter>
-    </ClInclude>
-    <Filter Include="Plugins\PointCloudPlugin\Source\PointCloudRuntime\Public">
-      <UniqueIdentifier>{A878EAD7-9580-4B26-B6C4-538E9F8A9023}</UniqueIdentifier>
-    </Filter>
-    <ClInclude Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Public\IPointCloudRuntimeModule.h">
-      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Public\PointCloud.h">
-      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Public\PointCloudActor.h">
-      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Public\PointCloudComponent.h">
-      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Public\PointCloudFileImporter.h">
-      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Public\PointCloudHelper.h">
-      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Public\PointCloudOctree.h">
-      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Public\PointCloudShared.h">
-      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Public\PointCloudStatics.h">
-      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Public</Filter>
-    </ClInclude>
     <Filter Include="Source\CPP_PointCloudsVR_22">
-      <UniqueIdentifier>{18D24C30-FE77-4442-BE24-4E6070329DDB}</UniqueIdentifier>
+      <UniqueIdentifier>{BE9D3DF7-87EF-44C6-B843-FDB685164A02}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\CPP_PointCloudsVR_22\CPP_PointCloudsVR_22.Build.cs">
       <Filter>Source\CPP_PointCloudsVR_22</Filter>
@@ -236,15 +236,17 @@
     <ClInclude Include="..\..\Source\CPP_PointCloudsVR_22\PointCloudTraveller.h">
       <Filter>Source\CPP_PointCloudsVR_22</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="LukExporter.txt">
-      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="LukExporter.csv">
-      <Filter>Plugins\PointCloudPlugin\Source\PointCloudRuntime\Public</Filter>
-    </ClInclude>
+    <Filter Include="Source\CPP_PointCloudsVR_22\Private">
+      <UniqueIdentifier>{A95798B2-651E-4EE5-847E-C7165E5161A0}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\CPP_PointCloudsVR_22\Private\LukExport.txt">
+      <Filter>Source\CPP_PointCloudsVR_22\Private</Filter>
+    </None>
+    <Filter Include="Source\CPP_PointCloudsVR_22\Public">
+      <UniqueIdentifier>{0301BF03-F791-4985-8CF3-5D4D32E6D5AB}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\CPP_PointCloudsVR_22\Public\LukExport.txt">
+      <Filter>Source\CPP_PointCloudsVR_22\Public</Filter>
+    </None>
   </ItemGroup>
 </Project>
