@@ -131,6 +131,16 @@ enum class EPointCloudColorMode : uint8;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execBP_GetPointsInDrawnBox) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_SelectionListIndex); \
+		P_GET_TARRAY(FVector,Z_Param_BoxPoints); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->BP_GetPointsInDrawnBox(Z_Param_SelectionListIndex,Z_Param_BoxPoints); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execBP_CallFitBoxOnSelection) \
 	{ \
 		P_GET_PROPERTY(UIntProperty,Z_Param_SelectionListIndex); \
@@ -457,6 +467,16 @@ enum class EPointCloudColorMode : uint8;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->BP_GetPointsOnPlaneInBounds(Z_Param_Plane,Z_Param_PlanePoint1,Z_Param_PlanePoint2,Z_Param_PlanePoint3,Z_Param_PlanePointA,Z_Param_PlanePointB,Z_Param_PlaneNormal,Z_Param_Threshhold,Z_Param_SelectionListIndex); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBP_GetPointsInDrawnBox) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_SelectionListIndex); \
+		P_GET_TARRAY(FVector,Z_Param_BoxPoints); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->BP_GetPointsInDrawnBox(Z_Param_SelectionListIndex,Z_Param_BoxPoints); \
 		P_NATIVE_END; \
 	} \
  \

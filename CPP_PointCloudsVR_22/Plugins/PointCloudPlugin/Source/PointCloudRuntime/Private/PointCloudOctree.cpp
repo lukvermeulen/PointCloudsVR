@@ -24,6 +24,7 @@
 TArray<uint32> TmpTouchedPointsIndex;   //stores indecies to Points
 TArray<TArray<uint32>> SelectionList;   //List of individual selections
 TArray<int32> ToBeDeleted;				//SelectionIndex of selection that will be deleted
+
 //TODO maybe move cloud rebuild from blueprint to the function itself?
 //TODO !!Export only points that do not match index in deleted index?
 //TODO Maybe copy point array to call deletion upon, so you can continue working after export (Hard delete changes all indecies etc) or only skip those on export
@@ -140,8 +141,47 @@ void FPointCloudOctree::CallFitBoxOnSelection(int32 SelectionListIndex, TArray<F
 	}
 	else // Collider not inside node
 	{
-		if (GEngine) { GEngine->AddOnScreenDebugMessage(2, 5.f, FColor::Red, TEXT("Collider NOT Inside Node")); }
+		//if (GEngine) { GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Collider NOT Inside Node")); }
 	} 
+}
+
+void FPointCloudOctree::GetPointsInDrawnBox(int32 SelectionListIndex, TArray<FPointCloudPoint> &Points, const FPointCloudOctree::Node& pNode, TArray<FVector> BoxPoints)
+{
+	//Check if selection already exists, if not add a slot for it
+	if (SelectionList.Num() < (SelectionListIndex + 1))
+	{
+		SelectionList.AddDefaulted(1);
+	}
+
+	FBox SelectionBounds = FBox(BoxPoints);
+
+	// Does Selection Bounds intersects with node 
+	if (SelectionBounds.Intersect(pNode.WorldBounds.GetBox()))
+	{
+		if (pNode.LOD >= 0)
+		{
+			for (auto const & index : pNode.LukPointIndices)
+			{
+				if (SelectionBounds.IsInsideOrOn(Points[index].Location))
+				{
+					SelectionList[SelectionListIndex].AddUnique(index);
+				}
+			}
+		}
+
+		if (pNode.LOD > 0)
+		{
+
+			// Iterate through all node children
+			for (int i = 0; i < int(pNode.NumChildren); i++) {
+				GetPointsInDrawnBox(SelectionListIndex, Points, *pNode.Children[i], BoxPoints);
+			}
+		}
+	}
+	else // Collider not inside node
+	{
+		//if (GEngine) { GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Collider NOT Inside Node")); }
+	}
 }
 
 //Create Box from points

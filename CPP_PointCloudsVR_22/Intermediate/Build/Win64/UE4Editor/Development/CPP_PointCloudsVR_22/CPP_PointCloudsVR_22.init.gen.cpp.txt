@@ -1,3 +1,0 @@
-D:\M2Rep\PointCloudsVR\CPP_PointCloudsVR_22\Intermediate\Build\Win64\UE4Editor\Development\CPP_PointCloudsVR_22\Definitions.CPP_PointCloudsVR_22.h
-D:\Programme\Epic\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
-D:\Programme\Epic\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h

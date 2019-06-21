@@ -1,0 +1,772 @@
+﻿Log file open, 06/21/19 17:29:54
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: File 'aqProf.dll' does not exist
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi32e.dll' does not exist
+LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
+LogInit: Display: Running engine for game: CPP_PointCloudsVR_22
+LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 14 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.199643
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +1:00, Platform Override: ''
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin EditorScriptingUtilities
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin GLTFImporter
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MaterialAnalyzer
+LogPluginManager: Mounting plugin MeshEditor
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleVision
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin BlastPlugin
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin HTML5Networking
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin SkeletalReduction
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin LinearTimecode
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin Firebase
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin PointCloudPlugin
+LogPluginManager: Mounting plugin DatasmithCADImporter
+LogPluginManager: Mounting plugin DatasmithDataPrepEditor
+LogPluginManager: Mounting plugin DatasmithFBXImporter
+LogPluginManager: Mounting plugin DatasmithGLTFImporter
+LogPluginManager: Mounting plugin DatasmithImporter
+LogPluginManager: Mounting plugin MDLImporter
+LogPluginManager: Mounting plugin StaticMeshEditorExtension
+LogPluginManager: Mounting plugin VariantManager
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogInit: Build: ++UE4+Release-4.22-CL-6063286
+LogInit: Engine Version: 4.22.1-6063286+++UE4+Release-4.22
+LogInit: Compatible Engine Version: 4.22.0-5660361+++UE4+Release-4.22
+LogInit: Net CL: 5660361
+LogInit: OS: Windows 10 (Release 1803) (), CPU: Intel(R) Core(TM) i7-7700 CPU @ 3.60GHz, GPU: NVIDIA GeForce GTX 1060 6GB
+LogInit: Compiled (64-bit): Apr 24 2019 04:36:48
+LogInit: Compiled with Visual C++: 19.16.27025.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.22
+LogInit: Command Line: 
+LogInit: Base Directory: D:/Programme/Epic/UE_4.22/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 23
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 3
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 30
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 35
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 28
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 11
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 2
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 2
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 25
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 6
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 2
+LogInit: Presizing for max 16777216 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2019.06.21-15.29.55:142][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2019.06.21-15.29.55:142][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2019.06.21-15.29.55:142][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [D:/M2Rep/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Config/Windows/Engine.ini]
+[2019.06.21-15.29.55:142][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2019.06.21-15.29.55:142][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [D:/M2Rep/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Config/Windows/Engine.ini]
+[2019.06.21-15.29.55:142][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [D:/M2Rep/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Config/Windows/Engine.ini]
+[2019.06.21-15.29.55:142][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2019.06.21-15.29.55:142][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2019.06.21-15.29.55:142][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2019.06.21-15.29.55:142][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2019.06.21-15.29.55:142][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2019.06.21-15.29.55:142][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2019.06.21-15.29.55:142][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2019.06.21-15.29.55:142][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2019.06.21-15.29.55:142][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2019.06.21-15.29.55:142][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2019.06.21-15.29.55:142][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2019.06.21-15.29.55:142][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2019.06.21-15.29.55:142][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2019.06.21-15.29.55:143][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [D:/M2Rep/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Config/Windows/Engine.ini]
+[2019.06.21-15.29.55:143][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2019.06.21-15.29.55:143][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2019.06.21-15.29.55:143][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2019.06.21-15.29.55:143][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2019.06.21-15.29.55:143][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2019.06.21-15.29.55:143][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2019.06.21-15.29.55:143][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:16777216]]
+[2019.06.21-15.29.55:143][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2019.06.21-15.29.55:143][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2019.06.21-15.29.55:143][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2019.06.21-15.29.55:143][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2019.06.21-15.29.55:143][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2019.06.21-15.29.55:143][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2019.06.21-15.29.55:143][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [D:/M2Rep/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Config/Windows/Engine.ini]
+[2019.06.21-15.29.55:143][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [D:/M2Rep/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Config/Windows/Engine.ini]
+[2019.06.21-15.29.55:146][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [D:/M2Rep/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Config/Windows/Scalability.ini]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [D:/M2Rep/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Config/Windows/Scalability.ini]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [D:/M2Rep/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Config/Windows/Scalability.ini]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [D:/M2Rep/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Config/Windows/Scalability.ini]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [D:/M2Rep/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Config/Windows/Scalability.ini]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [D:/M2Rep/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Config/Windows/Scalability.ini]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [D:/M2Rep/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Config/Windows/Scalability.ini]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2019.06.21-15.29.55:147][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2019.06.21-15.29.55:147][  0]LogInit: Selected Device Profile: [Windows]
+[2019.06.21-15.29.55:147][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2019.06.21-15.29.55:163][  0]LogHAL: Display: Platform has ~ 32 GB [34250248192 / 34359738368 / 32], which maps to Largest [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2019.06.21-15.29.55:163][  0]LogConfig: Setting CVar [[r.Vulkan.UseRealUBs:0		; Required until we fix HLR fall-out]]
+[2019.06.21-15.29.55:164][  0]LogInit: Going up to parent DeviceProfile []
+[2019.06.21-15.29.55:164][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [D:/M2Rep/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Config/Windows/Scalability.ini]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [D:/M2Rep/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Config/Windows/Scalability.ini]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [D:/M2Rep/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Config/Windows/Scalability.ini]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [D:/M2Rep/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Config/Windows/Scalability.ini]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [D:/M2Rep/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Config/Windows/Scalability.ini]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [D:/M2Rep/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Config/Windows/Scalability.ini]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [D:/M2Rep/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Config/Windows/Scalability.ini]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2019.06.21-15.29.55:164][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2019.06.21-15.29.55:165][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2019.06.21-15.29.55:165][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2019.06.21-15.29.55:165][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [D:/M2Rep/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Config/Windows/Engine.ini]
+[2019.06.21-15.29.55:165][  0]LogInit: Computer: DESKTOP-ON6PSEN
+[2019.06.21-15.29.55:165][  0]LogInit: User: CAADvr
+[2019.06.21-15.29.55:165][  0]LogInit: CPU Page size=4096, Cores=4
+[2019.06.21-15.29.55:165][  0]LogInit: High frequency timer resolution =3.515629 MHz
+[2019.06.21-15.29.55:165][  0]LogMemory: Memory total: Physical=31.9GB (32GB approx)
+[2019.06.21-15.29.55:165][  0]LogMemory: Platform Memory Stats for Windows
+[2019.06.21-15.29.55:165][  0]LogMemory: Process Physical Memory: 103.48 MB used, 103.48 MB peak
+[2019.06.21-15.29.55:165][  0]LogMemory: Process Virtual Memory: 98.27 MB used, 98.27 MB peak
+[2019.06.21-15.29.55:165][  0]LogMemory: Physical Memory: 9209.60 MB used,  23453.98 MB free, 32663.58 MB total
+[2019.06.21-15.29.55:165][  0]LogMemory: Virtual Memory: 4670.58 MB used,  134213056.00 MB free, 134217728.00 MB total
+[2019.06.21-15.29.55:269][  0]LogInit: Using OS detected language (de-DE).
+[2019.06.21-15.29.55:269][  0]LogInit: Using OS detected locale (de-DE).
+[2019.06.21-15.29.55:269][  0]LogTextLocalizationManager: No specific localization for 'de-DE' exists, so the 'de' localization will be used.
+[2019.06.21-15.29.55:269][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/Editor/de/Editor.locres' could not be opened for reading!
+[2019.06.21-15.29.55:270][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/EditorTutorials/de/EditorTutorials.locres' could not be opened for reading!
+[2019.06.21-15.29.55:270][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/Keywords/de/Keywords.locres' could not be opened for reading!
+[2019.06.21-15.29.55:270][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/Category/de/Category.locres' could not be opened for reading!
+[2019.06.21-15.29.55:270][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/ToolTips/de/ToolTips.locres' could not be opened for reading!
+[2019.06.21-15.29.55:270][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/PropertyNames/de/PropertyNames.locres' could not be opened for reading!
+[2019.06.21-15.29.55:270][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/Engine/de/Engine.locres' could not be opened for reading!
+[2019.06.21-15.29.55:286][  0]LogInit: Setting process to per monitor DPI aware
+[2019.06.21-15.29.55:340][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2019.06.21-15.29.55:340][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2019.06.21-15.29.56:752][  0]LogD3D11RHI: D3D11 adapters:
+[2019.06.21-15.29.56:805][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1060 6GB' (Feature Level 11_0)
+[2019.06.21-15.29.56:805][  0]LogD3D11RHI:       6052/0/16331 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2019.06.21-15.29.56:819][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 630' (Feature Level 11_0)
+[2019.06.21-15.29.56:819][  0]LogD3D11RHI:       128/0/16331 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2019.06.21-15.29.56:820][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2019.06.21-15.29.56:820][  0]LogD3D11RHI:       0/0/16331 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2019.06.21-15.29.56:820][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2019.06.21-15.29.56:827][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2019.06.21-15.29.56:827][  0]LogD3D11RHI:     GPU DeviceId: 0x1c03 (for the marketing name, search the web for "GPU Device Id")
+[2019.06.21-15.29.56:827][  0]LogWindows: EnumDisplayDevices:
+[2019.06.21-15.29.56:827][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1060 6GB' (P:1 D:1)
+[2019.06.21-15.29.56:827][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:1)
+[2019.06.21-15.29.56:827][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:0)
+[2019.06.21-15.29.56:827][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:0)
+[2019.06.21-15.29.56:828][  0]LogWindows:    4. 'Intel(R) HD Graphics 630' (P:0 D:0)
+[2019.06.21-15.29.56:828][  0]LogWindows:    5. 'Intel(R) HD Graphics 630' (P:0 D:0)
+[2019.06.21-15.29.56:828][  0]LogWindows:    6. 'Intel(R) HD Graphics 630' (P:0 D:0)
+[2019.06.21-15.29.56:828][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:4 
+[2019.06.21-15.29.56:828][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1060 6GB
+[2019.06.21-15.29.56:828][  0]LogD3D11RHI:   Driver Version: 418.91 (internal:25.21.14.1891, unified:418.91)
+[2019.06.21-15.29.56:828][  0]LogD3D11RHI:      Driver Date: 2-6-2019
+[2019.06.21-15.29.56:828][  0]LogRHI: Texture pool is 4236 MB (70% of 6052 MB)
+[2019.06.21-15.29.56:864][  0]LogD3D11RHI: Async texture creation enabled
+[2019.06.21-15.29.56:879][  0]LogRendererCore: FGlobalReadBuffer::InitRHI
+[2019.06.21-15.29.56:880][  0]LogRendererCore: FGlobalReadBuffer::InitRHI
+[2019.06.21-15.29.56:880][  0]LogRendererCore: FGlobalReadBuffer::InitRHI
+[2019.06.21-15.29.56:887][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2019.06.21-15.29.57:178][  0]LogTemp: Display: Module 'AllDesktopTargetPlatform' loaded TargetPlatform 'AllDesktop'
+[2019.06.21-15.29.57:196][  0]LogTemp: Display: Module 'MacClientTargetPlatform' loaded TargetPlatform 'MacClient'
+[2019.06.21-15.29.57:215][  0]LogTemp: Display: Module 'MacNoEditorTargetPlatform' loaded TargetPlatform 'MacNoEditor'
+[2019.06.21-15.29.57:236][  0]LogTemp: Display: Module 'MacServerTargetPlatform' loaded TargetPlatform 'MacServer'
+[2019.06.21-15.29.57:259][  0]LogTemp: Display: Module 'MacTargetPlatform' loaded TargetPlatform 'Mac'
+[2019.06.21-15.29.57:278][  0]LogTemp: Display: Module 'WindowsClientTargetPlatform' loaded TargetPlatform 'WindowsClient'
+[2019.06.21-15.29.57:298][  0]LogTemp: Display: Module 'WindowsNoEditorTargetPlatform' loaded TargetPlatform 'WindowsNoEditor'
+[2019.06.21-15.29.57:317][  0]LogTemp: Display: Module 'WindowsServerTargetPlatform' loaded TargetPlatform 'WindowsServer'
+[2019.06.21-15.29.57:331][  0]LogTemp: Display: Module 'WindowsTargetPlatform' loaded TargetPlatform 'Windows'
+[2019.06.21-15.29.57:406][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android'
+[2019.06.21-15.29.57:406][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ASTC'
+[2019.06.21-15.29.57:406][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ATC'
+[2019.06.21-15.29.57:406][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_DXT'
+[2019.06.21-15.29.57:406][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1'
+[2019.06.21-15.29.57:406][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1a'
+[2019.06.21-15.29.57:406][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC2'
+[2019.06.21-15.29.57:406][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_PVRTC'
+[2019.06.21-15.29.57:406][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'AndroidClient'
+[2019.06.21-15.29.57:406][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ASTCClient'
+[2019.06.21-15.29.57:406][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ATCClient'
+[2019.06.21-15.29.57:406][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_DXTClient'
+[2019.06.21-15.29.57:406][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1Client'
+[2019.06.21-15.29.57:406][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1aClient'
+[2019.06.21-15.29.57:406][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC2Client'
+[2019.06.21-15.29.57:406][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_PVRTCClient'
+[2019.06.21-15.29.57:406][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_Multi'
+[2019.06.21-15.29.57:406][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_MultiClient'
+[2019.06.21-15.29.57:415][  0]LogTemp: Display: Module 'HTML5TargetPlatform' loaded TargetPlatform 'HTML5'
+[2019.06.21-15.29.57:485][  0]LogTemp: Display: Module 'IOSTargetPlatform' loaded TargetPlatform 'IOSClient'
+[2019.06.21-15.29.57:485][  0]LogTemp: Display: Module 'IOSTargetPlatform' loaded TargetPlatform 'IOS'
+[2019.06.21-15.29.57:512][  0]LogTemp: Display: Module 'TVOSTargetPlatform' loaded TargetPlatform 'TVOSClient'
+[2019.06.21-15.29.57:512][  0]LogTemp: Display: Module 'TVOSTargetPlatform' loaded TargetPlatform 'TVOS'
+[2019.06.21-15.29.57:531][  0]LogTemp: Display: Module 'LinuxClientTargetPlatform' loaded TargetPlatform 'LinuxClient'
+[2019.06.21-15.29.57:549][  0]LogTemp: Display: Module 'LinuxNoEditorTargetPlatform' loaded TargetPlatform 'LinuxNoEditor'
+[2019.06.21-15.29.57:566][  0]LogTemp: Display: Module 'LinuxServerTargetPlatform' loaded TargetPlatform 'LinuxServer'
+[2019.06.21-15.29.57:589][  0]LogTemp: Display: Module 'LinuxTargetPlatform' loaded TargetPlatform 'Linux'
+[2019.06.21-15.29.57:635][  0]LogTemp: Display: Module 'LuminTargetPlatform' loaded TargetPlatform 'Lumin'
+[2019.06.21-15.29.57:635][  0]LogTemp: Display: Module 'LuminTargetPlatform' loaded TargetPlatform 'LuminClient'
+[2019.06.21-15.29.57:635][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2019.06.21-15.29.57:678][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2019.06.21-15.29.57:861][  0]LogShaderCompilers: Guid format shader working directory is -10 characters bigger than the processId version (../../../../../../M2Rep/PointCloudsVR/CPP_PointCloudsVR_22/Intermediate/Shaders/WorkingDirectory/1156/).
+[2019.06.21-15.29.57:861][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/CAAD.vr/AppData/Local/Temp/UnrealShaderWorkingDir/EFC6D5D245EE48FAAD6526B55F8780D5/'.
+[2019.06.21-15.29.57:863][  0]LogXGEController: Cleaning working directory: C:/Users/CAAD.vr/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2019.06.21-15.29.57:863][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2019.06.21-15.29.57:863][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2019.06.21-15.29.57:863][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2019.06.21-15.29.59:164][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2019.06.21-15.29.59:216][  0]LogDerivedDataCache: Loaded boot cache 0.05s 91MB C:/Users/CAAD.vr/AppData/Local/UnrealEngine/4.22/DerivedDataCache/Boot.ddc.
+[2019.06.21-15.29.59:216][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/CAAD.vr/AppData/Local/UnrealEngine/4.22/DerivedDataCache/Boot.ddc
+[2019.06.21-15.29.59:216][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../M2Rep/PointCloudsVR/CPP_PointCloudsVR_22/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2019.06.21-15.29.59:216][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2019.06.21-15.29.59:216][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../M2Rep/PointCloudsVR/CPP_PointCloudsVR_22/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2019.06.21-15.29.59:216][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2019.06.21-15.29.59:230][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2019.06.21-15.29.59:237][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Enterprise/DerivedDataCache/Compressed.ddp.
+[2019.06.21-15.29.59:249][  0]LogDerivedDataCache: Using Local data cache path C:/Users/CAAD.vr/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2019.06.21-15.29.59:249][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2019.06.21-15.29.59:249][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2019.06.21-15.29.59:267][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2019.06.21-15.29.59:268][  0]LogSlate: Using FreeType 2.6.0
+[2019.06.21-15.29.59:275][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2019.06.21-15.29.59:350][  0]LogAssetRegistry: FAssetRegistry took 0.0318 seconds to start up
+[2019.06.21-15.29.59:611][  0]LogInit: Selected Device Profile: [Windows]
+[2019.06.21-15.29.59:861][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2019.06.21-15.29.59:861][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2019.06.21-15.29.59:861][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2019.06.21-15.29.59:861][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2019.06.21-15.29.59:861][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2019.06.21-15.29.59:888][  0]LogNetVersion: CPP_PointCloudsVR_22 1.0.0, NetCL: 5660361, EngineNetVer: 10, GameNetVer: 0 (Checksum: 2507006774)
+[2019.06.21-15.30.00:656][  0]LogPackageLocalizationCache: Processed 17 localized package path(s) for 1 prioritized culture(s) in 0.066588 seconds
+[2019.06.21-15.30.00:662][  0]LogUObjectArray: 42657 objects as part of root set at end of initial load.
+[2019.06.21-15.30.00:662][  0]LogUObjectAllocator: 7430168 out of 0 bytes used by permanent object pool.
+[2019.06.21-15.30.00:662][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2019.06.21-15.30.01:871][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2019.06.21-15.30.01:892][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2019.06.21-15.30.02:262][  0]SourceControl: Source control is disabled
+[2019.06.21-15.30.02:262][  0]SourceControl: Source control is disabled
+[2019.06.21-15.30.02:273][  0]SourceControl: Source control is disabled
+[2019.06.21-15.30.02:282][  0]SourceControl: Source control is disabled
+[2019.06.21-15.30.02:839][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2019.06.21-15.30.02:962][  0]LogOcInput: OculusInput pre-init called
+[2019.06.21-15.30.05:026][  0]LogEngine: Initializing Engine...
+[2019.06.21-15.30.05:026][  0]LogHMD: Oculus plugin initialized. Version: 4.22.1-6063286+++UE4+Release-4.22, OVRPlugin: 1.32.0
+[2019.06.21-15.30.05:027][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2019.06.21-15.30.05:215][  0]LogInit: Initializing FReadOnlyCVARCache
+[2019.06.21-15.30.05:227][  0]LogAIModule: Creating AISystem for world Untitled
+[2019.06.21-15.30.05:244][  0]LogInit: XAudio2 using 'Speakers / Headphones (Realtek Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2019.06.21-15.30.05:415][  0]LogInit: FAudioDevice initialized.
+[2019.06.21-15.30.05:415][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2019.06.21-15.30.05:600][  0]LogDerivedDataCache: Saved boot cache 0.18s 91MB C:/Users/CAAD.vr/AppData/Local/UnrealEngine/4.22/DerivedDataCache/Boot.ddc.
+[2019.06.21-15.30.05:622][  0]LogInit: Texture streaming: Enabled
+[2019.06.21-15.30.05:637][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2019.06.21-15.30.05:663][  0]LogInit: Transaction tracking system initialized
+[2019.06.21-15.30.05:686][  0]BlueprintLog: New page: Editor Load
+[2019.06.21-15.30.05:751][  0]LocalizationService: Localization service is disabled
+[2019.06.21-15.30.06:198][  0]LogFileCache: Scanning file cache for directory 'D:/M2Rep/PointCloudsVR/CPP_PointCloudsVR_22/Content/' took 0.01s
+[2019.06.21-15.30.06:198][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2019.06.21-15.30.06:198][  0]LogCook: Display: Mobile HDR setting 1
+[2019.06.21-15.30.07:316][  0]SourceControl: Source control is disabled
+[2019.06.21-15.30.07:316][  0]Cmd: MAP LOAD FILE="../../../../../../M2Rep/PointCloudsVR/CPP_PointCloudsVR_22/Content/FirstPersonCPP/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2019.06.21-15.30.07:316][  0]LightingResults: New page: Lighting Build
+[2019.06.21-15.30.07:319][  0]MapCheck: New page: Map Check
+[2019.06.21-15.30.07:319][  0]LightingResults: New page: Lighting Build
+[2019.06.21-15.30.07:343][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.75ms
+[2019.06.21-15.30.07:506][  0]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2019.06.21-15.30.07:524][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2019.06.21-15.30.07:548][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.88ms
+[2019.06.21-15.30.07:549][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2019.06.21-15.30.07:549][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0,084ms to complete.
+[2019.06.21-15.30.07:549][  0]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 0.233
+[2019.06.21-15.30.07:649][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.06.21-15.30.07:655][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.06.21-15.30.07:660][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.06.21-15.30.07:667][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.06.21-15.30.07:672][  0]LogCollectionManager: Loaded 0 collections in 0.001360 seconds
+[2019.06.21-15.30.07:698][  0]LogFileCache: Scanning file cache for directory 'D:/M2Rep/PointCloudsVR/CPP_PointCloudsVR_22/Saved/Collections/' took 0.01s
+[2019.06.21-15.30.07:698][  0]LogFileCache: Scanning file cache for directory 'D:/M2Rep/PointCloudsVR/CPP_PointCloudsVR_22/Content/Developers/CAADvr/Collections/' took 0.01s
+[2019.06.21-15.30.07:698][  0]LogFileCache: Scanning file cache for directory 'D:/M2Rep/PointCloudsVR/CPP_PointCloudsVR_22/Content/Collections/' took 0.00s
+[2019.06.21-15.30.07:698][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
+[2019.06.21-15.30.07:706][  0]LogContentBrowser: Native class hierarchy populated in 0.0079 seconds. Added 2879 classes and 735 folders.
+[2019.06.21-15.30.07:713][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2019.06.21-15.30.07:714][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.21-15.30.07:714][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.21-15.30.07:714][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.21-15.30.07:715][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.21-15.30.07:715][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.21-15.30.07:715][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.21-15.30.07:716][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.21-15.30.07:716][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.21-15.30.07:716][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.21-15.30.07:717][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.21-15.30.07:717][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.21-15.30.07:717][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.21-15.30.07:717][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.21-15.30.07:718][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.21-15.30.07:718][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.21-15.30.07:718][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.21-15.30.07:719][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.21-15.30.07:719][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.21-15.30.07:720][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.21-15.30.07:720][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.21-15.30.07:720][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.21-15.30.07:721][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.21-15.30.07:721][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.21-15.30.07:721][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.21-15.30.07:722][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.21-15.30.07:722][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.21-15.30.07:722][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.21-15.30.07:723][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.21-15.30.07:746][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2019.06.21-15.30.07:750][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 1 classes and 0 folders.
+[2019.06.21-15.30.07:816][  0]LogSlate: Took 0.000131 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2019.06.21-15.30.07:817][  0]LogSlate: Took 0.000103 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2019.06.21-15.30.07:822][  0]LogSlate: Took 0.000151 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2019.06.21-15.30.07:874][  0]LogRenderer: Reallocating scene render targets to support 924x556 Format 10 NumSamples 1 (Frame:1).
+[2019.06.21-15.30.07:914][  0]LogSlate: Took 0.000165 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2019.06.21-15.30.07:972][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2019.06.21-15.30.07:972][  0]LogLoad: (Engine Initialization) Total time: 15.14 seconds
+[2019.06.21-15.30.07:972][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2019.06.21-15.30.07:988][  0]LogOcInput: OculusInput is initialized
+[2019.06.21-15.30.08:045][  0]LogAssetRegistry: Asset discovery search completed in 8.7184 seconds
+[2019.06.21-15.30.08:047][  0]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2019.06.21-15.30.08:047][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000053 seconds (updated 0 objects)
+[2019.06.21-15.30.08:052][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2019.06.21-15.30.09:336][  4]LogSlate: Took 0.000129 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2019.06.21-15.30.21:555][258]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.06.21-15.30.21:683][271]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/Collider/BPA_Collider.BPA_Collider
+[2019.06.21-15.30.21:873][271]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0005 seconds. Added 121 classes and 0 folders.
+[2019.06.21-15.30.22:555][271]LogAssetEditorManager: Opening Asset editor for WidgetBlueprint /Game/Collider/Widgets/WBP_SelectionController.WBP_SelectionController
+[2019.06.21-15.30.22:791][271]LogBlueprintActionDatabase: Requesting refresh due to module change: SequencerWidgets (loaded)
+[2019.06.21-15.30.23:091][271]LogSlate: Took 0.000178 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2019.06.21-15.30.25:013][463]LogSlate: Took 0.000130 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2019.06.21-15.31.00:234][635]LogSlate: Took 0.000143 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensedItalic.ttf' (160K)
+[2019.06.21-15.31.35:219][732]BlueprintLog: New page: Compile BPA_Collider
+[2019.06.21-15.31.35:559][732]LogUObjectHash: Compacting FUObjectHashTables data took   5.97ms
+[2019.06.21-15.33.39:105][329]BlueprintLog: New page: Compile WBP_SelectionController
+[2019.06.21-15.33.39:298][329]LogUObjectHash: Compacting FUObjectHashTables data took   4.16ms
+[2019.06.21-15.33.53:975][ 78]LogUObjectHash: Compacting FUObjectHashTables data took   3.47ms
+[2019.06.21-15.33.54:025][ 78]LogUObjectHash: Compacting FUObjectHashTables data took   0.74ms
+[2019.06.21-15.33.54:195][ 78]LogSavePackage: Moving '../../../../../../M2Rep/PointCloudsVR/CPP_PointCloudsVR_22/Saved/FirstPersonExampleMap56F12F3947C4FD6EAADFB0B5AC1F8C65.tmp' to '../../../../../../M2Rep/PointCloudsVR/CPP_PointCloudsVR_22/Content/FirstPersonCPP/Maps/FirstPersonExampleMap.umap'
+[2019.06.21-15.33.54:225][ 78]LogFileHelpers: Saving map 'FirstPersonExampleMap' took 0.237
+[2019.06.21-15.33.54:249][ 78]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Collider/BPA_Collider" FILE="../../../../../../M2Rep/PointCloudsVR/CPP_PointCloudsVR_22/Content/Collider/BPA_Collider.uasset" SILENT=true
+[2019.06.21-15.33.54:440][ 78]LogSavePackage: Moving '../../../../../../M2Rep/PointCloudsVR/CPP_PointCloudsVR_22/Saved/BPA_ColliderCC5DCF1A4B59E017DF29999961ECD703.tmp' to '../../../../../../M2Rep/PointCloudsVR/CPP_PointCloudsVR_22/Content/Collider/BPA_Collider.uasset'
+[2019.06.21-15.33.54:557][ 78]LogSavePackage: Moving '../../../../../../M2Rep/PointCloudsVR/CPP_PointCloudsVR_22/Saved/WBP_SelectionController48CAE9C64C4B67B9AAAF2CA48B1A3D6C.tmp' to '../../../../../../M2Rep/PointCloudsVR/CPP_PointCloudsVR_22/Content/Collider/Widgets/WBP_SelectionController.uasset'
+[2019.06.21-15.33.59:533][668]LogTemp: Repeating last play command: VR Preview
+[2019.06.21-15.33.59:582][668]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2019.06.21-15.33.59:582][668]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.06.21-15.33.59:582][668]LogHMD: Initializing OVRPlugin session
+[2019.06.21-15.33.59:645][668]PIE: New page: PIE session: FirstPersonExampleMap (21.06.2019 19:33:59)
+[2019.06.21-15.33.59:658][668]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2019.06.21-15.33.59:667][668]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008982s)
+[2019.06.21-15.33.59:667][668]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2019.06.21-15.33.59:668][668]LogPlayLevel: PIE: World Init took: (0.000537s)
+[2019.06.21-15.33.59:668][668]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.009793s)
+[2019.06.21-15.33.59:705][668]LogUObjectHash: Compacting FUObjectHashTables data took   2.59ms
+[2019.06.21-15.33.59:719][668]LogInit: XAudio2 using 'Headphones (Rift Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2019.06.21-15.33.59:726][668]LogInit: FAudioDevice initialized.
+[2019.06.21-15.33.59:732][668]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.06.21-15.33.59:763][668]LogHMD: Allocating Oculus 2688 x 1600 rendertarget swapchain
+[2019.06.21-15.33.59:798][668]LogLoad: Game class is 'CPP_PointCloudsVR_22GameMode'
+[2019.06.21-15.33.59:799][668]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2019.06.21-17.33.59
+[2019.06.21-15.33.59:799][668]LogWorld: Bringing up level for play took: 0.000699
+[2019.06.21-15.33.59:816][668]LogBlueprintActionDatabase: Requesting refresh due to module change: Voice (loaded)
+[2019.06.21-15.33.59:820][668]LogBlueprintActionDatabase: Requesting refresh due to module change: MovieSceneCapture (loaded)
+[2019.06.21-15.33.59:820][668]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0003 seconds. Added 20 classes and 0 folders.
+[2019.06.21-15.33.59:821][668]LogSlate: New Slate User Created.  User Index 8, Is Virtual User: 1
+[2019.06.21-15.33.59:821][668]LogSlate: Slate User Registered.  User Index 8, Is Virtual User: 1
+[2019.06.21-15.33.59:826][668]PIE: Play in editor start time for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap 0,723
+[2019.06.21-15.33.59:826][668]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2019.06.21-15.33.59:826][668]LogEngine: Changing dynamic resolution state.
+[2019.06.21-15.33.59:845][668]LogRenderer: Reallocating scene render targets to support 2688x1600 Format 10 NumSamples 1 (Frame:1).
+[2019.06.21-15.33.59:845][668]LogHMD: Allocating Oculus 2688 x 1600 depth rendertarget swapchain
+[2019.06.21-15.34.00:106][670]LogProfilingDebugging: Allocated a 1024 x 1024 texture for HMD canvas layer
+[2019.06.21-15.34.09:234][581]LogBlueprintUserMessages: [WBP_SelectionController] Start new Selection
+[2019.06.21-15.34.09:236][581]LogScript: Warning: Accessed None trying to read property NewPointCloud
+	BPA_Collider_C /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.BPA_Collider_3
+	Function /Game/Collider/BPA_Collider.BPA_Collider_C:ExecuteUbergraph_BPA_Collider:0491
+[2019.06.21-15.34.09:236][581]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read property NewPointCloud". Blueprint:  BPA_Collider Function:  Execute Ubergraph BPA Collider Graph:  EventGraph Node:  BP Add Selection Index
+[2019.06.21-15.34.17:999][367]LogScript: Warning: Accessed None trying to read property NewPointCloud
+	BPA_Collider_C /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.BPA_Collider_3
+	Function /Game/Collider/BPA_Collider.BPA_Collider_C:LoadPointCloud:0012
+[2019.06.21-15.34.17:999][367]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read property NewPointCloud". Blueprint:  BPA_Collider Function:  Load Point Cloud Graph:  LoadPointCloud Node:  BP Reset Variables
+[2019.06.21-15.34.18:339][367]LogTemp: Warning: [LOD4] Cells: 1, MinPoints: 6251, MaxPoints: 6251, TotalPoints: 6251
+[2019.06.21-15.34.18:339][367]LogTemp: Warning: [LOD3] Cells: 8, MinPoints: 1533, MaxPoints: 1583, TotalPoints: 12504
+[2019.06.21-15.34.18:339][367]LogTemp: Warning: [LOD2] Cells: 64, MinPoints: 368, MaxPoints: 413, TotalPoints: 25027
+[2019.06.21-15.34.18:339][367]LogTemp: Warning: [LOD1] Cells: 512, MinPoints: 78, MaxPoints: 118, TotalPoints: 50133
+[2019.06.21-15.34.18:339][367]LogTemp: Warning: [LOD0] Cells: 4096, MinPoints: 11, MaxPoints: 39, TotalPoints: 12389
+[2019.06.21-15.34.21:758][524]LogTemp: Warning: [LOD3] Cells: 1, MinPoints: 12501, MaxPoints: 12501, TotalPoints: 12501
+[2019.06.21-15.34.21:758][524]LogTemp: Warning: [LOD2] Cells: 8, MinPoints: 3065, MaxPoints: 3166, TotalPoints: 25004
+[2019.06.21-15.34.21:758][524]LogTemp: Warning: [LOD1] Cells: 64, MinPoints: 736, MaxPoints: 825, TotalPoints: 50021
+[2019.06.21-15.34.21:758][524]LogTemp: Warning: [LOD0] Cells: 512, MinPoints: 166, MaxPoints: 235, TotalPoints: 12481
+[2019.06.21-15.34.22:086][539]LogTemp: Warning: [LOD3] Cells: 1, MinPoints: 12501, MaxPoints: 12501, TotalPoints: 12501
+[2019.06.21-15.34.22:086][539]LogTemp: Warning: [LOD2] Cells: 8, MinPoints: 3065, MaxPoints: 3166, TotalPoints: 25004
+[2019.06.21-15.34.22:086][539]LogTemp: Warning: [LOD1] Cells: 64, MinPoints: 736, MaxPoints: 825, TotalPoints: 50021
+[2019.06.21-15.34.22:086][539]LogTemp: Warning: [LOD0] Cells: 512, MinPoints: 166, MaxPoints: 235, TotalPoints: 12481
+[2019.06.21-15.34.22:352][551]LogTemp: Warning: [LOD3] Cells: 1, MinPoints: 12501, MaxPoints: 12501, TotalPoints: 12501
+[2019.06.21-15.34.22:352][551]LogTemp: Warning: [LOD2] Cells: 8, MinPoints: 3065, MaxPoints: 3166, TotalPoints: 25004
+[2019.06.21-15.34.22:352][551]LogTemp: Warning: [LOD1] Cells: 64, MinPoints: 736, MaxPoints: 825, TotalPoints: 50021
+[2019.06.21-15.34.22:352][551]LogTemp: Warning: [LOD0] Cells: 512, MinPoints: 166, MaxPoints: 235, TotalPoints: 12481
+[2019.06.21-15.34.22:590][562]LogTemp: Warning: [LOD2] Cells: 1, MinPoints: 25001, MaxPoints: 25001, TotalPoints: 25001
+[2019.06.21-15.34.22:590][562]LogTemp: Warning: [LOD1] Cells: 8, MinPoints: 6129, MaxPoints: 6332, TotalPoints: 50003
+[2019.06.21-15.34.22:590][562]LogTemp: Warning: [LOD0] Cells: 64, MinPoints: 1506, MaxPoints: 1649, TotalPoints: 12500
+[2019.06.21-15.34.22:833][573]LogTemp: Warning: [LOD2] Cells: 1, MinPoints: 25001, MaxPoints: 25001, TotalPoints: 25001
+[2019.06.21-15.34.22:833][573]LogTemp: Warning: [LOD1] Cells: 8, MinPoints: 6129, MaxPoints: 6332, TotalPoints: 50003
+[2019.06.21-15.34.22:833][573]LogTemp: Warning: [LOD0] Cells: 64, MinPoints: 1506, MaxPoints: 1649, TotalPoints: 12500
+[2019.06.21-15.34.23:050][583]LogTemp: Warning: [LOD1] Cells: 1, MinPoints: 50001, MaxPoints: 50001, TotalPoints: 50001
+[2019.06.21-15.34.23:050][583]LogTemp: Warning: [LOD0] Cells: 8, MinPoints: 12258, MaxPoints: 12664, TotalPoints: 100001
+[2019.06.21-15.34.23:314][595]LogTemp: Warning: [LOD0] Cells: 1, MinPoints: 100001, MaxPoints: 100001, TotalPoints: 100001
+[2019.06.21-15.34.23:315][595]AssetCheck: The Point Cloud appears to be very small, did you use correct scale?
+[2019.06.21-15.34.23:315][595]AssetCheck: Warning: Small and dense clouds should have their Preferred Node Size reduced to improve performance.
+[2019.06.21-15.34.23:315][595]AssetCheck: Smaller clouds may benefit from reduced Sprite Size
+[2019.06.21-15.34.23:317][595]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.06.21-15.34.58:164][162]LogTemp: Warning: [LOD4] Cells: 1, MinPoints: 6251, MaxPoints: 6251, TotalPoints: 6251
+[2019.06.21-15.34.58:164][162]LogTemp: Warning: [LOD3] Cells: 8, MinPoints: 1533, MaxPoints: 1583, TotalPoints: 12504
+[2019.06.21-15.34.58:164][162]LogTemp: Warning: [LOD2] Cells: 64, MinPoints: 368, MaxPoints: 413, TotalPoints: 25027
+[2019.06.21-15.34.58:164][162]LogTemp: Warning: [LOD1] Cells: 512, MinPoints: 78, MaxPoints: 118, TotalPoints: 50133
+[2019.06.21-15.34.58:164][162]LogTemp: Warning: [LOD0] Cells: 4096, MinPoints: 11, MaxPoints: 39, TotalPoints: 12389
+[2019.06.21-15.35.03:048][378]LogBlueprintUserMessages: [BP_PointCloudTraveller_C_0] 45
+[2019.06.21-15.35.03:250][387]LogBlueprintUserMessages: [BP_PointCloudTraveller_C_0] 39
+[2019.06.21-15.35.03:426][395]LogBlueprintUserMessages: [BP_PointCloudTraveller_C_0] 34
+[2019.06.21-15.35.03:627][404]LogBlueprintUserMessages: [BP_PointCloudTraveller_C_0] 29
+[2019.06.21-15.35.43:541][199]LogBlueprintUserMessages: [WBP_SelectionController] Start new Selection
+[2019.06.21-15.36.08:984][341]LogTemp: Warning: [LOD4] Cells: 1, MinPoints: 6251, MaxPoints: 6251, TotalPoints: 6251
+[2019.06.21-15.36.08:984][341]LogTemp: Warning: [LOD3] Cells: 8, MinPoints: 1533, MaxPoints: 1583, TotalPoints: 12504
+[2019.06.21-15.36.08:984][341]LogTemp: Warning: [LOD2] Cells: 64, MinPoints: 368, MaxPoints: 413, TotalPoints: 25027
+[2019.06.21-15.36.08:984][341]LogTemp: Warning: [LOD1] Cells: 512, MinPoints: 78, MaxPoints: 118, TotalPoints: 50133
+[2019.06.21-15.36.08:984][341]LogTemp: Warning: [LOD0] Cells: 4096, MinPoints: 11, MaxPoints: 39, TotalPoints: 12389
+[2019.06.21-15.36.41:850][819]LogTemp: Warning: [LOD4] Cells: 1, MinPoints: 6251, MaxPoints: 6251, TotalPoints: 6251
+[2019.06.21-15.36.41:850][819]LogTemp: Warning: [LOD3] Cells: 8, MinPoints: 1533, MaxPoints: 1583, TotalPoints: 12504
+[2019.06.21-15.36.41:850][819]LogTemp: Warning: [LOD2] Cells: 64, MinPoints: 368, MaxPoints: 413, TotalPoints: 25027
+[2019.06.21-15.36.41:850][819]LogTemp: Warning: [LOD1] Cells: 512, MinPoints: 78, MaxPoints: 118, TotalPoints: 50133
+[2019.06.21-15.36.41:850][819]LogTemp: Warning: [LOD0] Cells: 4096, MinPoints: 11, MaxPoints: 39, TotalPoints: 12389
+[2019.06.21-15.36.53:292][208]LogTemp: Warning: [LOD10] Cells: 1, MinPoints: 1469, MaxPoints: 1469, TotalPoints: 1469
+[2019.06.21-15.36.53:292][208]LogTemp: Warning: [LOD9] Cells: 8, MinPoints: 4, MaxPoints: 1349, TotalPoints: 2942
+[2019.06.21-15.36.53:292][208]LogTemp: Warning: [LOD8] Cells: 25, MinPoints: 1, MaxPoints: 2643, TotalPoints: 5887
+[2019.06.21-15.36.53:292][208]LogTemp: Warning: [LOD7] Cells: 61, MinPoints: 1, MaxPoints: 4834, TotalPoints: 11779
+[2019.06.21-15.36.53:292][208]LogTemp: Warning: [LOD6] Cells: 204, MinPoints: 1, MaxPoints: 4761, TotalPoints: 23605
+[2019.06.21-15.36.53:292][208]LogTemp: Warning: [LOD5] Cells: 690, MinPoints: 1, MaxPoints: 3491, TotalPoints: 47352
+[2019.06.21-15.36.53:292][208]LogTemp: Warning: [LOD4] Cells: 2258, MinPoints: 1, MaxPoints: 2349, TotalPoints: 95054
+[2019.06.21-15.36.53:292][208]LogTemp: Warning: [LOD3] Cells: 7194, MinPoints: 1, MaxPoints: 1570, TotalPoints: 190772
+[2019.06.21-15.36.53:292][208]LogTemp: Warning: [LOD2] Cells: 20671, MinPoints: 1, MaxPoints: 715, TotalPoints: 379858
+[2019.06.21-15.36.53:292][208]LogTemp: Warning: [LOD1] Cells: 48685, MinPoints: 2, MaxPoints: 472, TotalPoints: 736680
+[2019.06.21-15.36.53:292][208]LogTemp: Warning: [LOD0] Cells: 96803, MinPoints: 3, MaxPoints: 302, TotalPoints: 357275
+[2019.06.21-15.36.57:195][344]LogTemp: Warning: [LOD9] Cells: 1, MinPoints: 2937, MaxPoints: 2937, TotalPoints: 2937
+[2019.06.21-15.36.57:196][344]LogTemp: Warning: [LOD8] Cells: 8, MinPoints: 8, MaxPoints: 2698, TotalPoints: 5878
+[2019.06.21-15.36.57:196][344]LogTemp: Warning: [LOD7] Cells: 25, MinPoints: 1, MaxPoints: 5286, TotalPoints: 11758
+[2019.06.21-15.36.57:196][344]LogTemp: Warning: [LOD6] Cells: 61, MinPoints: 1, MaxPoints: 9668, TotalPoints: 23521
+[2019.06.21-15.36.57:196][344]LogTemp: Warning: [LOD5] Cells: 204, MinPoints: 1, MaxPoints: 9522, TotalPoints: 47083
+[2019.06.21-15.36.57:196][344]LogTemp: Warning: [LOD4] Cells: 690, MinPoints: 1, MaxPoints: 6982, TotalPoints: 94294
+[2019.06.21-15.36.57:196][344]LogTemp: Warning: [LOD3] Cells: 2258, MinPoints: 1, MaxPoints: 4698, TotalPoints: 188866
+[2019.06.21-15.36.57:196][344]LogTemp: Warning: [LOD2] Cells: 7194, MinPoints: 1, MaxPoints: 3139, TotalPoints: 377789
+[2019.06.21-15.36.57:196][344]LogTemp: Warning: [LOD1] Cells: 20670, MinPoints: 2, MaxPoints: 1430, TotalPoints: 750642
+[2019.06.21-15.36.57:196][344]LogTemp: Warning: [LOD0] Cells: 48685, MinPoints: 3, MaxPoints: 715, TotalPoints: 336936
+[2019.06.21-15.36.58:629][373]LogTemp: Warning: [LOD9] Cells: 1, MinPoints: 2937, MaxPoints: 2937, TotalPoints: 2937
+[2019.06.21-15.36.58:629][373]LogTemp: Warning: [LOD8] Cells: 8, MinPoints: 8, MaxPoints: 2698, TotalPoints: 5878
+[2019.06.21-15.36.58:629][373]LogTemp: Warning: [LOD7] Cells: 25, MinPoints: 1, MaxPoints: 5286, TotalPoints: 11758
+[2019.06.21-15.36.58:629][373]LogTemp: Warning: [LOD6] Cells: 61, MinPoints: 1, MaxPoints: 9668, TotalPoints: 23521
+[2019.06.21-15.36.58:629][373]LogTemp: Warning: [LOD5] Cells: 204, MinPoints: 1, MaxPoints: 9522, TotalPoints: 47084
+[2019.06.21-15.36.58:629][373]LogTemp: Warning: [LOD4] Cells: 690, MinPoints: 1, MaxPoints: 6982, TotalPoints: 94294
+[2019.06.21-15.36.58:629][373]LogTemp: Warning: [LOD3] Cells: 2258, MinPoints: 1, MaxPoints: 4698, TotalPoints: 188867
+[2019.06.21-15.36.58:629][373]LogTemp: Warning: [LOD2] Cells: 7194, MinPoints: 1, MaxPoints: 3139, TotalPoints: 377788
+[2019.06.21-15.36.58:629][373]LogTemp: Warning: [LOD1] Cells: 20670, MinPoints: 2, MaxPoints: 1430, TotalPoints: 750640
+[2019.06.21-15.36.58:629][373]LogTemp: Warning: [LOD0] Cells: 48685, MinPoints: 3, MaxPoints: 715, TotalPoints: 336935
+[2019.06.21-15.36.59:688][386]LogTemp: Warning: [LOD9] Cells: 1, MinPoints: 2937, MaxPoints: 2937, TotalPoints: 2937
+[2019.06.21-15.36.59:688][386]LogTemp: Warning: [LOD8] Cells: 8, MinPoints: 8, MaxPoints: 2698, TotalPoints: 5878
+[2019.06.21-15.36.59:688][386]LogTemp: Warning: [LOD7] Cells: 25, MinPoints: 1, MaxPoints: 5286, TotalPoints: 11758
+[2019.06.21-15.36.59:688][386]LogTemp: Warning: [LOD6] Cells: 61, MinPoints: 1, MaxPoints: 9668, TotalPoints: 23521
+[2019.06.21-15.36.59:688][386]LogTemp: Warning: [LOD5] Cells: 204, MinPoints: 1, MaxPoints: 9522, TotalPoints: 47084
+[2019.06.21-15.36.59:688][386]LogTemp: Warning: [LOD4] Cells: 690, MinPoints: 1, MaxPoints: 6982, TotalPoints: 94294
+[2019.06.21-15.36.59:688][386]LogTemp: Warning: [LOD3] Cells: 2258, MinPoints: 1, MaxPoints: 4698, TotalPoints: 188866
+[2019.06.21-15.36.59:688][386]LogTemp: Warning: [LOD2] Cells: 7194, MinPoints: 1, MaxPoints: 3139, TotalPoints: 377792
+[2019.06.21-15.36.59:688][386]LogTemp: Warning: [LOD1] Cells: 20671, MinPoints: 2, MaxPoints: 1430, TotalPoints: 750645
+[2019.06.21-15.36.59:688][386]LogTemp: Warning: [LOD0] Cells: 48685, MinPoints: 3, MaxPoints: 715, TotalPoints: 336933
+[2019.06.21-15.37.00:790][405]LogTemp: Warning: [LOD8] Cells: 1, MinPoints: 5873, MaxPoints: 5873, TotalPoints: 5873
+[2019.06.21-15.37.00:790][405]LogTemp: Warning: [LOD7] Cells: 8, MinPoints: 16, MaxPoints: 5396, TotalPoints: 11750
+[2019.06.21-15.37.00:790][405]LogTemp: Warning: [LOD6] Cells: 25, MinPoints: 1, MaxPoints: 10571, TotalPoints: 23502
+[2019.06.21-15.37.00:790][405]LogTemp: Warning: [LOD5] Cells: 61, MinPoints: 1, MaxPoints: 19336, TotalPoints: 47012
+[2019.06.21-15.37.00:790][405]LogTemp: Warning: [LOD4] Cells: 204, MinPoints: 1, MaxPoints: 19044, TotalPoints: 94062
+[2019.06.21-15.37.00:790][405]LogTemp: Warning: [LOD3] Cells: 690, MinPoints: 1, MaxPoints: 13963, TotalPoints: 188213
+[2019.06.21-15.37.00:790][405]LogTemp: Warning: [LOD2] Cells: 2258, MinPoints: 1, MaxPoints: 9396, TotalPoints: 376568
+[2019.06.21-15.37.00:790][405]LogTemp: Warning: [LOD1] Cells: 7194, MinPoints: 2, MaxPoints: 6278, TotalPoints: 752297
+[2019.06.21-15.37.00:790][405]LogTemp: Warning: [LOD0] Cells: 20671, MinPoints: 3, MaxPoints: 2038, TotalPoints: 303285
+[2019.06.21-15.37.01:956][428]LogTemp: Warning: [LOD7] Cells: 1, MinPoints: 11746, MaxPoints: 11746, TotalPoints: 11746
+[2019.06.21-15.37.01:956][428]LogTemp: Warning: [LOD6] Cells: 8, MinPoints: 31, MaxPoints: 10792, TotalPoints: 23495
+[2019.06.21-15.37.01:956][428]LogTemp: Warning: [LOD5] Cells: 25, MinPoints: 1, MaxPoints: 21142, TotalPoints: 46994
+[2019.06.21-15.37.01:956][428]LogTemp: Warning: [LOD4] Cells: 61, MinPoints: 1, MaxPoints: 38671, TotalPoints: 93995
+[2019.06.21-15.37.01:956][428]LogTemp: Warning: [LOD3] Cells: 204, MinPoints: 1, MaxPoints: 38088, TotalPoints: 188004
+[2019.06.21-15.37.01:956][428]LogTemp: Warning: [LOD2] Cells: 690, MinPoints: 1, MaxPoints: 27926, TotalPoints: 376093
+[2019.06.21-15.37.01:956][428]LogTemp: Warning: [LOD1] Cells: 2258, MinPoints: 2, MaxPoints: 18792, TotalPoints: 752066
+[2019.06.21-15.37.01:956][428]LogTemp: Warning: [LOD0] Cells: 7194, MinPoints: 3, MaxPoints: 4709, TotalPoints: 226882
+[2019.06.21-15.37.27:675][300]LogBlueprintUserMessages: [WBP_SelectionController] Start new Selection
+[2019.06.21-15.38.02:180][741]LogOutputDevice: Warning: 
+
+Script Stack (6 frames):
+BPA_Collider_C.ExecuteUbergraph_BPA_Collider
+BPA_Collider_C.EDP_GetPointsInDrawnBox_Event
+WBP_SelectionController_C.ExecuteUbergraph_WBP_SelectionController
+WBP_SelectionController_C.BndEvt__Btn_Select_K2Node_ComponentBoundEvent_10_OnButtonClickedEvent__DelegateSignature
+BP_PointCloudTraveller_C.ExecuteUbergraph_BP_PointCloudTraveller
+BP_PointCloudTraveller_C.InpActEvt_MotionController_Right_Grip1_K2Node_InputKeyEvent_1
+
+[2019.06.21-15.38.02:182][741]LogWindows: Windows GetLastError: Der Vorgang wurde erfolgreich beendet. (0)

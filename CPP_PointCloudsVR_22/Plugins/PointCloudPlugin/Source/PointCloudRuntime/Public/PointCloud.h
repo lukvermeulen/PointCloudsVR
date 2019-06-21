@@ -510,6 +510,10 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Point Cloud")
 	void BP_CallFitBoxOnSelection(int32 SelectionListIndex) { Octree.CallFitBoxOnSelection(SelectionListIndex, Points, Octree.Root); }
 
+	//Get all points in given box
+	UFUNCTION(BlueprintCallable, Category = "Point Cloud")
+	void BP_GetPointsInDrawnBox(int32 SelectionListIndex, TArray<FVector> BoxPoints) { Octree.GetPointsInDrawnBox(SelectionListIndex, Points, Octree.Root, BoxPoints); }
+
 	UFUNCTION(BlueprintCallable, Category = "Point Cloud")
 	void BP_GetPointsOnPlaneInBounds(FPlane Plane, FVector PlanePoint1, FVector PlanePoint2, FVector PlanePoint3, FVector PlanePointA, FVector PlanePointB, FVector PlaneNormal, float Threshhold, int32 SelectionListIndex)
 	{

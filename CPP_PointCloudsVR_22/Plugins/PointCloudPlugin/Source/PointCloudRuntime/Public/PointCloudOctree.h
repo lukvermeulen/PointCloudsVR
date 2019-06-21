@@ -75,6 +75,8 @@ public:
 	FBox FitBox(TArray<uint32> Selection, TArray<FPointCloudPoint> &Points);
 	void CallFitBoxOnSelection(int32 SelectionListIndex, TArray<FPointCloudPoint> &Points, const FPointCloudOctree::Node&);
 
+	void GetPointsInDrawnBox(int32 SelectionListIndex, TArray<FPointCloudPoint> &Points, const FPointCloudOctree::Node&, TArray<FVector>);
+
 	bool PointOnPlaneInBounds(FPlane, FVector Point, FVector PlanePoint1, FVector PlanePoint2, FVector PlanePoint3, FVector PlaneNormal, float Threshhold);
 	void GetPointsOnPlaneInBounds(FPlane, FVector PlanePoint1, FVector PlanePoint2, FVector PlanePoint3, FVector, FVector, FVector PlaneNormal, float Threshhold, int32 SelectionListIndex, TArray<FPointCloudPoint>& Points, const FPointCloudOctree::Node&);
 	//END LUK
