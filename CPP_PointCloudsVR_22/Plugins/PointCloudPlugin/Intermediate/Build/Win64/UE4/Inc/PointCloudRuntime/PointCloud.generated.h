@@ -9,6 +9,9 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 struct FPointCloudPoint;
+struct FPlane;
+struct FVector;
+struct FColor;
 class UMaterialInterface;
 enum class EPointCloudRenderMethod : uint8;
 struct FBoxSphereBounds;
@@ -18,7 +21,7 @@ enum class EPointCloudColorMode : uint8;
 #endif
 #define POINTCLOUDRUNTIME_PointCloud_generated_h
 
-#define Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h_73_RPC_WRAPPERS \
+#define CPP_PointCloudsVR_22_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h_75_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execSetPointCloudData) \
 	{ \
@@ -27,6 +30,150 @@ enum class EPointCloudColorMode : uint8;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->SetPointCloudData(Z_Param_Out_InPoints,Z_Param_bRebuildCloud); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBP_ExportIndividual) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_SaveDirectory); \
+		P_GET_PROPERTY(UStrProperty,Z_Param_SelectionName); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_SelectionIndex); \
+		P_GET_UBOOL(Z_Param_AllowOverWriting); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->BP_ExportIndividual(Z_Param_SaveDirectory,Z_Param_SelectionName,Z_Param_SelectionIndex,Z_Param_AllowOverWriting); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBP_ExportCloud) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_SaveDirectory); \
+		P_GET_PROPERTY(UStrProperty,Z_Param_FileName); \
+		P_GET_UBOOL(Z_Param_DeleteMarked); \
+		P_GET_UBOOL(Z_Param_AllowOverWriting); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->BP_ExportCloud(Z_Param_SaveDirectory,Z_Param_FileName,Z_Param_DeleteMarked,Z_Param_AllowOverWriting); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBP_AddSelectionIndex) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->BP_AddSelectionIndex(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBP_ResetVariables) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->BP_ResetVariables(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBP_DeleteAllMarked) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->BP_DeleteAllMarked(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBP_MarkSelectionForDeletion) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_SelectionListIndex); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->BP_MarkSelectionForDeletion(Z_Param_SelectionListIndex); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBP_DeleteCollectedPoints) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_SelectionListIndex); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->BP_DeleteCollectedPoints(Z_Param_SelectionListIndex); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBP_PointOnPlaneInBounds) \
+	{ \
+		P_GET_STRUCT(FPlane,Z_Param_Plane); \
+		P_GET_STRUCT(FVector,Z_Param_Point); \
+		P_GET_STRUCT(FVector,Z_Param_PlanePoint1); \
+		P_GET_STRUCT(FVector,Z_Param_PlanePoint2); \
+		P_GET_STRUCT(FVector,Z_Param_PlanePoint3); \
+		P_GET_STRUCT(FVector,Z_Param_PlaneNormal); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Threshhold); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->BP_PointOnPlaneInBounds(Z_Param_Plane,Z_Param_Point,Z_Param_PlanePoint1,Z_Param_PlanePoint2,Z_Param_PlanePoint3,Z_Param_PlaneNormal,Z_Param_Threshhold); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBP_GetPointsOnPlaneInBounds) \
+	{ \
+		P_GET_STRUCT(FPlane,Z_Param_Plane); \
+		P_GET_STRUCT(FVector,Z_Param_PlanePoint1); \
+		P_GET_STRUCT(FVector,Z_Param_PlanePoint2); \
+		P_GET_STRUCT(FVector,Z_Param_PlanePoint3); \
+		P_GET_STRUCT(FVector,Z_Param_PlanePointA); \
+		P_GET_STRUCT(FVector,Z_Param_PlanePointB); \
+		P_GET_STRUCT(FVector,Z_Param_PlaneNormal); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Threshhold); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_SelectionListIndex); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->BP_GetPointsOnPlaneInBounds(Z_Param_Plane,Z_Param_PlanePoint1,Z_Param_PlanePoint2,Z_Param_PlanePoint3,Z_Param_PlanePointA,Z_Param_PlanePointB,Z_Param_PlaneNormal,Z_Param_Threshhold,Z_Param_SelectionListIndex); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBP_GetPointsInDrawnBox) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_SelectionListIndex); \
+		P_GET_TARRAY(FVector,Z_Param_BoxPoints); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->BP_GetPointsInDrawnBox(Z_Param_SelectionListIndex,Z_Param_BoxPoints); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBP_CallFitBoxOnSelection) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_SelectionListIndex); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->BP_CallFitBoxOnSelection(Z_Param_SelectionListIndex); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBP_HideCollectedPoints) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_SelectionListIndex); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->BP_HideCollectedPoints(Z_Param_SelectionListIndex); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBP_ColorCollectedPoints) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_SelectionListIndex); \
+		P_GET_STRUCT(FColor,Z_Param_pColor); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->BP_ColorCollectedPoints(Z_Param_SelectionListIndex,Z_Param_pColor); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetCollectedPointLocations) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TArray<FVector>*)Z_Param__Result=P_THIS->GetCollectedPointLocations(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -193,6 +340,17 @@ enum class EPointCloudColorMode : uint8;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execGetTouchedPoints) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_SelectionListIndex); \
+		P_GET_STRUCT(FVector,Z_Param_ColliderLocation); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_Radius); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->GetTouchedPoints(Z_Param_SelectionListIndex,Z_Param_ColliderLocation,Z_Param_Radius); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execUsesSprites) \
 	{ \
 		P_FINISH; \
@@ -202,7 +360,7 @@ enum class EPointCloudColorMode : uint8;
 	}
 
 
-#define Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h_73_RPC_WRAPPERS_NO_PURE_DECLS \
+#define CPP_PointCloudsVR_22_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h_75_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execSetPointCloudData) \
 	{ \
@@ -211,6 +369,150 @@ enum class EPointCloudColorMode : uint8;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->SetPointCloudData(Z_Param_Out_InPoints,Z_Param_bRebuildCloud); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBP_ExportIndividual) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_SaveDirectory); \
+		P_GET_PROPERTY(UStrProperty,Z_Param_SelectionName); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_SelectionIndex); \
+		P_GET_UBOOL(Z_Param_AllowOverWriting); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->BP_ExportIndividual(Z_Param_SaveDirectory,Z_Param_SelectionName,Z_Param_SelectionIndex,Z_Param_AllowOverWriting); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBP_ExportCloud) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_SaveDirectory); \
+		P_GET_PROPERTY(UStrProperty,Z_Param_FileName); \
+		P_GET_UBOOL(Z_Param_DeleteMarked); \
+		P_GET_UBOOL(Z_Param_AllowOverWriting); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->BP_ExportCloud(Z_Param_SaveDirectory,Z_Param_FileName,Z_Param_DeleteMarked,Z_Param_AllowOverWriting); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBP_AddSelectionIndex) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->BP_AddSelectionIndex(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBP_ResetVariables) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->BP_ResetVariables(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBP_DeleteAllMarked) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->BP_DeleteAllMarked(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBP_MarkSelectionForDeletion) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_SelectionListIndex); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->BP_MarkSelectionForDeletion(Z_Param_SelectionListIndex); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBP_DeleteCollectedPoints) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_SelectionListIndex); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->BP_DeleteCollectedPoints(Z_Param_SelectionListIndex); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBP_PointOnPlaneInBounds) \
+	{ \
+		P_GET_STRUCT(FPlane,Z_Param_Plane); \
+		P_GET_STRUCT(FVector,Z_Param_Point); \
+		P_GET_STRUCT(FVector,Z_Param_PlanePoint1); \
+		P_GET_STRUCT(FVector,Z_Param_PlanePoint2); \
+		P_GET_STRUCT(FVector,Z_Param_PlanePoint3); \
+		P_GET_STRUCT(FVector,Z_Param_PlaneNormal); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Threshhold); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->BP_PointOnPlaneInBounds(Z_Param_Plane,Z_Param_Point,Z_Param_PlanePoint1,Z_Param_PlanePoint2,Z_Param_PlanePoint3,Z_Param_PlaneNormal,Z_Param_Threshhold); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBP_GetPointsOnPlaneInBounds) \
+	{ \
+		P_GET_STRUCT(FPlane,Z_Param_Plane); \
+		P_GET_STRUCT(FVector,Z_Param_PlanePoint1); \
+		P_GET_STRUCT(FVector,Z_Param_PlanePoint2); \
+		P_GET_STRUCT(FVector,Z_Param_PlanePoint3); \
+		P_GET_STRUCT(FVector,Z_Param_PlanePointA); \
+		P_GET_STRUCT(FVector,Z_Param_PlanePointB); \
+		P_GET_STRUCT(FVector,Z_Param_PlaneNormal); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Threshhold); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_SelectionListIndex); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->BP_GetPointsOnPlaneInBounds(Z_Param_Plane,Z_Param_PlanePoint1,Z_Param_PlanePoint2,Z_Param_PlanePoint3,Z_Param_PlanePointA,Z_Param_PlanePointB,Z_Param_PlaneNormal,Z_Param_Threshhold,Z_Param_SelectionListIndex); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBP_GetPointsInDrawnBox) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_SelectionListIndex); \
+		P_GET_TARRAY(FVector,Z_Param_BoxPoints); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->BP_GetPointsInDrawnBox(Z_Param_SelectionListIndex,Z_Param_BoxPoints); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBP_CallFitBoxOnSelection) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_SelectionListIndex); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->BP_CallFitBoxOnSelection(Z_Param_SelectionListIndex); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBP_HideCollectedPoints) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_SelectionListIndex); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->BP_HideCollectedPoints(Z_Param_SelectionListIndex); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execBP_ColorCollectedPoints) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_SelectionListIndex); \
+		P_GET_STRUCT(FColor,Z_Param_pColor); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->BP_ColorCollectedPoints(Z_Param_SelectionListIndex,Z_Param_pColor); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetCollectedPointLocations) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TArray<FVector>*)Z_Param__Result=P_THIS->GetCollectedPointLocations(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -377,6 +679,17 @@ enum class EPointCloudColorMode : uint8;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execGetTouchedPoints) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_SelectionListIndex); \
+		P_GET_STRUCT(FVector,Z_Param_ColliderLocation); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_Radius); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->GetTouchedPoints(Z_Param_SelectionListIndex,Z_Param_ColliderLocation,Z_Param_Radius); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execUsesSprites) \
 	{ \
 		P_FINISH; \
@@ -386,31 +699,31 @@ enum class EPointCloudColorMode : uint8;
 	}
 
 
-#define Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h_73_ARCHIVESERIALIZER \
+#define CPP_PointCloudsVR_22_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h_75_ARCHIVESERIALIZER \
 	DECLARE_FSTRUCTUREDARCHIVE_SERIALIZER(UPointCloud, NO_API)
 
 
-#define Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h_73_INCLASS_NO_PURE_DECLS \
+#define CPP_PointCloudsVR_22_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h_75_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUPointCloud(); \
 	friend struct Z_Construct_UClass_UPointCloud_Statics; \
 public: \
 	DECLARE_CLASS(UPointCloud, UObject, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/PointCloudRuntime"), NO_API) \
 	DECLARE_SERIALIZER(UPointCloud) \
-	Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h_73_ARCHIVESERIALIZER
+	CPP_PointCloudsVR_22_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h_75_ARCHIVESERIALIZER
 
 
-#define Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h_73_INCLASS \
+#define CPP_PointCloudsVR_22_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h_75_INCLASS \
 private: \
 	static void StaticRegisterNativesUPointCloud(); \
 	friend struct Z_Construct_UClass_UPointCloud_Statics; \
 public: \
 	DECLARE_CLASS(UPointCloud, UObject, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/PointCloudRuntime"), NO_API) \
 	DECLARE_SERIALIZER(UPointCloud) \
-	Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h_73_ARCHIVESERIALIZER
+	CPP_PointCloudsVR_22_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h_75_ARCHIVESERIALIZER
 
 
-#define Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h_73_STANDARD_CONSTRUCTORS \
+#define CPP_PointCloudsVR_22_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h_75_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UPointCloud(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UPointCloud) \
@@ -423,7 +736,7 @@ private: \
 public:
 
 
-#define Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h_73_ENHANCED_CONSTRUCTORS \
+#define CPP_PointCloudsVR_22_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h_75_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UPointCloud(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -436,30 +749,30 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UPointCloud); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UPointCloud)
 
 
-#define Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h_73_PRIVATE_PROPERTY_OFFSET \
+#define CPP_PointCloudsVR_22_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h_75_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__MasterMaterial() { return STRUCT_OFFSET(UPointCloud, MasterMaterial); } \
 	FORCEINLINE static uint32 __PPO__Materials() { return STRUCT_OFFSET(UPointCloud, Materials); }
 
 
-#define Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h_70_PROLOG
-#define Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h_73_GENERATED_BODY_LEGACY \
+#define CPP_PointCloudsVR_22_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h_72_PROLOG
+#define CPP_PointCloudsVR_22_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h_75_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h_73_PRIVATE_PROPERTY_OFFSET \
-	Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h_73_RPC_WRAPPERS \
-	Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h_73_INCLASS \
-	Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h_73_STANDARD_CONSTRUCTORS \
+	CPP_PointCloudsVR_22_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h_75_PRIVATE_PROPERTY_OFFSET \
+	CPP_PointCloudsVR_22_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h_75_RPC_WRAPPERS \
+	CPP_PointCloudsVR_22_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h_75_INCLASS \
+	CPP_PointCloudsVR_22_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h_75_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h_73_GENERATED_BODY \
+#define CPP_PointCloudsVR_22_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h_75_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h_73_PRIVATE_PROPERTY_OFFSET \
-	Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h_73_RPC_WRAPPERS_NO_PURE_DECLS \
-	Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h_73_INCLASS_NO_PURE_DECLS \
-	Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h_73_ENHANCED_CONSTRUCTORS \
+	CPP_PointCloudsVR_22_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h_75_PRIVATE_PROPERTY_OFFSET \
+	CPP_PointCloudsVR_22_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h_75_RPC_WRAPPERS_NO_PURE_DECLS \
+	CPP_PointCloudsVR_22_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h_75_INCLASS_NO_PURE_DECLS \
+	CPP_PointCloudsVR_22_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h_75_ENHANCED_CONSTRUCTORS \
 static_assert(false, "Unknown access specifier for GENERATED_BODY() macro in class PointCloud."); \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -467,7 +780,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> POINTCLOUDRUNTIME_API UClass* StaticClass<class UPointCloud>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h
+#define CURRENT_FILE_ID CPP_PointCloudsVR_22_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloud_h
 
 
 #define FOREACH_ENUM_EPOINTCLOUDSPRITEMASK(op) \

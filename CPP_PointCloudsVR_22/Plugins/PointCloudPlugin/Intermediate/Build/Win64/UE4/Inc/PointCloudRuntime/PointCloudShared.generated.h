@@ -13,7 +13,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define POINTCLOUDRUNTIME_PointCloudShared_generated_h
 
-#define Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloudShared_h_32_GENERATED_BODY \
+#define CPP_PointCloudsVR_22_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloudShared_h_32_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FPointCloudPoint_Statics; \
 	static class UScriptStruct* StaticStruct();
 
@@ -21,7 +21,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 template<> POINTCLOUDRUNTIME_API UScriptStruct* StaticStruct<struct FPointCloudPoint>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID Users_micha_Downloads_PCP_Binaries_4_22_PointCloudPlugin_HostProject_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloudShared_h
+#define CURRENT_FILE_ID CPP_PointCloudsVR_22_Plugins_PointCloudPlugin_Source_PointCloudRuntime_Public_PointCloudShared_h
 
 
 #define FOREACH_ENUM_EPOINTCLOUDCOLORMODE(op) \
