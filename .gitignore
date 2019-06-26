@@ -74,3 +74,6 @@ Plugins/*/Intermediate/*
 DerivedDataCache/*
 *.pdb
 *.pak
+*.log
+*.log
+*.log

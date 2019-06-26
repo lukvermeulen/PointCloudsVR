@@ -1,0 +1,2680 @@
+From 0d923f3e2148e0bf983f8e5c19cad45e2581038c Mon Sep 17 00:00:00 2001
+From: phoboz-net <michal@phoboz.net>
+Date: Wed, 22 May 2019 18:43:52 +0100
+Subject: [PATCH] Missing includes
+
+---
+ .../Private/ActorFactoryPointCloud.cpp                |  1 +
+ Source/PointCloudEditor/Private/PointCloudEditor.cpp  |  1 +
+ .../Private/Importers/PointCloudFileImporter_LAS.cpp  | 11 ++++++++++-
+ .../Private/Importers/PointCloudFileImporter_LAS.h    |  8 +-------
+ .../Private/Importers/PointCloudFileImporter_XYZ.h    |  1 +
+ .../Private/PointCloudRuntimeModule.cpp               |  1 +
+ 6 files changed, 15 insertions(+), 8 deletions(-)
+
+diff --git a/Source/PointCloudEditor/Private/ActorFactoryPointCloud.cpp b/Source/PointCloudEditor/Private/ActorFactoryPointCloud.cpp
+index c67719e..8097a86 100644
+--- a/Source/PointCloudEditor/Private/ActorFactoryPointCloud.cpp
++++ b/Source/PointCloudEditor/Private/ActorFactoryPointCloud.cpp
+@@ -4,6 +4,7 @@
+ #include "PointCloudActor.h"
+ #include "PointCloudComponent.h"
+ #include "PointCloud.h"
++#include "AssetData.h"
+ 
+ #define LOCTEXT_NAMESPACE "ActorFactory"
+ 
+diff --git a/Source/PointCloudEditor/Private/PointCloudEditor.cpp b/Source/PointCloudEditor/Private/PointCloudEditor.cpp
+index 0dd6769..df57099 100644
+--- a/Source/PointCloudEditor/Private/PointCloudEditor.cpp
++++ b/Source/PointCloudEditor/Private/PointCloudEditor.cpp
+@@ -12,6 +12,7 @@
+ #include "SSingleObjectDetailsPanel.h"
+ #include "Widgets/Layout/SBorder.h"
+ #include "Widgets/Docking/SDockTab.h"
++#include "Package.h"
+ 
+ #define LOCTEXT_NAMESPACE "PointCloudEditor"
+ 
+diff --git a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.cpp b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.cpp
+index 4bdfda9..6119e63 100644
+--- a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.cpp
++++ b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.cpp
+@@ -23,6 +23,14 @@ FPointCloudImportSettings_LAS::FPointCloudImportSettings_LAS(const FString& File
+ 	});
+ }
+ 
++void FPointCloudImportSettings_LAS::Serialize(FArchive& Ar)
++{
++	if (Ar.CustomVer(UPointCloud::PointCloudFileGUID) >= 7)
++	{
++		Ar << FirstIndex << NumPointsToRead << ColorHandling;
++	}
++}
++
+ void FPointCloudImportSettings_LAS::ReadFileHeader(const FString& InFilename)
+ {
+ 	TUniquePtr<FArchive> Reader(IFileManager::Get().CreateFileReader(*Filename));
+@@ -76,7 +84,6 @@ void FPointCloudImportSettings_LAS::ReadFileHeader(const FString& InFilename)
+ }
+ 
+ #if WITH_EDITOR
+-#define LOCTEXT_NAMESPACE "PointCloudImportSettings"
+ 
+ #include "DetailLayoutBuilder.h"
+ #include "Widgets/Text/STextBlock.h"
+@@ -84,6 +91,8 @@ void FPointCloudImportSettings_LAS::ReadFileHeader(const FString& InFilename)
+ #include "Widgets/Input/SButton.h"
+ #include "Widgets/Input/SSpinBox.h"
+ 
++#define LOCTEXT_NAMESPACE "PointCloudImportSettings"
++
+ TSharedPtr<SWidget> FPointCloudImportSettings_LAS::GetWidget()
+ {
+ 	TSharedPtr<SVerticalBox> SettingsWidget;
+diff --git a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.h b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.h
+index 1a03851..ed9221d 100644
+--- a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.h
++++ b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.h
+@@ -282,13 +282,7 @@ private:
+ public:
+ 	FPointCloudImportSettings_LAS(const FString& Filename);
+ 	virtual bool IsFileCompatible(const FString& InFilename) const override { return true; }
+-	virtual void Serialize(FArchive& Ar) override
+-	{
+-		if (Ar.CustomVer(UPointCloud::PointCloudFileGUID) >= 7)
+-		{
+-			Ar << FirstIndex << NumPointsToRead << ColorHandling;
+-		}
+-	}
++	virtual void Serialize(FArchive& Ar) override;
+ 
+ 	virtual FString GetUID() const override { return "FPointCloudImportSettings_LAS"; }
+ 
+diff --git a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_XYZ.h b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_XYZ.h
+index ffa223d..e8bdce9 100644
+--- a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_XYZ.h
++++ b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_XYZ.h
+@@ -5,6 +5,7 @@
+ #include "CoreMinimal.h"
+ #include "PointCloudShared.h"
+ #include "PointCloudFileImporter.h"
++#include "Kismet/BlueprintFunctionLibrary.h"
+ 
+ #if WITH_EDITOR
+ #include "Widgets/Input/SComboBox.h"
+diff --git a/Source/PointCloudRuntime/Private/PointCloudRuntimeModule.cpp b/Source/PointCloudRuntime/Private/PointCloudRuntimeModule.cpp
+index 900538f..ce4f21d 100644
+--- a/Source/PointCloudRuntime/Private/PointCloudRuntimeModule.cpp
++++ b/Source/PointCloudRuntime/Private/PointCloudRuntimeModule.cpp
+@@ -1,6 +1,7 @@
+ // Copyright 2018-2019 Michal Cieciura. All Rights Reserved.
+ 
+ #include "IPointCloudRuntimeModule.h"
++#include "Runtime/Launch/Resources/Version.h"
+ 
+ #if ENGINE_MINOR_VERSION >= 21
+ #include "Misc/Paths.h"
+-- 
+2.17.1.windows.2
+
+From abc1465c8345ead5332327883322d01881b63a10 Mon Sep 17 00:00:00 2001
+From: phoboz-net <michal@phoboz.net>
+Date: Wed, 22 May 2019 13:10:26 +0100
+Subject: [PATCH] Meta
+
+---
+ PointCloudPlugin.uplugin | 2 +-
+ README.md                | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/PointCloudPlugin.uplugin b/PointCloudPlugin.uplugin
+index 5206d5e..25ea7de 100644
+--- a/PointCloudPlugin.uplugin
++++ b/PointCloudPlugin.uplugin
+@@ -1,7 +1,7 @@
+ {
+ 	"FileVersion": 1,
+ 	"Version": 1,
+-	"VersionName": "0.5.6",
++	"VersionName": "0.5.7",
+ 	"FriendlyName": "Point Cloud Plugin",
+ 	"Description": "Adds support for importing, processing and rendering of point clouds.",
+ 	"Category": "Rendering",
+diff --git a/README.md b/README.md
+index 136934f..1eff0ca 100644
+--- a/README.md
++++ b/README.md
+@@ -1,6 +1,6 @@
+ Unreal Engine 4 - Point Cloud Plugin
+ 
+-Current Version: 0.5.6 beta
++Current Version: 0.5.7 beta
+ 
+ This plugin has been created to help with importing, processing and rendering of point clouds.
+ 
+-- 
+2.17.1.windows.2
+
+From c0722c39ba5a623d46c0eb52c2f06a30dc0f92a7 Mon Sep 17 00:00:00 2001
+From: phoboz-net <michal@phoboz.net>
+Date: Wed, 22 May 2019 13:10:21 +0100
+Subject: [PATCH] Fixed Fatal Error when streaming levels with clouds
+
+---
+ .../Importers/PointCloudFileImporter_XYZ.cpp  | 113 +++++-------------
+ .../Importers/PointCloudFileImporter_XYZ.h    |   2 +
+ 2 files changed, 30 insertions(+), 85 deletions(-)
+
+diff --git a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_XYZ.cpp b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_XYZ.cpp
+index e023850..10649d5 100644
+--- a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_XYZ.cpp
++++ b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_XYZ.cpp
+@@ -44,6 +44,11 @@ bool UPointCloudFileImporter_XYZ::HandleImport(const FString& Filename, TSharedP
+ 
+ 	FPointCloudImportSettings_XYZ* Settings = (FPointCloudImportSettings_XYZ*)ImportSettings.Get();
+ 
++	if (!Settings->HasValidData())
++	{
++		return false;
++	}
++
+ 	// Modified FFileHelper::LoadFileToString, FFileHelper::LoadFileToStringArray and String::ParseIntoArray
+ 	// #todo Add multithreading support
+ 	TUniquePtr<FArchive> Reader(IFileManager::Get().CreateFileReader(*Filename));
+@@ -320,6 +325,7 @@ FPointCloudImportSettings_XYZ::FPointCloudImportSettings_XYZ(const FString& File
+ 	, LinesToSkip(0)
+ 	, bHasDescriptions(false)
+ 	, EstimatedPointCount(0)
++	, Delimiter("")
+ 	, RGBRange(FVector2D::ZeroVector)
+ 	, FirstLine(0)
+ 	, LastLine(0)
+@@ -352,30 +358,20 @@ void FPointCloudImportSettings_XYZ::ReadFileHeader(const FString& InFilename)
+ 		uint8* Data = (uint8*)FMemory::Malloc(Size);
+ 		Reader->Serialize(Data, Size);
+ 		Reader->Close();
+-		Reader = nullptr;
+-		uint8 *DataPtr = Data;
++		Reader = nullptr;		
+ 
+-		int32 UnrecognizableLines = 0;
+-		bool bFetchNextLine = true;
++		FString FileData;
++		FFileHelper::BufferToString(FileData, Data, Size);
+ 
+-		FString Line;
+-		uint8 *LineStart = NULL;
++		TArray<FString> FileLines;
++		FileData.ParseIntoArrayLines(FileLines);
+ 
+-		bool bEndOfData = false;
++		// How much data is unrecognizable. Used for estimation of size
++		uint32 UnrecognizableSize = 0;
+ 
+-		while (bFetchNextLine && !bEndOfData)
++		for (int32 i = 0; i < FileLines.Num(); i++)
+ 		{
+-			bFetchNextLine = false;
+-
+-			LineStart = DataPtr;
+-
+-			while (*DataPtr != 0 && *DataPtr != '\r' && *DataPtr != '\n' && !bEndOfData)
+-			{
+-				DataPtr++;
+-				bEndOfData = (DataPtr - Data) >= Size;
+-			}
+-
+-			FFileHelper::BufferToString(Line, LineStart, DataPtr - LineStart);
++			FString Line = FileLines[i];
+ 
+ 			// Determine Delimiter
+ 			if (Line.Contains(","))
+@@ -391,33 +387,29 @@ void FPointCloudImportSettings_XYZ::ReadFileHeader(const FString& InFilename)
+ 				Delimiter = "\t";
+ 			}
+ 
+-			Line.ParseIntoArray(Columns, *Delimiter);
+-
+-			if (Columns.Num() < 3)
++			if (!Delimiter.IsEmpty())
+ 			{
+-				// Skip line
+-				UnrecognizableLines++;
+-				bFetchNextLine = true;
++				Line.ParseIntoArray(Columns, *Delimiter);
+ 
+-				if (*DataPtr == '\r')
++				// Stop iterating once readable data is found
++				if (Columns.Num() >= 3)
+ 				{
+-					DataPtr++;
+-				}
+-				if (*DataPtr == '\n')
+-				{
+-					DataPtr++;
+-				}
+-				if (*DataPtr == 0)
+-				{
+-					DataPtr++;
++					break;
+ 				}
+ 			}
++
++			// ... otherwise keep incrementing the counters
++			LinesToSkip++;
++			UnrecognizableSize += Line.Len();
++			Delimiter = "";
+ 		}
+ 
+-		LineStart = NULL;
++		// Estimate number of points
++		EstimatedPointCount = Size > UnrecognizableSize ? (TotalSize - UnrecognizableSize) * (FileLines.Num() - LinesToSkip) / (Size - UnrecognizableSize) : 0;
+ 
+ 		// Check if first line is text-based
+ 		bHasDescriptions = Columns.Num() > 0 && !FCString::IsNumeric(*Columns[0]);
++		LinesToSkip += bHasDescriptions;
+ 
+ 		// Attempt to assign defaults
+ 		for (int32 i = 0; i < Columns.Num(); i++)
+@@ -472,56 +464,7 @@ void FPointCloudImportSettings_XYZ::ReadFileHeader(const FString& InFilename)
+ 			}
+ 		}
+ 
+-		// Skip irrelevant lines
+-		LinesToSkip = UnrecognizableLines + bHasDescriptions;
+-
+-		// Estimate number of points
+-		uint64 ContentSize = TotalSize;
+-		if (LinesToSkip > 0)
+-		{
+-			Size -= Line.Len() + 1;
+-			ContentSize -= Line.Len() + 1;
+-
+-			if (*DataPtr == '\r')
+-			{
+-				DataPtr++;
+-			}
+-			if (*DataPtr == '\n')
+-			{
+-				DataPtr++;
+-			}
+-		}
+-
+-		int32 LineCount = 0;
+-		int32 Count = 0;
+-		while (*DataPtr != 0)
+-		{
+-			while (*DataPtr != 0 && *DataPtr != '\r' && *DataPtr != '\n')
+-			{
+-				Count++;
+-				DataPtr++;
+-			}
+-
+-			if (Count > 0)
+-			{
+-				LineCount++;
+-				Count = 0;
+-			}
+-
+-			if (*DataPtr == '\r')
+-			{
+-				DataPtr++;
+-			}
+-			if (*DataPtr == '\n')
+-			{
+-				DataPtr++;
+-			}
+-		}
+-
+-		EstimatedPointCount = ContentSize * LineCount / Size;
+-
+ 		FMemory::Free(Data);
+-		DataPtr = NULL;
+ 	}
+ }
+ 
+diff --git a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_XYZ.h b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_XYZ.h
+index 933ed72..ffa223d 100644
+--- a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_XYZ.h
++++ b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_XYZ.h
+@@ -94,6 +94,8 @@ public:
+ 
+ 	virtual FString GetUID() const override { return "FPointCloudImportSettings_XYZ"; }
+ 
++	FORCEINLINE bool HasValidData() { return !Delimiter.IsEmpty() && Columns.Num() > 0; }
++
+ private:
+ 	/** Reads and parses header information about the given file. */
+ 	void ReadFileHeader(const FString& InFilename);
+-- 
+2.17.1.windows.2
+
+From ea1966ccbb259049e8e1c384b72fa2afdd1393b9 Mon Sep 17 00:00:00 2001
+From: phoboz-net <michal@phoboz.net>
+Date: Thu, 16 May 2019 02:06:57 +0100
+Subject: [PATCH] Fixed parameter shadowing
+
+---
+ .../Private/Importers/PointCloudFileImporter_LAS.cpp            | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.cpp b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.cpp
+index 270ede4..4bdfda9 100644
+--- a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.cpp
++++ b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.cpp
+@@ -219,7 +219,7 @@ bool UPointCloudFileImporter_LAS::HandleImport(const FString& Filename, TSharedP
+ 			Reader->Seek(Header.OffsetToPointData + FirstIndex * Header.PointDataRecordLength);
+ 
+ 			// Calculate max buffer size
+-			int64 MaxPointsToRead = FMath::Min(RemainingPoints, PC_MAXBUFFERSIZE / Header.PointDataRecordLength);
++			MaxPointsToRead = FMath::Min(RemainingPoints, PC_MAXBUFFERSIZE / Header.PointDataRecordLength);
+ 
+ 			// Clear any existing data
+ 			OutPoints.Empty(RemainingPoints);
+-- 
+2.17.1.windows.2
+
+From a7f1e0ac40ded341964f355595d7d4d74322f133 Mon Sep 17 00:00:00 2001
+From: phoboz-net <michal@phoboz.net>
+Date: Tue, 14 May 2019 19:36:58 +0100
+Subject: [PATCH] Added some import guards
+
+---
+ .../Importers/PointCloudFileImporter.cpp      | 33 ++++++++++++++++---
+ .../Importers/PointCloudFileImporter_LAS.cpp  |  7 +++-
+ .../Importers/PointCloudFileImporter_XYZ.cpp  | 20 ++++++++---
+ .../Public/PointCloudFileImporter.h           | 16 ++++++---
+ 4 files changed, 62 insertions(+), 14 deletions(-)
+
+diff --git a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter.cpp b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter.cpp
+index 255c43d..ed7a8eb 100644
+--- a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter.cpp
++++ b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter.cpp
+@@ -18,6 +18,24 @@ void PointCloudFileImporter::PrepareImport()
+ 	bPrecisionCorrected = false;
+ }
+ 
++bool PointCloudFileImporter::ValidateImportSettings(TSharedPtr<FPointCloudImportSettings>& ImportSettings, const FString& Filename)
++{
++	if (ImportSettings.IsValid())
++	{
++		if (!IsSettingsUIDSupported(ImportSettings->GetUID()))
++		{
++			PC_ERROR("Provided type of ImportSettings does not match the selected importer. Aborting.");
++			ImportSettings = nullptr;
++		}
++	}
++	else
++	{
++		ImportSettings = GetImportSettings(Filename);
++	}
++
++	return ImportSettings.IsValid();
++}
++
+ void PointCloudFileImporter::CheckAndCorrectPrecisionLoss(double& X, double& Y, double& Z, TArray<FPointCloudPoint>& Points)
+ {
+ 	if (bPrecisionCorrected)
+@@ -67,12 +85,19 @@ bool UPointCloudFileImporter::Import(const FString& Filename, TSharedPtr<FPointC
+ 	PointCloudFileImporter *Importer = GetImporterForType(Filename);
+ 	if (Importer)
+ 	{
+-		FBenchmarkTimer::Reset();
++		if (Importer->ValidateImportSettings(ImportSettings, Filename))
++		{
++			FBenchmarkTimer::Reset();
+ 
+-		Importer->PrepareImport();		
+-		bSuccess = Importer->HandleImport(Filename, ImportSettings, OutPoints, OutColorMode);
++			Importer->PrepareImport();
++			bSuccess = Importer->HandleImport(Filename, ImportSettings, OutPoints, OutColorMode);
+ 
+-		FBenchmarkTimer::Log("Loading");
++			FBenchmarkTimer::Log("Loading");
++		}
++	}
++	else
++	{
++		PC_ERROR("No registered importer found for file: %s", *Filename);
+ 	}
+ 
+ 	return bSuccess;
+diff --git a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.cpp b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.cpp
+index 19a69b9..270ede4 100644
+--- a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.cpp
++++ b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.cpp
+@@ -186,7 +186,12 @@ UPointCloud* UPointCloudFileImporter_LAS::LoadPointCloudFromFile_LAS(FString Fil
+ 
+ bool UPointCloudFileImporter_LAS::HandleImport(const FString& Filename, TSharedPtr<FPointCloudImportSettings> ImportSettings, TArray<FPointCloudPoint>& OutPoints, EPointCloudColorMode& OutColorMode)
+ {
+-	FPointCloudImportSettings_LAS* Settings = (FPointCloudImportSettings_LAS*)(ImportSettings.IsValid() && IsSettingsUIDSupported(ImportSettings->GetUID()) ? ImportSettings : GetImportSettings(Filename)).Get();
++	if (!ValidateImportSettings(ImportSettings, Filename))
++	{
++		return false;
++	}
++
++	FPointCloudImportSettings_LAS* Settings = (FPointCloudImportSettings_LAS*)ImportSettings.Get();
+ 	FPointCloudImporter_LAS_PublicHeaderBlock Header = Settings->PublicHeaderBlock;
+ 
+ 	// Return immediately if header is invalid
+diff --git a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_XYZ.cpp b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_XYZ.cpp
+index 43726a4..e023850 100644
+--- a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_XYZ.cpp
++++ b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_XYZ.cpp
+@@ -37,13 +37,18 @@
+ 
+ bool UPointCloudFileImporter_XYZ::HandleImport(const FString& Filename, TSharedPtr<FPointCloudImportSettings> ImportSettings, TArray<FPointCloudPoint>& OutPoints, EPointCloudColorMode &OutColorMode)
+ {
++	if (!ValidateImportSettings(ImportSettings, Filename))
++	{
++		return false;
++	}
++
++	FPointCloudImportSettings_XYZ* Settings = (FPointCloudImportSettings_XYZ*)ImportSettings.Get();
++
+ 	// Modified FFileHelper::LoadFileToString, FFileHelper::LoadFileToStringArray and String::ParseIntoArray
+ 	// #todo Add multithreading support
+ 	TUniquePtr<FArchive> Reader(IFileManager::Get().CreateFileReader(*Filename));
+ 	if (Reader)
+ 	{
+-		FPointCloudImportSettings_XYZ* Settings = (FPointCloudImportSettings_XYZ*)(ImportSettings.IsValid() && IsSettingsUIDSupported(ImportSettings->GetUID()) ? ImportSettings : GetImportSettings(Filename)).Get();
+-
+ 		uint32 FirstIndex = Settings->FirstLine;
+ 		uint32 LastIndex = Settings->LastLine;
+ 		TArray<int32> SelectedColumns = Settings->SelectedColumns;
+@@ -356,15 +361,18 @@ void FPointCloudImportSettings_XYZ::ReadFileHeader(const FString& InFilename)
+ 		FString Line;
+ 		uint8 *LineStart = NULL;
+ 
+-		while (bFetchNextLine)
++		bool bEndOfData = false;
++
++		while (bFetchNextLine && !bEndOfData)
+ 		{
+ 			bFetchNextLine = false;
+ 
+ 			LineStart = DataPtr;
+ 
+-			while (*DataPtr != 0 && *DataPtr != '\r' && *DataPtr != '\n')
++			while (*DataPtr != 0 && *DataPtr != '\r' && *DataPtr != '\n' && !bEndOfData)
+ 			{
+ 				DataPtr++;
++				bEndOfData = (DataPtr - Data) >= Size;
+ 			}
+ 
+ 			FFileHelper::BufferToString(Line, LineStart, DataPtr - LineStart);
+@@ -399,6 +407,10 @@ void FPointCloudImportSettings_XYZ::ReadFileHeader(const FString& InFilename)
+ 				{
+ 					DataPtr++;
+ 				}
++				if (*DataPtr == 0)
++				{
++					DataPtr++;
++				}
+ 			}
+ 		}
+ 
+diff --git a/Source/PointCloudRuntime/Public/PointCloudFileImporter.h b/Source/PointCloudRuntime/Public/PointCloudFileImporter.h
+index f053867..d4e7596 100644
+--- a/Source/PointCloudRuntime/Public/PointCloudFileImporter.h
++++ b/Source/PointCloudRuntime/Public/PointCloudFileImporter.h
+@@ -69,10 +69,10 @@ public:
+ 	void PrepareImport();
+ 
+ 	/** This is what will actually be called to process the import of the file */
+-	virtual bool HandleImport(const FString& Filename, TSharedPtr<FPointCloudImportSettings> ImportSettings, TArray<FPointCloudPoint>& OutPoints, EPointCloudColorMode &OutColorMode) { return false; }
++	virtual bool HandleImport(const FString &Filename, TSharedPtr<FPointCloudImportSettings> ImportSettings, TArray<FPointCloudPoint> &OutPoints, EPointCloudColorMode &OutColorMode) { return false; }
+ 
+ 	/** Returns a shared pointer for the import settings of this importer */
+-	virtual TSharedPtr<FPointCloudImportSettings> GetImportSettings(const FString& Filename) { return NULL; }
++	virtual TSharedPtr<FPointCloudImportSettings> GetImportSettings(const FString &Filename) { return NULL; }
+ 
+ 	/**
+ 	 * Must return true if the provided UID is of supported Import Settings type.
+@@ -80,9 +80,15 @@ public:
+ 	 */
+ 	virtual bool IsSettingsUIDSupported(FString UID) { return UID.Equals(GetImportSettings("")->GetUID()); }
+ 
++	/**
++	 * Performs validation checks and corrections on the provided ImportSettings object using the given Filename.
++	 * Returns true if the resulting object is valid.
++	 */
++	virtual bool ValidateImportSettings(TSharedPtr<FPointCloudImportSettings> &ImportSettings, const FString &Filename);
++
+ protected:
+ 	/** Performs check for potential precision loss of data, and corrects it, if necessary */
+-	void CheckAndCorrectPrecisionLoss(double& X, double& Y, double& Z, TArray<FPointCloudPoint>& Points);
++	void CheckAndCorrectPrecisionLoss(double &X, double &Y, double &Z, TArray<FPointCloudPoint> &Points);
+ };
+ 
+ /** Links extensions to file importers capable of handling them */
+@@ -117,7 +123,7 @@ public:
+ 	 * Populates OutPoints and OutColorMode parameters
+ 	 * Returns true if the import was successful.
+ 	 */
+-	static bool Import(const FString& Filename, TSharedPtr<FPointCloudImportSettings> ImportSettings, TArray<FPointCloudPoint>& OutPoints, EPointCloudColorMode &OutColorMode);
++	static bool Import(const FString& Filename, TSharedPtr<FPointCloudImportSettings> ImportSettings, TArray<FPointCloudPoint> &OutPoints, EPointCloudColorMode &OutColorMode);
+ 
+ 	/**
+ 	 * Returns the import settings instance depending on the format provided
+@@ -131,7 +137,7 @@ public:
+ 	static void RegisterImporter(PointCloudFileImporter* Importer, TArray<FString> Extensions);
+ 
+ 	/** Returns pointer to the importer, which supports the given format */
+-	static PointCloudFileImporter* GetImporterForType(const FString& Filename);
++	static PointCloudFileImporter* GetImporterForType(const FString &Filename);
+ 
+ 	/** Responsible for serialization using correct serializer for the given format. */
+ 	static void SerializeImportSettings(FArchive& Ar, TSharedPtr<FPointCloudImportSettings> &ImportSettings);
+-- 
+2.17.1.windows.2
+
+From 6741d100cfbc887a49c7c0e0609b204c15926649 Mon Sep 17 00:00:00 2001
+From: phoboz-net <michal@phoboz.net>
+Date: Tue, 14 May 2019 18:25:05 +0100
+Subject: [PATCH] LAS Import UI
+
+---
+ .../Importers/PointCloudFileImporter_LAS.cpp  | 304 ++++++++++++------
+ .../Importers/PointCloudFileImporter_LAS.h    |  61 +++-
+ 2 files changed, 263 insertions(+), 102 deletions(-)
+
+diff --git a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.cpp b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.cpp
+index 9ae535e..19a69b9 100644
+--- a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.cpp
++++ b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.cpp
+@@ -11,8 +11,16 @@
+ 
+ FPointCloudImportSettings_LAS::FPointCloudImportSettings_LAS(const FString& Filename)
+ 	: FPointCloudImportSettings(Filename)
++	, FirstIndex(0)
++	, NumPointsToRead(0)
++	, ColorHandling(FPointCloudImporter_LAS_ColorHandling::ImportAll)
+ {
+ 	ReadFileHeader(Filename);
++	ColorOptions.Append({
++		MakeShareable<FString>(new FString("Import All")),
++		MakeShareable<FString>(new FString("Convert To Intensity")),
++		MakeShareable<FString>(new FString("Discard All"))
++	});
+ }
+ 
+ void FPointCloudImportSettings_LAS::ReadFileHeader(const FString& InFilename)
+@@ -74,6 +82,7 @@ void FPointCloudImportSettings_LAS::ReadFileHeader(const FString& InFilename)
+ #include "Widgets/Text/STextBlock.h"
+ #include "Widgets/Input/SComboBox.h"
+ #include "Widgets/Input/SButton.h"
++#include "Widgets/Input/SSpinBox.h"
+ 
+ TSharedPtr<SWidget> FPointCloudImportSettings_LAS::GetWidget()
+ {
+@@ -91,6 +100,12 @@ TSharedPtr<SWidget> FPointCloudImportSettings_LAS::GetWidget()
+ 		+ SVerticalBox::Slot()
+ 		.AutoHeight()
+ 		.Padding(2)
++		[
++			SNew(STextBlock).Text(FText::Format(LOCTEXT("PointFormat", "Point Format: {0} (#{1})"), FText::FromString(PublicHeaderBlock.GetFormatDescription()), FText::AsNumber(PublicHeaderBlock.PointDataRecordFormat))).Font(IDetailLayoutBuilder::GetDetailFont())
++		]
++		+ SVerticalBox::Slot()
++		.AutoHeight()
++		.Padding(2)
+ 		[
+ 			SNew(STextBlock).Text(FText::Format(LOCTEXT("PointCount", "Point Count: {0}"), FText::AsNumber(PublicHeaderBlock.GetNumberOfPoints()))).Font(IDetailLayoutBuilder::GetDetailFont())
+ 		]
+@@ -98,7 +113,59 @@ TSharedPtr<SWidget> FPointCloudImportSettings_LAS::GetWidget()
+ 		.AutoHeight()
+ 		.Padding(2)
+ 		[
+-			SNew(STextBlock).Text(FText::Format(LOCTEXT("PointFormat", "Point Format: {0}"), FText::AsNumber(PublicHeaderBlock.PointDataRecordFormat))).Font(IDetailLayoutBuilder::GetDetailFont())
++			SNew(STextBlock).Text(LOCTEXT("LineRange", "Specify the first point's index to start importing from and the maximum number of points to import (or 0 to import until the end of file):")).Font(IDetailLayoutBuilder::GetDetailFont()).AutoWrapText(true)
++		]
++		+ SVerticalBox::Slot()
++		.AutoHeight()
++		.Padding(2)
++		[
++			SNew(SHorizontalBox)
++			+ SHorizontalBox::Slot()
++			.Padding(2)
++			.FillWidth(0.5f)
++			[
++				SNew(SSpinBox<uint32>)
++				.MaxValue(UINT_MAX)
++				.Value(FirstIndex)
++				.OnValueChanged_Lambda([this](uint32 NewValue) { FirstIndex = NewValue; })
++			]
++			+ SHorizontalBox::Slot()
++			.Padding(2)
++			.FillWidth(0.5f)
++			[
++				SNew(SSpinBox<uint32>)
++				.MaxValue(UINT_MAX)
++				.Value(NumPointsToRead)
++				.OnValueChanged_Lambda([this](uint32 NewValue) { NumPointsToRead = NewValue; })
++			]
++		]
++		+ SVerticalBox::Slot()
++		.AutoHeight()
++		.Padding(2)
++		[
++			SNew(STextBlock).Text(LOCTEXT("ColorHandling", "Specify how to handle color information (if present):")).Font(IDetailLayoutBuilder::GetDetailFont()).AutoWrapText(true)
++		]
++		+ SVerticalBox::Slot()
++		.AutoHeight()
++		.Padding(2)
++		[
++			SNew(SComboBox<TSharedPtr<FString>>)
++			.OptionsSource(&ColorOptions)
++			.InitiallySelectedItem(ColorOptions[(uint8)ColorHandling])
++			.OnSelectionChanged_Lambda([this](TSharedPtr<FString> NewItem, ESelectInfo::Type SelectInfo)
++			{
++				ColorHandling = (FPointCloudImporter_LAS_ColorHandling)ColorOptions.IndexOfByKey(NewItem);
++			})
++			.OnGenerateWidget_Lambda([this](TSharedPtr<FString> Item)
++			{
++				return SNew(STextBlock).Text(FText::FromString(*Item)).Font(IDetailLayoutBuilder::GetDetailFont()).Margin(FMargin(2));
++			})
++			[
++				SNew(STextBlock).Text_Lambda([this]()
++				{
++					return FText::FromString(*ColorOptions[(uint8)ColorHandling]);
++				}).Font(IDetailLayoutBuilder::GetDetailFont()).Margin(FMargin(2))
++			]
+ 		];
+ 	}
+ 
+@@ -108,9 +175,13 @@ TSharedPtr<SWidget> FPointCloudImportSettings_LAS::GetWidget()
+ #undef LOCTEXT_NAMESPACE
+ #endif // WITH_EDITOR
+ 
+-UPointCloud* UPointCloudFileImporter_LAS::LoadPointCloudFromFile_LAS(FString Filename)
++UPointCloud* UPointCloudFileImporter_LAS::LoadPointCloudFromFile_LAS(FString Filename, int32 FirstIndex, int32 NumPointsToRead, FPointCloudImporter_LAS_ColorHandling ColorHandling)
+ {
+-	return UPointCloud::LoadFromFile(Filename, nullptr);
++	TSharedPtr<FPointCloudImportSettings_LAS> ImportSettings(new FPointCloudImportSettings_LAS(Filename));
++	ImportSettings->FirstIndex = FirstIndex;
++	ImportSettings->NumPointsToRead = NumPointsToRead;
++	ImportSettings->ColorHandling = ColorHandling;
++	return UPointCloud::LoadFromFile(Filename, ImportSettings);
+ }
+ 
+ bool UPointCloudFileImporter_LAS::HandleImport(const FString& Filename, TSharedPtr<FPointCloudImportSettings> ImportSettings, TArray<FPointCloudPoint>& OutPoints, EPointCloudColorMode& OutColorMode)
+@@ -131,133 +202,166 @@ bool UPointCloudFileImporter_LAS::HandleImport(const FString& Filename, TSharedP
+ 	if (Reader)
+ 	{
+ 		int64 TotalSize = Reader->TotalSize();
+-		int64 RemainingPoints = Header.GetNumberOfPoints();
+-
+-		// Set the position at the beginning of the PointData
+-		Reader->Seek(Header.OffsetToPointData);
+-		
+-		// Calculate max buffer size
+-		int64 MaxPointsToRead = FMath::Min(RemainingPoints, PC_MAXBUFFERSIZE / Header.PointDataRecordLength);
+-
+-		// Clear any existing data
+-		OutPoints.Empty(Header.GetNumberOfPoints());
+-
+-		// Set to true if any Intensity information is encountered
+-		bool bHasIntensityData = false;
++		uint8* Data = nullptr;
+ 
+-		// Reserve space for the data
+-		uint8* Data = new uint8[MaxPointsToRead * Header.PointDataRecordLength];
++		uint32 FirstIndex = Settings->FirstIndex;
++		int64 MaxPointsToRead = Header.GetNumberOfPoints() - FirstIndex;
++		int64 RemainingPoints = (Settings->NumPointsToRead > 0 ? FMath::Min((int64)Settings->NumPointsToRead, MaxPointsToRead) : MaxPointsToRead);
+ 
+-		while (RemainingPoints > 0)
++		if (RemainingPoints > 0)
+ 		{
+-			// Calculate the amount of data to read
+-			int64 PointsToRead = FMath::Min(MaxPointsToRead, RemainingPoints);
+-			int64 DataToRead = PointsToRead * Header.PointDataRecordLength;
++			// Set the correct position for the reader
++			Reader->Seek(Header.OffsetToPointData + FirstIndex * Header.PointDataRecordLength);
+ 
+-			// Read the data
+-			Reader->Serialize(Data, DataToRead);
++			// Calculate max buffer size
++			int64 MaxPointsToRead = FMath::Min(RemainingPoints, PC_MAXBUFFERSIZE / Header.PointDataRecordLength);
+ 
+-			// Decrement the remaining points
+-			RemainingPoints -= PointsToRead;
++			// Clear any existing data
++			OutPoints.Empty(RemainingPoints);
+ 
+-			uint8* DataPointer = Data;
++			// Set to true if any Intensity information is encountered
++			bool bHasIntensityData = false;
+ 
+-			// Parse the data
+-			for (int64 i = 0; i < PointsToRead; i++)
++			// Reserve space for the data
++			Data = new uint8[MaxPointsToRead * Header.PointDataRecordLength];
++
++			// Stream the data
++			while (RemainingPoints > 0)
+ 			{
+-				FPointCloudImporter_LAS_PointDataRecordFormatCommon* Record = (FPointCloudImporter_LAS_PointDataRecordFormatCommon*)DataPointer;
++				// Calculate the amount of data to read
++				int64 PointsToRead = FMath::Min(MaxPointsToRead, RemainingPoints);
++				int64 DataToRead = PointsToRead * Header.PointDataRecordLength;
+ 
+-				bHasIntensityData = bHasIntensityData || Record->Intensity > 0;
++				// Read the data
++				Reader->Serialize(Data, DataToRead);
+ 
+-				float X = 0;
+-				float Y = 0;
+-				float Z = 0;
+-				float R = Record->Intensity / 65535.0f;
+-				float G = 1.0f;
+-				float B = 1.0f;
+-				float A = 1.0f;
++				// Decrement the remaining points
++				RemainingPoints -= PointsToRead;
+ 
+-				// Extract location information
+-				{
+-					// Calculate the actual location of the point
+-					double Location[] = {
+-						Header.XScaleFactor * Record->X + Header.XOffset,
+-						Header.YScaleFactor * Record->Y + Header.YOffset,
+-						Header.ZScaleFactor * Record->Z + Header.ZOffset
+-					};
+-
+-					// Check for and correct precision loss
+-					CheckAndCorrectPrecisionLoss(Location[0], Location[1], Location[2], OutPoints);
+-
+-					// Convert location to floats
+-					X = Location[0];
+-					Y = Location[1];
+-					Z = Location[2];
+-				}
++				uint8* DataPointer = Data;
+ 
+-				// Extract color information
++				// Parse the data
++				for (int64 i = 0; i < PointsToRead; i++)
+ 				{
+-					FPointCloudImporter_LAS_PointDataRecordFormatCommonRGB* RecordRGB = nullptr;
++					FPointCloudImporter_LAS_PointDataRecordFormatCommon* Record = (FPointCloudImporter_LAS_PointDataRecordFormatCommon*)DataPointer;
++
++					bHasIntensityData = bHasIntensityData || Record->Intensity > 0;
+ 
+-					switch (Header.PointDataRecordFormat)
++					float X = 0;
++					float Y = 0;
++					float Z = 0;
++					float R = Record->Intensity / 65535.0f;
++					float G = 1.0f;
++					float B = 1.0f;
++					float A = 1.0f;
++
++					// Extract location information
+ 					{
+-					case 2: RecordRGB = (FPointCloudImporter_LAS_PointDataRecordFormat2*)DataPointer; break;
+-					case 3: RecordRGB = (FPointCloudImporter_LAS_PointDataRecordFormat3*)DataPointer; break;
+-					case 5: RecordRGB = (FPointCloudImporter_LAS_PointDataRecordFormat5*)DataPointer; break;
+-					case 7: RecordRGB = (FPointCloudImporter_LAS_PointDataRecordFormat7*)DataPointer; break;
+-					case 8: RecordRGB = (FPointCloudImporter_LAS_PointDataRecordFormat8*)DataPointer; break;
+-					case 10: RecordRGB = (FPointCloudImporter_LAS_PointDataRecordFormat10*)DataPointer; break;
++						// Calculate the actual location of the point
++						double Location[] = {
++							Header.XScaleFactor * Record->X + Header.XOffset,
++							Header.YScaleFactor * Record->Y + Header.YOffset,
++							Header.ZScaleFactor * Record->Z + Header.ZOffset
++						};
++
++						// Check for and correct precision loss
++						CheckAndCorrectPrecisionLoss(Location[0], Location[1], Location[2], OutPoints);
++
++						// Convert location to floats
++						X = Location[0];
++						Y = Location[1];
++						Z = Location[2];
+ 					}
+ 
+-					if (RecordRGB)
++					// Extract color information
+ 					{
+-						R = RecordRGB->Red / 65535.0f;
+-						G = RecordRGB->Green / 65535.0f;
+-						B = RecordRGB->Blue / 65535.0f;
++						// Do not check for color if set to discard
++						if (Settings->ColorHandling == FPointCloudImporter_LAS_ColorHandling::DiscardAll)
++						{
++							R = 1.0f;
++						}
++						else
++						{
++							FPointCloudImporter_LAS_PointDataRecordFormatCommonRGB* RecordRGB = nullptr;
++
++							switch (Header.PointDataRecordFormat)
++							{
++							case 2: RecordRGB = (FPointCloudImporter_LAS_PointDataRecordFormat2*)DataPointer; break;
++							case 3: RecordRGB = (FPointCloudImporter_LAS_PointDataRecordFormat3*)DataPointer; break;
++							case 5: RecordRGB = (FPointCloudImporter_LAS_PointDataRecordFormat5*)DataPointer; break;
++							case 7: RecordRGB = (FPointCloudImporter_LAS_PointDataRecordFormat7*)DataPointer; break;
++							case 8: RecordRGB = (FPointCloudImporter_LAS_PointDataRecordFormat8*)DataPointer; break;
++							case 10: RecordRGB = (FPointCloudImporter_LAS_PointDataRecordFormat10*)DataPointer; break;
++							}
++
++							if (RecordRGB)
++							{
++								switch (Settings->ColorHandling)
++								{
++								case FPointCloudImporter_LAS_ColorHandling::ImportAll:
++									R = RecordRGB->Red / 65535.0f;
++									G = RecordRGB->Green / 65535.0f;
++									B = RecordRGB->Blue / 65535.0f;
++									break;
++
++								case FPointCloudImporter_LAS_ColorHandling::ConvertToIntensity:
++									R = (0.3f * RecordRGB->Red + 0.59f * RecordRGB->Green + 0.11f * RecordRGB->Blue) / 65535.0f;
++									bHasIntensityData = true;
++									break;
++								}
++							}
++						}
+ 					}
+-				}
+ 
+-				OutPoints.Emplace(X, Y, Z, R, G, B, A);
++					OutPoints.Emplace(X, Y, Z, R, G, B, A);
+ 
+-				// Increment the data pointer
+-				DataPointer += Header.PointDataRecordLength;
++					// Increment the data pointer
++					DataPointer += Header.PointDataRecordLength;
++				}
+ 			}
+-		}
+ 
+-		// Set ColorMode
+-		switch (Header.PointDataRecordFormat)
+-		{
+-		case 2:
+-		case 3:
+-		case 5:
+-		case 7:
+-		case 8:
+-		case 10:
+-			OutColorMode = EPointCloudColorMode::RGB;
+-			break;
+-
+-		default:
+-			OutColorMode = EPointCloudColorMode::Intensity;
+-			break;
+-		}
++			// Set ColorMode
+ 
+-		// Switch ColorMode to None if necessary
+-		if (OutColorMode == EPointCloudColorMode::Intensity && !bHasIntensityData)
+-		{
+-			OutColorMode = EPointCloudColorMode::None;
++			switch (Settings->ColorHandling)
++			{
++			case FPointCloudImporter_LAS_ColorHandling::ImportAll:
++				OutColorMode = Header.HasRGB() ? EPointCloudColorMode::RGB : EPointCloudColorMode::Intensity;
++				break;
++
++			case FPointCloudImporter_LAS_ColorHandling::ConvertToIntensity:
++				OutColorMode = EPointCloudColorMode::Intensity;
++				break;
+ 
+-			// Override the R channel, to prevent the cloud from becoming black
+-			for (int64 i = 0; i < OutPoints.Num(); i++)
++			case FPointCloudImporter_LAS_ColorHandling::DiscardAll:
++				OutColorMode = EPointCloudColorMode::None;
++				break;
++			}
++
++			// Switch ColorMode to None if necessary
++			if (OutColorMode == EPointCloudColorMode::Intensity && !bHasIntensityData)
+ 			{
+-				OutPoints[i].Color.R = 255;
++				OutColorMode = EPointCloudColorMode::None;
++
++				// Override the R channel, to prevent the cloud from becoming black
++				for (int64 i = 0; i < OutPoints.Num(); i++)
++				{
++					OutPoints[i].Color.R = 255;
++				}
+ 			}
+-		}
+ 
+-		bSuccess = true;
++			bSuccess = true;
++		}
++		else
++		{
++			PC_ERROR("Incorrect import range has been provided. FirstIndex: %d, PointsToRead: %d, FilePointCount: %d", Settings->FirstIndex, RemainingPoints, Header.GetNumberOfPoints());
++		}
+ 
+ 		// Free memory
+-		delete[] Data;
+-		Data = nullptr;
++		if (Data)
++		{
++			delete[] Data;
++			Data = nullptr;
++		}
+ 		Reader->Close();
+ 		Reader = nullptr;
+ 	}
+diff --git a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.h b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.h
+index d1f4270..1a03851 100644
+--- a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.h
++++ b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.h
+@@ -13,6 +13,14 @@
+ 
+ #include "PointCloudFileImporter_LAS.generated.h"
+ 
++UENUM(BlueprintType)
++enum class FPointCloudImporter_LAS_ColorHandling : uint8
++{
++	ImportAll,
++	ConvertToIntensity,
++	DiscardAll
++};
++
+ #pragma pack(push)
+ #pragma pack(1)
+ 
+@@ -199,6 +207,23 @@ struct FPointCloudImporter_LAS_PublicHeaderBlock
+ 		return VersionMinor < 4 ? LegacyNumberOfPointRecords : NumberOfPointRecords;
+ 	}
+ 
++	FORCEINLINE bool HasRGB()
++	{
++		switch (PointDataRecordFormat)
++		{
++		case 2:
++		case 3:
++		case 5:
++		case 7:
++		case 8:
++		case 10:
++			return true;
++
++		default:
++			return false;
++		}
++	}
++
+ 	/** Returns true if the point data contains user-specific extra bytes */
+ 	bool PointDataContainsExtraContent()
+ 	{
+@@ -221,6 +246,25 @@ struct FPointCloudImporter_LAS_PublicHeaderBlock
+ 
+ 		return PointDataRecordLength != Size;
+ 	}
++
++	FString GetFormatDescription()
++	{
++		switch (PointDataRecordFormat)
++		{
++		case 0: return "Legacy Intensity";
++		case 1: return "Legacy Intensity with Time";
++		case 2: return "Legacy RGB";
++		case 3: return "Legacy RGB with Time";
++		case 4: return "Legacy Intensity with Time and Waveform";
++		case 5: return "Legacy RGB with Time and Waveform";
++		case 6: return "Intensity";
++		case 7: return "RGB";
++		case 8: return "RGB with NIR";
++		case 9: return "Intensity with Waveform";
++		case 10: return "RGB with NIR and Waveform";
++		default: return "Unknown";
++		}
++	}
+ };
+ #pragma pack(pop)
+ 
+@@ -228,10 +272,23 @@ struct FPointCloudImportSettings_LAS : public FPointCloudImportSettings
+ {
+ 	FPointCloudImporter_LAS_PublicHeaderBlock PublicHeaderBlock;
+ 
++	uint32 FirstIndex;
++	uint32 NumPointsToRead;
++	FPointCloudImporter_LAS_ColorHandling ColorHandling;
++
++private:
++	TArray<TSharedPtr<FString>> ColorOptions;
++
+ public:
+ 	FPointCloudImportSettings_LAS(const FString& Filename);
+ 	virtual bool IsFileCompatible(const FString& InFilename) const override { return true; }
+-	virtual void Serialize(FArchive& Ar) override { }
++	virtual void Serialize(FArchive& Ar) override
++	{
++		if (Ar.CustomVer(UPointCloud::PointCloudFileGUID) >= 7)
++		{
++			Ar << FirstIndex << NumPointsToRead << ColorHandling;
++		}
++	}
+ 
+ 	virtual FString GetUID() const override { return "FPointCloudImportSettings_LAS"; }
+ 
+@@ -257,7 +314,7 @@ class UPointCloudFileImporter_LAS : public UBlueprintFunctionLibrary, public Poi
+ 
+ public:
+ 	UFUNCTION(BlueprintPure, Category = "Point Cloud", meta = (DisplayName = "Load Point Cloud From File (LAS)"))
+-	static UPointCloud* LoadPointCloudFromFile_LAS(FString Filename);
++	static UPointCloud* LoadPointCloudFromFile_LAS(FString Filename, int32 FirstIndex, int32 NumPointsToRead, FPointCloudImporter_LAS_ColorHandling ColorHandling);
+ 
+ 	virtual bool HandleImport(const FString& Filename, TSharedPtr<FPointCloudImportSettings> ImportSettings, TArray<FPointCloudPoint>& OutPoints, EPointCloudColorMode& OutColorMode) override;
+ 	virtual TSharedPtr<FPointCloudImportSettings> GetImportSettings(const FString& Filename) override { return TSharedPtr<FPointCloudImportSettings>(new FPointCloudImportSettings_LAS(Filename)); }
+-- 
+2.17.1.windows.2
+
+From 2fb3ed02ab21f83a475961cfbbcf67fea71c916b Mon Sep 17 00:00:00 2001
+From: phoboz-net <michal@phoboz.net>
+Date: Tue, 14 May 2019 18:17:59 +0100
+Subject: [PATCH] Precision Guard fix
+
+---
+ .../Private/Importers/PointCloudFileImporter.cpp     | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+
+diff --git a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter.cpp b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter.cpp
+index 0d4d52b..255c43d 100644
+--- a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter.cpp
++++ b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter.cpp
+@@ -33,9 +33,9 @@ void PointCloudFileImporter::CheckAndCorrectPrecisionLoss(double& X, double& Y,
+ 		// Assign offset values from the first point of the cloud
+ 		if (Points.Num() > 0)
+ 		{
+-			PrecisionCorrectionOffset[0] = Points[0].Location.X;
+-			PrecisionCorrectionOffset[1] = Points[0].Location.Y;
+-			PrecisionCorrectionOffset[2] = Points[0].Location.Z;
++			PrecisionCorrectionOffset[0] = Points[0].OriginalLocation.X;
++			PrecisionCorrectionOffset[1] = Points[0].OriginalLocation.Y;
++			PrecisionCorrectionOffset[2] = Points[0].OriginalLocation.Z;
+ 		}
+ 		else
+ 		{
+@@ -51,9 +51,9 @@ void PointCloudFileImporter::CheckAndCorrectPrecisionLoss(double& X, double& Y,
+ 
+ 		for (int32 p = 0; p < Points.Num(); p++)
+ 		{
+-			Points[p].Location.X -= PrecisionCorrectionOffset[0];
+-			Points[p].Location.Y -= PrecisionCorrectionOffset[1];
+-			Points[p].Location.Z -= PrecisionCorrectionOffset[2];
++			Points[p].OriginalLocation.X -= PrecisionCorrectionOffset[0];
++			Points[p].OriginalLocation.Y -= PrecisionCorrectionOffset[1];
++			Points[p].OriginalLocation.Z -= PrecisionCorrectionOffset[2];
+ 		}
+ 
+ 		PC_LOG("Large offset detected - corrected by %f, %f, %f", -PrecisionCorrectionOffset[0], -PrecisionCorrectionOffset[1], -PrecisionCorrectionOffset[2]);
+-- 
+2.17.1.windows.2
+
+From 6a565357a7eacfac06d6f49f77b344ab1fdb10bc Mon Sep 17 00:00:00 2001
+From: phoboz-net <michal@phoboz.net>
+Date: Tue, 14 May 2019 15:27:57 +0100
+Subject: [PATCH] Importing Refactor
+
+---
+ .../Private/PointCloudEditor.cpp              | 11 +++--
+ .../Private/PointCloudFactory.cpp             |  7 ++-
+ .../Private/PointCloudImportUI.cpp            |  7 ++-
+ .../Private/PointCloudImportUI.h              |  9 ++++
+ .../Importers/PointCloudFileImporter.cpp      | 38 ++++++++++------
+ .../Importers/PointCloudFileImporter_LAS.cpp  |  8 ++--
+ .../Importers/PointCloudFileImporter_LAS.h    |  5 ++-
+ .../Importers/PointCloudFileImporter_XYZ.cpp  |  8 ++--
+ .../Importers/PointCloudFileImporter_XYZ.h    |  5 ++-
+ .../PointCloudRuntime/Private/PointCloud.cpp  | 44 +++++++++++++++----
+ .../Private/PointCloudStatics.cpp             | 20 +--------
+ Source/PointCloudRuntime/Public/PointCloud.h  | 17 ++++---
+ .../Public/PointCloudFileImporter.h           | 29 +++++++++---
+ .../Public/PointCloudShared.h                 |  9 +++-
+ .../Public/PointCloudStatics.h                |  5 +--
+ 15 files changed, 141 insertions(+), 81 deletions(-)
+
+diff --git a/Source/PointCloudEditor/Private/PointCloudEditor.cpp b/Source/PointCloudEditor/Private/PointCloudEditor.cpp
+index 96e599c..0dd6769 100644
+--- a/Source/PointCloudEditor/Private/PointCloudEditor.cpp
++++ b/Source/PointCloudEditor/Private/PointCloudEditor.cpp
+@@ -357,13 +357,16 @@ void FPointCloudEditor::ExecuteCommand_Reimport()
+ 		{
+ 			bSuccess = FPointCloudImportUI::ShowImportDialog(PointCloudBeingEdited->ImportSettings, true);
+ 		}
+-		// ... otherwise attempt to generate new, based on the source path (if set)
+-		else if(!PointCloudBeingEdited->SourcePath.FilePath.IsEmpty())
++		// ... otherwise attempt to generate new, based on the source path (if valid)
++		else if(FPaths::FileExists(PointCloudBeingEdited->GetSourcePath()))
+ 		{
+-			PointCloudBeingEdited->ImportSettings = FPointCloudImportUI::ShowImportDialog(PointCloudBeingEdited->SourcePath.FilePath, true);
+-
++			PointCloudBeingEdited->ImportSettings = FPointCloudImportUI::ShowImportDialog(PointCloudBeingEdited->GetSourcePath(), true);
+ 			bSuccess = PointCloudBeingEdited->ImportSettings.IsValid();
+ 		}
++		else
++		{
++			PC_ERROR("Cannot reimport, source path is incorrect.");
++		}
+ 		
+ 		if (bSuccess)
+ 		{
+diff --git a/Source/PointCloudEditor/Private/PointCloudFactory.cpp b/Source/PointCloudEditor/Private/PointCloudFactory.cpp
+index fedd470..e0829de 100644
+--- a/Source/PointCloudEditor/Private/PointCloudFactory.cpp
++++ b/Source/PointCloudEditor/Private/PointCloudFactory.cpp
+@@ -5,7 +5,6 @@
+ #include "PointCloudShared.h"
+ #include "PointCloudImportUI.h"
+ #include "PointCloudEditor.h"
+-#include "PointCloudStatics.h"
+ #include "PointCloudFileImporter.h"
+ #include "Runtime/Launch/Resources/Version.h"
+ 
+@@ -78,7 +77,7 @@ UObject* UPointCloudFactory::FactoryCreateFile(UClass* InClass, UObject* InParen
+ 	{
+ 		Warn->BeginSlowTask(NSLOCTEXT("PointCloudFactory", "BeginImportingPointCloudTask", "Importing Point Cloud"), true);
+ 
+-		OutObject = UPointCloudStatics::LoadPointCloudFromFile(Filename, ImportSettings, InParent, InName, Flags);
++		OutObject = UPointCloud::LoadFromFile(Filename, ImportSettings, InParent, InName, Flags);
+ 		
+ 		Warn->EndSlowTask();
+ 	}
+@@ -103,7 +102,7 @@ bool UPointCloudFactory::CanReimport(UObject* Obj, TArray<FString>& OutFilenames
+ 	UPointCloud* PC = Cast<UPointCloud>(Obj);
+ 	if (PC)
+ 	{
+-		OutFilenames.Add(*PC->SourcePath.FilePath);
++		OutFilenames.Add(*PC->GetSourcePath());
+ 		return true;
+ 	}
+ 	return false;
+@@ -114,7 +113,7 @@ void UPointCloudFactory::SetReimportPaths(UObject* Obj, const TArray<FString>& N
+ 	UPointCloud *PC = Cast<UPointCloud>(Obj);
+ 	if (PC && NewReimportPaths.Num())
+ 	{
+-		PC->SetNewSourcePath(NewReimportPaths[0], true);
++		PC->SetSourcePath(NewReimportPaths[0]);
+ 	}
+ }
+ 
+diff --git a/Source/PointCloudEditor/Private/PointCloudImportUI.cpp b/Source/PointCloudEditor/Private/PointCloudImportUI.cpp
+index 11503c4..af38372 100644
+--- a/Source/PointCloudEditor/Private/PointCloudImportUI.cpp
++++ b/Source/PointCloudEditor/Private/PointCloudImportUI.cpp
+@@ -155,6 +155,11 @@ TSharedPtr<FPointCloudImportSettings> FPointCloudImportUI::ShowImportDialog(cons
+ 
+ bool FPointCloudImportUI::ShowImportDialog(TSharedPtr<FPointCloudImportSettings> ImportSettings, bool bIsReimport)
+ {
++	if (!ImportSettings.IsValid())
++	{
++		return false;
++	}
++
+ 	TSharedPtr<SWindow> ParentWindow;
+ 
+ 	if (FModuleManager::Get().IsModuleLoaded("MainFrame"))
+@@ -189,7 +194,7 @@ bool FPointCloudImportUI::ShowImportDialog(TSharedPtr<FPointCloudImportSettings>
+ 		SAssignNew(PointCloudOptionWindow, SPointCloudOptionWindow)
+ 		.ImportUI(ImportSettings)
+ 		.WidgetWindow(Window)
+-		.FullPath(FText::FromString(ImportSettings->Filename.Len() > 58 ? ("..." + ImportSettings->Filename.Right(55)) : ImportSettings->Filename))
++		.FullPath(FText::FromString(ImportSettings->GetFilename().Len() > 58 ? ("..." + ImportSettings->GetFilename().Right(55)) : ImportSettings->GetFilename()))
+ 		.IsReimport(bIsReimport)
+ 		.MaxWindowHeight(ImportWindowHeight)
+ 		.MaxWindowWidth(ImportWindowWidth)
+diff --git a/Source/PointCloudEditor/Private/PointCloudImportUI.h b/Source/PointCloudEditor/Private/PointCloudImportUI.h
+index 86e365d..65cc2ce 100644
+--- a/Source/PointCloudEditor/Private/PointCloudImportUI.h
++++ b/Source/PointCloudEditor/Private/PointCloudImportUI.h
+@@ -93,6 +93,15 @@ private:
+ class FPointCloudImportUI
+ {
+ public:
++	/**
++	 * This version queries the default ImportSettings based on the Filename provided
++	 * Returns the ImportSettings object
++	 */
+ 	static TSharedPtr<FPointCloudImportSettings> ShowImportDialog(const FString& Filename, bool bIsReimport);
++
++	/**
++	 * This version uses existing ImportSettings
++	 * Returns true if ImportSettings are valid and the action has been accepted by the user
++	 */
+ 	static bool ShowImportDialog(TSharedPtr<FPointCloudImportSettings> ImportSettings, bool bIsReimport);
+ };
+\ No newline at end of file
+diff --git a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter.cpp b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter.cpp
+index ed44af3..0d4d52b 100644
+--- a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter.cpp
++++ b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter.cpp
+@@ -121,30 +121,40 @@ PointCloudFileImporter* UPointCloudFileImporter::GetImporterForType(const FStrin
+ 	return NULL;
+ }
+ 
+-void UPointCloudFileImporter::SerializeImportSettings(FArchive& Ar, TSharedPtr<FPointCloudImportSettings> *ImportSettings)
++void UPointCloudFileImporter::SerializeImportSettings(FArchive& Ar, TSharedPtr<FPointCloudImportSettings> &ImportSettings)
+ {
+-	if (!ImportSettings)
+-	{
+-		return;
+-	}
+-
+ 	if (Ar.IsLoading())
+ 	{
+ 		FString FilePath;
+ 		Ar << FilePath;
+ 
+-		PointCloudFileImporter* Importer = GetImporterForType(FilePath);
+-		if (Importer)
++		// If there are no ImportSettings data, do not try to read anything
++		if (FilePath.IsEmpty())
+ 		{
+-			TSharedPtr<FPointCloudImportSettings> _ImportSettings = Importer->GetImportSettings(FilePath);
+-			_ImportSettings->Serialize(Ar);
+-			*ImportSettings = _ImportSettings;
++			return;
+ 		}
++
++		PointCloudFileImporter* Importer = GetImporterForType(FilePath);
++		
++		// The importer for this file format is no longer available - no way to proceed
++		check(Importer);
++		
++		ImportSettings = Importer->GetImportSettings(FilePath);
++		ImportSettings->Serialize(Ar);
+ 	}
+-	else if (ImportSettings->IsValid())
++	else
+ 	{
+-		Ar << (*ImportSettings)->Filename;
+-		(*ImportSettings)->Serialize(Ar);
++		if (ImportSettings.IsValid())
++		{
++			Ar << ImportSettings->Filename;
++			ImportSettings->Serialize(Ar);
++		}
++		else
++		{
++			// If the ImportSettings is invalid, write 0-length FString to indicate it for loading
++			FString FilePath = "";
++			Ar << FilePath;
++		}
+ 	}
+ }
+ 
+diff --git a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.cpp b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.cpp
+index fd6cf81..9ae535e 100644
+--- a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.cpp
++++ b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.cpp
+@@ -2,7 +2,6 @@
+ 
+ #include "PointCloudFileImporter_LAS.h"
+ #include "PointCloudShared.h"
+-#include "PointCloudStatics.h"
+ #include "PointCloud.h"
+ #include "HAL/FileManager.h"
+ #include "Misc/FileHelper.h"
+@@ -111,12 +110,12 @@ TSharedPtr<SWidget> FPointCloudImportSettings_LAS::GetWidget()
+ 
+ UPointCloud* UPointCloudFileImporter_LAS::LoadPointCloudFromFile_LAS(FString Filename)
+ {
+-	return UPointCloudStatics::LoadPointCloudFromFile(Filename, nullptr);
++	return UPointCloud::LoadFromFile(Filename, nullptr);
+ }
+ 
+ bool UPointCloudFileImporter_LAS::HandleImport(const FString& Filename, TSharedPtr<FPointCloudImportSettings> ImportSettings, TArray<FPointCloudPoint>& OutPoints, EPointCloudColorMode& OutColorMode)
+ {
+-	FPointCloudImportSettings_LAS* Settings = (FPointCloudImportSettings_LAS*)(ImportSettings.IsValid() ? ImportSettings : GetImportSettings(Filename)).Get();
++	FPointCloudImportSettings_LAS* Settings = (FPointCloudImportSettings_LAS*)(ImportSettings.IsValid() && IsSettingsUIDSupported(ImportSettings->GetUID()) ? ImportSettings : GetImportSettings(Filename)).Get();
+ 	FPointCloudImporter_LAS_PublicHeaderBlock Header = Settings->PublicHeaderBlock;
+ 
+ 	// Return immediately if header is invalid
+@@ -266,5 +265,4 @@ bool UPointCloudFileImporter_LAS::HandleImport(const FString& Filename, TSharedP
+ 	return bSuccess;
+ }
+ 
+-#undef PC_MAXBUFFERSIZE
+-#undef PC_MAXPRECISIONLOSS
+\ No newline at end of file
++#undef PC_MAXBUFFERSIZE
+\ No newline at end of file
+diff --git a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.h b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.h
+index dc9dabf..d1f4270 100644
+--- a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.h
++++ b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.h
+@@ -230,9 +230,11 @@ struct FPointCloudImportSettings_LAS : public FPointCloudImportSettings
+ 
+ public:
+ 	FPointCloudImportSettings_LAS(const FString& Filename);
+-	virtual bool IsFileCompatible(const FString& InFilename) override { return true; }
++	virtual bool IsFileCompatible(const FString& InFilename) const override { return true; }
+ 	virtual void Serialize(FArchive& Ar) override { }
+ 
++	virtual FString GetUID() const override { return "FPointCloudImportSettings_LAS"; }
++
+ private:
+ 	/** Reads and parses header information about the given file. */
+ 	void ReadFileHeader(const FString& InFilename);
+@@ -257,7 +259,6 @@ public:
+ 	UFUNCTION(BlueprintPure, Category = "Point Cloud", meta = (DisplayName = "Load Point Cloud From File (LAS)"))
+ 	static UPointCloud* LoadPointCloudFromFile_LAS(FString Filename);
+ 
+-protected:
+ 	virtual bool HandleImport(const FString& Filename, TSharedPtr<FPointCloudImportSettings> ImportSettings, TArray<FPointCloudPoint>& OutPoints, EPointCloudColorMode& OutColorMode) override;
+ 	virtual TSharedPtr<FPointCloudImportSettings> GetImportSettings(const FString& Filename) override { return TSharedPtr<FPointCloudImportSettings>(new FPointCloudImportSettings_LAS(Filename)); }
+ 
+diff --git a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_XYZ.cpp b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_XYZ.cpp
+index 431e1f7..43726a4 100644
+--- a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_XYZ.cpp
++++ b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_XYZ.cpp
+@@ -2,7 +2,6 @@
+ 
+ #include "PointCloudFileImporter_XYZ.h"
+ #include "PointCloudShared.h"
+-#include "PointCloudStatics.h"
+ #include "PointCloud.h"
+ #include "Misc/Paths.h"
+ #include "HAL/FileManager.h"
+@@ -43,7 +42,7 @@ bool UPointCloudFileImporter_XYZ::HandleImport(const FString& Filename, TSharedP
+ 	TUniquePtr<FArchive> Reader(IFileManager::Get().CreateFileReader(*Filename));
+ 	if (Reader)
+ 	{
+-		FPointCloudImportSettings_XYZ *Settings = (FPointCloudImportSettings_XYZ*)(ImportSettings.IsValid() ? ImportSettings : GetImportSettings(Filename)).Get();
++		FPointCloudImportSettings_XYZ* Settings = (FPointCloudImportSettings_XYZ*)(ImportSettings.IsValid() && IsSettingsUIDSupported(ImportSettings->GetUID()) ? ImportSettings : GetImportSettings(Filename)).Get();
+ 
+ 		uint32 FirstIndex = Settings->FirstLine;
+ 		uint32 LastIndex = Settings->LastLine;
+@@ -308,7 +307,7 @@ UPointCloud* UPointCloudFileImporter_XYZ::LoadPointCloudFromFile_XYZ(FString Fil
+ 	ImportSettings->RGBRange = RGBRange;
+ 	ImportSettings->SelectedColumns = { FMath::Max(-1, Columns.LocationX), FMath::Max(-1, Columns.LocationY), FMath::Max(-1, Columns.LocationZ), FMath::Max(-1, Columns.Red), FMath::Max(-1, Columns.Green), FMath::Max(-1, Columns.Blue), FMath::Max(-1, Columns.Alpha) };
+ 
+-	return UPointCloudStatics::LoadPointCloudFromFile(Filename, ImportSettings);
++	return UPointCloud::LoadFromFile(Filename, ImportSettings);
+ }
+ 
+ FPointCloudImportSettings_XYZ::FPointCloudImportSettings_XYZ(const FString& Filename)
+@@ -329,7 +328,7 @@ FPointCloudImportSettings_XYZ::FPointCloudImportSettings_XYZ(const FString& File
+ 	ReadFileHeader(Filename);
+ }
+ 
+-bool FPointCloudImportSettings_XYZ::IsFileCompatible(const FString& InFilename)
++bool FPointCloudImportSettings_XYZ::IsFileCompatible(const FString& InFilename) const
+ {
+ 	FPointCloudImportSettings_XYZ OtherFile(InFilename);
+ 	return (OtherFile.LinesToSkip == LinesToSkip) && (OtherFile.Columns.Num() == Columns.Num());
+@@ -823,7 +822,6 @@ TSharedRef<SWidget> FPointCloudImportSettings_XYZ::HandleGenerateWidget(FString
+ #undef LOCTEXT_NAMESPACE
+ #endif // WITH_EDITOR
+ 
+-#undef PC_MAXPRECISIONLOSS
+ #undef PC_MAXBUFFERSIZE
+ #undef PC_STREAMTEXTFILE
+ #undef PC_STREAMTEXTFILE_OFFSET
+diff --git a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_XYZ.h b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_XYZ.h
+index 96442b9..933ed72 100644
+--- a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_XYZ.h
++++ b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_XYZ.h
+@@ -84,7 +84,7 @@ struct FPointCloudImportSettings_XYZ : public FPointCloudImportSettings
+ 
+ public:
+ 	FPointCloudImportSettings_XYZ(const FString& Filename);
+-	virtual bool IsFileCompatible(const FString& InFilename) override;
++	virtual bool IsFileCompatible(const FString& InFilename) const override;
+ 
+ 	/** Links the FPointCloudImportSettings_XYZ with FArchive serialization */
+ 	virtual void Serialize(FArchive& Ar) override
+@@ -92,6 +92,8 @@ public:
+ 		Ar << LinesToSkip << bHasDescriptions << EstimatedPointCount << Delimiter << Columns << SelectedColumns << RGBRange << FirstLine << LastLine;
+ 	}
+ 
++	virtual FString GetUID() const override { return "FPointCloudImportSettings_XYZ"; }
++
+ private:
+ 	/** Reads and parses header information about the given file. */
+ 	void ReadFileHeader(const FString& InFilename);
+@@ -130,7 +132,6 @@ public:
+ 	UFUNCTION(BlueprintPure, Category = "Point Cloud", meta = (DisplayName = "Load Point Cloud From File (XYZ)"))
+ 	static UPointCloud* LoadPointCloudFromFile_XYZ(FString Filename, int32 FirstLine, int32 LastLine, FVector2D RGBRange, FPointCloudImportSettings_XYZ_Columns Columns);
+ 
+-protected:
+ 	virtual bool HandleImport(const FString& Filename, TSharedPtr<FPointCloudImportSettings> ImportSettings, TArray<FPointCloudPoint>& OutPoints, EPointCloudColorMode &OutColorMode) override;
+ 	virtual TSharedPtr<FPointCloudImportSettings> GetImportSettings(const FString& Filename) override { return TSharedPtr<FPointCloudImportSettings>(new FPointCloudImportSettings_XYZ(Filename)); }
+ 
+diff --git a/Source/PointCloudRuntime/Private/PointCloud.cpp b/Source/PointCloudRuntime/Private/PointCloud.cpp
+index dd1454c..4ca9429 100644
+--- a/Source/PointCloudRuntime/Private/PointCloud.cpp
++++ b/Source/PointCloudRuntime/Private/PointCloud.cpp
+@@ -97,7 +97,7 @@ void UPointCloud::Serialize(FArchive& Ar)
+ 	if (Version != -1)
+ 	{
+ 		// Serialize ImportSettings
+-		UPointCloudFileImporter::SerializeImportSettings(Ar, &ImportSettings);
++		UPointCloudFileImporter::SerializeImportSettings(Ar, ImportSettings);
+ 	}
+ 
+ 	// For backward compatibility with asset versions 6 and earlier
+@@ -196,7 +196,7 @@ void UPointCloud::PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedE
+ 		if (IS_PROPERTY(SourcePath))
+ 		{
+ 			bCommonDirty = false;
+-			SetNewSourcePath(SourcePath.FilePath, true);
++			SetSourcePath(SourcePath.FilePath);
+ 		}
+ 
+ 		if (IS_PROPERTY(DensityReductionDistance) || IS_PROPERTY(NoiseReductionDistance) || IS_PROPERTY(NoiseReductionDensity))
+@@ -603,19 +603,24 @@ bool UPointCloud::Reimport(bool bRebuild)
+ 	return false;
+ }
+ 
+-void UPointCloud::SetNewSourcePath(FString NewSourcePath, bool bProcessHeader)
++void UPointCloud::SetSourcePath(FString NewSourcePath)
+ {
+ 	SourcePath.FilePath = NewSourcePath;
+ 
+-	if (!SourcePath.FilePath.IsEmpty() && FPaths::FileExists(SourcePath.FilePath) && FPaths::IsRelative(SourcePath.FilePath))
++	if (FPaths::FileExists(SourcePath.FilePath))
+ 	{
+-		SourcePath.FilePath = FPaths::ConvertRelativePathToFull(SourcePath.FilePath);
+-	}
++		if (FPaths::IsRelative(SourcePath.FilePath))
++		{
++			SourcePath.FilePath = FPaths::ConvertRelativePathToFull(SourcePath.FilePath);
++		}
+ 
+-	if (bProcessHeader)
++		// Generate new ImportSettings if the source path has changed
++		ImportSettings = UPointCloudFileImporter::GetImportSettingsForType(SourcePath.FilePath);
++	}
++	else
+ 	{
++		// Invalidate ImportSettings if the source path is invalid too
+ 		ImportSettings = NULL;
+-		OnPointCloudSourceChangedEvent.Broadcast();
+ 	}
+ }
+ 
+@@ -677,6 +682,29 @@ void UPointCloud::SetColorMode(EPointCloudColorMode NewMode)
+ 	AdjustColorMode();
+ }
+ 
++UPointCloud* UPointCloud::LoadFromFile(const FString& Filename, TSharedPtr<struct FPointCloudImportSettings> ImportSettings, UObject* InParent /*= (UObject*)GetTransientPackage()*/, FName InName /*= NAME_None*/, EObjectFlags Flags /*= RF_NoFlags*/)
++{
++	TArray<FPointCloudPoint> Points;
++	EPointCloudColorMode ColorMode = EPointCloudColorMode::None;
++
++	UPointCloud* PC = NULL;
++
++	if (UPointCloudFileImporter::Import(Filename, ImportSettings, Points, ColorMode))
++	{
++		PC = NewObject<UPointCloud>(InParent, InName, Flags);
++		PC->SetSourcePath(Filename);
++		PC->ImportSettings = ImportSettings;
++		PC->SetColorMode(ColorMode);
++		PC->SetPointCloudData(Points);
++	}
++	else
++	{
++		UE_LOG(LogTemp, Error, TEXT("Parsing Failed"));
++	}
++
++	return PC;
++}
++
+ void UPointCloud::CalculateDistanceThresholds()
+ {
+ 	DistanceThresholds.Reset();
+diff --git a/Source/PointCloudRuntime/Private/PointCloudStatics.cpp b/Source/PointCloudRuntime/Private/PointCloudStatics.cpp
+index 1bebd1c..ec37a5f 100644
+--- a/Source/PointCloudRuntime/Private/PointCloudStatics.cpp
++++ b/Source/PointCloudRuntime/Private/PointCloudStatics.cpp
+@@ -19,23 +19,5 @@ UPointCloud* UPointCloudStatics::MakeEmptyPointCloud(UObject* WorldContextObject
+ 
+ UPointCloud* UPointCloudStatics::LoadPointCloudFromFile(const FString &Filename, TSharedPtr<FPointCloudImportSettings> ImportSettings, UObject* InParent, FName InName, EObjectFlags Flags)
+ {
+-	TArray<FPointCloudPoint> Points;
+-	EPointCloudColorMode ColorMode = EPointCloudColorMode::None;
+-
+-	UPointCloud *PC = NULL;
+-
+-	if (UPointCloudFileImporter::Import(Filename, ImportSettings, Points, ColorMode))
+-	{
+-		PC = NewObject<UPointCloud>(InParent, InName, Flags);
+-		PC->ImportSettings = ImportSettings;
+-		PC->SetColorMode(ColorMode);
+-		PC->SetPointCloudData(Points);
+-		PC->SetNewSourcePath(Filename, false);
+-	}
+-	else
+-	{
+-		UE_LOG(LogTemp, Error, TEXT("Parsing Failed"));
+-	}
+-
+-	return PC;
++	return UPointCloud::LoadFromFile(Filename, ImportSettings, InParent, InName, Flags);
+ }
+diff --git a/Source/PointCloudRuntime/Public/PointCloud.h b/Source/PointCloudRuntime/Public/PointCloud.h
+index 690c3d7..e56693a 100644
+--- a/Source/PointCloudRuntime/Public/PointCloud.h
++++ b/Source/PointCloudRuntime/Public/PointCloud.h
+@@ -72,11 +72,12 @@ class POINTCLOUDRUNTIME_API UPointCloud : public UObject
+ {
+ 	GENERATED_UCLASS_BODY()
+ 
+-public:
++private:
+ 	/** Stores the path to the original source file. Empty if dynamically created. */
+-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Import Settings")
++	UPROPERTY(EditAnywhere, Category = "Import Settings", meta = (AllowPrivateAccess = "true"))
+ 	FFilePath SourcePath;
+ 
++public:
+ 	/**
+ 	 * Minimum LOD at which to switch to single triangle per sprite. Ignored if using point rendering.
+ 	 * Use SinglePolyScale property to help mitigate potential gaps between triangles.
+@@ -403,7 +404,6 @@ public:
+ #endif
+ 
+ 	virtual FOnPointCloudChanged& OnPointCloudChanged() { return OnPointCloudChangedEvent; }
+-	virtual FOnPointCloudChanged& OnPointCloudSourceChanged() { return OnPointCloudSourceChangedEvent; }
+ 	virtual FOnPointCloudChanged& OnPointCloudRebuilt() { return OnPointCloudRebuiltEvent; }
+ 
+ 	UFUNCTION(BlueprintPure, Category = "Rendering")
+@@ -466,9 +466,12 @@ public:
+ 	UFUNCTION(BlueprintCallable, Category = "Point Cloud")
+ 	bool Reimport(bool bRebuild = true);
+ 
+-	/** Sets new source for the file and optionally runs all necessary processing. */
++	UFUNCTION(BlueprintPure, Category = "Point Cloud")
++	FORCEINLINE FString GetSourcePath() { return SourcePath.FilePath; }
++
++	/** Sets new source for the file */
+ 	UFUNCTION(BlueprintCallable, Category = "Point Cloud")
+-	void SetNewSourcePath(FString NewSourcePath, bool bProcessHeader = true);
++	void SetSourcePath(FString NewSourcePath);
+ 
+ 	/** Sets new Rendering Method. */
+ 	UFUNCTION(BlueprintCallable, Category = "Point Cloud")
+@@ -493,6 +496,9 @@ public:
+ 
+ 	FORCEINLINE float GetDistanceThreshold(uint8 LOD) { return DistanceThresholds[LOD]; }
+ 
++	/** Returns new Point Cloud object imported using the settings provided or NULL if failed */
++	static UPointCloud* LoadFromFile(const FString& Filename, TSharedPtr<struct FPointCloudImportSettings> ImportSettings, UObject* InParent = (UObject*)GetTransientPackage(), FName InName = NAME_None, EObjectFlags Flags = RF_NoFlags);
++
+ private:
+ 	void CalculateDistanceThresholds();
+ 	void CacheAssetRegistryTags();
+@@ -508,6 +514,5 @@ private:
+ 	void ProcessWarningMessages();
+ 
+ 	FOnPointCloudChanged OnPointCloudChangedEvent;
+-	FOnPointCloudChanged OnPointCloudSourceChangedEvent;
+ 	FOnPointCloudChanged OnPointCloudRebuiltEvent;
+ };
+\ No newline at end of file
+diff --git a/Source/PointCloudRuntime/Public/PointCloudFileImporter.h b/Source/PointCloudRuntime/Public/PointCloudFileImporter.h
+index 089613d..f053867 100644
+--- a/Source/PointCloudRuntime/Public/PointCloudFileImporter.h
++++ b/Source/PointCloudRuntime/Public/PointCloudFileImporter.h
+@@ -15,14 +15,18 @@ class UPointCloudFileImporter;
+ /** Base for all importer settings */
+ struct POINTCLOUDRUNTIME_API FPointCloudImportSettings
+ {
+-	FString Filename;
+-
++public:
+ 	/** Holds a flag determining whether the same settings should be applied to the whole import at once */
+ 	bool bImportAll;
+ 
++protected:
++	/** Used to determine the correct Importer to use during serialization. */
++	FString Filename;
++
++public:
+ 	FPointCloudImportSettings(const FString& Filename)
+-		: Filename(Filename)
+-		, bImportAll(false)
++		: bImportAll(false)
++		, Filename(Filename)
+ 	{
+ 	}
+ 	virtual ~FPointCloudImportSettings() {}
+@@ -31,7 +35,7 @@ struct POINTCLOUDRUNTIME_API FPointCloudImportSettings
+ 	 * Should return true if the given file is compatible with this instance of settings
+ 	 * Useful for detecting different headers
+ 	 */
+-	virtual bool IsFileCompatible(const FString& InFilename) { return false; }
++	virtual bool IsFileCompatible(const FString& InFilename) const { return false; }
+ 
+ 	/**
+ 	 * Links the FPointCloudImportSettings with FArchive serialization
+@@ -39,10 +43,17 @@ struct POINTCLOUDRUNTIME_API FPointCloudImportSettings
+ 	 */
+ 	virtual void Serialize(FArchive& Ar) { }
+ 
++	FORCEINLINE FString GetFilename() const { return Filename; }
++
++	/** Must return a unique id of this Import Settings type. */
++	virtual FString GetUID() const = 0;
++
+ #if WITH_EDITOR
+ 	/** Used to create properties window */
+ 	virtual TSharedPtr<SWidget> GetWidget() { return nullptr; }
+ #endif
++
++	friend class UPointCloudFileImporter;
+ };
+ 
+ /** Base type implemented by all importers */
+@@ -63,6 +74,12 @@ public:
+ 	/** Returns a shared pointer for the import settings of this importer */
+ 	virtual TSharedPtr<FPointCloudImportSettings> GetImportSettings(const FString& Filename) { return NULL; }
+ 
++	/**
++	 * Must return true if the provided UID is of supported Import Settings type.
++	 * Default implementation simply checks the default ImportSettings' UID to compare against.
++	 */
++	virtual bool IsSettingsUIDSupported(FString UID) { return UID.Equals(GetImportSettings("")->GetUID()); }
++
+ protected:
+ 	/** Performs check for potential precision loss of data, and corrects it, if necessary */
+ 	void CheckAndCorrectPrecisionLoss(double& X, double& Y, double& Z, TArray<FPointCloudPoint>& Points);
+@@ -117,7 +134,7 @@ public:
+ 	static PointCloudFileImporter* GetImporterForType(const FString& Filename);
+ 
+ 	/** Responsible for serialization using correct serializer for the given format. */
+-	static void SerializeImportSettings(FArchive& Ar, TSharedPtr<FPointCloudImportSettings> *ImportSettings);
++	static void SerializeImportSettings(FArchive& Ar, TSharedPtr<FPointCloudImportSettings> &ImportSettings);
+ 
+ protected:
+ 	UPointCloudFileImporter();
+diff --git a/Source/PointCloudRuntime/Public/PointCloudShared.h b/Source/PointCloudRuntime/Public/PointCloudShared.h
+index e8a1025..49dbb91 100644
+--- a/Source/PointCloudRuntime/Public/PointCloudShared.h
++++ b/Source/PointCloudRuntime/Public/PointCloudShared.h
+@@ -72,10 +72,15 @@ struct POINTCLOUDRUNTIME_API FPointCloudPoint
+ 
+ 	FORCEINLINE bool IsEnabled() const			{ return (Flags & 0b00000001) == 0b00000001; }
+ 	FORCEINLINE bool IsEnabledOverriden() const { return (Flags & 0b00000010) == 0b00000010; }
+-	FORCEINLINE void SetEnabled(bool bNewEnabled, bool bMarkAsOverridden = false)
++
++	/**
++	 * Allows control over visibility of individual points.
++	 * If changing this manually, make sure to set persistent flag to true, to prevent Rebuilds from resetting it 
++	 */
++	FORCEINLINE void SetEnabled(bool bNewEnabled, bool bMarkAsPersistent = false)
+ 	{
+ 		Flags = bNewEnabled ? (Flags | 0b00000001) : (Flags & 0b11111110);
+-		Flags = bMarkAsOverridden ? (Flags | 0b00000010) : (Flags & 0b11111101);
++		Flags = bMarkAsPersistent ? (Flags | 0b00000010) : (Flags & 0b11111101);
+ 	}
+ 
+ 	FORCEINLINE float GridDistance(FPointCloudPoint *point) const { return (point->Location - Location).GetAbsMax(); }
+diff --git a/Source/PointCloudRuntime/Public/PointCloudStatics.h b/Source/PointCloudRuntime/Public/PointCloudStatics.h
+index 986e4f0..4bc577a 100644
+--- a/Source/PointCloudRuntime/Public/PointCloudStatics.h
++++ b/Source/PointCloudRuntime/Public/PointCloudStatics.h
+@@ -53,6 +53,5 @@ public:
+ 	UFUNCTION(BlueprintPure, Category = "Point Cloud", meta = (HidePin = "WorldContextObject", DefaultToSelf = "WorldContextObject"))
+ 	static UPointCloud* MakeEmptyPointCloud(UObject* WorldContextObject);
+ 
+-	/** Returns new Point Cloud object, imported using the settings provided */
+-	static UPointCloud* LoadPointCloudFromFile(const FString &Filename, TSharedPtr<FPointCloudImportSettings> ImportSettings, UObject* InParent = (UObject*)GetTransientPackage(), FName InName = NAME_None, EObjectFlags Flags = RF_NoFlags);
+-};
+\ No newline at end of file
++	__declspec(deprecated("Please use UPointCloud::LoadFromFile instead")) static UPointCloud* LoadPointCloudFromFile(const FString &Filename, TSharedPtr<FPointCloudImportSettings> ImportSettings, UObject* InParent = (UObject*)GetTransientPackage(), FName InName = NAME_None, EObjectFlags Flags = RF_NoFlags);
++};
+-- 
+2.17.1.windows.2
+
+From 05fccdb92e569dc5f28576a5f8548a606e2543ed Mon Sep 17 00:00:00 2001
+From: phoboz-net <michal@phoboz.net>
+Date: Mon, 13 May 2019 19:55:39 +0100
+Subject: [PATCH] Meta
+
+---
+ PointCloudPlugin.uplugin | 2 +-
+ README.md                | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/PointCloudPlugin.uplugin b/PointCloudPlugin.uplugin
+index 8be9b72..5206d5e 100644
+--- a/PointCloudPlugin.uplugin
++++ b/PointCloudPlugin.uplugin
+@@ -1,7 +1,7 @@
+ {
+ 	"FileVersion": 1,
+ 	"Version": 1,
+-	"VersionName": "0.5.5",
++	"VersionName": "0.5.6",
+ 	"FriendlyName": "Point Cloud Plugin",
+ 	"Description": "Adds support for importing, processing and rendering of point clouds.",
+ 	"Category": "Rendering",
+diff --git a/README.md b/README.md
+index ac4e3a0..136934f 100644
+--- a/README.md
++++ b/README.md
+@@ -1,6 +1,6 @@
+ Unreal Engine 4 - Point Cloud Plugin
+ 
+-Current Version: 0.5.5 beta
++Current Version: 0.5.6 beta
+ 
+ This plugin has been created to help with importing, processing and rendering of point clouds.
+ 
+-- 
+2.17.1.windows.2
+
+From 6af1c63a2b3470fec1b05faaa510ba8413944295 Mon Sep 17 00:00:00 2001
+From: phoboz-net <michal@phoboz.net>
+Date: Mon, 13 May 2019 19:54:29 +0100
+Subject: [PATCH] Fixed cooking not serializing data correctly
+
+---
+ Source/PointCloudRuntime/Private/PointCloud.cpp | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Source/PointCloudRuntime/Private/PointCloud.cpp b/Source/PointCloudRuntime/Private/PointCloud.cpp
+index 0aa8aaa..dd1454c 100644
+--- a/Source/PointCloudRuntime/Private/PointCloud.cpp
++++ b/Source/PointCloudRuntime/Private/PointCloud.cpp
+@@ -86,7 +86,7 @@ void UPointCloud::Serialize(FArchive& Ar)
+ 	Super::Serialize(Ar);
+ 	
+ 	// Make sure to serialize only actual data
+-	if (!FPaths::FileExists(Ar.GetArchiveName()))
++	if (!FPaths::FileExists(Ar.GetArchiveName()) && !(Ar.IsCooking() && Ar.GetArchiveName().Equals(FPaths::GetBaseFilename(FStringAssetReference(this).ToString(), false))))
+ 	{
+ 		return;
+ 	}
+-- 
+2.17.1.windows.2
+
+From 14d07a90e37dd83518cdcbda506d2575e75faf6a Mon Sep 17 00:00:00 2001
+From: phoboz-net <michal@phoboz.net>
+Date: Mon, 13 May 2019 12:54:33 +0100
+Subject: [PATCH] Fixed import Color Range not allowing negative values
+
+---
+ .../Private/Importers/PointCloudFileImporter_XYZ.cpp          | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_XYZ.cpp b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_XYZ.cpp
+index 9f5967c..431e1f7 100644
+--- a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_XYZ.cpp
++++ b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_XYZ.cpp
+@@ -722,7 +722,7 @@ TSharedPtr<SWidget> FPointCloudImportSettings_XYZ::GetWidget()
+ 				.FillWidth(0.5f)
+ 				[
+ 					SAssignNew(RGBRangeMin, SSpinBox<float>)
+-					.MinValue(FLT_MIN)
++					.MinValue(-FLT_MAX)
+ 					.MaxValue(FLT_MAX)
+ 					.Value(RGBRange.X)
+ 					.OnValueChanged_Lambda([this](float NewValue) { RGBRange.X = NewValue; })
+@@ -732,7 +732,7 @@ TSharedPtr<SWidget> FPointCloudImportSettings_XYZ::GetWidget()
+ 				.FillWidth(0.5f)
+ 				[
+ 					SAssignNew(RGBRangeMax, SSpinBox<float>)
+-					.MinValue(FLT_MIN)
++					.MinValue(-FLT_MAX)
+ 					.MaxValue(FLT_MAX)
+ 					.Value(RGBRange.Y)
+ 					.OnValueChanged_Lambda([this](float NewValue) { RGBRange.Y = NewValue; })
+-- 
+2.17.1.windows.2
+
+From d5861ae4f6992bd74bc8e8d666d815fab1cc662c Mon Sep 17 00:00:00 2001
+From: phoboz-net <michal@phoboz.net>
+Date: Mon, 13 May 2019 12:44:35 +0100
+Subject: [PATCH] Serialization refactor
+
+---
+ .../PointCloudRuntime/Private/PointCloud.cpp  | 61 +++++--------------
+ Source/PointCloudRuntime/Public/PointCloud.h  |  1 +
+ 2 files changed, 15 insertions(+), 47 deletions(-)
+
+diff --git a/Source/PointCloudRuntime/Private/PointCloud.cpp b/Source/PointCloudRuntime/Private/PointCloud.cpp
+index 8b2f1c6..0aa8aaa 100644
+--- a/Source/PointCloudRuntime/Private/PointCloud.cpp
++++ b/Source/PointCloudRuntime/Private/PointCloud.cpp
+@@ -14,7 +14,7 @@
+ #define IS_PROPERTY(Name) PropertyChangedEvent.MemberProperty->GetName().Equals(#Name)
+ 
+ const FGuid UPointCloud::PointCloudFileGUID('P', 'C', 'P', 'F');
+-const int32 UPointCloud::PointCloudFileVersion(6);
++const int32 UPointCloud::PointCloudFileVersion(7);
+ FCustomVersionRegistration PCPFileVersion(UPointCloud::PointCloudFileGUID, UPointCloud::PointCloudFileVersion, TEXT("Point Cloud File Version"));
+ 
+ #define LOCTEXT_NAMESPACE "PointCloud"
+@@ -82,10 +82,7 @@ UPointCloud::~UPointCloud()
+ 
+ void UPointCloud::Serialize(FArchive& Ar)
+ {
+-	DECLARE_SCOPE_CYCLE_COUNTER(TEXT("UPointCloud::Serialize"), STAT_PointCLoud_Serialize, STATGROUP_LoadTime);
+-
+ 	Ar.UsingCustomVersion(PointCloudFileGUID);
+-
+ 	Super::Serialize(Ar);
+ 	
+ 	// Make sure to serialize only actual data
+@@ -94,24 +91,8 @@ void UPointCloud::Serialize(FArchive& Ar)
+ 		return;
+ 	}
+ 
+-	bool bLoading = Ar.IsLoading();
+-	bool bCooked = Ar.IsCooking();
+-
+ 	int32 Version = Ar.CustomVer(PointCloudFileGUID);
+ 
+-	bool ReservedFlags = false;
+-	bool FreeFlags = false;
+-	uint8 Flags =	(uint8)(bUsesSprites * 1) +
+-					(uint8)(FreeFlags * 2) +
+-					(uint8)(FreeFlags * 4) +
+-					(uint8)(FreeFlags * 8) +
+-					(uint8)(FreeFlags * 16) +
+-					(uint8)(FreeFlags * 32) +
+-					(uint8)(FreeFlags * 64) +
+-					(uint8)(FreeFlags * 128);
+-
+-	int32 NumPoints = GetPointCount(bCooked);
+-
+ 	// ImportSettings were serialized differently in previous versions
+ 	if (Version != -1)
+ 	{
+@@ -119,44 +100,30 @@ void UPointCloud::Serialize(FArchive& Ar)
+ 		UPointCloudFileImporter::SerializeImportSettings(Ar, &ImportSettings);
+ 	}
+ 
+-	Ar << bCooked;
+-	Ar << ColorMode;
+-	Ar << Flags;	
++	// For backward compatibility with asset versions 6 and earlier
++	if (Version < 7)
++	{
++		bool bLegacy;
++		uint8 Legacy;
++		Ar << bLegacy << ColorMode << Legacy;
++	}
++
++	int32 NumPoints = GetPointCount(false);
+ 	Ar << NumPoints;
+ 
+-	if (bLoading)
++	if (Ar.IsLoading())
+ 	{
+-		ReservedFlags = ((Flags & 1) == 1);
+-		bUsesSprites = ((Flags & 2) == 2);
+-		bUseLowPrecision = ((Flags & 4) == 4);
+-
+ 		Points.AddUninitialized(NumPoints);
+ 	}
+ 
+-	for (int32 i = 0; i < (bLoading ? NumPoints : Points.Num()); i++)
++	for (int32 i = 0; i < NumPoints; i++)
+ 	{
+-		// Skip unnecessary points when saving cooked version
+-		if (!bLoading && bCooked && !Points[i].IsEnabled())
+-		{
+-			continue;
+-		}
+-
+ 		Ar << Points[i].OriginalLocation;
+ 		Ar << Points[i].Color;
+-
+-		// Flags
+-		if (!bCooked)
+-		{
+-			Ar << Points[i].Flags;
+-		}
+-
+-		if (bLoading && bCooked)
+-		{
+-			Points[i].SetEnabled(true);
+-		}
++		Ar << Points[i].Flags;
+ 	}
+ 
+-	if (bLoading)
++	if (Ar.IsLoading())
+ 	{
+ 		bTransformDirty = true;
+ 		bTreeDirty = true;
+diff --git a/Source/PointCloudRuntime/Public/PointCloud.h b/Source/PointCloudRuntime/Public/PointCloud.h
+index 48aef2b..690c3d7 100644
+--- a/Source/PointCloudRuntime/Public/PointCloud.h
++++ b/Source/PointCloudRuntime/Public/PointCloud.h
+@@ -324,6 +324,7 @@ public:
+ 
+ private:
+ 	/** Specifies what color information is contained inside the data */
++	UPROPERTY()
+ 	EPointCloudColorMode ColorMode;
+ 
+ 	bool bUsesSprites;
+-- 
+2.17.1.windows.2
+
+From 9999d22dee3f7e4472d8282e11562641f2a47a9e Mon Sep 17 00:00:00 2001
+From: phoboz-net <michal@phoboz.net>
+Date: Fri, 10 May 2019 10:43:26 +0100
+Subject: [PATCH] Fixed Render Method not switching to RGB after reimport
+
+---
+ .../PointCloudRuntime/Private/PointCloud.cpp  | 57 ++++++++++++++-----
+ 1 file changed, 43 insertions(+), 14 deletions(-)
+
+diff --git a/Source/PointCloudRuntime/Private/PointCloud.cpp b/Source/PointCloudRuntime/Private/PointCloud.cpp
+index 3a28053..8b2f1c6 100644
+--- a/Source/PointCloudRuntime/Private/PointCloud.cpp
++++ b/Source/PointCloudRuntime/Private/PointCloud.cpp
+@@ -767,25 +767,54 @@ void UPointCloud::BuildRenderData()
+ 
+ void UPointCloud::AdjustColorMode()
+ {
+-	if (UsesRGB() && ColorMode != EPointCloudColorMode::RGB)
++	if (UsesRGB())
+ 	{
+-		switch (RenderMethod)
++		// Switch back to non-RGB if no RGB data is present
++		if (ColorMode != EPointCloudColorMode::RGB)
+ 		{
+-		case EPointCloudRenderMethod::Point_Unlit_RGB:
+-			SetRenderingMethod(EPointCloudRenderMethod::Point_Unlit);
+-			break;
++			switch (RenderMethod)
++			{
++			case EPointCloudRenderMethod::Point_Unlit_RGB:
++				SetRenderingMethod(EPointCloudRenderMethod::Point_Unlit);
++				break;
++
++			case EPointCloudRenderMethod::Point_Lit_RGB:
++				SetRenderingMethod(EPointCloudRenderMethod::Point_Lit);
++				break;
++
++			case EPointCloudRenderMethod::Sprite_Unlit_RGB:
++				SetRenderingMethod(EPointCloudRenderMethod::Sprite_Unlit);
++				break;
++
++			case EPointCloudRenderMethod::Sprite_Lit_RGB:
++				SetRenderingMethod(EPointCloudRenderMethod::Sprite_Lit);
++				break;
++			}
++		}
++	}
++	else
++	{
++		// Switch to RGB if RGB data is present
++		if (ColorMode == EPointCloudColorMode::RGB)
++		{
++			switch (RenderMethod)
++			{
++			case EPointCloudRenderMethod::Point_Unlit:
++				SetRenderingMethod(EPointCloudRenderMethod::Point_Unlit_RGB);
++				break;
+ 
+-		case EPointCloudRenderMethod::Point_Lit_RGB:
+-			SetRenderingMethod(EPointCloudRenderMethod::Point_Lit);
+-			break;
++			case EPointCloudRenderMethod::Point_Lit:
++				SetRenderingMethod(EPointCloudRenderMethod::Point_Lit_RGB);
++				break;
+ 
+-		case EPointCloudRenderMethod::Sprite_Unlit_RGB:
+-			SetRenderingMethod(EPointCloudRenderMethod::Sprite_Unlit);
+-			break;
++			case EPointCloudRenderMethod::Sprite_Unlit:
++				SetRenderingMethod(EPointCloudRenderMethod::Sprite_Unlit_RGB);
++				break;
+ 
+-		case EPointCloudRenderMethod::Sprite_Lit_RGB:
+-			SetRenderingMethod(EPointCloudRenderMethod::Sprite_Lit);
+-			break;
++			case EPointCloudRenderMethod::Sprite_Lit:
++				SetRenderingMethod(EPointCloudRenderMethod::Sprite_Lit_RGB);
++				break;
++			}
+ 		}
+ 	}
+ }
+-- 
+2.17.1.windows.2
+
+From 96b1a13c005527b733cec4a11bfde846206d8001 Mon Sep 17 00:00:00 2001
+From: phoboz-net <michal@phoboz.net>
+Date: Mon, 13 May 2019 11:21:04 +0100
+Subject: [PATCH] File Versioning slight refactor;
+
+---
+ Source/PointCloudRuntime/Private/PointCloud.cpp | 6 +++---
+ Source/PointCloudRuntime/Public/PointCloud.h    | 4 ++++
+ 2 files changed, 7 insertions(+), 3 deletions(-)
+
+diff --git a/Source/PointCloudRuntime/Private/PointCloud.cpp b/Source/PointCloudRuntime/Private/PointCloud.cpp
+index 24c7489..3a28053 100644
+--- a/Source/PointCloudRuntime/Private/PointCloud.cpp
++++ b/Source/PointCloudRuntime/Private/PointCloud.cpp
+@@ -13,9 +13,9 @@
+ 
+ #define IS_PROPERTY(Name) PropertyChangedEvent.MemberProperty->GetName().Equals(#Name)
+ 
+-static const FGuid PointCloudFileGUID('P', 'C', 'P', 'F');
+-static const int32 PointCloudFileVersion(6);
+-FCustomVersionRegistration PCPFileVersion(PointCloudFileGUID, PointCloudFileVersion, TEXT("Point Cloud File Version"));
++const FGuid UPointCloud::PointCloudFileGUID('P', 'C', 'P', 'F');
++const int32 UPointCloud::PointCloudFileVersion(6);
++FCustomVersionRegistration PCPFileVersion(UPointCloud::PointCloudFileGUID, UPointCloud::PointCloudFileVersion, TEXT("Point Cloud File Version"));
+ 
+ #define LOCTEXT_NAMESPACE "PointCloud"
+ #define MIN_SCALE 0.001f
+diff --git a/Source/PointCloudRuntime/Public/PointCloud.h b/Source/PointCloudRuntime/Public/PointCloud.h
+index e1fdaa9..48aef2b 100644
+--- a/Source/PointCloudRuntime/Public/PointCloud.h
++++ b/Source/PointCloudRuntime/Public/PointCloud.h
+@@ -318,6 +318,10 @@ public:
+ 		int32 ProxyCount;
+ 	} RenderData;
+ 
++	/** Required for file versioning */
++	static const FGuid PointCloudFileGUID;
++	static const int32 PointCloudFileVersion;
++
+ private:
+ 	/** Specifies what color information is contained inside the data */
+ 	EPointCloudColorMode ColorMode;
+-- 
+2.17.1.windows.2
+
+From 01df4647d9978ae95c696e4e842ad59fe586b002 Mon Sep 17 00:00:00 2001
+From: phoboz-net <michal@phoboz.net>
+Date: Mon, 13 May 2019 11:17:35 +0100
+Subject: [PATCH] Fixed issue compiling Volumetric materials
+
+---
+ Shaders/Private/PointCloudVertexFactory.ush | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+
+diff --git a/Shaders/Private/PointCloudVertexFactory.ush b/Shaders/Private/PointCloudVertexFactory.ush
+index 297891e..d58edd0 100644
+--- a/Shaders/Private/PointCloudVertexFactory.ush
++++ b/Shaders/Private/PointCloudVertexFactory.ush
+@@ -315,4 +315,9 @@ uint VertexFactoryGetEyeIndex(uint InstanceId)
+ 
+ 		return TangentToWorld;
+ 	}
+-#endif // #if USING_TESSELLATION
+\ No newline at end of file
++#endif // #if USING_TESSELLATION
++
++uint VertexFactoryGetPrimitiveId(FVertexFactoryInterpolantsVSToPS Interpolants)
++{
++	return 0;
++}
+\ No newline at end of file
+-- 
+2.17.1.windows.2
+
+From ab96bbb85ff0820b69b7cbeb544757e525226c4e Mon Sep 17 00:00:00 2001
+From: phoboz-net <michal@phoboz.net>
+Date: Thu, 9 May 2019 18:37:51 +0100
+Subject: [PATCH] Importer refactor; Fixed precision loss guard not triggering;
+
+---
+ .../Importers/PointCloudFileImporter.cpp      | 74 +++++++++++++++++--
+ .../Importers/PointCloudFileImporter_LAS.cpp  | 40 ++--------
+ .../Importers/PointCloudFileImporter_LAS.h    |  2 +-
+ .../Importers/PointCloudFileImporter_XYZ.cpp  | 33 +--------
+ .../Importers/PointCloudFileImporter_XYZ.h    |  2 +-
+ .../Public/PointCloudFileImporter.h           | 32 ++++----
+ 6 files changed, 95 insertions(+), 88 deletions(-)
+
+diff --git a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter.cpp b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter.cpp
+index 2e2b3cc..ed44af3 100644
+--- a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter.cpp
++++ b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter.cpp
+@@ -5,22 +5,82 @@
+ #include "PointCloud.h"
+ #include "Misc/Paths.h"
+ 
++// Determines the level of precision loss, above which the cloud will be automatically re-centered
++#define PC_MAXPRECISIONLOSS 0.01
++
+ UPointCloudFileImporter* UPointCloudFileImporter::Instance = NULL;
+ 
++void PointCloudFileImporter::PrepareImport()
++{
++	PrecisionCorrectionOffset[0] = 0;
++	PrecisionCorrectionOffset[1] = 0;
++	PrecisionCorrectionOffset[2] = 0;
++	bPrecisionCorrected = false;
++}
++
++void PointCloudFileImporter::CheckAndCorrectPrecisionLoss(double& X, double& Y, double& Z, TArray<FPointCloudPoint>& Points)
++{
++	if (bPrecisionCorrected)
++	{
++		X -= PrecisionCorrectionOffset[0];
++		Y -= PrecisionCorrectionOffset[1];
++		Z -= PrecisionCorrectionOffset[2];
++	}
++	else if (FMath::Abs(X - (double)(float)X) > PC_MAXPRECISIONLOSS || FMath::Abs(Y - (double)(float)Y) > PC_MAXPRECISIONLOSS || FMath::Abs(Z - (double)(float)Z) > PC_MAXPRECISIONLOSS)
++	{
++		bPrecisionCorrected = true;
++
++		// Assign offset values from the first point of the cloud
++		if (Points.Num() > 0)
++		{
++			PrecisionCorrectionOffset[0] = Points[0].Location.X;
++			PrecisionCorrectionOffset[1] = Points[0].Location.Y;
++			PrecisionCorrectionOffset[2] = Points[0].Location.Z;
++		}
++		else
++		{
++			PrecisionCorrectionOffset[0] = X;
++			PrecisionCorrectionOffset[1] = Y;
++			PrecisionCorrectionOffset[2] = Z;
++		}
++
++		// Apply correction to the current point, as well as all previously processed points
++		X -= PrecisionCorrectionOffset[0];
++		Y -= PrecisionCorrectionOffset[1];
++		Z -= PrecisionCorrectionOffset[2];
++
++		for (int32 p = 0; p < Points.Num(); p++)
++		{
++			Points[p].Location.X -= PrecisionCorrectionOffset[0];
++			Points[p].Location.Y -= PrecisionCorrectionOffset[1];
++			Points[p].Location.Z -= PrecisionCorrectionOffset[2];
++		}
++
++		PC_LOG("Large offset detected - corrected by %f, %f, %f", -PrecisionCorrectionOffset[0], -PrecisionCorrectionOffset[1], -PrecisionCorrectionOffset[2]);
++	}
++}
++
+ bool UPointCloudFileImporter::Import(const FString& Filename, TSharedPtr<FPointCloudImportSettings> ImportSettings, TArray<FPointCloudPoint>& OutPoints, EPointCloudColorMode &OutColorMode)
+ {
+-	IPointCloudFileImporterInterface *Importer = GetImporterForType(Filename);
++	bool bSuccess = false;
++
++	PointCloudFileImporter *Importer = GetImporterForType(Filename);
+ 	if (Importer)
+ 	{
+-		return Importer->HandleImport(Filename, ImportSettings, OutPoints, OutColorMode);
++		FBenchmarkTimer::Reset();
++
++		Importer->PrepareImport();		
++		bSuccess = Importer->HandleImport(Filename, ImportSettings, OutPoints, OutColorMode);
++
++		FBenchmarkTimer::Log("Loading");
+ 	}
+ 
+-	return false;
++	return bSuccess;
+ }
+ 
+ TSharedPtr<FPointCloudImportSettings> UPointCloudFileImporter::GetImportSettingsForType(const FString &Filename)
+ {
+-	IPointCloudFileImporterInterface *Importer = GetImporterForType(Filename);
++	PointCloudFileImporter *Importer = GetImporterForType(Filename);
+ 	if (Importer)
+ 	{
+ 		return Importer->GetImportSettings(Filename);
+@@ -41,12 +101,12 @@ TArray<FString> UPointCloudFileImporter::GetSupportedExtensions()
+ 	return Extensions;
+ }
+ 
+-void UPointCloudFileImporter::RegisterImporter(IPointCloudFileImporterInterface* Importer, TArray<FString> Extensions)
++void UPointCloudFileImporter::RegisterImporter(PointCloudFileImporter* Importer, TArray<FString> Extensions)
+ {
+ 	Instance->RegisteredImporters.Emplace(Importer, Extensions);
+ }
+ 
+-IPointCloudFileImporterInterface* UPointCloudFileImporter::GetImporterForType(const FString& Filename)
++PointCloudFileImporter* UPointCloudFileImporter::GetImporterForType(const FString& Filename)
+ {
+ 	FString FileExtension = FPaths::GetExtension(Filename);
+ 
+@@ -73,7 +133,7 @@ void UPointCloudFileImporter::SerializeImportSettings(FArchive& Ar, TSharedPtr<F
+ 		FString FilePath;
+ 		Ar << FilePath;
+ 
+-		IPointCloudFileImporterInterface* Importer = GetImporterForType(FilePath);
++		PointCloudFileImporter* Importer = GetImporterForType(FilePath);
+ 		if (Importer)
+ 		{
+ 			TSharedPtr<FPointCloudImportSettings> _ImportSettings = Importer->GetImportSettings(FilePath);
+diff --git a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.cpp b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.cpp
+index dc9e66e..fd6cf81 100644
+--- a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.cpp
++++ b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.cpp
+@@ -7,9 +7,6 @@
+ #include "HAL/FileManager.h"
+ #include "Misc/FileHelper.h"
+ 
+-// Determines the level of precision loss, above which the cloud will be automatically re-centered
+-#define PC_MAXPRECISIONLOSS 0.01
+-
+ // Empirically, 50MB seemed like a good balance for performance
+ #define PC_MAXBUFFERSIZE 52428800LL
+ 
+@@ -130,8 +127,7 @@ bool UPointCloudFileImporter_LAS::HandleImport(const FString& Filename, TSharedP
+ 
+ 	bool bSuccess = false;
+ 
+-	FBenchmarkTimer::Reset();
+-
++	// #todo Multi-threading
+ 	TUniquePtr<FArchive> Reader(IFileManager::Get().CreateFileReader(*Filename));
+ 	if (Reader)
+ 	{
+@@ -144,10 +140,6 @@ bool UPointCloudFileImporter_LAS::HandleImport(const FString& Filename, TSharedP
+ 		// Calculate max buffer size
+ 		int64 MaxPointsToRead = FMath::Min(RemainingPoints, PC_MAXBUFFERSIZE / Header.PointDataRecordLength);
+ 
+-		// Used to store and apply offset to data to prevent precision loss
+-		double RecenterOffset[] = {0, 0, 0};
+-		bool bPrecisionChecked = false;
+-
+ 		// Clear any existing data
+ 		OutPoints.Empty(Header.GetNumberOfPoints());
+ 
+@@ -190,33 +182,13 @@ bool UPointCloudFileImporter_LAS::HandleImport(const FString& Filename, TSharedP
+ 				{
+ 					// Calculate the actual location of the point
+ 					double Location[] = {
+-						Header.XScaleFactor * Record->X + Header.XOffset - RecenterOffset[0],
+-						Header.YScaleFactor * Record->Y + Header.YOffset - RecenterOffset[1],
+-						Header.ZScaleFactor * Record->Z + Header.ZOffset - RecenterOffset[2]
++						Header.XScaleFactor * Record->X + Header.XOffset,
++						Header.YScaleFactor * Record->Y + Header.YOffset,
++						Header.ZScaleFactor * Record->Z + Header.ZOffset
+ 					};
+ 
+ 					// Check for and correct precision loss
+-					if (!bPrecisionChecked)
+-					{
+-						bPrecisionChecked = true;
+-
+-						bool bPrecisionCorrected = false;
+-						for (int32 p = 0; p < 3; p++)
+-						{
+-							if (FMath::Abs(Location[p] - (double)(float)Location[p]) > PC_MAXPRECISIONLOSS)
+-							{
+-								RecenterOffset[p] = Location[p];
+-								Location[p] = 0;
+-
+-								bPrecisionCorrected = true;
+-							}
+-						}
+-
+-						if (bPrecisionCorrected)
+-						{
+-							PC_LOG("Large offset detected - corrected by %f, %f, %f", RecenterOffset[0], RecenterOffset[1], RecenterOffset[2]);
+-						}
+-					}
++					CheckAndCorrectPrecisionLoss(Location[0], Location[1], Location[2], OutPoints);
+ 
+ 					// Convert location to floats
+ 					X = Location[0];
+@@ -291,8 +263,6 @@ bool UPointCloudFileImporter_LAS::HandleImport(const FString& Filename, TSharedP
+ 		Reader = nullptr;
+ 	}
+ 
+-	FBenchmarkTimer::Log("Loading");
+-
+ 	return bSuccess;
+ }
+ 
+diff --git a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.h b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.h
+index 84870cd..dc9dabf 100644
+--- a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.h
++++ b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.h
+@@ -249,7 +249,7 @@ public:
+  * Inherits from UBlueprintFunctionLibrary to allow exposure to Blueprint Library in the same class.
+  */
+ UCLASS()
+-class UPointCloudFileImporter_LAS : public UBlueprintFunctionLibrary, public IPointCloudFileImporterInterface
++class UPointCloudFileImporter_LAS : public UBlueprintFunctionLibrary, public PointCloudFileImporter
+ {
+ 	GENERATED_BODY()
+ 
+diff --git a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_XYZ.cpp b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_XYZ.cpp
+index 180b87f..9f5967c 100644
+--- a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_XYZ.cpp
++++ b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_XYZ.cpp
+@@ -8,9 +8,6 @@
+ #include "HAL/FileManager.h"
+ #include "Misc/FileHelper.h"
+ 
+-// Determines the level of precision loss, above which the cloud will be automatically re-centered
+-#define PC_MAXPRECISIONLOSS 0.01
+-
+ // Empirically, 50MB seemed like a good balance for performance
+ #define PC_MAXBUFFERSIZE 52428800LL
+ 
+@@ -149,10 +146,6 @@ bool UPointCloudFileImporter_XYZ::HandleImport(const FString& Filename, TSharedP
+ 
+ 		// Read and process the data
+ 		{
+-			// Used to store and apply offset to data to prevent precision loss
+-			double* RecenterOffset = new double[SelectedColumns.Num()]();
+-			bool bPrecisionChecked = false;
+-
+ 			int64 TotalSize = Reader->TotalSize();
+ 			int64 RemainingSize = TotalSize;
+ 			int64 RemainingLoadedSize = 0;
+@@ -190,7 +183,7 @@ bool UPointCloudFileImporter_XYZ::HandleImport(const FString& Filename, TSharedP
+ 
+ 							for (int32 i = 0; i < DataAssociated; i++)
+ 							{
+-								TempFloats[LookupTable[Iterator][i]] = value - RecenterOffset[LookupTable[Iterator][i]];
++								TempFloats[LookupTable[Iterator][i]] = value;
+ 							}
+ 
+ 							LoadedColumns += DataAssociated;
+@@ -232,26 +225,9 @@ bool UPointCloudFileImporter_XYZ::HandleImport(const FString& Filename, TSharedP
+ 					if (LoadedColumns == NumExpectedColumns)
+ 					{
+ 						// Check for and correct precision loss
+-						if (!bPrecisionChecked)
+-						{
+-							bPrecisionChecked = true;
+-
+-							bool bPrecisionCorrected = false;
+-							for (int32 p = 0; p < 3; p++)
+-							{
+-								if (FMath::Abs(TempFloats[p] - (double)(float)TempFloats[p]) > PC_MAXPRECISIONLOSS)
+-								{
+-									RecenterOffset[p] = TempFloats[p];
+-									TempFloats[p] = 0;
+-
+-									bPrecisionCorrected = true;
+-								}
+-							}
+-
+-							if (bPrecisionCorrected)
+-							{
+-								PC_LOG("Large offset detected - corrected by %f, %f, %f", RecenterOffset[0], RecenterOffset[1], RecenterOffset[2]);
+-							}
++						if (IsColumnPopulated[0] && IsColumnPopulated[1] && IsColumnPopulated[2])
++						{							
++							CheckAndCorrectPrecisionLoss(TempFloats[0], TempFloats[1], TempFloats[2], OutPoints);
+ 						}
+ 
+ 						float X = IsColumnPopulated[0] ? TempFloats[0] : 0;
+@@ -296,7 +272,6 @@ bool UPointCloudFileImporter_XYZ::HandleImport(const FString& Filename, TSharedP
+ 			Reader->Close();
+ 			Reader = nullptr;
+ 			delete[] TempFloats;
+-			delete[] RecenterOffset;
+ 			TempFloats = NULL;
+ 			FMemory::Free(Data);
+ 			Data = NULL;
+diff --git a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_XYZ.h b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_XYZ.h
+index 09b519e..96442b9 100644
+--- a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_XYZ.h
++++ b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_XYZ.h
+@@ -122,7 +122,7 @@ private:
+  * Inherits from UBlueprintFunctionLibrary to allow exposure to Blueprint Library in the same class.
+  */
+ UCLASS()
+-class UPointCloudFileImporter_XYZ : public UBlueprintFunctionLibrary, public IPointCloudFileImporterInterface
++class UPointCloudFileImporter_XYZ : public UBlueprintFunctionLibrary, public PointCloudFileImporter
+ {
+ 	GENERATED_BODY()
+ 
+diff --git a/Source/PointCloudRuntime/Public/PointCloudFileImporter.h b/Source/PointCloudRuntime/Public/PointCloudFileImporter.h
+index 34f7301..089613d 100644
+--- a/Source/PointCloudRuntime/Public/PointCloudFileImporter.h
++++ b/Source/PointCloudRuntime/Public/PointCloudFileImporter.h
+@@ -4,7 +4,6 @@
+ 
+ #include "CoreMinimal.h"
+ #include "PointCloudShared.h"
+-#include "UObject/Interface.h"
+ #include "Widgets/SWidget.h"
+ #include "PointCloudFileImporter.generated.h"
+ 
+@@ -46,33 +45,36 @@ struct POINTCLOUDRUNTIME_API FPointCloudImportSettings
+ #endif
+ };
+ 
+-/** Expose interface to UE's reflection system */
+-UINTERFACE()
+-class UPointCloudFileImporterInterface : public UInterface
++/** Base type implemented by all importers */
++class PointCloudFileImporter
+ {
+-	GENERATED_BODY()
+-};
+-
+-/** Interface used by all importers */
+-class IPointCloudFileImporterInterface
+-{
+-	GENERATED_BODY()
++protected:
++	/** Used for precision loss check and correction */
++	double PrecisionCorrectionOffset[3] = { 0, 0, 0 };
++	bool bPrecisionCorrected = false;
+ 
+ public:
++	/** Called before importing to prepare the data */
++	void PrepareImport();
++
+ 	/** This is what will actually be called to process the import of the file */
+ 	virtual bool HandleImport(const FString& Filename, TSharedPtr<FPointCloudImportSettings> ImportSettings, TArray<FPointCloudPoint>& OutPoints, EPointCloudColorMode &OutColorMode) { return false; }
+ 
+ 	/** Returns a shared pointer for the import settings of this importer */
+ 	virtual TSharedPtr<FPointCloudImportSettings> GetImportSettings(const FString& Filename) { return NULL; }
++
++protected:
++	/** Performs check for potential precision loss of data, and corrects it, if necessary */
++	void CheckAndCorrectPrecisionLoss(double& X, double& Y, double& Z, TArray<FPointCloudPoint>& Points);
+ };
+ 
+ /** Links extensions to file importers capable of handling them */
+ struct FPointCloudRegisteredFileImporter
+ {
+-	IPointCloudFileImporterInterface* Importer;
++	PointCloudFileImporter* Importer;
+ 	TArray<FString> Extensions;
+ 
+-	FPointCloudRegisteredFileImporter(IPointCloudFileImporterInterface* Importer, TArray<FString> Extensions)
++	FPointCloudRegisteredFileImporter(PointCloudFileImporter* Importer, TArray<FString> Extensions)
+ 		: Importer(Importer)
+ 		, Extensions(Extensions)
+ 	{
+@@ -109,10 +111,10 @@ public:
+ 	static TArray<FString> GetSupportedExtensions();
+ 
+ 	/** Called to register an importer for the supported formats list */
+-	static void RegisterImporter(IPointCloudFileImporterInterface* Importer, TArray<FString> Extensions);
++	static void RegisterImporter(PointCloudFileImporter* Importer, TArray<FString> Extensions);
+ 
+ 	/** Returns pointer to the importer, which supports the given format */
+-	static IPointCloudFileImporterInterface* GetImporterForType(const FString& Filename);
++	static PointCloudFileImporter* GetImporterForType(const FString& Filename);
+ 
+ 	/** Responsible for serialization using correct serializer for the given format. */
+ 	static void SerializeImportSettings(FArchive& Ar, TSharedPtr<FPointCloudImportSettings> *ImportSettings);
+-- 
+2.17.1.windows.2
+
+From 2e8f1a1da68da50793b5a5ab15d05a7e280179bb Mon Sep 17 00:00:00 2001
+From: phoboz-net <michal@phoboz.net>
+Date: Fri, 3 May 2019 18:17:10 +0100
+Subject: [PATCH] Blueprint exposure fix
+
+---
+ .../Private/Importers/PointCloudFileImporter_LAS.cpp         | 5 +----
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+
+diff --git a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.cpp b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.cpp
+index b23c78e..dc9e66e 100644
+--- a/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.cpp
++++ b/Source/PointCloudRuntime/Private/Importers/PointCloudFileImporter_LAS.cpp
+@@ -114,8 +114,7 @@ TSharedPtr<SWidget> FPointCloudImportSettings_LAS::GetWidget()
+ 
+ UPointCloud* UPointCloudFileImporter_LAS::LoadPointCloudFromFile_LAS(FString Filename)
+ {
+-	// #implement Blueprint exposure
+-	return NULL;
++	return UPointCloudStatics::LoadPointCloudFromFile(Filename, nullptr);
+ }
+ 
+ bool UPointCloudFileImporter_LAS::HandleImport(const FString& Filename, TSharedPtr<FPointCloudImportSettings> ImportSettings, TArray<FPointCloudPoint>& OutPoints, EPointCloudColorMode& OutColorMode)
+@@ -151,8 +150,6 @@ bool UPointCloudFileImporter_LAS::HandleImport(const FString& Filename, TSharedP
+ 
+ 		// Clear any existing data
+ 		OutPoints.Empty(Header.GetNumberOfPoints());
+-		// #implement Line selection
+-		// OutPoints.Empty((LastIndex == 0 ? Settings->EstimatedPointCount : LastIndex + 1) - FirstIndex);
+ 
+ 		// Set to true if any Intensity information is encountered
+ 		bool bHasIntensityData = false;
+-- 
+2.17.1.windows.2
+
+From 3cf17189b7aac64e34276226d0c29ee8dca25c6e Mon Sep 17 00:00:00 2001
+From: phoboz-net <michal@phoboz.net>
+Date: Wed, 1 May 2019 21:10:27 +0100
+Subject: [PATCH] Few minor fixes
+
+---
+ Source/PointCloudRuntime/Private/PointCloud.cpp   |  5 ++---
+ .../PointCloudRuntime/Public/PointCloudShared.h   | 15 +++++++--------
+ 2 files changed, 9 insertions(+), 11 deletions(-)
+
+diff --git a/Source/PointCloudRuntime/Private/PointCloud.cpp b/Source/PointCloudRuntime/Private/PointCloud.cpp
+index fe40ad0..24c7489 100644
+--- a/Source/PointCloudRuntime/Private/PointCloud.cpp
++++ b/Source/PointCloudRuntime/Private/PointCloud.cpp
+@@ -694,13 +694,12 @@ void UPointCloud::SetPointCloudData(TArray<FPointCloudPoint> &InPoints, bool bRe
+ 	if (InPoints.Num() > 0)
+ 	{
+ 		Points = InPoints;
+-		bRenderDataDirty = bTransformDirty = bReductionDirty = bTreeDirty = bMaterialDirty = true;
+ 
+ 		AdjustPerformanceSettings();
+ 
+ 		if (bRebuildCloud)
+ 		{
+-			Rebuild();
++			Rebuild(true);
+ 		}
+ 	}
+ }
+@@ -793,7 +792,7 @@ void UPointCloud::AdjustColorMode()
+ 
+ void UPointCloud::AdjustPerformanceSettings()
+ {
+-	if (Points.Num() < 75000)
++	if (Points.Num() < 75000 && (bEnableLOD || MinimumNodePointCount > 2))
+ 	{
+ 		bEnableLOD = false;
+ 		MinimumNodePointCount = Points.Num() < 50000 ? 1 : 2;
+diff --git a/Source/PointCloudRuntime/Public/PointCloudShared.h b/Source/PointCloudRuntime/Public/PointCloudShared.h
+index 90452c9..e8a1025 100644
+--- a/Source/PointCloudRuntime/Public/PointCloudShared.h
++++ b/Source/PointCloudRuntime/Public/PointCloudShared.h
+@@ -45,13 +45,13 @@ struct POINTCLOUDRUNTIME_API FPointCloudPoint
+ 	FPointCloudPoint(FVector Location, FColor Color, bool bEnabled)
+ 		: OriginalLocation(Location)
+ 		, Location(Location)
+-		, Color(FLinearColor(Color).ToFColor(true))
+-		, Flags(0x00000000)
++		, Color(Color)
++		, Flags(0b00000000)
+ 	{
+ 		SetEnabled(bEnabled);
+ 	}
+ 	FPointCloudPoint(float &X, float &Y, float &Z)
+-		: Flags(0x00000001)
++		: Flags(0b00000001)
+ 	{
+ 		Location.X = X;
+ 		Location.Y = Y;
+@@ -70,16 +70,15 @@ struct POINTCLOUDRUNTIME_API FPointCloudPoint
+ 		Color = FLinearColor(R, G, B, A).ToFColor(false);
+ 	}
+ 
+-	FORCEINLINE bool IsEnabled() const { return (Flags & 0x00000001) == 0x00000001; }
+-	FORCEINLINE bool IsEnabledOverriden() const { return (Flags & 0x00000010) == 0x00000010; }
++	FORCEINLINE bool IsEnabled() const			{ return (Flags & 0b00000001) == 0b00000001; }
++	FORCEINLINE bool IsEnabledOverriden() const { return (Flags & 0b00000010) == 0b00000010; }
+ 	FORCEINLINE void SetEnabled(bool bNewEnabled, bool bMarkAsOverridden = false)
+ 	{
+-		Flags = bNewEnabled ? (Flags | 0x00000001) : (Flags & 0x11111110);
+-		Flags = bMarkAsOverridden ? (Flags | 0x00000010) : (Flags & 0x11111101);
++		Flags = bNewEnabled ? (Flags | 0b00000001) : (Flags & 0b11111110);
++		Flags = bMarkAsOverridden ? (Flags | 0b00000010) : (Flags & 0b11111101);
+ 	}
+ 
+ 	FORCEINLINE float GridDistance(FPointCloudPoint *point) const { return (point->Location - Location).GetAbsMax(); }
+-	FORCEINLINE void AddColor(FLinearColor InColor) { Color = InColor.ToFColor(false); }
+ 
+ 	FORCEINLINE FString ToString() const { return FString::Printf(TEXT("E: %s, OL: %s, L: %s, C: %s"), BOOL2STR(IsEnabled()), *OriginalLocation.ToString(), *Location.ToString(), *Color.ToString()); }
+ };
+-- 
+2.17.1.windows.2
+
+From 3cecd99bca76f079f8d10056f4f7b290e6e329a0 Mon Sep 17 00:00:00 2001
+From: phoboz-net <michal@phoboz.net>
+Date: Wed, 1 May 2019 17:59:06 +0100
+Subject: [PATCH] Removed necessity of using SetEnabledOverride
+
+---
+ Source/PointCloudRuntime/Public/PointCloudShared.h  |  8 +++++---
+ Source/PointCloudRuntime/Public/PointCloudStatics.h | 12 ++----------
+ 2 files changed, 7 insertions(+), 13 deletions(-)
+
+diff --git a/Source/PointCloudRuntime/Public/PointCloudShared.h b/Source/PointCloudRuntime/Public/PointCloudShared.h
+index 8ff26b8..90452c9 100644
+--- a/Source/PointCloudRuntime/Public/PointCloudShared.h
++++ b/Source/PointCloudRuntime/Public/PointCloudShared.h
+@@ -71,10 +71,12 @@ struct POINTCLOUDRUNTIME_API FPointCloudPoint
+ 	}
+ 
+ 	FORCEINLINE bool IsEnabled() const { return (Flags & 0x00000001) == 0x00000001; }
+-	FORCEINLINE void SetEnabled(bool NewEnabled) { Flags = NewEnabled ? (Flags | 0x00000001) : (Flags & 0x11111110); }
+-
+ 	FORCEINLINE bool IsEnabledOverriden() const { return (Flags & 0x00000010) == 0x00000010; }
+-	FORCEINLINE void SetEnabledOverride(bool NewEnabled) { Flags = NewEnabled ? (Flags | 0x00000010) : (Flags & 0x11111101); }
++	FORCEINLINE void SetEnabled(bool bNewEnabled, bool bMarkAsOverridden = false)
++	{
++		Flags = bNewEnabled ? (Flags | 0x00000001) : (Flags & 0x11111110);
++		Flags = bMarkAsOverridden ? (Flags | 0x00000010) : (Flags & 0x11111101);
++	}
+ 
+ 	FORCEINLINE float GridDistance(FPointCloudPoint *point) const { return (point->Location - Location).GetAbsMax(); }
+ 	FORCEINLINE void AddColor(FLinearColor InColor) { Color = InColor.ToFColor(false); }
+diff --git a/Source/PointCloudRuntime/Public/PointCloudStatics.h b/Source/PointCloudRuntime/Public/PointCloudStatics.h
+index 2b7ee15..986e4f0 100644
+--- a/Source/PointCloudRuntime/Public/PointCloudStatics.h
++++ b/Source/PointCloudRuntime/Public/PointCloudStatics.h
+@@ -42,18 +42,10 @@ public:
+ 
+ 	/**
+ 	 * Manually sets enabled state
+-	 * This will also prevent reduction settings from changing the status
++	 * Optionally, this can also prevent reduction settings from changing the status
+ 	 */
+ 	UFUNCTION(BlueprintCallable, Category = "Point Cloud")
+-	static void SetEnabled(UPARAM(ref) FPointCloudPoint &InPoint, bool NewEnabled)
+-	{
+-		InPoint.SetEnabled(NewEnabled);
+-		InPoint.SetEnabledOverride(true);
+-	}
+-
+-	/** This will restore automatic state selection when rebuilding */
+-	UFUNCTION(BlueprintCallable, Category = "Point Cloud")
+-	static void SetEnabledAuto(UPARAM(ref) FPointCloudPoint &InPoint) { InPoint.SetEnabledOverride(false); }
++	static void SetEnabled(UPARAM(ref) FPointCloudPoint &InPoint, bool bNewEnabled, bool bPersistent = true) { InPoint.SetEnabled(bNewEnabled, bPersistent); }
+ 
+ 	UFUNCTION(BlueprintPure, Category = "Point Cloud")
+ 	static FPointCloudPoint MakePointCloudPoint(FVector Location, FColor Color, bool bEnabled);
+-- 
+2.17.1.windows.2
+
