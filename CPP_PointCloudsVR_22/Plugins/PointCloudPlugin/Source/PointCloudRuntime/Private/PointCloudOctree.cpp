@@ -310,7 +310,7 @@ void FPointCloudOctree::GetPoints(int32 SelectionListIndex, TArray<FPointCloudPo
 			SelectionList[SelectionListIndex].AddUnique(pointIndex);           // Add the Index of the Point to the collection
 
 			UWorld* myworld = GEngine->GetWorldFromContextObject(PointCloud);
-			DrawDebugPoint(myworld, PointCloudPoints[pointIndex].Location, 50, FColor::Red, false, 10);
+			//DrawDebugPoint(myworld, PointCloudPoints[pointIndex].Location, 50, FColor::Red, false, 10);
 
 			//if (GEngine) { GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, FString::Printf(TEXT("Point Added: %d"), pNodeToGetPoints.LOD)); }
 		}
@@ -330,6 +330,7 @@ void FPointCloudOctree::GetTouchedPoints(int32 SelectionListIndex, FVector Colli
 	return;
 }
 
+FColor DarkRed = FColor(155, 29, 67, 1);
 // Go through all nodes
 void FPointCloudOctree::GetAllTouchedNodes(int32 SelectionListIndex, FVector CLocation, int32 Radius, TArray<FPointCloudPoint> &pPointCloudPoints, const FPointCloudOctree::Node &pNodeToGetPoints)
 {
@@ -349,7 +350,7 @@ void FPointCloudOctree::GetAllTouchedNodes(int32 SelectionListIndex, FVector CLo
 			//if (GEngine) { GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Purple, FString::Printf(TEXT("Colliding with LOD: %d"), pNodeToGetPoints.LOD)); }
 			GetPoints(SelectionListIndex, pPointCloudPoints, CLocation, Radius, pNodeToGetPoints); // Get the points that are inside the collider
 
-			DrawDebugBox(myworld, center, extent, FColor::Red, false, 10, 0, 5);
+			DrawDebugBox(myworld, center, extent, DarkRed, false, 10, 0, 10);
 		}
 
 		if (pNodeToGetPoints.LOD > 0)

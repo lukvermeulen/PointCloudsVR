@@ -6,6 +6,7 @@
 #include "D:\M2Rep\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudActor.cpp"
 #include "D:\M2Rep\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudComponent.cpp"
 #include "D:\M2Rep\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudHelper.cpp"
+#include "D:\M2Rep\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudOctree.cpp"
 #include "D:\M2Rep\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudRendering.cpp"
 #include "D:\M2Rep\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudRuntimeModule.cpp"
 #include "D:\M2Rep\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudShared.cpp"

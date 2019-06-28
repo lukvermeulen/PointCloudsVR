@@ -1,54 +1,24 @@
-﻿  Cleaning CPP_PointCloudsVR_22Editor and UnrealHeaderTool binaries...
-  Using 'git status' to determine working set for adaptive non-unity build (D:\M2Rep\PointCloudsVR).
-  Creating makefile for CPP_PointCloudsVR_22Editor (no existing makefile)
+﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\M2Rep\PointCloudsVR).
+  Creating makefile for CPP_PointCloudsVR_22Editor (ini files are newer than makefile)
   Parsing headers for CPP_PointCloudsVR_22Editor
     Running UnrealHeaderTool "D:\M2Rep\PointCloudsVR\CPP_PointCloudsVR_22\CPP_PointCloudsVR_22.uproject" "D:\M2Rep\PointCloudsVR\CPP_PointCloudsVR_22\Intermediate\Build\Win64\CPP_PointCloudsVR_22Editor\Development\CPP_PointCloudsVR_22Editor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for CPP_PointCloudsVR_22Editor in 5,2714751 seconds
+  Reflection code generated for CPP_PointCloudsVR_22Editor in 21,7838751 seconds
   [Adaptive unity build] Excluded from PointCloudRuntime unity file: PointCloudOctree.cpp
   Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 29 actions with 4 processes...
-    [1/29] Default.rc2
-    [2/29] Default.rc2
-    [3/29] Default.rc2
-    [4/29] SharedPCH.UnrealEd.cpp
-    [5/29] SharedPCH.Engine.cpp
-    [6/29] Module.PointCloudRuntime.gen.cpp
-    [7/29] CPP_PointCloudsVR_22.cpp
-    [8/29] CPP_PointCloudsVR_22Character.cpp
-    [9/29] CPP_PointCloudsVR_22Projectile.cpp
-    [10/29] CPP_PointCloudsVR_22HUD.cpp
-    [11/29] CPP_PointCloudsVR_22.init.gen.cpp
-    [12/29] CPP_PointCloudsVR_22Character.gen.cpp
-    [13/29] CPP_PointCloudsVR_22GameMode.gen.cpp
-    [14/29] CPP_PointCloudsVR_22HUD.gen.cpp
-    [15/29] CPP_PointCloudsVR_22Projectile.gen.cpp
-    [16/29] PointCloudTraveller.gen.cpp
-    [17/29] PointCloudTraveller.cpp
-    [18/29] PointCloudOctree.cpp
+  Building 4 actions with 4 processes...
+    [1/4] PointCloudOctree.cpp
 D:\M2Rep\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudOctree.cpp(196): warning C4996: 'UEngine::GetWorldFromContextObject': GetWorldFromContextObject(Object) and GetWorldFromContextObject(Object, boolean) are replaced by GetWorldFromContextObject(Object, Enum) or GetWorldFromContextObjectChecked(Object) Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
     D:\Programme\Epic\UE_4.22\Engine\Source\Runtime\Engine\Classes\Engine/Engine.h(2478): note: Siehe Deklaration von "UEngine::GetWorldFromContextObject"
 D:\M2Rep\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudOctree.cpp(258): warning C4996: 'UEngine::GetWorldFromContextObject': GetWorldFromContextObject(Object) and GetWorldFromContextObject(Object, boolean) are replaced by GetWorldFromContextObject(Object, Enum) or GetWorldFromContextObjectChecked(Object) Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
     D:\Programme\Epic\UE_4.22\Engine\Source\Runtime\Engine\Classes\Engine/Engine.h(2478): note: Siehe Deklaration von "UEngine::GetWorldFromContextObject"
 D:\M2Rep\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudOctree.cpp(312): warning C4996: 'UEngine::GetWorldFromContextObject': GetWorldFromContextObject(Object) and GetWorldFromContextObject(Object, boolean) are replaced by GetWorldFromContextObject(Object, Enum) or GetWorldFromContextObjectChecked(Object) Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
     D:\Programme\Epic\UE_4.22\Engine\Source\Runtime\Engine\Classes\Engine/Engine.h(2478): note: Siehe Deklaration von "UEngine::GetWorldFromContextObject"
-D:\M2Rep\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudOctree.cpp(342): warning C4996: 'UEngine::GetWorldFromContextObject': GetWorldFromContextObject(Object) and GetWorldFromContextObject(Object, boolean) are replaced by GetWorldFromContextObject(Object, Enum) or GetWorldFromContextObjectChecked(Object) Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+D:\M2Rep\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Source\PointCloudRuntime\Private\PointCloudOctree.cpp(343): warning C4996: 'UEngine::GetWorldFromContextObject': GetWorldFromContextObject(Object) and GetWorldFromContextObject(Object, boolean) are replaced by GetWorldFromContextObject(Object, Enum) or GetWorldFromContextObjectChecked(Object) Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
     D:\Programme\Epic\UE_4.22\Engine\Source\Runtime\Engine\Classes\Engine/Engine.h(2478): note: Siehe Deklaration von "UEngine::GetWorldFromContextObject"
-    [19/29] CPP_PointCloudsVR_22GameMode.cpp
-    [20/29] UE4Editor-CPP_PointCloudsVR_22.lib
-       Bibliothek "D:\M2Rep\PointCloudsVR\CPP_PointCloudsVR_22\Intermediate\Build\Win64\UE4Editor\Development\CPP_PointCloudsVR_22\UE4Editor-CPP_PointCloudsVR_22.lib" und Objekt "D:\M2Rep\PointCloudsVR\CPP_PointCloudsVR_22\Intermediate\Build\Win64\UE4Editor\Development\CPP_PointCloudsVR_22\UE4Editor-CPP_PointCloudsVR_22.exp" werden erstellt.
-    [21/29] UE4Editor-CPP_PointCloudsVR_22.dll
-       Bibliothek "D:\M2Rep\PointCloudsVR\CPP_PointCloudsVR_22\Intermediate\Build\Win64\UE4Editor\Development\CPP_PointCloudsVR_22\UE4Editor-CPP_PointCloudsVR_22.suppressed.lib" und Objekt "D:\M2Rep\PointCloudsVR\CPP_PointCloudsVR_22\Intermediate\Build\Win64\UE4Editor\Development\CPP_PointCloudsVR_22\UE4Editor-CPP_PointCloudsVR_22.suppressed.exp" werden erstellt.
-    [22/29] Module.PointCloudRuntime.cpp
-    [23/29] UE4Editor-PointCloudRuntime.lib
+    [2/4] UE4Editor-PointCloudRuntime.lib
        Bibliothek "D:\M2Rep\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Development\PointCloudRuntime\UE4Editor-PointCloudRuntime.lib" und Objekt "D:\M2Rep\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Development\PointCloudRuntime\UE4Editor-PointCloudRuntime.exp" werden erstellt.
-    [24/29] UE4Editor-PointCloudRuntime.dll
+    [3/4] UE4Editor-PointCloudRuntime.dll
        Bibliothek "D:\M2Rep\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Development\PointCloudRuntime\UE4Editor-PointCloudRuntime.suppressed.lib" und Objekt "D:\M2Rep\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Development\PointCloudRuntime\UE4Editor-PointCloudRuntime.suppressed.exp" werden erstellt.
-    [25/29] Module.PointCloudEditor.gen.cpp
-    [26/29] Module.PointCloudEditor.cpp
-    [27/29] UE4Editor-PointCloudEditor.lib
-       Bibliothek "D:\M2Rep\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Development\PointCloudEditor\UE4Editor-PointCloudEditor.lib" und Objekt "D:\M2Rep\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Development\PointCloudEditor\UE4Editor-PointCloudEditor.exp" werden erstellt.
-    [28/29] UE4Editor-PointCloudEditor.dll
-       Bibliothek "D:\M2Rep\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Development\PointCloudEditor\UE4Editor-PointCloudEditor.suppressed.lib" und Objekt "D:\M2Rep\PointCloudsVR\CPP_PointCloudsVR_22\Plugins\PointCloudPlugin\Intermediate\Build\Win64\UE4Editor\Development\PointCloudEditor\UE4Editor-PointCloudEditor.suppressed.exp" werden erstellt.
-    [29/29] CPP_PointCloudsVR_22Editor.target
-  Total time in Parallel executor: 48,15 seconds
-  Total execution time: 55,61 seconds
+    [4/4] CPP_PointCloudsVR_22Editor.target
+  Total time in Parallel executor: 91,02 seconds
+  Total execution time: 120,34 seconds
